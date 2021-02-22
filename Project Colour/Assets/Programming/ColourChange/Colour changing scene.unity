@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd74e125d4d7db64d95ae066f719fc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentColor: {r: 0.24847457, g: 0.94509804, b: 0.031372547, a: 0}
+  currentColor: {r: 1, g: 1, b: 1, a: 0}
 --- !u!54 &394468316
 Rigidbody:
   m_ObjectHideFlags: 0
