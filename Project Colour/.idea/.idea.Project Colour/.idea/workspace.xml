@@ -41,6 +41,7 @@
         <option value="$PROJECT_DIR$/Assets/Programming/ColourChange/Slime.cs" />
         <option value="$PROJECT_DIR$/Assets/Programming/ColourChange/SlimeEnum.cs" />
         <option value="$PROJECT_DIR$/Assets/Programming/ColourChange/ChangeColour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Programming/PlayerMovement/ThirdPersonMovement.cs" />
       </list>
     </option>
   </component>
@@ -87,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613960822087</updated>
       <workItem from="1613960829842" duration="2838000" />
+      <workItem from="1614125672942" duration="617000" />
     </task>
     <servers />
   </component>
@@ -105,6 +107,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

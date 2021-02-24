@@ -13,6 +13,9 @@
             <e p="Slime.cs" t="Include" />
             <e p="SlimeEnum.cs" t="Include" />
           </e>
+          <e p="PlayerMovement" t="Include">
+            <e p="ThirdPersonMovement.cs" t="Include" />
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="SimpleCameraController.cs" t="Include" />
