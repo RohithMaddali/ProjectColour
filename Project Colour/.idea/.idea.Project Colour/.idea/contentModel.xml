@@ -14,6 +14,7 @@
             <e p="SlimeEnum.cs" t="Include" />
           </e>
           <e p="PlayerMovement" t="Include">
+            <e p="ColourMover.cs" t="Include" />
             <e p="ThirdPersonMovement.cs" t="Include" />
           </e>
         </e>
