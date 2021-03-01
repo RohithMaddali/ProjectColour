@@ -23,10 +23,10 @@ namespace AJ
         void Update()
         {
             //This is the next step to complete once I get that uncoloured box fixed correctly.
-            if (Input.GetKeyDown("E"))
+            /*if (Input.GetKeyDown("E"))
             {
                 
-            }
+            }*/
             
             
             //var ray = new Ray(transform.position, transform.forward);
