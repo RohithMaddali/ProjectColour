@@ -31,7 +31,7 @@ namespace AJ
             var transform = this.transform;
             
            
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 100.0f))
+            if (Physics.Raycast(transform.position, transform.forward, out hit, 10.0f))
             {
                 if (hit.transform.GetComponent<ColouredObject>())
                 {
@@ -40,7 +40,7 @@ namespace AJ
                     print("Object colour: " + ToString());
                 }
             }
-            else if (!Physics.Raycast(transform.position, transform.forward, out hit, 100.0f))
+            else if (!Physics.Raycast(transform.position, transform.forward, out hit, 10.0f))
             {
                 print("DID NOT HIT A COLOURED OBJECT!! ");
             }
