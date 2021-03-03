@@ -10,6 +10,7 @@
         <e p="Programming" t="Include">
           <e p="ColourChange" t="Include">
             <e p="ChangeColour.cs" t="Include" />
+            <e p="ColouredObject.cs" t="Include" />
             <e p="Slime.cs" t="Include" />
             <e p="SlimeEnum.cs" t="Include" />
           </e>
