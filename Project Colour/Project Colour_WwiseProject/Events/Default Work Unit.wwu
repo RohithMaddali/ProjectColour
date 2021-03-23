@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="play_sfx_env_forrest_amb" ID="{3BADE60D-9071-47D2-9DDA-492B30D988D0}">
+					<ChildrenList>
+						<Action Name="" ID="{A8767BFB-7D28-4F72-B1DB-06E088730F9A}" ShortID="564901905">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="kinoton__forest-winter-light-wind" ID="{AF43A22D-920E-41A7-87FE-8596444E10FA}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

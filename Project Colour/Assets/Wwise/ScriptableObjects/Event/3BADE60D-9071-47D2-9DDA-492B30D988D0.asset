@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c8b2f7083a1964196796388720c066, type: 3}
+  m_Name: 3BADE60D-9071-47D2-9DDA-492B30D988D0
+  m_EditorClassIdentifier: 
+  objectName: play_sfx_env_forrest_amb
+  id: 2852027888
+  guid: 3BADE60D-9071-47D2-9DDA-492B30D988D0
