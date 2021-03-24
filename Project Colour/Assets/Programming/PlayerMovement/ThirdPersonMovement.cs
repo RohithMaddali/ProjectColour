@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +10,6 @@ namespace AJ
         public Transform cam;
         public float speed = 6f;
 
-        private float lastSpeed;
 
         public float turnSmoothTime = 0.1f;
 
@@ -26,8 +24,6 @@ namespace AJ
         void Start()
         {
             controller = GetComponent<CharacterController>();
-            speed = 10f;
-            maxSpeed = 20f;
         }
 
         // Update is called once per frame
@@ -58,16 +54,7 @@ namespace AJ
                 //Increase speed over time
                 if (speed < maxSpeed)
                 {
-                    speed += 0.9f * Time.deltaTime;
-                }
-                else if(Input.GetKeyDown(KeyCode.W))
-                {
-                    //Reset once key is released
-                    if (speed != lastSpeed)
-                    {
-                        speed = 10;
-                        lastSpeed = speed;
-                    }
+                    speed += 0.5f * Time.deltaTime;
                 }
             }
         }
