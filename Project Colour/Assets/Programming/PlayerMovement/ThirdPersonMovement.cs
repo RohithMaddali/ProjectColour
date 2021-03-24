@@ -6,7 +6,7 @@ namespace AJ
 {
     public class ThirdPersonMovement : MonoBehaviour
     {
-        public CharacterController controller;
+        
         public Transform cam;
         public float speed = 6f;
 
@@ -14,6 +14,23 @@ namespace AJ
         public float turnSmoothTime = 0.1f;
 
         private float turnSmoothVelocity;
+        
+        private CharacterController controller;
+
+        //public float forwardSpeed;
+
+        public float maxSpeed;
+        // Start is called before the first frame update
+        void Start()
+        {
+            controller = GetComponent<CharacterController>();
+        }
+
+        // Update is called once per frame
+        
+        
+            
+        
         // Update is called once per frame
         void Update()
         {
@@ -30,6 +47,15 @@ namespace AJ
 
                 Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            }
+            
+            if(Input.GetKey(KeyCode.W))
+            {
+                //Increase speed over time
+                if (speed < maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
             }
         }
     }
