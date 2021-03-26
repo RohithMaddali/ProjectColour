@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d185e359cdc33649899a2838002beffd
     GuidInternal: 
-    m_lastTime: -8585851211688929522
+    m_lastTime: -8585848871894438939
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1ad7f73361ace840af42609fdd7fd554
     GuidInternal: 
-    m_lastTime: -8585851211689325591
+    m_lastTime: -8585848871895778359
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585851211689704567
-    List: []
+    m_lastTime: -8585848871894458886
+    List:
+    - name: Environment
+      guid: c321d99e91158640bf31e616fa2d0806
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2a944836521c424da3d49e97a9e03762
+      - ElementName: Environment
+        ObjectType: 7
+        guid: c321d99e91158640bf31e616fa2d0806
+      Path: SoundBanks\Default Work Unit\Environment
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585851211689235756
-    List: []
+    m_lastTime: -8585848871897424270
+    List:
+    - name: play_sfx_env_forrest_amb
+      guid: 0de6ad3b7190d2479dda492b30d988d0
+      id: 2852027888
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: play_sfx_env_forrest_amb
+        ObjectType: 3
+        guid: 0de6ad3b7190d2479dda492b30d988d0
+      Path: Events\Default Work Unit\play_sfx_env_forrest_amb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +125,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d4ef90d6a268b24ab2c9aa2ac58f5fde
     GuidInternal: 
-    m_lastTime: -8585851211690243120
+    m_lastTime: -8585848871897414306
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +139,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46f609f0b2605447aa33f2db183074af
     GuidInternal: 
-    m_lastTime: -8585851211690352842
+    m_lastTime: -8585848871894448914
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,7 +153,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
     GuidInternal: 
-    m_lastTime: -8585851211690532363
+    m_lastTime: -8585848871894438939
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -136,7 +167,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 7dc84a5948a5bc419e20ee63e751d964
     GuidInternal: 
-    m_lastTime: -8585851211690033642
+    m_lastTime: -8585848871894438939
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 0500000006000000090000000a000000

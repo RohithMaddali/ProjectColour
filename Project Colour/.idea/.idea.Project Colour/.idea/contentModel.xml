@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\AJ\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\AJ\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Project Colour.1828560101.00" t="ExcludeRecursive" />
-    <e p="C:\Users\AJ\Downloads\Trimester 4 GPG220\CIU212\ProjectColour\Project Colour" t="IncludeRecursive">
+    <e p="C:\Users\predi\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\predi\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Project Colour.477091594.00" t="ExcludeRecursive" />
+    <e p="C:\Users\predi\OneDrive\Documents\ProjectColour\Project Colour" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -13,6 +13,26 @@
             <e p="ColouredObject.cs" t="Include" />
             <e p="Slime.cs" t="Include" />
             <e p="SlimeEnum.cs" t="Include" />
+          </e>
+          <e p="FlockBehaviourScene" t="Include">
+            <e p="Behaviour Scripts" t="Include">
+              <e p="AlignmentBehaviour.cs" t="Include" />
+              <e p="AvoidanceBehaviour.cs" t="Include" />
+              <e p="CohesionBehaviour.cs" t="Include" />
+              <e p="CompositeBehaviour.cs" t="Include" />
+              <e p="SteeredCohesion.cs" t="Include" />
+            </e>
+            <e p="ContextFilter.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CompositeBehaviourEditor.cs" t="Include" />
+            </e>
+            <e p="FilteredFlockBehaviour.cs" t="Include" />
+            <e p="Flock.cs" t="Include" />
+            <e p="FlockAgent.cs" t="Include" />
+            <e p="FlockBehaviour.cs" t="Include" />
+            <e p="SameFlockFilter.cs" t="Include" />
+            <e p="SecondWorldScanner.cs" t="Include" />
+            <e p="StayInRadiusBehaviour.cs" t="Include" />
           </e>
           <e p="PlayerMovement" t="Include">
             <e p="ColourMover.cs" t="Include" />
