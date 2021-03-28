@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_sfx_plr_foosteps" ID="{F753B1F0-DDB8-4837-B3CA-13D65BD4DF2C}">
+					<ChildrenList>
+						<Action Name="" ID="{3E220DB8-07D4-4933-9912-2D926EF72B01}" ShortID="316629275">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_plr_foosteps" ID="{2BD7FAC4-9F04-44B9-A446-8F3AF2232F4C}" WorkUnitID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
