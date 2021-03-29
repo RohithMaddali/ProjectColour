@@ -11,10 +11,92 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1229948536" Language="SFX" Hash="2040142791">
+			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
+			<ShortName>Environment</ShortName>
+			<Path>Environment.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2852027888" Name="play_sfx_env_forrest_amb" ObjectPath="\Events\Default Work Unit\play_sfx_env_forrest_amb" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1044353861" Language="SFX">
+							<ShortName>kinoton__forest-winter-light-wind.wav</ShortName>
+							<Path>SFX\kinoton__forest-winter-light-wind_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3052839150">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="670168798">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3531304827" Name="Play_mx_explore_layer_a" ObjectPath="\Events\Default Work Unit\Play_mx_explore_layer_a" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="91049681" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Kalimba3.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Kalimba3_9EDFC787.wem</Path>
+						</File>
+						<File Id="98677703" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Music box3.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Music box3_9EDFC787.wem</Path>
+						</File>
+						<File Id="103796916" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Ufo landing2.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Ufo landing2_9EDFC787.wem</Path>
+						</File>
+						<File Id="187534322" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Una cordaChords2.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Una cordaChords2_9EDFC787.wem</Path>
+						</File>
+						<File Id="207343722" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Ufo landing3.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Ufo landing3_9EDFC787.wem</Path>
+						</File>
+						<File Id="508508414" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Una cordaChords.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Una cordaChords_9EDFC787.wem</Path>
+						</File>
+						<File Id="589495230" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor EP melody3.2.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor EP melody3.2_9EDFC787.wem</Path>
+						</File>
+						<File Id="627032412" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Una corda melody3.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Una corda melody3_9EDFC787.wem</Path>
+						</File>
+						<File Id="646738884" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Ufo landing.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Ufo landing_9EDFC787.wem</Path>
+						</File>
+						<File Id="835319521" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor EP chords2.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor EP chords2_9EDFC787.wem</Path>
+						</File>
+						<File Id="906170101" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Una corda melody2.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Una corda melody2_9EDFC787.wem</Path>
+						</File>
+						<File Id="929316674" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor Una cordaChords3.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor Una cordaChords3_9EDFC787.wem</Path>
+						</File>
+						<File Id="941262012" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor EP chords 3.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor EP chords 3_9EDFC787.wem</Path>
+						</File>
+						<File Id="1071923929" Language="SFX">
+							<ShortName>Spectrum 4 Exploring 74bpm A minor EP chords.wav</ShortName>
+							<Path>SFX\Spectrum 4 Exploring 74bpm A minor EP chords_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

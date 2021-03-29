@@ -4,6 +4,14 @@
 		<WorkUnit Name="Environment" ID="{8F224472-0FE9-4D71-A993-379D65339606}" OwnerID="{F14F1F25-382B-419C-8A28-E79869725246}" PersistMode="Nested">
 			<ChildrenList>
 				<Sound Name="kinoton__forest-winter-light-wind" ID="{AF43A22D-920E-41A7-87FE-8596444E10FA}" ShortID="550147075">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>

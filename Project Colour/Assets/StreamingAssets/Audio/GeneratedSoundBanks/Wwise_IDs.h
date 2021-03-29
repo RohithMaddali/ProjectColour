@@ -13,18 +13,50 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_MX_EXPLORE_LAYER_A = 3531304827U;
         static const AkUniqueID PLAY_SFX_ENV_FORREST_AMB = 2852027888U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FS_MATERIAL_SWITCH_GROUP
+        {
+            static const AkUniqueID GROUP = 2371526279U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace FS_MATERIAL_SWITCH_GROUP
+
+        namespace FS_MOVEMENT_SWITCH_GROUP
+        {
+            static const AkUniqueID GROUP = 2905878991U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID RUNNING = 3863236874U;
+                static const AkUniqueID WALKING = 340271938U;
+            } // namespace SWITCH
+        } // namespace FS_MOVEMENT_SWITCH_GROUP
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ENVIRONMENT = 1229948536U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID ENEMY = 2299321487U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAYER = 1069431850U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
