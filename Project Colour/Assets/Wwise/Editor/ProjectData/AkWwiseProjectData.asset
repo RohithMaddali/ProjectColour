@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585848871894458886
+    m_lastTime: -8585844897937198069
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -150,6 +150,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: c321d99e91158640bf31e616fa2d0806
       Path: SoundBanks\Default Work Unit\Environment
+    - name: Music
+      guid: 7a3acfce6e0ea842bf7ec64d88447628
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2a944836521c424da3d49e97a9e03762
+      - ElementName: Music
+        ObjectType: 7
+        guid: 7a3acfce6e0ea842bf7ec64d88447628
+      Path: SoundBanks\Default Work Unit\Music
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -162,8 +176,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585846266532419155
+    m_lastTime: -8585844897942279312
     List:
+    - name: Play_mx_explore_layer_a
+      guid: 5e2a0c0bf09cec4287f732b45caf79b9
+      id: 3531304827
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: Play_mx_explore_layer_a
+        ObjectType: 3
+        guid: 5e2a0c0bf09cec4287f732b45caf79b9
+      Path: Events\Default Work Unit\Play_mx_explore_layer_a
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: play_sfx_env_forrest_amb
       guid: 0de6ad3b7190d2479dda492b30d988d0
       id: 2852027888
