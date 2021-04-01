@@ -9,6 +9,20 @@
 							<ObjectRef Name="System" ID="{CFB1AC06-4B03-4CF0-BDDA-EF388403E4ED}" WorkUnitID="{125F2FD8-F61B-437D-ABC8-172AC45A0DF3}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Ambience" ID="{638FB4D6-DAFF-400F-ACED-95B3F1979DF2}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Enemy" ID="{25084BAB-1055-4565-B60C-7F0131D3A074}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Music" ID="{535F77AE-F0D9-44AC-BAAF-AA7619C7B12B}">
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>
