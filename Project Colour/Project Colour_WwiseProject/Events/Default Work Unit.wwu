@@ -14,7 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-<<<<<<< HEAD
 				<Event Name="Play_sfx_plr_foosteps" ID="{F753B1F0-DDB8-4837-B3CA-13D65BD4DF2C}">
 					<ChildrenList>
 						<Action Name="" ID="{3E220DB8-07D4-4933-9912-2D926EF72B01}" ShortID="316629275">
@@ -37,8 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-=======
->>>>>>> parent of cf05641... Audio Stuff
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -41,7 +41,6 @@
 							<ConversionPlugin Name="" ID="{8C8D2008-246C-49F0-A834-644970A80168}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-<<<<<<< HEAD
 							<ConversionPlugin Name="" ID="{38E77B34-3BB2-4852-8791-419D29D78581}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
@@ -85,9 +84,6 @@
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{D91177F2-72AA-4BCB-BB8C-163D974E4F5A}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
-=======
-							<ConversionPlugin Name="" ID="{4F68A06E-D4A1-40B8-8B31-F4FDA6D71E0C}" PluginName="PCM" CompanyID="0" PluginID="1"/>
->>>>>>> parent of cf05641... Audio Stuff
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
