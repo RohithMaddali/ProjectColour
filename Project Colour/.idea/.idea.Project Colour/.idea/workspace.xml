@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1ffe9b-57a3-4621-a0da-b0fe9680555b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/CECF3A7A-0E6E-42A8-BF7E-C64D88447628.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/CECF3A7A-0E6E-42A8-BF7E-C64D88447628.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +36,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Programming/ColourChange/SlimeEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Programming/ColourChange/Slime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ConveyerBelt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@8.2.0/Runtime/ShadowUtils.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Conveyer Belt.cs" />
+      <option value="$PROJECT_DIR$/Assets/ConveyerBelt.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ConveyerBelt.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1oolRv0yBiVdwaf5PsTyPJkicBe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,7 +59,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -87,6 +98,7 @@
       <workItem from="1616561207435" duration="177000" />
       <workItem from="1616719833572" duration="2000" />
       <workItem from="1617160273409" duration="1000" />
+      <workItem from="1617767375187" duration="3998000" />
     </task>
     <servers />
   </component>
