@@ -40,7 +40,6 @@ namespace AJ
 
             if(Input.GetKey(KeyCode.W))
             {
-                //Increase speed over time
                 if (speed <= maxSpeed)
                 {
                     speed += 0.5f * Time.deltaTime;

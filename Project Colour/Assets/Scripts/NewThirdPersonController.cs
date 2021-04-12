@@ -10,6 +10,9 @@ namespace UnityTemplateProjects
 {
     public class NewThirdPersonController : MonoBehaviour
     {
+        private float lastSpeed;
+        public float speed = 10f;
+        public float maxSpeed = 20f;
         class CameraState
         {
             public float yaw;
@@ -18,7 +21,7 @@ namespace UnityTemplateProjects
             public float x;
             public float y;
             public float z;
-
+            
             public void SetFromTransform(Transform t)
             {
                 pitch = t.eulerAngles.x;
@@ -87,18 +90,71 @@ namespace UnityTemplateProjects
             Vector3 direction = new Vector3();
             if (Input.GetKey(KeyCode.W))
             {
+                //Increase speed over time
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.W))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
                 direction += Vector3.forward;
             }
             if (Input.GetKey(KeyCode.S))
             {
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.W))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
                 direction += Vector3.back;
             }
             if (Input.GetKey(KeyCode.A))
             {
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.W))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
                 direction += Vector3.left;
             }
             if (Input.GetKey(KeyCode.D))
             {
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.W))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
                 direction += Vector3.right;
             }
             if (Input.GetKey(KeyCode.Q))
