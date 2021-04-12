@@ -112,7 +112,7 @@ namespace UnityTemplateProjects
                 {
                     speed += 0.5f * Time.deltaTime;
                 }
-                else if (Input.GetKeyDown(KeyCode.W))
+                else if (Input.GetKeyDown(KeyCode.S))
                 {
                     //Reset once key is released 
                     if (speed >= lastSpeed)
@@ -129,7 +129,7 @@ namespace UnityTemplateProjects
                 {
                     speed += 0.5f * Time.deltaTime;
                 }
-                else if (Input.GetKeyDown(KeyCode.W))
+                else if (Input.GetKeyDown(KeyCode.A))
                 {
                     //Reset once key is released 
                     if (speed >= lastSpeed)
@@ -146,7 +146,7 @@ namespace UnityTemplateProjects
                 {
                     speed += 0.5f * Time.deltaTime;
                 }
-                else if (Input.GetKeyDown(KeyCode.W))
+                else if (Input.GetKeyDown(KeyCode.D))
                 {
                     //Reset once key is released 
                     if (speed >= lastSpeed)
