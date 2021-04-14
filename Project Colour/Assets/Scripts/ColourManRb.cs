@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 namespace ZachFrench
@@ -10,6 +11,9 @@ namespace ZachFrench
     public class ColourManRb : MonoBehaviour
     {
         public Rigidbody rb;
+        public CinemachineFreeLook CinemachineFreeLook;
+        public Quaternion cameraAngle;
+        public Vector3 moveCamera;
         public Vector3 fAndBMovementForce;
         public Vector3 lAndRMovementForce;
         public Vector3 jumpForce;
@@ -23,7 +27,7 @@ namespace ZachFrench
         void Start()
         {
             rb = GetComponent<Rigidbody>();
-            fAndBStrength = 50;
+            fAndBStrength = 10;
             lAndRStrength = 40;
             jumpStrength = 100;
         }
@@ -33,11 +37,16 @@ namespace ZachFrench
         {
             fAndBMovementForce = new Vector3(0, 0, fAndBStrength);
             lAndRMovementForce = new Vector3(lAndRStrength, 0, 0);
+            
+            //attempt at movement based around camera
+            cameraAngle.eulerAngles = CinemachineFreeLook.transform.position;
+            moveCamera = new Vector3(cameraAngle.x, 0, -cameraAngle.z);
+            
             jumpForce = new Vector3(0, jumpStrength, 0);
             
             if (Input.GetKey(KeyCode.W))
             {
-                rb.AddRelativeForce(fAndBMovementForce);
+                rb.AddRelativeForce(moveCamera.normalized * fAndBStrength);
             }
             if (Input.GetKey(KeyCode.S))
             {
