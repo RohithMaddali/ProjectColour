@@ -17,7 +17,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="ColourManRb.cs" t="Include" />
+          <e p="ColourPowers.cs" t="Include" />
           <e p="ConveyerBelt.cs" t="Include" />
+          <e p="PlatformMovement.cs" t="Include" />
           <e p="Programming" t="Include">
             <e p="ColourChange" t="Include">
               <e p="ChangeColour.cs" t="Include" />
@@ -49,7 +51,10 @@
               <e p="ColourMover.cs" t="Include" />
             </e>
           </e>
-          <e p="SimpleCameraController.cs" t="Include" />
+          <e p="Third person movement" t="Include">
+            <e p="ThirdPersonMovement.cs" t="Include" />
+          </e>
+          <e p="ThirdPersonCameraController.cs" t="Include" />
           <e p="ThirdPersonMovement.cs" t="Include" />
         </e>
         <e p="StreamingAssets" t="Include">

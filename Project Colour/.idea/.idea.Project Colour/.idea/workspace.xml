@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5f1ffe9b-57a3-4621-a0da-b0fe9680555b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/CECF3A7A-0E6E-42A8-BF7E-C64D88447628.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Soundbank/CECF3A7A-0E6E-42A8-BF7E-C64D88447628.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ConveyerBelt.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +48,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Conveyer Belt.cs" />
       <option value="$PROJECT_DIR$/Assets/ConveyerBelt.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ConveyerBelt.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlatformMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1oolRv0yBiVdwaf5PsTyPJkicBe" />
@@ -99,6 +104,7 @@
       <workItem from="1616719833572" duration="2000" />
       <workItem from="1617160273409" duration="1000" />
       <workItem from="1617767375187" duration="3998000" />
+      <workItem from="1618733602952" duration="935000" />
     </task>
     <servers />
   </component>
