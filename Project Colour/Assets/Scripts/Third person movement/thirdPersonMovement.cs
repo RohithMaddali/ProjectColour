@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 
@@ -25,8 +27,8 @@ namespace ZachFrench
         public Vector3 lAndRMovementForce;
         public Vector3 moveDir;
         public Vector3 jumpForce;
-        public float fAndBStrength;
-        public float lAndRStrength;
+        public float fAndBStrength = 10;
+        public float lAndRStrength = 10;
         public float jumpStrength;
         public bool isGrounded;
         
@@ -52,9 +54,6 @@ namespace ZachFrench
         void Start()
         {
             rb = GetComponent<Rigidbody>();
-            fAndBStrength = 10;
-            lAndRStrength = 40;
-            jumpStrength = 100;
         }
 
         // Update is called once per frame
@@ -77,6 +76,7 @@ namespace ZachFrench
             }
             
             
+            
             fAndBMovementForce = new Vector3(0, 0, fAndBStrength);
             lAndRMovementForce = new Vector3(lAndRStrength, 0, 0);
            
@@ -84,31 +84,44 @@ namespace ZachFrench
             
             if (Input.GetKey(KeyCode.W))
             {
+                rb.useGravity = false;
                 rb.AddForce(moveDir.normalized * fAndBStrength);
+                rb.useGravity = true;
             }
 
             if (Input.GetKey(KeyCode.S))
             {
-                rb.AddForce(-moveDir.normalized * fAndBStrength);
+                rb.AddForce(-moveDir.normalized * -fAndBStrength);
             }
-            
-            
 
-            //check if the player is on the ground
-            //if (controller.isGrounded)
+            if (Input.GetKey(KeyCode.A))
             {
-                velocity.y = -1f;
+                rb.AddForce(-lAndRMovementForce);
+            }
+
+            if (Input.GetKey(KeyCode.D))
+            {
+                rb.AddForce(lAndRMovementForce);
+            }
+
+
+            jumpStrength = 100;
+            jumpForce = new Vector3(0, jumpStrength, 0);
+            //check if the player is on the ground
+            if (isGrounded == true && Input.GetKey(KeyCode.Space))
+            {
                 //jumping
                 if (Input.GetButton("Jump"))
                 {
-                    velocity.y = Mathf.Sqrt(jumpHeight * -1 * gravity);
+                    rb.AddRelativeForce(jumpForce);
+                    isGrounded = false;
                 }
             }
+        }
 
-            //bring the player to the ground
-            velocity.y += gravity * Time.deltaTime;
-
-            //controller.Move((velocity * weight) * Time.deltaTime);
+        private void OnCollisionStay(Collision other)
+        {
+            isGrounded = true;
         }
     }
 }
