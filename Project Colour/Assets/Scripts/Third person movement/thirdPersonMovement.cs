@@ -30,6 +30,7 @@ namespace ZachFrench
         public float fAndBStrength = 10;
         public float lAndRStrength = 10;
         public float jumpStrength;
+        public float hillClimbPower;
         public bool isGrounded;
         
 
@@ -81,12 +82,11 @@ namespace ZachFrench
             lAndRMovementForce = new Vector3(lAndRStrength, 0, 0);
            
             jumpForce = new Vector3(0, jumpStrength, 0);
-            
+            hillClimbPower = 5f;
             if (Input.GetKey(KeyCode.W))
             {
-                rb.useGravity = false;
                 rb.AddForce(moveDir.normalized * fAndBStrength);
-                rb.useGravity = true;
+                rb.AddForce(new Vector3(0,hillClimbPower,0));
             }
 
             if (Input.GetKey(KeyCode.S))
