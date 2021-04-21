@@ -105,7 +105,7 @@ namespace ZachFrench
             }
 
 
-            jumpStrength = 100;
+            jumpStrength = 1;
             jumpForce = new Vector3(0, jumpStrength, 0);
             //check if the player is on the ground
             if (isGrounded == true && Input.GetKey(KeyCode.Space))
