@@ -51,6 +51,9 @@ namespace ZachFrench
         //this is for GRAVITY
         public Vector3 velocity = Vector3.zero;
 
+        //For BlueBounce
+        public GameObject feet;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -122,6 +125,30 @@ namespace ZachFrench
         private void OnCollisionStay(Collision other)
         {
             isGrounded = true;
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            //check if coliding with blue object
+            if (collision.gameObject.GetComponent<Renderer>().material.color == Color.blue)
+            {
+                Debug.Log("Boing");
+                rb.AddExplosionForce(200f, feet.transform.position, 1f);
+            }
+            //check if coliding with red object
+            if (collision.gameObject.GetComponent<Renderer>().material.color == Color.red)
+            {
+                Debug.Log("gotta go fast");
+                speed *= 2f;
+            }
+        }
+        private void OnCollisionExit(Collision collision)
+        {
+            if (collision.gameObject.GetComponent<Renderer>().material.color == Color.red)
+            {
+                Debug.Log("Reset speed");
+                speed /= 2f;
+            }
         }
     }
 }
