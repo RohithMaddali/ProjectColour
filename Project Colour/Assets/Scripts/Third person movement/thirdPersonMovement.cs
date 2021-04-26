@@ -36,6 +36,8 @@ namespace ZachFrench
 
         //set the walk speed
         public float speed = 4f;
+        private float lastSpeed;
+        public float maxSpeed = 20f;
 
         //jump and gravity
         public float jumpHeight = 4f;
@@ -90,23 +92,74 @@ namespace ZachFrench
             {
                 rb.AddForce(moveDir.normalized * fAndBStrength);
                 rb.AddForce(new Vector3(0,hillClimbPower,0));
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.W))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
             }
 
             if (Input.GetKey(KeyCode.S))
             {
                 rb.AddForce(-moveDir.normalized * -fAndBStrength);
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.S))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
             }
 
             if (Input.GetKey(KeyCode.A))
             {
                 rb.AddForce(-lAndRMovementForce);
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.A))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
             }
 
             if (Input.GetKey(KeyCode.D))
             {
                 rb.AddForce(lAndRMovementForce);
+                if (speed <= maxSpeed)
+                {
+                    speed += 0.5f * Time.deltaTime;
+                }
+                else if (Input.GetKeyDown(KeyCode.D))
+                {
+                    //Reset once key is released 
+                    if (speed >= lastSpeed)
+                    {
+                        speed = 10;
+                        lastSpeed = speed;
+                    }
+                }
             }
-
 
             jumpStrength = 1;
             jumpForce = new Vector3(0, jumpStrength, 0);
