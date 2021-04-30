@@ -9,7 +9,7 @@ namespace ZachFrench
 {
 
 
-    public class thirdPersonMovement : MonoBehaviour
+    public class MainPlayerMovementScript : MonoBehaviour
     {
         //set up character controller
         //public CharacterController controller;
@@ -30,7 +30,6 @@ namespace ZachFrench
         public float fAndBStrength = 10;
         public float lAndRStrength = 10;
         public float jumpStrength;
-        public float hillClimbPower;
         public bool isGrounded;
         
 
@@ -54,7 +53,7 @@ namespace ZachFrench
         public Vector3 velocity = Vector3.zero;
 
         //For BlueBounce
-        public GameObject feet;
+        //public GameObject feet;
 
         // Start is called before the first frame update
         void Start()
@@ -65,6 +64,12 @@ namespace ZachFrench
         // Update is called once per frame
         void Update()
         {
+            //Cursor Lock to screen
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.lockState = CursorLockMode.Locked;
+            
+            
+            
             hori = Input.GetAxisRaw("Horizontal") * Time.deltaTime;
             verti = Input.GetAxisRaw("Vertical") * Time.deltaTime;
             directionCam = new Vector3(hori, 0f, verti).normalized;
@@ -87,11 +92,9 @@ namespace ZachFrench
             lAndRMovementForce = new Vector3(lAndRStrength, 0, 0);
            
             jumpForce = new Vector3(0, jumpStrength, 0);
-            hillClimbPower = 5f;
             if (Input.GetKey(KeyCode.W))
             {
                 rb.AddForce(moveDir.normalized * fAndBStrength);
-                rb.AddForce(new Vector3(0,hillClimbPower,0));
                 if (speed <= maxSpeed)
                 {
                     speed += 0.5f * Time.deltaTime;
@@ -160,8 +163,7 @@ namespace ZachFrench
                     }
                 }
             }
-
-            jumpStrength = 1;
+            
             jumpForce = new Vector3(0, jumpStrength, 0);
             //check if the player is on the ground
             if (isGrounded == true && Input.GetKey(KeyCode.Space))
@@ -186,7 +188,7 @@ namespace ZachFrench
             if (collision.gameObject.GetComponent<Renderer>().material.color == Color.blue)
             {
                 Debug.Log("Boing");
-                rb.AddExplosionForce(200f, feet.transform.position, 1f);
+                //rb.AddExplosionForce(200f, feet.transform.position, 1f);
             }
             //check if coliding with red object
             if (collision.gameObject.GetComponent<Renderer>().material.color == Color.red)

@@ -70,9 +70,9 @@ public class ColourPowers : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if(collision.gameObject.GetComponent<thirdPersonMovement>() != null)
+        if(collision.gameObject.GetComponent<MainPlayerMovementScript>() != null)
         {
-            collision.gameObject.GetComponent<thirdPersonMovement>().fAndBStrength = 5;
+            collision.gameObject.GetComponent<MainPlayerMovementScript>().fAndBStrength = 5;
         }
     }
 }
