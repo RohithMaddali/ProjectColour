@@ -53,7 +53,7 @@ namespace ZachFrench
         public Vector3 velocity = Vector3.zero;
 
         //For BlueBounce
-        //public GameObject feet;
+        public GameObject feet;
 
         // Start is called before the first frame update
         void Start()
@@ -188,7 +188,7 @@ namespace ZachFrench
             if (collision.gameObject.GetComponent<Renderer>().material.color == Color.blue)
             {
                 Debug.Log("Boing");
-                //rb.AddExplosionForce(200f, feet.transform.position, 1f);
+                rb.AddExplosionForce(200f, feet.transform.position, 1f);
             }
             //check if coliding with red object
             if (collision.gameObject.GetComponent<Renderer>().material.color == Color.red)
