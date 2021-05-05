@@ -20,13 +20,6 @@ namespace AJ
                 renderer.material.color = newColor;
                 currentColor            = newColor;
             }
-            //ChangeTo(newColor);
         }
-
-        /*public bool IsSameColour(Material a, Material b)
-        {
-            // TODO
-            return true;
-        }*/
     }
 }

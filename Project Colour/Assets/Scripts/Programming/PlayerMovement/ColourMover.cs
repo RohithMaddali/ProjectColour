@@ -58,7 +58,6 @@ namespace AJ
                      weapon.transform.GetComponent<Renderer>().material.color = lastColor;
                  }
              }
-            
         }
     }
 }
