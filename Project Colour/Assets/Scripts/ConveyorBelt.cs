@@ -5,13 +5,14 @@ using UnityEngine;
 
 namespace Jordan
 {
-    public class ConveyerBelt : MonoBehaviour
+    public class ConveyorBelt : MonoBehaviour
     {
         public GameObject belt;
         public Transform endpoint;
         bool isOn = false;
         public float timer;
         public int speed;
+        
         private void OnTriggerStay(Collider col)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -34,5 +35,4 @@ namespace Jordan
             Debug.Log("Belt is off");
         }
     }
-
 }

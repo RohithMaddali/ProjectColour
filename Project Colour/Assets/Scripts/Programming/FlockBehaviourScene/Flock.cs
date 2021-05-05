@@ -10,6 +10,10 @@ namespace AJ
         List<FlockAgent> agents = new List<FlockAgent>();
         public FlockBehaviour behaviour;
 
+        //[SerializeField] 
+        //Animator animator;
+
+        
         [Range(10, 1500)] 
         public int startingCount = 250;
         const float AgentDensity = 0.08f;
@@ -34,6 +38,8 @@ namespace AJ
         // Start is called before the first frame update
         void Start()
         {
+            //animator = this.gameObject.GetComponent<Animator>();
+            
             squareMaxSpeed = maxSpeed * maxSpeed;
             squareNeighborRadius = neighborRadius * neighborRadius;
             squareAvoidanceRadius = squareNeighborRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
