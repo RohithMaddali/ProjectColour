@@ -7,6 +7,9 @@ public class LukesMovement : MonoBehaviour
 {
     public CinemachineVirtualCamera aimCam;
     public CinemachineFreeLook moveCam;
+    public CharacterAim aimScript;
+    public GameObject weapon;
+    public Transform weaponReturnPos;
     public bool moveCamActive;
 
     public CharacterController controller;
@@ -30,7 +33,10 @@ public class LukesMovement : MonoBehaviour
     Vector3 velocity;
     public bool isGrounded;
 
-    
+    private void Start()
+    {
+        weaponReturnPos = weapon.transform;
+    }
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -82,11 +88,15 @@ public class LukesMovement : MonoBehaviour
         {
             moveCam.Priority = 0;
             aimCam.Priority = 1;
+            aimScript.aimCam = true;
         }
         else
         {
             moveCam.Priority = 1;
             aimCam.Priority = 0;
+            aimScript.aimCam = false;
+            weapon.transform.position = weaponReturnPos.position;
+            weapon.transform.rotation = weaponReturnPos.rotation;
         }
         moveCamActive = !moveCamActive;
     }
