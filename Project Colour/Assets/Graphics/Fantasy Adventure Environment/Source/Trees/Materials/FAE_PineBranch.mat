@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FAE_PineBranch
-  m_Shader: {fileID: 4800000, guid: 85827a98514358f438446da0fc64b0f5, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 85827a98514358f438446da0fc64b0f0, type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
