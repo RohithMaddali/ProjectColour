@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class CharacterAim : MonoBehaviour
 {
-    public float turnSpeed = 15f;
-    public float aimDuration = .3f;
-
-    public Transform camLookAt;
-    public Cinemachine.AxisState xAxis;
-    public Cinemachine.AxisState yAxis;
-
     public bool aimCam = false;
     Camera mainCam;
+    public float mouseSensitivity = 100f;
+    public Transform playerBody;
+    float xRotation = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +24,13 @@ public class CharacterAim : MonoBehaviour
         
         if (aimCam)
         {
-            xAxis.Update(Time.fixedDeltaTime);
-            yAxis.Update(Time.fixedDeltaTime);
-            camLookAt.eulerAngles = new Vector3(yAxis.Value, xAxis.Value, 0);
-            float yawCamera = mainCam.transform.rotation.eulerAngles.y;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, yawCamera, 0), turnSpeed * Time.fixedDeltaTime);
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.fixedDeltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
+
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            playerBody.Rotate(Vector3.up * mouseX);
         }
         
     }
