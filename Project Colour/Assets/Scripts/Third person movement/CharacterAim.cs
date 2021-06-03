@@ -1,31 +1,50 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterAim : MonoBehaviour
 {
+    PlayerControls controls;
+    Vector2 rotate;
+
     public bool aimCam = false;
     Camera mainCam;
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
 
-    // Start is called before the first frame update
+    void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Camera.performed += ctx => rotate = ctx.ReadValue<Vector2>();
+        controls.Gameplay.Camera.canceled += ctx => rotate = Vector2.zero;
+    }
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
     void Start()
     {
         mainCam = Camera.main;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         
         if (aimCam)
         {
-            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            float mouseX = rotate.x * mouseSensitivity * Time.deltaTime;
+            float mouseY = rotate.y * mouseSensitivity * Time.deltaTime;
 
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);

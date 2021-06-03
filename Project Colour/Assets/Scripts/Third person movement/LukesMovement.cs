@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Cinemachine;
 
 public class LukesMovement : MonoBehaviour
 {
+    PlayerControls controls;
+    Vector2 move;
+
     public CinemachineVirtualCamera aimCam;
     public CinemachineFreeLook moveCam;
     public CharacterAim aimScript;
@@ -32,10 +36,36 @@ public class LukesMovement : MonoBehaviour
     Vector3 velocity;
     public bool isGrounded;
 
+    private void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Jump.performed += ctx => Jump();
+        controls.Gameplay.CamChange.performed += ctx => SwitchCam();
+
+        controls.Gameplay.Move.performed += ctx => move = ctx.ReadValue<Vector2>();
+        controls.Gameplay.Move.canceled += ctx => move = Vector2.zero;
+    }
+
+    void Jump()
+    {
+        if (isGrounded && moveCamActive)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        }
+    }
+
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
         if (moveCamActive)
         {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -48,7 +78,7 @@ public class LukesMovement : MonoBehaviour
                 speed += acceleration * Time.deltaTime;
             }
             
-            Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+            Vector3 direction = new Vector3(move.x, 0f, move.y).normalized;
 
             if (direction.magnitude >= 0.1f)
             {
@@ -65,29 +95,16 @@ public class LukesMovement : MonoBehaviour
             {
                 speed = 2f;
             }
-            if (Input.GetButtonDown("Jump") && isGrounded)
-            {
-                velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
-            }
-
-
-            
         }
         else if (!moveCamActive)
         {
-            Vector3 move = transform.right * horizontal + transform.forward * vertical;
+            Vector3 aimMove = transform.right * move.x + transform.forward * move.y;
 
-            controller.Move(move * aimSpeed * Time.deltaTime);
+            controller.Move(aimMove * aimSpeed * Time.deltaTime);
         }
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
-        if (Input.GetButtonDown("Fire3"))
-        {
-            SwitchCam();
-        }
-
     }
 
     private void SwitchCam()

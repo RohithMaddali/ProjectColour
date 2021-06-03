@@ -32286,7 +32286,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470819037}
-  m_LocalRotation: {x: 0.23785092, y: -0, z: -0, w: 0.9713017}
+  m_LocalRotation: {x: 0.2378509, y: -0, z: -0, w: 0.9713017}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -32619,6 +32619,7 @@ GameObject:
   - component: {fileID: 474378062}
   - component: {fileID: 474378065}
   - component: {fileID: 474378064}
+  - component: {fileID: 474378066}
   m_Layer: 0
   m_Name: ThirdPersonCamera
   m_TagString: Untagged
@@ -32791,6 +32792,21 @@ MonoBehaviour:
   m_FocusTarget: {fileID: 0}
   m_FocusOffset: 0
   m_Profile: {fileID: 0}
+--- !u!114 &474378066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474378061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7194dc27b9df64c8beca7482ee8e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerIndex: -1
+  XYAxis: {fileID: 3255356226877415230, guid: 5ad23166d32312847830a2fa7959ad5b, type: 3}
+  ZAxis: {fileID: 0}
 --- !u!1 &483422921
 GameObject:
   m_ObjectHideFlags: 0
@@ -36374,6 +36390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 616322537}
   - component: {fileID: 616322536}
+  - component: {fileID: 616322538}
   m_Layer: 0
   m_Name: AimCam
   m_TagString: Untagged
@@ -36431,6 +36448,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &616322538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616322535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb7194dc27b9df64c8beca7482ee8e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerIndex: -1
+  XYAxis: {fileID: 6719545904304072451, guid: 5ad23166d32312847830a2fa7959ad5b, type: 3}
+  ZAxis: {fileID: 0}
 --- !u!43 &634265468
 Mesh:
   m_ObjectHideFlags: 0
@@ -53135,7 +53167,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19590
+  m_Name: pb_Mesh20252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -68694,7 +68726,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316918322}
-  m_LocalRotation: {x: 0.24314795, y: 0.0000000111959935, z: -0.0000000028065084, w: 0.9699893}
+  m_LocalRotation: {x: 0.24314794, y: 0.0000000111959935, z: -0.0000000028065081, w: 0.9699893}
   m_LocalPosition: {x: 69.3, y: 18.193016, z: -15.404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
