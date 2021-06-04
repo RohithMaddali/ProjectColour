@@ -33,7 +33,7 @@ public class LukesMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
-    Vector3 velocity;
+    public Vector3 velocity;
     public bool isGrounded;
 
     private void Awake()
@@ -70,11 +70,7 @@ public class LukesMovement : MonoBehaviour
         {
             //check if grounded
             isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-            //reset velocity when on ground so gravity stops increasing
-            if (isGrounded && velocity.y < 0)
-            {
-                velocity.y = -2f;
-            }
+            
             //increase speed over time up to max speed 
             if (speed < maxSpeed)
             {
@@ -139,5 +135,36 @@ public class LukesMovement : MonoBehaviour
             aimScript.aimCam = false;
         }
         moveCamActive = !moveCamActive;
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.GetComponent<Renderer>().material.color == Color.blue 
+            && Mathf.Abs(velocity.y) > 10.1f)
+        {
+            Debug.Log("velocity.y = " + velocity.y);
+            velocity.y = -velocity.y;
+        }
+        else if (hit.gameObject.GetComponent<Renderer>().material.color == Color.blue 
+            && Mathf.Abs(velocity.y) <= 10.1f)
+        {
+            Debug.Log("bounce");
+            velocity.y = 10f;
+        }
+        else if (isGrounded && velocity.y < 0)
+        {
+            //reset velocity when on ground so gravity stops increasing
+            velocity.y = -2f;
+        }
+
+        if (hit.gameObject.GetComponent<Renderer>().material.color == Color.red)
+        {
+            maxSpeed = 20f;
+            acceleration = 100f;
+        }
+        if (hit.gameObject.GetComponent<Renderer>().material.color != Color.red)
+        {
+            acceleration = 2f;
+        }
     }
 }
