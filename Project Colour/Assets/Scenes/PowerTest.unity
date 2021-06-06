@@ -2984,7 +2984,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780373895}
-  m_LocalRotation: {x: 0.24314792, y: -0.0000000016690027, z: 4.1837014e-10, w: 0.9699893}
+  m_LocalRotation: {x: 0.24314792, y: 0.000000001669004, z: -4.1837048e-10, w: 0.9699893}
   m_LocalPosition: {x: 1.050003, y: 18.693016, z: -17.154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3462,7 +3462,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966915196}
-  m_LocalRotation: {x: 0.23785092, y: -0.0000000083562925, z: 0.0000000020462767, w: 0.9713017}
+  m_LocalRotation: {x: 0.23785092, y: 0.000000008356294, z: -0.0000000020462771, w: 0.9713017}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6398,7 +6398,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3560
+  m_Name: pb_Mesh19594
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6954,7 +6954,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043598920}
-  m_LocalRotation: {x: 0.25547904, y: 0.000000008317691, z: -0.0000000021979356, w: 0.96681464}
+  m_LocalRotation: {x: 0.25547904, y: -0.00000000831769, z: 0.0000000021979352, w: 0.96681464}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7177,11 +7177,12 @@ MonoBehaviour:
   moveCamActive: 1
   controller: {fileID: 2058659687}
   cam: {fileID: 780373901}
-  speed: 6
-  maxSpeed: 10
-  minSpeed: 2
+  walkSpeed: 2
+  runSpeed: 10
+  boostSpeed: 20
   aimSpeed: 3
-  acceleration: 6.5
+  accelBase: 10
+  accelBoost: 100
   gravity: -19.62
   jumpHeight: 1.5
   groundCheck: {fileID: 1724064681}
