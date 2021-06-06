@@ -157,7 +157,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd74e125d4d7db64d95ae066f719fc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentColor: {r: 1, g: 1, b: 1, a: 0}
+  shootDistance: 10
+  shootDelay: 2
+  raycastHitMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  multiObjectShoot: 0
 --- !u!54 &394468316
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -245,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394468314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.36, y: 5.13, z: 2.01}
+  m_LocalPosition: {x: 2.46, y: 1.77, z: 2.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -395,26 +400,13 @@ GameObject:
   - component: {fileID: 797427465}
   - component: {fileID: 797427464}
   - component: {fileID: 797427463}
-  - component: {fileID: 797427462}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GreenTile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &797427462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797427461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d56ee65dc4868e44fa91cbd010cf8440, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &797427463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -485,8 +477,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797427461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4, y: 0.7, z: -2.5}
-  m_LocalScale: {x: 1.7311, y: 0.30491, z: 1.8377}
+  m_LocalPosition: {x: 2.350511, y: 0.5, z: 6.953171}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -766,26 +758,13 @@ GameObject:
   - component: {fileID: 1319708522}
   - component: {fileID: 1319708521}
   - component: {fileID: 1319708520}
-  - component: {fileID: 1319708519}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: GreenTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1319708519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319708518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d56ee65dc4868e44fa91cbd010cf8440, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1319708520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -856,8 +835,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319708518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4, y: 0.7, z: 1.7493453}
-  m_LocalScale: {x: 1.7311, y: 0.30491, z: 1.8377}
+  m_LocalPosition: {x: 7.16, y: 0.7, z: 1.7493453}
+  m_LocalScale: {x: 1, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4

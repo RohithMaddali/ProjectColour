@@ -20,7 +20,7 @@ namespace AJ
             //Debug.Log(transform.name.ToString() +  " Hello");
             if (other.transform.root.gameObject.GetComponent<ChangeColour>())
             {
-                other.transform.root.gameObject.GetComponent<ChangeColour>().ChangeTo(myColor);
+                //other.transform.root.gameObject.GetComponent<ChangeColour>().ChangeTo(myColor);
             }
         }
 
