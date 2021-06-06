@@ -17,11 +17,15 @@ public class LukesMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
 
-    public float speed = 2f;
-    public float maxSpeed = 10f;
-    public float minSpeed = 2f;
+    private float speed = 2f;
+    private float maxSpeed = 10f;
+    public float walkSpeed = 2f;
+    public float runSpeed = 10f;
+    public float boostSpeed = 20f;
     public float aimSpeed = 3f;
-    public float acceleration = 2f;
+    private float acceleration;
+    public float accelBase = 5f;
+    public float accelBoost = 100f;
     public float gravity = -9.81f;
     public float jumpHeight = 2f;
 
@@ -86,11 +90,11 @@ public class LukesMovement : MonoBehaviour
 
             if(controls.Gameplay.Move.ReadValue<Vector2>().magnitude < .9f)
             {
-                maxSpeed = 5f;
+                maxSpeed = walkSpeed;
             }
             else if(controls.Gameplay.Move.ReadValue<Vector2>().magnitude >= .9f)
             {
-                maxSpeed = 10f;
+                maxSpeed = runSpeed;
             }
             //move
             if (direction.magnitude >= 0.1f)
@@ -159,12 +163,12 @@ public class LukesMovement : MonoBehaviour
 
         if (hit.gameObject.GetComponent<Renderer>().material.color == Color.red)
         {
-            maxSpeed = 20f;
-            acceleration = 100f;
+            maxSpeed = boostSpeed;
+            acceleration = accelBoost;
         }
         if (hit.gameObject.GetComponent<Renderer>().material.color != Color.red)
         {
-            acceleration = 2f;
+            acceleration = accelBase;
         }
     }
 }
