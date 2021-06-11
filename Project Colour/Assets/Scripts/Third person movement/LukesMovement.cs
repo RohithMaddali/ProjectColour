@@ -17,8 +17,8 @@ public class LukesMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
 
-    private float speed = 2f;
-    private float maxSpeed = 10f;
+    public float speed = 2f;
+    public float maxSpeed = 10f;
     public float walkSpeed = 2f;
     public float runSpeed = 10f;
     public float boostSpeed = 20f;
@@ -28,6 +28,7 @@ public class LukesMovement : MonoBehaviour
     public float accelBoost = 100f;
     public float gravity = -9.81f;
     public float jumpHeight = 2f;
+    private bool boosted = false;
 
     public Transform groundCheck;
     public float groundDistance = .4f;
@@ -88,11 +89,11 @@ public class LukesMovement : MonoBehaviour
             //get direction of movement
             Vector3 direction = new Vector3(move.x, 0f, move.y).normalized;
 
-            if(controls.Gameplay.Move.ReadValue<Vector2>().magnitude < .9f)
+            if(controls.Gameplay.Move.ReadValue<Vector2>().magnitude < .9f && !boosted)
             {
                 maxSpeed = walkSpeed;
             }
-            else if(controls.Gameplay.Move.ReadValue<Vector2>().magnitude >= .9f)
+            else if(controls.Gameplay.Move.ReadValue<Vector2>().magnitude >= .9f && !boosted)
             {
                 maxSpeed = runSpeed;
             }
@@ -165,10 +166,12 @@ public class LukesMovement : MonoBehaviour
         {
             maxSpeed = boostSpeed;
             acceleration = accelBoost;
+            boosted = true;
         }
-        if (hit.gameObject.GetComponent<Renderer>().material.color != Color.red)
+        if (hit.gameObject.GetComponent<Renderer>().material.color != Color.red && hit.gameObject.GetComponent<Renderer>().material.color != Color.blue)
         {
             acceleration = accelBase;
+            boosted = false;
         }
     }
 }
