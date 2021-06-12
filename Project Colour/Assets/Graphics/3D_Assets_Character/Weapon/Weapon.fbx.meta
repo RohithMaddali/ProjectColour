@@ -3,7 +3,32 @@ guid: ba360d6c8ae346b4eb499755b1748a8b
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ColourOrb
+    second: {fileID: 2100000, guid: 21124ed6be5cfa6469aef994d47a769e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WeaponEyeM
+    second: {fileID: 2100000, guid: eab5bef2cacb5454ca7d2d19e8adb443, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WeaponIrisM
+    second: {fileID: 2100000, guid: 546444f833af567409301cda62e3b45c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WeaponM
+    second: {fileID: 2100000, guid: 50eedc48b3a038c49a728b2f51c38c92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WeaponOrbM
+    second: {fileID: 2100000, guid: d065aba4b6ae7dd44b5992a57e92e45b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
