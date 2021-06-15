@@ -17,6 +17,9 @@ public class LukesMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
 
+    public Material red;
+    public Material blue;
+
     public float speed = 2f;
     public float maxSpeed = 10f;
     public float walkSpeed = 2f;
@@ -144,13 +147,13 @@ public class LukesMovement : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.GetComponent<Renderer>().material.color == Color.blue 
+        if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue 
             && Mathf.Abs(velocity.y) > 10.1f)
         {
             Debug.Log("velocity.y = " + velocity.y);
             velocity.y = -velocity.y;
         }
-        else if (hit.gameObject.GetComponent<Renderer>().material.color == Color.blue 
+        else if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue 
             && Mathf.Abs(velocity.y) <= 10.1f)
         {
             Debug.Log("bounce");
@@ -162,13 +165,14 @@ public class LukesMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        if (hit.gameObject.GetComponent<Renderer>().material.color == Color.red)
+        if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == red)
         {
             maxSpeed = boostSpeed;
             acceleration = accelBoost;
             boosted = true;
         }
-        if (hit.gameObject.GetComponent<Renderer>().material.color != Color.red && hit.gameObject.GetComponent<Renderer>().material.color != Color.blue)
+        if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial != red && 
+            hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial != blue)
         {
             acceleration = accelBase;
             boosted = false;
