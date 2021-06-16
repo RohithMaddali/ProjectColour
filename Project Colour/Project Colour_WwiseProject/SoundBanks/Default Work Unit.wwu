@@ -5,7 +5,10 @@
 			<ChildrenList>
 				<SoundBank Name="Environment" ID="{9ED921C3-1591-4086-BF31-E616FA2D0806}">
 					<ObjectInclusionList>
-						<ObjectRef Name="play_sfx_env_forrest_amb" ID="{3BADE60D-9071-47D2-9DDA-492B30D988D0}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_wind_forrest_vegetation" ID="{9E6804D5-9216-4052-895C-E2F54BFAEE57}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_all_ambience" ID="{673D2226-32AD-4863-8733-E6525DA99793}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

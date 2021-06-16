@@ -13,8 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ALL_AMBIENCE = 2123621926U;
         static const AkUniqueID PLAY_MX_EXPLORE_LAYER_A = 3531304827U;
-        static const AkUniqueID PLAY_SFX_ENV_FORREST_AMB = 2852027888U;
+        static const AkUniqueID PLAY_SFX_BIRDS = 1990436654U;
+        static const AkUniqueID PLAY_SFX_WIND_FORREST_VEGETATION = 3148266417U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -57,7 +59,13 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID VOICEOVER = 4041657371U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

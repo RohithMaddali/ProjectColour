@@ -36,6 +36,63 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_all_ambience" ID="{673D2226-32AD-4863-8733-E6525DA99793}">
+					<ChildrenList>
+						<Action Name="" ID="{BC13C4A7-78C7-4A4D-8DA9-18A2F153C337}" ShortID="818949827">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C301FB2D-D676-4BFD-9E5F-03198FAE3253}" ShortID="715168160">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_sfx_wind_forrest_vegetation" ID="{9E6804D5-9216-4052-895C-E2F54BFAEE57}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}">
+					<ChildrenList>
+						<Action Name="" ID="{0DCFA65D-9638-4326-A4B5-F953C8069280}" ShortID="721229600">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_birds" ID="{6088CE7D-1E58-450E-A3EF-6EB5AC46ADC3}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sfx_wind_forrest_vegetation" ID="{9E6804D5-9216-4052-895C-E2F54BFAEE57}">
+					<ChildrenList>
+						<Action Name="" ID="{DD6D4ED0-547A-43CF-ADCF-401EBC5C0F31}" ShortID="617415111">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spectrum_wind_forrest_vegetation" ID="{F0C3541F-A2B4-4C6A-B926-FF2C2E0BCE99}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}">
+					<ChildrenList>
+						<Action Name="" ID="{4A4A0A38-5575-4358-8629-9B486520F968}" ShortID="882284792">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spectrum_running_water" ID="{805A70CE-AF41-47EE-B381-84B34DAB7212}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

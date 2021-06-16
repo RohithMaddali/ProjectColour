@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1ad7f73361ace840af42609fdd7fd554
     GuidInternal: 
-    m_lastTime: -8585837676503088333
+    m_lastTime: -8585777734903355218
     List:
     - name: Ambience
       guid: d6b48f63ffda0f40aced95b3f1979df2
@@ -122,6 +122,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: 90c2e04a5f5fb8438972a3099ee6b0b4
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Player
+    - name: Reverb
+      guid: 532a1ca709145945946e6163cfc1be6f
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1ad7f73361ace840af42609fdd7fd554
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 532a1ca709145945946e6163cfc1be6f
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
+    - name: VoiceOver
+      guid: e02eeb3ac0cd5f458b39101b26688ab3
+      id: 4041657371
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1ad7f73361ace840af42609fdd7fd554
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: VoiceOver
+        ObjectType: 2
+        guid: e02eeb3ac0cd5f458b39101b26688ab3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\VoiceOver
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -134,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585837676502928758
+    m_lastTime: -8585777656059750057
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -176,8 +210,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585837676503128223
+    m_lastTime: -8585777702796581621
     List:
+    - name: Play_all_ambience
+      guid: 26223d67ad3263488733e6525da99793
+      id: 2123621926
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: Play_all_ambience
+        ObjectType: 3
+        guid: 26223d67ad3263488733e6525da99793
+      Path: Events\Default Work Unit\Play_all_ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_mx_explore_layer_a
       guid: 5e2a0c0bf09cec4287f732b45caf79b9
       id: 3531304827
@@ -192,6 +243,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5e2a0c0bf09cec4287f732b45caf79b9
       Path: Events\Default Work Unit\Play_mx_explore_layer_a
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_sfx_birds
+      guid: 1746bfc9b92f074098ef4f784e9cd826
+      id: 1990436654
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: Play_sfx_birds
+        ObjectType: 3
+        guid: 1746bfc9b92f074098ef4f784e9cd826
+      Path: Events\Default Work Unit\Play_sfx_birds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -210,8 +278,8 @@ MonoBehaviour:
         guid: 0de6ad3b7190d2479dda492b30d988d0
       Path: Events\Default Work Unit\play_sfx_env_forrest_amb
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_sfx_plr_foosteps
       guid: f0b153f7b8dd3748b3ca13d65bd4df2c
       id: 3870925874
@@ -226,6 +294,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: f0b153f7b8dd3748b3ca13d65bd4df2c
       Path: Events\Default Work Unit\Play_sfx_plr_foosteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_sfx_running_water
+      guid: 3b2e50e839aabb488fece7dc2d7c5e6f
+      id: 1969647975
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: Play_sfx_running_water
+        ObjectType: 3
+        guid: 3b2e50e839aabb488fece7dc2d7c5e6f
+      Path: Events\Default Work Unit\Play_sfx_running_water
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_sfx_wind_forrest_vegetation
+      guid: d504689e16925240895ce2f54bfaee57
+      id: 3148266417
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: Play_sfx_wind_forrest_vegetation
+        ObjectType: 3
+        guid: d504689e16925240895ce2f54bfaee57
+      Path: Events\Default Work Unit\Play_sfx_wind_forrest_vegetation
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -269,7 +371,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
     GuidInternal: 
-    m_lastTime: -8585837676502918693
+    m_lastTime: -8585800483073848710
     List:
     - name: fs_material_switch_group
       guid: 7d9d9a7f3f7c594dae1105e9af7bfedb
@@ -386,7 +488,7 @@ MonoBehaviour:
     m_lastTime: -8585837676502908811
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000090000000a0000000d0000000e000000
+  ExpandedWaapiItemIds: 010000000200000005000000060000000700000008000000090000000a0000000d0000000e0000000f000000100000001100000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

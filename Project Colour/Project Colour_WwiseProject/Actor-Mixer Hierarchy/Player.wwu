@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}" SchemaVersion="103" RootDocumentID="{F14F1F25-382B-419C-8A28-E79869725246}" ParentDocumentID="{F14F1F25-382B-419C-8A28-E79869725246}">
 	<AudioObjects>
-		<WorkUnit Name="Player" ID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}" OwnerID="{F14F1F25-382B-419C-8A28-E79869725246}" PersistMode="Nested">
+		<WorkUnit Name="Player" ID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}" OwnerID="{326BFD9C-7286-4F00-8019-AD738FB66DD9}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Movement" ID="{03EDF5F3-7032-4DF0-8D4D-193E0F874201}" ShortID="501820638">
 					<ReferenceList>

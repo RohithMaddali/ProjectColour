@@ -4,6 +4,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2299321487	Enemy			\Default Work Unit\Master Audio Bus\Enemy	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4041657371	VoiceOver			\Default Work Unit\Master Audio Bus\VoiceOver	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	813255135	Room_Small (Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

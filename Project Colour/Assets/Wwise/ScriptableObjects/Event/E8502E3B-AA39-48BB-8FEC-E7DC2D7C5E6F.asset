@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c8b2f7083a1964196796388720c066, type: 3}
+  m_Name: E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F
+  m_EditorClassIdentifier: 
+  objectName: Play_sfx_running_water
+  id: 1969647975
+  guid: E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F

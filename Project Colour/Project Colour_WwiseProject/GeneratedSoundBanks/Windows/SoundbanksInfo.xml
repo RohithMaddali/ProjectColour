@@ -1,35 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>I:\Applications (x86)\Unity Projects\Collab Projects\ProjectColour\Project Colour\Project Colour_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>I:\Applications (x86)\Unity Projects\Collab Projects\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>I:\Applications (x86)\Unity Projects\Collab Projects\ProjectColour\Project Colour\Project Colour_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>I:\Applications (x86)\Unity Projects\Collab Projects\ProjectColour\Project Colour\Project Colour_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1229948536" Language="SFX" Hash="2040142791">
+		<SoundBank Id="1229948536" Language="SFX" Hash="4273678109">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2852027888" Name="play_sfx_env_forrest_amb" ObjectPath="\Events\Default Work Unit\play_sfx_env_forrest_amb" DurationType="Infinite">
+				<Event Id="2123621926" Name="Play_all_ambience" ObjectPath="\Events\Default Work Unit\Play_all_ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="1990436654" Name="Play_sfx_birds" ObjectPath="\Events\Default Work Unit\Play_sfx_birds"/>
+						<ActionPostEventEntry Id="3148266417" Name="Play_sfx_wind_forrest_vegetation" ObjectPath="\Events\Default Work Unit\Play_sfx_wind_forrest_vegetation"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="1990436654" Name="Play_sfx_birds" ObjectPath="\Events\Default Work Unit\Play_sfx_birds" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="1044353861" Language="SFX">
-							<ShortName>kinoton__forest-winter-light-wind.wav</ShortName>
-							<Path>SFX\kinoton__forest-winter-light-wind_D79FB2B7.wem</Path>
+						<File Id="56239873" Language="SFX">
+							<ShortName>Spectrum_ambience_birds_chirping-003.wav</ShortName>
+							<Path>SFX\Spectrum_ambience_birds_chirping-003_00B2541D.wem</Path>
+						</File>
+						<File Id="150453628" Language="SFX">
+							<ShortName>Spectrum_ambience_birds_chirping.wav</ShortName>
+							<Path>SFX\Spectrum_ambience_birds_chirping_CF534753.wem</Path>
+						</File>
+						<File Id="317469201" Language="SFX">
+							<ShortName>Spectrum_ambience_birds_chirping-001.wav</ShortName>
+							<Path>SFX\Spectrum_ambience_birds_chirping-001_D8153223.wem</Path>
+						</File>
+						<File Id="317553922" Language="SFX">
+							<ShortName>Spectrum_ambience_birds_chirping-004.wav</ShortName>
+							<Path>SFX\Spectrum_ambience_birds_chirping-004_142B70BF.wem</Path>
+						</File>
+						<File Id="709356173" Language="SFX">
+							<ShortName>Spectrum_ambience_birds_chirping-002.wav</ShortName>
+							<Path>SFX\Spectrum_ambience_birds_chirping-002_7A84413B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3148266417" Name="Play_sfx_wind_forrest_vegetation" ObjectPath="\Events\Default Work Unit\Play_sfx_wind_forrest_vegetation" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="370626416" Language="SFX">
+							<ShortName>Spectrum_wind_forrest_vegetation.wav</ShortName>
+							<Path>SFX\Spectrum_wind_forrest_vegetation_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3052839150">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3833249473">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+			</IncludedAuxBusses>
 		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX" Hash="670168798">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
