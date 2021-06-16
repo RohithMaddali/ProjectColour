@@ -19,20 +19,12 @@ namespace Jordan
             {
                 isOn = true;
                 Debug.Log("Belt is on");
-                StartCoroutine("BeltToggle");
             }
 
             if (isOn == true)
             {
                 col.transform.position = Vector3.MoveTowards(col.transform.position, endpoint.transform.position, speed * Time.deltaTime);
             }
-        }
-
-        IEnumerator BeltToggle()
-        {
-            yield return new WaitForSeconds(timer);
-            isOn = false;
-            Debug.Log("Belt is off");
         }
     }
 }

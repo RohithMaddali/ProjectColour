@@ -20,7 +20,7 @@ namespace AJ
         void Update()
         {
             var transform = this.transform;
-
+            
             if (Physics.Raycast(transform.position, transform.forward, out hit, 10.0f))
             {
                 if (hit.transform.GetComponent<ColouredObject>())
