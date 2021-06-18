@@ -23,6 +23,7 @@ namespace AJ
         private Color previousColor;
         private Renderer thisRenderer;
         private bool isCoroutineRunning; //Delay between shots
+        Vector3 move;
         
 
         private void Start()
@@ -30,13 +31,15 @@ namespace AJ
             thisRenderer = GetComponent<Renderer>();
             isCoroutineRunning = false;
             currentColor = thisRenderer.material.color;
+            
         }
 
         private void FixedUpdate()
         {
+            move = gameObject.GetComponentInParent<LukesMovement>().moveDir;
             if (Mouse.current.leftButton.isPressed)
             {
-                Ray ray = new Ray(transform.position, Vector3.forward);
+                Ray ray = new Ray(transform.position, move);
                 RaycastHit raycastToTarget;
             
                 if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))

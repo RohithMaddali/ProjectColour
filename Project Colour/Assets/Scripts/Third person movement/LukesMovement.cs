@@ -32,6 +32,7 @@ public class LukesMovement : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 2f;
     private bool boosted = false;
+    public Vector3 moveDir;
 
     public Transform groundCheck;
     public float groundDistance = .4f;
@@ -107,7 +108,7 @@ public class LukesMovement : MonoBehaviour
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-                Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 controller.Move(moveDir.normalized * speed * Time.deltaTime);
             }
             else if (direction.magnitude < .1f)
