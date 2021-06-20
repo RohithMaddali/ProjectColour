@@ -36,7 +36,17 @@ namespace AJ
 
         private void FixedUpdate()
         {
-            move = gameObject.GetComponentInParent<LukesMovement>().moveDir;
+            //Check to see if the object has that component, try not to make it dependent or it will break for testing.
+            if (gameObject.GetComponentInParent<LukesMovement>() != null)
+            {
+                move = gameObject.GetComponentInParent<LukesMovement>().moveDir;
+            }
+            else
+            {
+                Debug.Log("You don't have LukesMovement on the player");
+                move = Vector3.forward;
+            }
+
             if (Mouse.current.leftButton.isPressed)
             {
                 Ray ray = new Ray(transform.position, move);
