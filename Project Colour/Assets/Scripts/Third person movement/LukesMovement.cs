@@ -127,6 +127,15 @@ public class LukesMovement : MonoBehaviour
         //apply gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        if (isGrounded)
+        {
+            controller.enabled = true;
+        }
+        else if (!isGrounded)
+        {
+            controller.enabled = false;
+        }
     }
 
     private void SwitchCam()
