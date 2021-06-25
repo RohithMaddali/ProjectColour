@@ -157,22 +157,40 @@ public class LukesMovement : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue 
-            && Mathf.Abs(velocity.y) > 10.1f)
+        if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue
+            && velocity.y > 0 && velocity.y < 10f)
+        {
+            Debug.Log("BOUNCE BACK");
+            velocity.y = 10f;
+            velocity.x *= -1;
+            velocity.z *= -1;
+        }
+        else if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue
+            && velocity.y > 0 && velocity.y < 10f)
+        {
+
+            velocity.x = moveDir.x * -2 * speed;
+            velocity.z = moveDir.z * -2 * speed;
+            velocity.y = 10f;
+        }
+        else if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue
+            && velocity.y <= 0 && velocity.y >= -10.1f)
+        {
+            Debug.Log("base bounce");
+            velocity.y = 10f;
+        }
+        else if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue
+            && velocity.y < -10.1f)
         {
             Debug.Log("velocity.y = " + velocity.y);
             velocity.y = -velocity.y;
-        }
-        else if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == blue 
-            && Mathf.Abs(velocity.y) <= 10.1f)
-        {
-            Debug.Log("bounce");
-            velocity.y = 10f;
         }
         else if (isGrounded && velocity.y < 0)
         {
             //reset velocity when on ground so gravity stops increasing
             velocity.y = -2f;
+            velocity.x = 0;
+            velocity.z = 0;
         }
 
         if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial == red)
@@ -181,11 +199,12 @@ public class LukesMovement : MonoBehaviour
             acceleration = accelBoost;
             boosted = true;
         }
-        if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial != red && 
+        if (hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial != red &&
             hit.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial != blue)
         {
             acceleration = accelBase;
             boosted = false;
         }
+
     }
 }

@@ -15,7 +15,8 @@ public class ColourPowers : MonoBehaviour
 
     public Renderer rend;
 
-    public float bounceHeight = 50f;
+    public float bounceHeight;
+    public RBMove player;
 
     public float speedBoost = 50f;
 
@@ -23,6 +24,7 @@ public class ColourPowers : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
+        player = FindObjectOfType<RBMove>();
     }
 
     // Update is called once per frame
@@ -51,20 +53,21 @@ public class ColourPowers : MonoBehaviour
 
     //      Put this in charactercontroller to check platforms and make them work
 
-    /*private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<ColourPowers>() != null
-            && collision.gameObject.GetComponent<ColourPowers>().isRed
-            && fAndBStrength <= fAndBStrengthMax)
+        if (isBlue && collision.gameObject.CompareTag("Player"))
         {
-            fAndBStrength *= 2;
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(0f, bounceHeight, 0f,ForceMode.Impulse);
+            Debug.Log(collision.gameObject);
         }
-        if (collision.gameObject.GetComponent<ColourPowers>() != null
-            && collision.gameObject.GetComponent<ColourPowers>().isBlue)
+
+        if(isRed && collision.gameObject.CompareTag("Player"))
         {
-            rb.AddForce(Vector3.up * jumpStrength * 2);
+            player.maxSpeed = player.boostSpeed;
+            player.acceleration = player.accelBoost;
+            player.boosted = true;
         }
-    }*/
+    }
 
     //      resets acceleration when leaving platform
 
