@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &4673731042017906607
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491270683096675310}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c23c3bff7ec61ef41b63b28eb47156b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4894964229178160235
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +504,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4894964230543866188}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.050003, y: 10.1, z: -2.9099998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -530,14 +549,14 @@ MonoBehaviour:
   moveCamActive: 1
   speed: 5
   maxSpeed: 0
-  walkSpeed: 2
-  runSpeed: 4
-  boostSpeed: 8
-  acceleration: 0
-  jumpHeight: 350
+  walkSpeed: 5
+  runSpeed: 8
+  boostSpeed: 10
+  acceleration: 10
+  jumpHeight: 500
   accelBoost: 5
   boosted: 0
-  gravity: -20
+  gravity: -100
   moveDir: {x: 0, y: 0, z: 0}
   turnSmoothTime: 0.1
   groundCheck: {fileID: 4894964230341066113}
@@ -619,6 +638,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba360d6c8ae346b4eb499755b1748a8b, type: 3}
+--- !u!1 &4491270683096675310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ba360d6c8ae346b4eb499755b1748a8b, type: 3}
+  m_PrefabInstance: {fileID: 3644919744204066495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3828027038873823572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba360d6c8ae346b4eb499755b1748a8b, type: 3}

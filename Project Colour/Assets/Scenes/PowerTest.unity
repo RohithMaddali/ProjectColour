@@ -10889,10 +10889,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1976645190}
-    - target: {fileID: 4894964230543866176, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4894964230543866188, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_Name
       value: ThirdPersonPlayer
@@ -10953,33 +10949,5 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 780373901}
-    - target: {fileID: 4894964230543866190, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: runSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894964230543866190, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: boostSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894964230543866190, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: walkSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894964230543866190, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: acceleration
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894964230543866190, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: maxSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894964230543866190, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: gravity
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4894964230543866190, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
-      propertyPath: jumpHeight
-      value: 500
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
