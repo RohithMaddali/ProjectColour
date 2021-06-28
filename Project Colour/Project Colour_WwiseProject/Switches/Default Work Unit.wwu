@@ -15,6 +15,12 @@
 						<Switch Name="Running" ID="{A444A2D9-4E8C-4D39-98F2-359B74AA080A}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="MusicState" ID="{58AFBA6F-4E43-4505-B480-64C3BA2981D7}">
+					<ChildrenList>
+						<Switch Name="Blue" ID="{970B1D6E-B21C-467B-8916-1295B05D5757}"/>
+						<Switch Name="Green" ID="{F199E652-AEA1-4DAC-9B37-F29F0AE1EC21}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

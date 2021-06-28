@@ -4,6 +4,9 @@
 		<WorkUnit Name="VoiceOver" ID="{5A4F02DD-E1A5-426E-9457-F53B70C89303}" OwnerID="{326BFD9C-7286-4F00-8019-AD738FB66DD9}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Story" ID="{DA81D912-FD31-4D60-99B7-6B354358BA0E}" ShortID="474704119">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -13,10 +16,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Spectrum_5-S01- take 1 waking the weapon" ID="{D843ADBF-859B-4294-A812-6F82EA6C2205}" ShortID="101577962">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
+						<RandomSequenceContainer Name="Storyvox" ID="{43498CD2-4C0B-47FA-9053-A6E9865DDDE0}" ShortID="906490516">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -26,23 +26,208 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Spectrum_5-S01- take 1 waking the weapon" ID="{F43740FF-FE39-40AA-A75F-C2D4AD235947}">
-									<Language>English(US)</Language>
-									<AudioFile>Spectrum_5-S01- take 1 waking the weapon.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="932068419"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Spectrum_5-S01- take 1 waking the weapon" ID="{D843ADBF-859B-4294-A812-6F82EA6C2205}" ShortID="101577962">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_5-S01- take 1 waking the weapon" ID="{F43740FF-FE39-40AA-A75F-C2D4AD235947}">
+											<Language>English(US)</Language>
+											<AudioFile>Spectrum_5-S01- take 1 waking the weapon.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="932068419"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_5-S01- take 1 waking the weapon" ID="{F43740FF-FE39-40AA-A75F-C2D4AD235947}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_8-S02- take 1 power corrupts" ID="{1C95A617-EB08-4103-951E-D24DE7711098}" ShortID="1022013195">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_8-S02- take 1 power corrupts" ID="{2CABE435-2017-44D5-800F-AECB4F8AA8E6}">
+											<Language>English(US)</Language>
+											<AudioFile>Spectrum_8-S02- take 1 power corrupts.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="731635015"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_8-S02- take 1 power corrupts" ID="{2CABE435-2017-44D5-800F-AECB4F8AA8E6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_9-S04- take 1 best for both of us" ID="{95295A76-7DA4-458D-9323-662101D475AA}" ShortID="514084647">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_9-S04- take 1 best for both of us" ID="{F4295F58-BF13-40EB-BA3C-25E518D09C0A}">
+											<Language>English(US)</Language>
+											<AudioFile>Spectrum_9-S04- take 1 best for both of us.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="678571695"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_9-S04- take 1 best for both of us" ID="{F4295F58-BF13-40EB-BA3C-25E518D09C0A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_13-S06- take 1 Restoring_first_prism" ID="{3FA3B2D4-D657-4BBA-AF8A-75C45E199787}" ShortID="638296819">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_13-S06- take 1 Restoring_first_prism" ID="{42BEECF2-AB7A-426F-BC24-7F15CB4EEAB0}">
+											<Language>English(US)</Language>
+											<AudioFile>Spectrum_13-S06- take 1 Restoring_first_prism.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="221752951"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_13-S06- take 1 Restoring_first_prism" ID="{42BEECF2-AB7A-426F-BC24-7F15CB4EEAB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_11-S05- take 1" ID="{89644F23-DC4E-4A09-BC17-FD4F21FE572E}" ShortID="766759459">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_11-S05- take 1" ID="{5D688B91-67D4-444C-9B08-FA8946393BAD}">
+											<Language>English(US)</Language>
+											<AudioFile>Spectrum_11-S05- take 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="759032536"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_11-S05- take 1" ID="{5D688B91-67D4-444C-9B08-FA8946393BAD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_14-S07- take 1 Restoring_second_prism" ID="{332BFE24-B619-4EA5-A1E4-AB86C28B0900}" ShortID="357699674">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_14-S07- take 1 Restoring_second_prism" ID="{512905B1-FAFC-4125-82B6-8ECADA2FE3B1}">
+											<Language>English(US)</Language>
+											<AudioFile>Spectrum_14-S07- take 1 Restoring_second_prism.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="580709224"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_14-S07- take 1 Restoring_second_prism" ID="{512905B1-FAFC-4125-82B6-8ECADA2FE3B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_16-S08- take 2 restoring_the_3rd" ID="{A26787F3-F037-4E3E-9FB2-60EEC547B698}" ShortID="325490135">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_16-S08- take 2 restoring_the_3rd" ID="{9EA95990-66D3-4B1F-BBA8-09A86BF1B8AE}">
+											<Language>English(US)</Language>
+											<AudioFile>Spectrum_16-S08- take 2 restoring_the_3rd.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="91365112"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_16-S08- take 2 restoring_the_3rd" ID="{9EA95990-66D3-4B1F-BBA8-09A86BF1B8AE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Spectrum_5-S01- take 1 waking the weapon" ID="{F43740FF-FE39-40AA-A75F-C2D4AD235947}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Spectrum_8-S02- take 1 power corrupts" ID="{1C95A617-EB08-4103-951E-D24DE7711098}" ShortID="1022013195">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Idle" ID="{5BBA533D-6B10-4E62-8CC8-B288AC1644C4}" ShortID="604235285">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="VoiceOver" ID="{3AEB2EE0-CDC0-455F-8B39-101B26688AB3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Idlevox" ID="{F6BC51D7-D86F-461A-BF62-AB17C5EB1BD9}" ShortID="871459823">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -52,149 +237,308 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Spectrum_8-S02- take 1 power corrupts" ID="{2CABE435-2017-44D5-800F-AECB4F8AA8E6}">
-									<Language>English(US)</Language>
-									<AudioFile>Spectrum_8-S02- take 1 power corrupts.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="731635015"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Spectrum VO lines 1-4-E07- take 1" ID="{1692693B-9C68-496B-A6AE-ACAEB47EEFC8}" ShortID="802200169">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 1-4-E07- take 1" ID="{8023309C-5D33-4DD2-9B7B-B681EE3D3449}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 1-4-E07- take 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="668681399"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 1-4-E07- take 1" ID="{8023309C-5D33-4DD2-9B7B-B681EE3D3449}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520]" ID="{7A461A2A-08BB-4144-B008-729B306D268B}" ShortID="551248654">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520]" ID="{C5495867-E83F-4147-A068-0F501C0ADF17}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="164480560"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520]" ID="{C5495867-E83F-4147-A068-0F501C0ADF17}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022]" ID="{D643CDAF-F6F4-4AE3-9CEE-15CBE408475D}" ShortID="597410222">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022]" ID="{737939CA-D2FF-44C5-9A9C-30D96F7C8C41}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="920976042"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022]" ID="{737939CA-D2FF-44C5-9A9C-30D96F7C8C41}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 4-8-E10- take 1 [2021-06-16 210724]" ID="{1E9BAD1E-F044-400E-BA44-6B9A6C5FC4E9}" ShortID="484353614">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 4-8-E10- take 1 [2021-06-16 210724]" ID="{3F2B67F8-D22B-4C5F-A541-9F4F73059C35}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 4-8-E10- take 1 [2021-06-16 210724].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="225225391"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 4-8-E10- take 1 [2021-06-16 210724]" ID="{3F2B67F8-D22B-4C5F-A541-9F4F73059C35}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058]" ID="{6ABFEAF0-9025-4450-8E24-F698D32B2B41}" ShortID="1004694270">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058]" ID="{E21A264F-4A19-44CD-BD83-FFAB438DEE5E}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="549970528"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058]" ID="{E21A264F-4A19-44CD-BD83-FFAB438DEE5E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 6-10-E01- take 1" ID="{419EE722-A24C-485D-8BBC-9C21F6C0968D}" ShortID="390331742">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 6-10-E01- take 1" ID="{271EB741-18BC-414D-9E84-D58ADC394C78}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 6-10-E01- take 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="158637950"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 6-10-E01- take 1" ID="{271EB741-18BC-414D-9E84-D58ADC394C78}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457]" ID="{FED613CE-6E58-4009-9CFE-1BF36FD40422}" ShortID="293952388">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457]" ID="{EDE7E2AD-DEF0-4955-B670-C6550261EB9F}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="707900487"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457]" ID="{EDE7E2AD-DEF0-4955-B670-C6550261EB9F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 8-12-E04- take 1 [2021-06-16 212313]" ID="{4C3D6F01-F54B-484C-BE99-096CA02009A8}" ShortID="551302992">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 8-12-E04- take 1 [2021-06-16 212313]" ID="{DE131B33-11AE-42B5-9AE0-A388901747AD}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 8-12-E04- take 1 [2021-06-16 212313].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="612496692"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 8-12-E04- take 1 [2021-06-16 212313]" ID="{DE131B33-11AE-42B5-9AE0-A388901747AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550]" ID="{8F31F04D-BA11-4D61-8E1F-CCD8726CFAFA}" ShortID="213524358">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550]" ID="{93F42AF7-3231-4C58-9740-6246EA8310CB}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="61681148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550]" ID="{93F42AF7-3231-4C58-9740-6246EA8310CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 10-14-E04- take 3 [2021-06-16 212728]" ID="{A3850BCA-B582-436A-B38C-B3ADA067D362}" ShortID="817469830">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 10-14-E04- take 3 [2021-06-16 212728]" ID="{96FA0AA9-D823-4CF1-8A9A-0DC109DD35FC}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 10-14-E04- take 3 [2021-06-16 212728].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="828871710"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 10-14-E04- take 3 [2021-06-16 212728]" ID="{96FA0AA9-D823-4CF1-8A9A-0DC109DD35FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049]" ID="{5FD33114-D4AA-4CE6-BDD9-12830555B5CD}" ShortID="1027613441">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049]" ID="{6F281245-2CB2-4A79-A61E-058903F0C742}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="55166877"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049]" ID="{6F281245-2CB2-4A79-A61E-058903F0C742}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410]" ID="{78FD4ED9-1107-4732-9148-9BAA6606ADE1}" ShortID="465289943">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410]" ID="{3525D8FC-3C9D-4363-94CC-733BA0D8450B}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="366064581"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410]" ID="{3525D8FC-3C9D-4363-94CC-733BA0D8450B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum VO lines 13-17-E06- take 2 [2021-06-16 213416]" ID="{458D9858-2396-4C40-81E7-ACBAEED2C059}" ShortID="805513268">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum VO lines 13-17-E06- take 2 [2021-06-16 213416]" ID="{CD5EB1BA-F454-4F8B-B6EC-564C8311ABF5}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum VO lines 13-17-E06- take 2 [2021-06-16 213416].wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="646458720"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum VO lines 13-17-E06- take 2 [2021-06-16 213416]" ID="{CD5EB1BA-F454-4F8B-B6EC-564C8311ABF5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Spectrum_8-S02- take 1 power corrupts" ID="{2CABE435-2017-44D5-800F-AECB4F8AA8E6}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Spectrum_9-S04- take 1 best for both of us" ID="{95295A76-7DA4-458D-9323-662101D475AA}" ShortID="514084647">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Spectrum_9-S04- take 1 best for both of us" ID="{F4295F58-BF13-40EB-BA3C-25E518D09C0A}">
-									<Language>English(US)</Language>
-									<AudioFile>Spectrum_9-S04- take 1 best for both of us.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="678571695"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Spectrum_9-S04- take 1 best for both of us" ID="{F4295F58-BF13-40EB-BA3C-25E518D09C0A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Spectrum_11-S05- take 1" ID="{89644F23-DC4E-4A09-BC17-FD4F21FE572E}" ShortID="766759459">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Spectrum_11-S05- take 1" ID="{5D688B91-67D4-444C-9B08-FA8946393BAD}">
-									<Language>English(US)</Language>
-									<AudioFile>Spectrum_11-S05- take 1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="759032536"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Spectrum_11-S05- take 1" ID="{5D688B91-67D4-444C-9B08-FA8946393BAD}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Spectrum_13-S06- take 1 Restoring_first_prism" ID="{3FA3B2D4-D657-4BBA-AF8A-75C45E199787}" ShortID="638296819">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Spectrum_13-S06- take 1 Restoring_first_prism" ID="{42BEECF2-AB7A-426F-BC24-7F15CB4EEAB0}">
-									<Language>English(US)</Language>
-									<AudioFile>Spectrum_13-S06- take 1 Restoring_first_prism.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="221752951"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Spectrum_13-S06- take 1 Restoring_first_prism" ID="{42BEECF2-AB7A-426F-BC24-7F15CB4EEAB0}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Spectrum_14-S07- take 1 Restoring_second_prism" ID="{332BFE24-B619-4EA5-A1E4-AB86C28B0900}" ShortID="357699674">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Spectrum_14-S07- take 1 Restoring_second_prism" ID="{512905B1-FAFC-4125-82B6-8ECADA2FE3B1}">
-									<Language>English(US)</Language>
-									<AudioFile>Spectrum_14-S07- take 1 Restoring_second_prism.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="580709224"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Spectrum_14-S07- take 1 Restoring_second_prism" ID="{512905B1-FAFC-4125-82B6-8ECADA2FE3B1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Spectrum_16-S08- take 2 restoring_the_3rd" ID="{A26787F3-F037-4E3E-9FB2-60EEC547B698}" ShortID="325490135">
-							<PropertyList>
-								<Property Name="IsVoice" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Spectrum_16-S08- take 2 restoring_the_3rd" ID="{9EA95990-66D3-4B1F-BBA8-09A86BF1B8AE}">
-									<Language>English(US)</Language>
-									<AudioFile>Spectrum_16-S08- take 2 restoring_the_3rd.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="91365112"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Spectrum_16-S08- take 2 restoring_the_3rd" ID="{9EA95990-66D3-4B1F-BBA8-09A86BF1B8AE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

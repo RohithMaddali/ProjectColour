@@ -20,6 +20,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Vox" ID="{9DFEE26F-6344-4F76-B73B-87DDE9A2B153}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_IdleVox" ID="{C8ED8C94-3637-4762-8816-504F2090DEF8}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

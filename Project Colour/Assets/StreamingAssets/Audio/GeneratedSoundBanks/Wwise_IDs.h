@@ -14,8 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ALL_AMBIENCE = 2123621926U;
+        static const AkUniqueID PLAY_IDLEVOX = 2078339439U;
         static const AkUniqueID PLAY_MX_EXPLORE_LAYER_A = 3531304827U;
         static const AkUniqueID PLAY_SFX_BIRDS = 1990436654U;
+        static const AkUniqueID PLAY_SFX_RUNNING_WATER = 1969647975U;
         static const AkUniqueID PLAY_SFX_WIND_FORREST_VEGETATION = 3148266417U;
     } // namespace EVENTS
 
@@ -43,6 +45,17 @@ namespace AK
             } // namespace SWITCH
         } // namespace FS_MOVEMENT_SWITCH_GROUP
 
+        namespace MUSICSTATE
+        {
+            static const AkUniqueID GROUP = 1021618141U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BLUE = 1325827433U;
+                static const AkUniqueID GREEN = 4147287986U;
+            } // namespace SWITCH
+        } // namespace MUSICSTATE
+
     } // namespace SWITCHES
 
     namespace BANKS
@@ -50,6 +63,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID VOX = 543694036U;
     } // namespace BANKS
 
     namespace BUSSES

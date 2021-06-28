@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="Soundcaster Session" ID="{D794DAD3-59D6-410F-B45E-02F47773F92B}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="mx_explore_layer_a" ID="{49F2BC9F-AB3C-4E6D-AB81-8D4193295BCF}" WorkUnitID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}"/>
+							<ObjectRef Name="mx_Blue" ID="{49F2BC9F-AB3C-4E6D-AB81-8D4193295BCF}" WorkUnitID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 					</ModuleList>
@@ -14,6 +14,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Running" ID="{A444A2D9-4E8C-4D39-98F2-359B74AA080A}"/>
+						<CurrentSwitchRef Name="Blue" ID="{970B1D6E-B21C-467B-8916-1295B05D5757}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

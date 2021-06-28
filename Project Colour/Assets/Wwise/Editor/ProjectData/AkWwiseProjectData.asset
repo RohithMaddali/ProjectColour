@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1ad7f73361ace840af42609fdd7fd554
     GuidInternal: 
-    m_lastTime: -8585777734903355218
+    m_lastTime: -8585768057580391599
     List:
     - name: Ambience
       guid: d6b48f63ffda0f40aced95b3f1979df2
@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585777656059750057
+    m_lastTime: -8585768096837637918
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -198,6 +198,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 7a3acfce6e0ea842bf7ec64d88447628
       Path: SoundBanks\Default Work Unit\Music
+    - name: Vox
+      guid: 6fe2fe9d4463764fb73b87dde9a2b153
+      id: 543694036
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2a944836521c424da3d49e97a9e03762
+      - ElementName: Vox
+        ObjectType: 7
+        guid: 6fe2fe9d4463764fb73b87dde9a2b153
+      Path: SoundBanks\Default Work Unit\Vox
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -210,7 +224,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585777702796581621
+    m_lastTime: -8585768057580261957
     List:
     - name: Play_all_ambience
       guid: 26223d67ad3263488733e6525da99793
@@ -229,6 +243,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_IdleVox
+      guid: 948cedc8373662478816504f2090def8
+      id: 2078339439
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: Play_IdleVox
+        ObjectType: 3
+        guid: 948cedc8373662478816504f2090def8
+      Path: Events\Default Work Unit\Play_IdleVox
+      maxAttenuation: 0
+      maxDuration: 16.438368
+      minDuration: 16.438368
     - name: Play_mx_explore_layer_a
       guid: 5e2a0c0bf09cec4287f732b45caf79b9
       id: 3531304827
@@ -278,8 +309,8 @@ MonoBehaviour:
         guid: 0de6ad3b7190d2479dda492b30d988d0
       Path: Events\Default Work Unit\play_sfx_env_forrest_amb
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_sfx_plr_foosteps
       guid: f0b153f7b8dd3748b3ca13d65bd4df2c
       id: 3870925874
@@ -371,7 +402,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
     GuidInternal: 
-    m_lastTime: -8585800483073848710
+    m_lastTime: -8585768080438120255
     List:
     - name: fs_material_switch_group
       guid: 7d9d9a7f3f7c594dae1105e9af7bfedb
@@ -470,6 +501,56 @@ MonoBehaviour:
         - ElementName: Walking
           ObjectType: 10
           guid: 90dd0f2a96f57940b787f334223344ee
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MusicState
+      guid: 6fbaaf58434e0545b48064c3ba2981d7
+      id: 1021618141
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+      - ElementName: MusicState
+        ObjectType: 11
+        guid: 6fbaaf58434e0545b48064c3ba2981d7
+      Path: Switches\Default Work Unit\MusicState
+      values:
+      - name: Blue
+        guid: 6e1d0b971cb27b4689161295b05d5757
+        id: 1325827433
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: MusicState
+          ObjectType: 11
+          guid: 6fbaaf58434e0545b48064c3ba2981d7
+        - ElementName: Blue
+          ObjectType: 10
+          guid: 6e1d0b971cb27b4689161295b05d5757
+      - name: Green
+        guid: 52e699f1a1aeac4d9b37f29f0ae1ec21
+        id: 4147287986
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: MusicState
+          ObjectType: 11
+          guid: 6fbaaf58434e0545b48064c3ba2981d7
+        - ElementName: Green
+          ObjectType: 10
+          guid: 52e699f1a1aeac4d9b37f29f0ae1ec21
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

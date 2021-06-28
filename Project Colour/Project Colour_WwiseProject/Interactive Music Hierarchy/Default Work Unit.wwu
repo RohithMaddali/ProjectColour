@@ -3,22 +3,503 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicPlaylistContainer Name="mx_explore_layer_a" ID="{49F2BC9F-AB3C-4E6D-AB81-8D4193295BCF}" ShortID="444326169">
+				<MusicSwitchContainer Name="MusicDynamic" ID="{61C4560D-AC9E-4995-AFF7-2B805E6C3DAD}" ShortID="839988059">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Music" ID="{D3291DAC-EB54-4B7F-BD33-D553D5FC3897}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Music" ID="{535F77AE-F0D9-44AC-BAAF-AA7619C7B12B}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="explore_track" ID="{D54A8B21-1C3D-40DE-BB0D-B1E5734A49CE}" ShortID="410019257">
+						<MusicPlaylistContainer Name="mx_Blue" ID="{49F2BC9F-AB3C-4E6D-AB81-8D4193295BCF}" ShortID="444326169">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="108629.092507141"/>
-								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
-								<Property Name="Tempo" Type="Real64" Value="74"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Music" ID="{D3291DAC-EB54-4B7F-BD33-D553D5FC3897}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{535F77AE-F0D9-44AC-BAAF-AA7619C7B12B}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Blue" ID="{D54A8B21-1C3D-40DE-BB0D-B1E5734A49CE}" ShortID="410019257">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="108629.092507141"/>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="56"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="74"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="16 EP chords" ID="{28CCE241-7622-483F-AF22-C5132F07377F}" ShortID="1033419585">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 1-16 EP chords" ID="{D5C034A9-AB94-436E-9BE5-BD8CCF865E26}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 1-16 EP chords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="654144160"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 16-32 EP chords" ID="{5FD64001-161F-48B2-A31E-654D57D9686F}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 16-32 EP chords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="883231556"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{BBD4DEC0-5ED7-4C49-9D47-E3E4AEB76EFC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E58381FE-3BFF-4B87-9781-9F278FB2D1E4}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 1-16 EP chords" ID="{EE726D90-52A2-424C-8918-E625AB33F248}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 1-16 EP chords" ID="{D5C034A9-AB94-436E-9BE5-BD8CCF865E26}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{61A62072-DF14-47B4-A5DD-9AEF0571E402}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 16-32 EP chords" ID="{FD310185-08A5-41A3-846B-81C8350AB287}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 16-32 EP chords" ID="{5FD64001-161F-48B2-A31E-654D57D9686F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Ufo landing" ID="{11888106-50F3-4C1F-AC45-DABFF24A10F9}" ShortID="775570442">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 1-16 Ufo landing" ID="{704FDB4D-DE36-4ECE-A3D0-907CB6F97A3D}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 1-16 Ufo landing.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1053166123"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 16-32 Ufo landing" ID="{F20504C6-475B-43F8-B15D-D3328DFB5B39}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 16-32 Ufo landing.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509542754"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{B79D364D-621E-4D85-A939-AE144FFA18B2}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList/>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{63E5A363-A92E-4C8F-B485-5391CC667E11}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 1-16 Ufo landing" ID="{7166D8F4-70AB-4190-9511-FB49FCD277BB}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 1-16 Ufo landing" ID="{704FDB4D-DE36-4ECE-A3D0-907CB6F97A3D}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2DE0D0D7-1BCD-406E-A32B-9F54CF3CD415}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 16-32 Ufo landing" ID="{A5E9EAF8-07B3-4285-9B0F-DBB5572481B2}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 16-32 Ufo landing" ID="{F20504C6-475B-43F8-B15D-D3328DFB5B39}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8442E7B0-80C4-49B4-9C50-C5391FAC0F93}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Una cordaChords" ID="{EFBDB603-832B-4D61-992E-EE9C51091ADC}" ShortID="534548255">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 1-16 Una cordaChords" ID="{A026EDC1-F93E-4579-AEF8-C55BD2E16EBC}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 1-16 Una cordaChords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="813853291"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 16-32 Una cordaChords" ID="{C20C6F91-31DF-4CFE-B5C5-30AF35DCEF63}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 16-32 Una cordaChords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="924617312"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{7C16A189-17A0-4CF2-B8FB-1F70586F5B8D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{A9229D72-40B7-4AF7-ACAB-8B2334500AC8}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 1-16 Una cordaChords" ID="{C71C1642-79E1-4D96-99DC-CA48DAD78CDE}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 1-16 Una cordaChords" ID="{A026EDC1-F93E-4579-AEF8-C55BD2E16EBC}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{380B85AB-EB4F-4020-AD71-C3B5646053F9}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 16-32 Una cordaChords" ID="{6C231E8F-4B6F-4F9F-BAC2-BF46332D42D0}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 16-32 Una cordaChords" ID="{C20C6F91-31DF-4CFE-B5C5-30AF35DCEF63}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9C99976F-E41E-419A-9DD6-B9B2242FFAAE}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{A2738C6F-3C65-4543-AC8E-88B6DED1CC8D}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Kyans volca" ID="{2BC168DE-FAF4-40CC-B7F4-33EF8C405994}" ShortID="927987363">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 16-32 Kyans volca" ID="{ABB3D38A-E44E-407E-9A32-237FA20A9EB8}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 16-32 Kyans volca.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="681152443"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{2C8FC154-0D54-463F-9C26-AFB798C7D1FE}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{7F2D5D14-29B2-44CC-AC46-58E953656C0F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 16-32 Kyans volca" ID="{1DE09D1D-B95D-4C4A-BC48-386741130457}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 16-32 Kyans volca" ID="{ABB3D38A-E44E-407E-9A32-237FA20A9EB8}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3171B77A-2909-41F9-B9A8-201F11B1BC31}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{301EB71D-F792-473F-B682-C29AE9EF94AF}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Una corda melody" ID="{D31412C4-E16E-48A6-AE58-47188CD271DD}" ShortID="210148341">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 16-32 Una corda melody" ID="{11B1960D-4241-4092-9186-76966E42DBC0}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 16-32 Una corda melody.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="479703291"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{05268559-A70E-4BB8-A89C-BF4DCEBB0227}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{49A3716F-A604-4F19-B01E-AFD62364857A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 16-32 Una corda melody" ID="{B412565C-929A-4A09-AFD8-2DCF6D7D55E5}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 16-32 Una corda melody" ID="{11B1960D-4241-4092-9186-76966E42DBC0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{627B2F65-2195-4F80-A1B3-239EB5451A20}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8138D397-579E-474F-BD71-AD7E68CB21BF}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{37A8A19C-F8D8-40F6-ABC1-1A58B1B06568}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{F3777D10-8CD7-4130-91D4-05457BCD897C}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="51891.8918918919"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{827A1B46-8B22-4156-9847-9A14BF2A4EF5}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{E90EE42B-97D3-4721-BD0C-D596B0D103C7}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{9F14DBF2-531C-4D5B-9DAB-3A058BB5C038}" ShortID="1065460760">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{7262EB2B-AAA0-43F8-B1C0-5AEED6C1028E}" ShortID="783599249">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Blue" ID="{D54A8B21-1C3D-40DE-BB0D-B1E5734A49CE}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="mx_Green" ID="{AC6C5677-6FE3-4EC6-8D5E-56364A12B7AA}" ShortID="473975470">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -28,623 +509,1229 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="A minor EP chords" ID="{53DD8B4A-08B9-4B1C-9E39-F88BB040049C}" ShortID="34781717">
+								<MusicSegment Name="Green" ID="{E3F5B3EF-A221-4617-ADBE-4079D7294955}" ShortID="503812609">
 									<PropertyList>
-										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+										<Property Name="EndPosition" Type="Real64" Value="53004.2275536169"/>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="56"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="74"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor EP chords" ID="{01DA06B4-693A-42D8-9880-983FF4EAEF29}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor EP chords.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1071923929"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor EP chords2" ID="{40BA8A88-A011-4ED4-915C-003D53FFA159}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor EP chords2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="835319521"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{345753EA-195E-416A-B00B-0548E4CC4284}">
+										<MusicTrack Name="Kontakt" ID="{E3C15992-9F3E-4B66-B9CA-6E478E23E17C}" ShortID="1033719426">
 											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
 											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 48-64 16-Kontakt" ID="{283417CF-83DD-456B-91B9-D5D8F9FDC249}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 48-64 16-Kontakt.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="415596912"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 16-Kontakt" ID="{46988890-4DFD-4D23-869C-5B953B4A6372}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 16-Kontakt.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="23573578"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 16-Kontakt" ID="{9326ACDC-986E-4E98-BA47-A54B9ECD1E99}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 16-Kontakt.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="830977006"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{CC771A86-BC19-4F05-8F15-3C0D0A53C930}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9BF197B7-7560-4F1E-827F-33894A849A49}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 48-64 16-Kontakt" ID="{F519D8CA-36BC-44BA-AA54-EB935C3A3110}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 48-64 16-Kontakt" ID="{283417CF-83DD-456B-91B9-D5D8F9FDC249}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D85AE637-52DC-4BB8-9F30-9E5DEC9FF46B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 16-Kontakt" ID="{7B887431-ED06-41D0-950C-2CF4767674A3}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 16-Kontakt" ID="{46988890-4DFD-4D23-869C-5B953B4A6372}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{760FFDD1-3D44-4BEC-9404-88A1FCFA16B7}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 16-Kontakt" ID="{D4B19057-70C9-4EFA-B47C-D10E0713497A}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 16-Kontakt" ID="{9326ACDC-986E-4E98-BA47-A54B9ECD1E99}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{385567FC-1A56-44CA-84BB-35044CBF2E8A}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{39FCFD46-7CAF-4324-AA23-0B9F8E320130}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="EP chords" ID="{FB4840A2-CAFD-4FEC-B59F-97F315A2E70B}" ShortID="1044921780">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 48-64 EP chords" ID="{F17BF4E8-A9D8-4CEA-916F-C5964624E229}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 48-64 EP chords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="484436932"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 EP chords" ID="{83FFCE50-621C-4473-BAFB-B46ABDAD38E4}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 EP chords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="927469935"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 EP chords 2" ID="{D75C0A9A-28A6-4A64-A337-5892926B36E6}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 EP chords 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="267995335"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{1A276773-D7E6-42DE-8BCC-C54C80413CE0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2A278D06-AC3E-4C63-BDEB-0F1581C39D65}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 48-64 EP chords" ID="{B3768B62-7BB7-464F-8D2A-5C18CDC73A99}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 48-64 EP chords" ID="{F17BF4E8-A9D8-4CEA-916F-C5964624E229}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8A535A78-C4FA-46AF-8FAA-D8EAFDC19C06}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 EP chords" ID="{F4B57501-5EA3-495B-A999-F38534E8048E}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 EP chords" ID="{83FFCE50-621C-4473-BAFB-B46ABDAD38E4}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{72FB00E5-FED6-4BB8-BFFC-9969189ADA59}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 EP chords 2" ID="{1BD49BD8-DC20-4866-91E1-3D631B748B9F}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 EP chords 2" ID="{D75C0A9A-28A6-4A64-A337-5892926B36E6}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{79CB8A57-E91C-49DC-BDD7-E003F410708F}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F1779CD6-07E9-4446-8C12-6430E238BEDB}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Ufo landing" ID="{011E2A77-5184-432B-BA4C-70D947A3B628}" ShortID="692005342">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 48-64 Ufo landing" ID="{8964B602-AD34-4B23-AFA2-BB79504AA4DD}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 48-64 Ufo landing.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1002848807"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 Ufo landing" ID="{65741343-CA13-4756-8397-8166D85015DE}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 Ufo landing.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="509986141"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Ufo landing" ID="{39290F05-C067-404C-84E2-F081604A28E2}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Ufo landing.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="631265261"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{796FA2BC-42E9-4444-A231-EBDD648CFB7C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{5EDE9B57-E57C-4AEA-8C8F-41DA5B368872}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 48-64 Ufo landing" ID="{CBDFE1E0-8269-43C8-9B74-CA179EED3EB5}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 48-64 Ufo landing" ID="{8964B602-AD34-4B23-AFA2-BB79504AA4DD}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B9CA6A4D-9BE0-4BB6-B856-C5623F2BDE42}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 Ufo landing" ID="{6F41B739-5348-4D52-95AA-D76C02A47912}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 Ufo landing" ID="{65741343-CA13-4756-8397-8166D85015DE}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{105B57EF-E47E-49A9-B10B-C7305E530343}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Ufo landing" ID="{7C1F973B-7455-49DC-B461-342E28E6F5F8}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Ufo landing" ID="{39290F05-C067-404C-84E2-F081604A28E2}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{BC65D303-29FE-426C-AAA1-D0AE6522E736}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{675EF93E-831D-4307-A4A3-06670C8865D4}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Una cordaChords" ID="{6374EC63-07E8-48CE-B116-5E3C2DDED8AD}" ShortID="860453769">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 48-64 Una cordaChords" ID="{6E7A0383-23F4-4A95-85E4-39A5511E9D25}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 48-64 Una cordaChords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="489680500"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 Una cordaChords" ID="{8B963C7D-6FB5-45B4-B9C2-2D8EECF0D902}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 Una cordaChords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="420442598"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Una cordaChords" ID="{7A922384-1DB6-45C6-B12F-A76EC70590F8}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Una cordaChords.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="254604164"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{22E034F3-46D3-48C5-9AED-CFEA65CE6E73}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{201DA67F-4F4F-40F3-9BB5-D1D812C7A9E6}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 48-64 Una cordaChords" ID="{984DA044-167A-4EBC-8754-49DF002DC4E2}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 48-64 Una cordaChords" ID="{6E7A0383-23F4-4A95-85E4-39A5511E9D25}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{AD54BA89-EA0A-485D-9323-22C52EB7D592}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 Una cordaChords" ID="{E35EAB03-9F77-4D8A-823B-75BF44915814}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 Una cordaChords" ID="{8B963C7D-6FB5-45B4-B9C2-2D8EECF0D902}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2FA5E767-78E7-4E05-AA11-8D0FF10828E3}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Una cordaChords" ID="{62A164B3-6D60-4A32-95FA-B028209D38F8}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Una cordaChords" ID="{7A922384-1DB6-45C6-B12F-A76EC70590F8}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4C7EC0EF-5A62-4966-B267-DCDE69DA8680}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{FAC17D4A-64B4-43D3-A995-41938E8F811F}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="17-Mini V3" ID="{980284EB-91DD-4479-91B4-B186611BDC57}" ShortID="127058990">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 17-Mini V3" ID="{9AE627E7-6AFD-4597-8BBA-A83BB3D2251E}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 17-Mini V3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="857655518"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 17-Mini V3" ID="{B2B5516D-3B4C-4931-B21B-5FCA38B27305}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 17-Mini V3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="411324864"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{738079AB-B42F-4636-8D4E-4921E6374F98}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F007A43A-9C40-40BE-817D-4BB6E25AE03F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 17-Mini V3" ID="{8AA35C67-8546-49C4-81E4-F56B19FD9C81}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 17-Mini V3" ID="{9AE627E7-6AFD-4597-8BBA-A83BB3D2251E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{97F7E470-BC54-4639-966C-F711B59D3886}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 17-Mini V3" ID="{ADC92277-F822-42B8-A393-AC9C9BDA18FE}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 17-Mini V3" ID="{B2B5516D-3B4C-4931-B21B-5FCA38B27305}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B243B1BC-6462-4367-A49D-33B429D803A1}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{16AB65ED-C3B3-4174-A340-0721A17123EB}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Arp plucks" ID="{554C99BA-E3FA-4B50-9A53-F385C58FC9C7}" ShortID="412340391">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 Arp plucks" ID="{499D96BA-B563-45F4-A52E-CD9DE2C20117}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 Arp plucks.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="863609679"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Arp plucks" ID="{A450C17A-830A-4C88-B201-7DF4BCCCC675}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Arp plucks.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="327951146"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{D74BF031-2523-4369-9AC8-A922D1ECFCCF}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D33AEC67-0541-450E-9D02-7D93CA98D5A2}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 Arp plucks" ID="{78E449F8-9CEB-40B1-A7BB-14B9DA9A80A8}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 Arp plucks" ID="{499D96BA-B563-45F4-A52E-CD9DE2C20117}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{CFE3003D-617D-486B-B6CF-BB4544B86E7A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Arp plucks" ID="{1A9C698B-F01D-402F-AACB-5D40313C1759}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Arp plucks" ID="{A450C17A-830A-4C88-B201-7DF4BCCCC675}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Synthy pad" ID="{429CB6A1-3071-42DA-B872-BB95D70823ED}" ShortID="423355484">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 Synthy pad" ID="{E78DFA17-811F-4A1A-9455-BECFC92A87B4}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 Synthy pad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1060751705"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Synthy pad" ID="{363E0BE7-3025-4D50-BEAF-91356E5DEAA3}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Synthy pad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="115339553"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{6F5D2E77-4F96-4FF2-B5E9-D9103DEB9F95}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4B5A78B4-14A3-4B8F-B855-1030B61BA80D}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 Synthy pad" ID="{9E63546B-5C0D-431A-A895-4BF73338D827}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 Synthy pad" ID="{E78DFA17-811F-4A1A-9455-BECFC92A87B4}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B000E84B-978B-4FA3-8F8D-092798C76C30}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Synthy pad" ID="{C6DB05F1-A923-464C-A1C4-F4B8E92F1CD0}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Synthy pad" ID="{363E0BE7-3025-4D50-BEAF-91356E5DEAA3}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{261C269D-A341-4B05-8B1A-9D256720DF22}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4B871E72-AD13-49AD-A95D-EF0B6148788E}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="12-Qin_RV_x64" ID="{030FCB09-2317-4CB7-A91B-18023A45AA87}" ShortID="442963184">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 12-Qin_RV_x64" ID="{AD827A07-BD19-461A-A0AF-A4F44CD20628}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 12-Qin_RV_x64.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="413958182"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{82EA6BA4-E25F-406B-A076-E72EC848CC97}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2D3E3900-292D-4A7F-BD64-DA6D25A50E1A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 12-Qin_RV_x64" ID="{20DD7297-60DD-4D07-A6D9-E32C8569E3A3}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 12-Qin_RV_x64" ID="{AD827A07-BD19-461A-A0AF-A4F44CD20628}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Color Instruments" ID="{5DA021C1-2B0A-420E-ADB2-AB9F2D39EE3C}" ShortID="870250267">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Kalimba" ID="{12C13EAD-823E-479C-8065-02B258C525E7}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Kalimba.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="825283440"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Kyans volca" ID="{B020DAC1-2A79-4DE9-8C80-1733F697E052}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Kyans volca.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658842775"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Music box" ID="{9C34E0E6-638F-413C-88C1-C14861BCC821}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Music box.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="394090265"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 Kyans volca" ID="{A8D533EF-CFF3-4E82-85A7-759AFB73021A}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 Kyans volca.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="49553736"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E21D70C4-FEC7-437E-AECB-2F35491F00DB}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{5923C1DB-4C30-401E-BEC7-DB03351D750C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Kalimba" ID="{24DB599E-4DD5-4838-8534-CF88501A59F8}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Kalimba" ID="{12C13EAD-823E-479C-8065-02B258C525E7}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B498BDCE-4ADB-4ED8-8A5A-C98922AC064C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Kyans volca" ID="{B3331780-AF62-4EF4-A621-078F4F0F3D23}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Kyans volca" ID="{B020DAC1-2A79-4DE9-8C80-1733F697E052}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{12C074BD-039C-42A1-9EFA-C1D24735DE85}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Music box" ID="{B1DD7FB1-DAE4-45E6-8C48-BE35308AD71E}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Music box" ID="{9C34E0E6-638F-413C-88C1-C14861BCC821}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{20F66939-819A-4BE5-9F57-8056681D9C4E}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 Kyans volca" ID="{14D724BD-3A5F-49B2-B6FC-7C3A825BA8EF}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 Kyans volca" ID="{A8D533EF-CFF3-4E82-85A7-759AFB73021A}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F6030AAD-16AC-49E3-A8EA-D4E3C8D99D67}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{24BDB241-A9FB-458C-A477-024429F95ECC}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{203EF58D-60B0-444C-AA6D-721C02F23884}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Una corda Melody" ID="{5C935931-D5CD-4DAB-9995-1CDF503A7835}" ShortID="710836946">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 64-80 Una corda melody" ID="{EB6D55FA-E869-4F44-974F-C7DC2CE0F8FF}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 64-80 Una corda melody.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="587872161"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 Una corda melody" ID="{819EC95F-13CC-4A11-92DB-22BD036D525F}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 Una corda melody.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1036144694"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{06C3EB3E-E6CA-41B8-86FC-743525FE584E}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{63D96EB4-29E9-44BF-AAAB-DDC09A1DD177}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 64-80 Una corda melody" ID="{2A1B2F85-4FA0-41FD-9766-97BB753805D9}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 64-80 Una corda melody" ID="{EB6D55FA-E869-4F44-974F-C7DC2CE0F8FF}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8AB61288-F482-4BBF-8096-3278BD5C7EEE}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 Una corda melody" ID="{18A1687C-1D5B-48F1-B33A-A95BCCEC007D}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 Una corda melody" ID="{819EC95F-13CC-4A11-92DB-22BD036D525F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{DF5AC23B-A124-40EB-8BD4-58251163EC8D}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3E668205-14DB-4E94-BFCC-29972F9B198D}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="EP Melody" ID="{521FE237-8BCF-429F-830E-6254692BBCCF}" ShortID="217473016">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum 4 74bpm 4-4 80-96 EP melody" ID="{C3FE5D20-7126-4071-B46D-D23ECF0E232C}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum 4 74bpm 4-4 80-96 EP melody.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="60892728"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{72B003FD-298F-4A97-9389-18C3E2E71A7B}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{A05F7492-FFD8-46E1-BF38-ADDC6571C271}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Spectrum 4 74bpm 4-4 80-96 EP melody" ID="{5CFF2839-733F-4FA0-BFD2-3DF62994D3AA}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Spectrum 4 74bpm 4-4 80-96 EP melody" ID="{C3FE5D20-7126-4071-B46D-D23ECF0E232C}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F5F14E12-38E7-4398-B6FF-FA8BCE9D8001}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{43E927D7-E6D9-4FAB-96FB-21279111D2C1}">
+																<ObjectLists/>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
 									<ObjectLists>
-										<ObjectList Name="Sequences">
+										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{00DA94B9-8050-4997-A5F9-B848AF6F7EDA}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor EP chords" ID="{75E3850B-B73D-4C6D-B865-4D3804DC924C}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor EP chords" ID="{01DA06B4-693A-42D8-9880-983FF4EAEF29}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+													<MusicCue Name="Entry Cue" ID="{A5E8DD9B-4586-46C1-A481-0EA820ECB631}"/>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{86149C03-D2A7-4FC7-A59F-0BF5AD01CF37}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor EP chords2" ID="{128AC69F-9332-41F5-BE00-01427FD82359}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor EP chords2" ID="{40BA8A88-A011-4ED4-915C-003D53FFA159}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
+													<MusicCue Name="Exit Cue" ID="{0DEED3FC-4A8B-449E-AE30-346C2ABF1EBC}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="Ufo landing" ID="{F4104F52-B9E0-46C3-8BD8-3B3721B02E79}" ShortID="413325019">
-									<PropertyList>
-										<Property Name="MusicTrackType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Ufo landing" ID="{1E971AD1-F99C-4286-80C1-5E24106CFCDC}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Ufo landing.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="646738884"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Ufo landing2" ID="{8C585225-4264-4CBA-992E-5D5A44B9B2A1}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Ufo landing2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="103796916"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Ufo landing3" ID="{868178BB-465A-4E59-8F6A-6F934E13A462}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Ufo landing3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="207343722"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{AD9A19E5-A98C-4BD8-9445-03581F0DD405}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{9E595A8E-4CE6-48E1-80C7-A1C5919946C3}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Ufo landing" ID="{102AFF41-AAEF-40B0-8529-BC3259DD6738}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Ufo landing" ID="{1E971AD1-F99C-4286-80C1-5E24106CFCDC}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{B33DA554-0B5C-47FB-A527-A0A19CDB4380}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Ufo landing2" ID="{FC911A98-CD6D-4D20-8564-8DB39C678EC0}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Ufo landing2" ID="{8C585225-4264-4CBA-992E-5D5A44B9B2A1}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{D6E214E4-DD19-4F4D-8CF4-2D4B6370ACCF}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Ufo landing3" ID="{67890801-E61A-4AAA-9EE3-924CAB931BDE}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Ufo landing3" ID="{868178BB-465A-4E59-8F6A-6F934E13A462}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{FDBD1C71-8927-4EA3-B97A-5B6F02AD8D35}">
-														<ObjectLists/>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="Una corda Chords" ID="{EAAFE89F-4787-4F80-BA7F-982F0F9D8E71}" ShortID="69093417">
-									<PropertyList>
-										<Property Name="MusicTrackType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords" ID="{42305E17-7619-43DF-A2B9-54F297AEFFA0}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Una cordaChords.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="508508414"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords2" ID="{E7F33017-18B2-4766-B1C0-BCFE88E8854F}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Una cordaChords2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="187534322"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords3" ID="{5E547052-3C0A-496C-AC02-17187772B4D5}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Una cordaChords3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="929316674"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{5E9BE542-546A-42E1-9365-146F11197929}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{20505B16-329C-4BF1-8B10-BC5E18338897}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords" ID="{4153B834-55EF-4A6E-8955-67E689322ABE}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords" ID="{42305E17-7619-43DF-A2B9-54F297AEFFA0}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{48E3420F-EF27-4D2E-9CB8-0AC5E0401225}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords2" ID="{82420497-C385-4F0C-BEF1-CA29E220A43F}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords2" ID="{E7F33017-18B2-4766-B1C0-BCFE88E8854F}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{76B49F9D-F8BA-4A28-9471-18CCAE4C532B}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords3" ID="{E347E8F0-D257-4365-954D-C5BCE1384854}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Una cordaChords3" ID="{5E547052-3C0A-496C-AC02-17187772B4D5}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{A58D6DDA-0A3C-4921-B4B1-672CA5D0921B}">
-														<ObjectLists/>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="Una corda Melody" ID="{3E2E7588-C9DF-48C4-99D7-C0EB246EED92}" ShortID="12156067">
-									<PropertyList>
-										<Property Name="MusicTrackType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Una corda melody2" ID="{DCC1A904-13EF-447F-A693-1E3DBF8A5AE9}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Una corda melody2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="906170101"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Una corda melody3" ID="{20DA9377-5E63-4CA5-846A-E7A5354A8104}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Una corda melody3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="627032412"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor EP melody3_2" ID="{150FA434-C29F-4694-A51D-1A93E2A59E05}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor EP melody3.2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="589495230"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{ECC8D95C-785A-4AB9-8682-9379676DFAC1}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{CAF56F56-5B66-4049-870F-08F12E892A56}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Una corda melody2" ID="{7227FF77-8B4D-4895-A601-A9C386E80487}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Una corda melody2" ID="{DCC1A904-13EF-447F-A693-1E3DBF8A5AE9}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{C3FDA501-2746-4307-9920-B7711971D0F3}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Una corda melody3" ID="{81B2C569-1A0B-4B89-B104-6A237D77607A}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Una corda melody3" ID="{20DA9377-5E63-4CA5-846A-E7A5354A8104}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{4C783E3B-62C2-4678-B2F8-43159174F005}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor EP melody3_2" ID="{9973A582-0C9A-4F22-8761-7ACAC451DA2E}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor EP melody3_2" ID="{150FA434-C29F-4694-A51D-1A93E2A59E05}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{2EAD11AF-4FF0-4CD9-8F8E-B174368E1435}">
-														<ObjectLists/>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{9C474CFD-CC72-481C-8431-2D4536E71DFA}">
-														<ObjectLists/>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="A minor Kalimba3" ID="{94D51A27-E0CC-488A-B509-422C00509B21}" ShortID="644411405">
-									<PropertyList>
-										<Property Name="MusicTrackType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Kalimba3" ID="{427E46FC-E5F1-45FA-A38B-A1C35D756766}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Kalimba3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="91049681"/>
-											</MediaIDList>
-										</AudioFileSource>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor Music box3" ID="{393AAEAE-892D-4803-B88C-9AE2146F6FBC}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor Music box3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="98677703"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{25FC84E0-B017-48B5-9058-97D2E2AE14E3}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{4B90BF13-0243-4594-830C-E7F3397D9619}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Kalimba3" ID="{B8A527C3-CB35-4E7B-8011-6A38D420DDE5}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Kalimba3" ID="{427E46FC-E5F1-45FA-A38B-A1C35D756766}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{FDE298C8-C322-4E27-B89A-C81E54163732}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor Music box3" ID="{E5C4FAE1-D3C3-4248-B44D-3106E2CB8F64}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor Music box3" ID="{393AAEAE-892D-4803-B88C-9AE2146F6FBC}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{E9C0F366-F328-4B48-A56E-F960A2015862}">
-														<ObjectLists/>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{5D04881A-C27A-4330-95A8-AFF4D92FA5E4}">
-														<ObjectLists/>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-								<MusicTrack Name="Base Chord" ID="{9BBBEF23-40A6-4448-B699-576DEFC677A6}" ShortID="613693252">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Spectrum 4 Exploring 74bpm A minor EP chords 3" ID="{F516549E-D9D8-43D0-A9B9-7D5B3F7F9009}">
-											<Language>SFX</Language>
-											<AudioFile>Spectrum 4 Exploring 74bpm A minor EP chords 3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="941262012"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<TransitionList>
-										<MusicTransition Name="Root" ID="{120E4618-1805-4B15-89A3-7BF8D75042C1}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</TransitionList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{B46DB61A-E760-4D54-A7B0-611D28B1502A}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Spectrum 4 Exploring 74bpm A minor EP chords 3" ID="{E3D20A94-61EB-476A-824C-139D0E33E36B}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="51891.9047619048"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Spectrum 4 Exploring 74bpm A minor EP chords 3" ID="{F516549E-D9D8-43D0-A9B9-7D5B3F7F9009}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
+								</MusicSegment>
 							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<Reference>
-										<Local>
-											<MusicCue Name="Entry Cue" ID="{37A8A19C-F8D8-40F6-ABC1-1A58B1B06568}"/>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicCue Name="Exit Cue" ID="{F3777D10-8CD7-4130-91D4-05457BCD897C}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="51891.8918918919"/>
-												</PropertyList>
-											</MusicCue>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{EE815C4A-BC2F-4725-B2FC-BC2859FD160F}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{ECC93746-0441-4B8C-8839-AF1BC31DACD7}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{40690AFE-EB3E-4E74-B40B-435AF9074802}" ShortID="490013821">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{8C3EF10F-AF4C-4872-A854-FAF8AB39E8CF}" ShortID="529348121">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Green" ID="{E3F5B3EF-A221-4617-ADBE-4079D7294955}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
 					</ChildrenList>
 					<TransitionList>
-						<MusicTransition Name="Root" ID="{827A1B46-8B22-4156-9847-9A14BF2A4EF5}">
+						<MusicTransition Name="Root" ID="{50265E75-C9A0-44DA-A9F5-BD271E2EBB0C}">
 							<PropertyList>
 								<Property Name="IsFolder" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{E90EE42B-97D3-4721-BD0C-D596B0D103C7}">
+								<MusicTransition Name="Transition" ID="{BD0F746C-0CB4-4694-B784-FA4B8B36CC5A}">
 									<TransitionInfo/>
 								</MusicTransition>
 							</ChildrenList>
@@ -652,20 +1739,28 @@
 						</MusicTransition>
 					</TransitionList>
 					<ObjectLists/>
-					<Playlist>
-						<MusicPlaylistItem Name="" ID="{9F14DBF2-531C-4D5B-9DAB-3A058BB5C038}" ShortID="1065460760">
-							<ChildrenList>
-								<MusicPlaylistItem Name="" ID="{7262EB2B-AAA0-43F8-B1C0-5AEED6C1028E}" ShortID="783599249">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-									</PropertyList>
-									<SegmentRef Name="explore_track" ID="{D54A8B21-1C3D-40DE-BB0D-B1E5734A49CE}"/>
-								</MusicPlaylistItem>
-							</ChildrenList>
-						</MusicPlaylistItem>
-					</Playlist>
-				</MusicPlaylistContainer>
+					<ArgumentList>
+						<ArgumentRef Name="MusicState" ID="{58AFBA6F-4E43-4505-B480-64C3BA2981D7}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Blue" ID="{970B1D6E-B21C-467B-8916-1295B05D5757}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mx_Blue" ID="{49F2BC9F-AB3C-4E6D-AB81-8D4193295BCF}" WorkUnitID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Green" ID="{F199E652-AEA1-4DAC-9B37-F29F0AE1EC21}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="mx_Green" ID="{AC6C5677-6FE3-4EC6-8D5E-56364A12B7AA}" WorkUnitID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

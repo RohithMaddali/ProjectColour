@@ -23,6 +23,13 @@
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="VoiceOver" ID="{3AEB2EE0-CDC0-455F-8B39-101B26688AB3}">
+							<PropertyList>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="UserAuxSend0">
 									<ObjectRef Name="Reverb" ID="{A71C2A53-1409-4559-946E-6163CFC1BE6F}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>

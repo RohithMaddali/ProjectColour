@@ -42,6 +42,7 @@ public class RBMove : MonoBehaviour
 
     private void Awake()
     {
+        
         controls = new PlayerControls();
 
         controls.Gameplay.Jump.performed += ctx => Jump();
@@ -65,6 +66,7 @@ public class RBMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+    
     }
 
     // Update is called once per frame

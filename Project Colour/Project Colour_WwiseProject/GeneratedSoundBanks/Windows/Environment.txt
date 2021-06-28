@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1969647975	Play_sfx_running_water			\Default Work Unit\Play_sfx_running_water	
 	1990436654	Play_sfx_birds			\Default Work Unit\Play_sfx_birds	
 	2123621926	Play_all_ambience			\Default Work Unit\Play_all_ambience	
 	3148266417	Play_sfx_wind_forrest_vegetation			\Default Work Unit\Play_sfx_wind_forrest_vegetation	
@@ -10,4 +11,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	317553922	Spectrum_ambience_birds_chirping-004	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Windows\SFX\Spectrum_ambience_birds_chirping-004_142B70BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Environment\AreaLoop\sfx_birds\Spectrum_ambience_birds_chirping-004		125888
 	370626416	Spectrum_wind_forrest_vegetation	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Windows\SFX\Spectrum_wind_forrest_vegetation_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Environment\AreaLoop\sfx_wind\Spectrum_wind_forrest_vegetation		8323424
 	709356173	Spectrum_ambience_birds_chirping-002	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Windows\SFX\Spectrum_ambience_birds_chirping-002_7A84413B.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Environment\AreaLoop\sfx_birds\Spectrum_ambience_birds_chirping-002		88408
+	1027518291	Spectrum_running_water	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Windows\SFX\Spectrum_running_water_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Environment\SourceLoops3D\Spectrum_running_water		5317172
 
