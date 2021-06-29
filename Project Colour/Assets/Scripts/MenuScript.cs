@@ -7,6 +7,7 @@ namespace Pyro
     public class MenuScript : MonoBehaviour
     {
         public GameObject confirm;
+        public GameObject settingsMenu;
 
         public void Quit()
         {
@@ -14,14 +15,14 @@ namespace Pyro
             Debug.Log("Application has quit.");
         }
 
-        public void AskToQuit()
+        public void OpenSubmenu(GameObject delta)
         {
-            confirm.SetActive(true);
+            delta.SetActive(true);
         }
 
-        public void CancelQuit()
+        public void CloseSubmenu(GameObject delta)
         {
-            confirm.SetActive(false);
+            delta.SetActive(false);
         }
     }
 }
