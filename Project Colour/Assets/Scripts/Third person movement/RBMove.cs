@@ -34,6 +34,7 @@ public class RBMove : MonoBehaviour
     public Vector3 moveDir;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+    public Vector3 bounceDir;
 
     public Transform groundCheck;
     public float groundDistance = .4f;
@@ -178,11 +179,16 @@ public class RBMove : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
+        
         float mag = fallVelocity.magnitude * 2;
-        Vector3 bounceDir = Vector3.Reflect(fallVelocity.normalized, collision.contacts[0].normal);
+        if (!isBouncing)
+        {
+            bounceDir = moveDir;
+        }
+        
 
-
-        if (collision.gameObject.GetComponent<MeshRenderer>().material.color == Color.blue && fallVelocity.y <= 0)
+        if (colColor == Color.blue && fallVelocity.y <= 0)
         {
             rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); //reset y velocity to 0 to establish base
             float bounceBack = Mathf.Max(mag * bounceMultiplier, bounceHeight); //take the higher of either base bounce or magnitude of fall
@@ -190,10 +196,29 @@ public class RBMove : MonoBehaviour
             Debug.Log("Boucne " + bounceBack);
             isBouncing = true;
         }
+        else if(colColor == Color.blue && fallVelocity.y > 0 && !isBouncing)
+        {
+            
+            rb.AddForce(new Vector3(bounceDir.x * -bounceHeight, bounceHeight, bounceDir.z * -bounceHeight), ForceMode.Impulse);
+            isBouncing = true;
+            Debug.Log("BOUNCE BACK");
+        }
+        else if (colColor == Color.blue && fallVelocity.y > 0 && isBouncing)
+        {
+            rb.AddForce(new Vector3(bounceDir.x * bounceHeight, bounceHeight, bounceDir.z * bounceHeight), ForceMode.Impulse);
+            isBouncing = true;
+            Debug.Log("BOUNCE BACK 2");
+        }
+
+        if (colColor == Color.red)
+        {
+            maxSpeed = boostSpeed;
+            acceleration = accelBoost;
+            boosted = true;
+        }
         
-        
-        if(collision.gameObject.GetComponent<MeshRenderer>().material.color != Color.blue &&
-            collision.gameObject.GetComponent<MeshRenderer>().material.color != Color.red)
+        if(colColor != Color.blue &&
+            colColor != Color.red)
         {
             boosted = false;
             isBouncing = false;
