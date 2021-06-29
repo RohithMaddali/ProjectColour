@@ -126,7 +126,7 @@ public class RBMove : MonoBehaviour
                 speed = 2f;
             }
 
-            if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude > .1f && !isBouncing)
+            if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude > .1f)
             {
                 rb.MovePosition(transform.position + (moveDir.normalized * speed * Time.deltaTime));
             }
@@ -170,7 +170,7 @@ public class RBMove : MonoBehaviour
     }
     void Jump()
     {
-        if (isGrounded && moveCamActive)
+        if (isGrounded && moveCamActive && !isBouncing)
         {
             rb.AddForce(0f, jumpHeight, 0f, ForceMode.Impulse);
         }
@@ -188,14 +188,15 @@ public class RBMove : MonoBehaviour
             float bounceBack = Mathf.Max(mag * bounceMultiplier, bounceHeight); //take the higher of either base bounce or magnitude of fall
             rb.AddForce(new Vector3(0f, bounceBack, 0f), ForceMode.Impulse); //add y force
             Debug.Log("Boucne " + bounceBack);
+            isBouncing = true;
         }
         
         
-        if(collision.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial != blue &&
-            collision.gameObject.GetComponentInChildren<MeshRenderer>().sharedMaterial != red &&
-            boosted)
+        if(collision.gameObject.GetComponent<MeshRenderer>().material.color != Color.blue &&
+            collision.gameObject.GetComponent<MeshRenderer>().material.color != Color.red)
         {
             boosted = false;
+            isBouncing = false;
         }
         
 
