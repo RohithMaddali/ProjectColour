@@ -53,12 +53,31 @@ public class ColourPowers : MonoBehaviour
 
     //      Put this in charactercontroller to check platforms and make them work
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (isBlue && collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Rigidbody>().AddForce(0f, bounceHeight, 0f,ForceMode.Impulse);
-            Debug.Log(collision.gameObject);
+            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+
+            if (rb.velocity.y <= -9f)
+            {
+                rb.velocity = new Vector3(0f, -2f * rb.velocity.y, 0f);
+                Debug.Log(rb.velocity.y + " fall on");
+            }
+            else if (rb.velocity.y > -9f && rb.velocity.y < .5f)
+            {
+                rb.velocity = new Vector3(0f, bounceHeight, 0f);
+                //rb.AddForce(0f, bounceHeight, 0f, ForceMode.Impulse);
+                Debug.Log(rb.velocity.y + " walk on");
+            }
+            else if (rb.velocity.y >= .5f)
+            {
+                rb.velocity = new Vector3(0f, 0f, 0f);
+                rb.AddForce(-100f * rb.velocity.x, bounceHeight, -100f * rb.velocity.z, ForceMode.Impulse);
+                Debug.Log(rb.velocity.y + " BBBBOUNCE BACK");
+            }
+
+
         }
 
         if(isRed && collision.gameObject.CompareTag("Player"))
@@ -77,5 +96,5 @@ public class ColourPowers : MonoBehaviour
         {
             collision.gameObject.GetComponent<MainPlayerMovementScript>().fAndBStrength = 5;
         }
-    }
+    }*/
 }
