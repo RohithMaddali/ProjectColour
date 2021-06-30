@@ -27,7 +27,7 @@ public class RBMove : MonoBehaviour
     public float bounceHeight;
     public float accelBoost;
     public float bounceMultiplier;
-    bool isBouncing;
+    public bool isBouncing;
     public bool boosted;
     public float gravity;
     public Vector3 fallVelocity;
@@ -150,7 +150,6 @@ public class RBMove : MonoBehaviour
         }
         fallVelocity = rb.velocity; // get fall velocity because physics update is weird
         rb.AddForce(0f, gravity, 0f);
-
     }
 
     private void SwitchCam()
@@ -180,35 +179,50 @@ public class RBMove : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
-        
-        float mag = fallVelocity.magnitude * 2;
-        if (!isBouncing)
+        //Debug.Log(fallVelocity.y);
+        if (colColor == Color.blue)
         {
-            bounceDir = moveDir;
-        }
-        
+            float mag = fallVelocity.magnitude;
+            ContactPoint cp = collision.contacts[0];
+            Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
+            float bounceForce = Mathf.Max(mag, bounceHeight);
+            //rb.velocity = Vector3.Reflect(fallVelocity, cp.normal);
+            rb.velocity = bounceDir.normalized * bounceForce;
 
-        if (colColor == Color.blue && fallVelocity.y <= 0)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); //reset y velocity to 0 to establish base
-            float bounceBack = Mathf.Max(mag * bounceMultiplier, bounceHeight); //take the higher of either base bounce or magnitude of fall
-            rb.AddForce(new Vector3(0f, bounceBack, 0f), ForceMode.Impulse); //add y force
-            Debug.Log("Boucne " + bounceBack);
-            isBouncing = true;
+            Debug.Log(bounceForce);
+
+            //Debug.Log("Boucne " + collision.contacts[0].normal);
         }
-        else if(colColor == Color.blue && fallVelocity.y > 0 && !isBouncing)
-        {
-            
-            rb.AddForce(new Vector3(bounceDir.x * -bounceHeight, bounceHeight, bounceDir.z * -bounceHeight), ForceMode.Impulse);
-            isBouncing = true;
-            Debug.Log("BOUNCE BACK");
-        }
-        else if (colColor == Color.blue && fallVelocity.y > 0 && isBouncing)
-        {
-            rb.AddForce(new Vector3(bounceDir.x * bounceHeight, bounceHeight, bounceDir.z * bounceHeight), ForceMode.Impulse);
-            isBouncing = true;
-            Debug.Log("BOUNCE BACK 2");
-        }
+
+        //bounceDir = moveDir;
+
+
+            /*if (colColor == Color.blue && fallVelocity.y < 0)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); //reset y velocity to 0 to establish base
+                float bounceBack = Mathf.Max(mag * bounceMultiplier, bounceHeight); //take the higher of either base bounce or magnitude of fall
+                rb.AddForce(new Vector3(0f, bounceBack, 0f), ForceMode.Impulse); //add y force
+                Debug.Log("Boucne " + bounceBack);
+                isBouncing = true;
+                reflect = false;
+            }
+            else if(colColor == Color.blue && fallVelocity.y >= 0  && !reflect)
+            {
+
+                rb.AddForce(bounceDir.x * speed * -200, bounceHeight, bounceDir.z * speed * -200, ForceMode.Impulse);
+                isBouncing = true;
+                reflect = true;
+                Debug.Log("BOUNCE BACK");
+                Debug.Log(collision.gameObject.transform.forward.x);
+                Debug.Log(collision.gameObject.transform.forward.z);
+            }
+            else if (colColor == Color.blue && fallVelocity.y >= 0 && reflect)
+            {
+                rb.AddForce(bounceDir.x * speed * -200, bounceHeight, bounceDir.z * speed * -200, ForceMode.Impulse);
+                isBouncing = true;
+                reflect = false;
+                Debug.Log("BOUNCE BACK 2");
+            }*/
 
         if (colColor == Color.red)
         {
