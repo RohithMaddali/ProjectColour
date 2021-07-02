@@ -2,43 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Quontity
+public class TestOut : MonoBehaviour
 {
-    public class TestOut : MonoBehaviour
+    void Start()
     {
-        //var for tracking panel 
-        public GameObject trackingPanel;
-        //keeps tracking panel hidden when played
-        bool Paused = false;
-        void Start()
-        {
-            //loads all objective onto the tracking panel
+        
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T)) {
             ObjectiveManager.i.TriggerDisplayPanel(0);
-            ObjectiveManager.i.TriggerDisplayPanel(1);
-            ObjectiveManager.i.TriggerDisplayPanel(2);
-            trackingPanel.gameObject.SetActive(false);
         }
-
-        void Update()
+        if (Input.GetKeyDown(KeyCode.G)) {
+            ObjectiveManager.i.AddItemToObjective(0);
+        }
+        if (Input.GetKeyDown(KeyCode.B)) {
+            ObjectiveManager.i.AddItemToObjective(1);
+        }
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            //acts similiar to a pause menu, pressing TAB will pause the menu and display current objectives
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                if (Paused == true)
-                {
-                    Time.timeScale = 1.0f;
-                    trackingPanel.gameObject.SetActive(false);
-                    Paused = false;
-                }
-                else
-                {
-                    Time.timeScale = 0.0f;
-                    trackingPanel.gameObject.SetActive(true);
-                    Paused = true;
-
-                }
-            }
+            ObjectiveManager.i.AddItemToObjective(2);
         }
-
     }
 }

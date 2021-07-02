@@ -4,84 +4,77 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace Quontity
-{
-    [System.Serializable]
-    public class SingleObjective
-    {
-        public string objectiveName;
-        public int maxItemNumber;
-        private int currentItemNumber;
-        public UnityEvent OnCompletedObjective;
+[System.Serializable]
+public class SingleObjective {
+    public string objectiveName;
+    public int maxItemNumber;
+    private int currentItemNumber;
+    public UnityEvent OnCompletedObjective;
 
-        public void AddCurrentItemNumber()
+    public void AddCurrentItemNumber() {
+        if (currentItemNumber < maxItemNumber)
         {
-            if (currentItemNumber < maxItemNumber)
-            {
-                currentItemNumber += 1;
-            }
-            if (currentItemNumber == maxItemNumber)
-            {
-                OnCompletedObjective?.Invoke();
-            }
+            currentItemNumber += 1;
         }
-
-        public string GetObjectiveName()
-        {
-            return objectiveName + "\t" + currentItemNumber.ToString() + " / " + maxItemNumber.ToString();
+        if (currentItemNumber == maxItemNumber) {
+            OnCompletedObjective?.Invoke();
         }
     }
 
-    public class ObjectiveManager : MonoBehaviour
+    public string GetObjectiveName() {
+        return objectiveName + "\t" +currentItemNumber.ToString() + " / " + maxItemNumber.ToString();
+    }
+}
+
+public class ObjectiveManager : MonoBehaviour
+{
+    private static ObjectiveManager _i;
+    public static ObjectiveManager i
     {
-        private static ObjectiveManager _i;
-        public static ObjectiveManager i
+        get
         {
-            get
+            if (_i == null)
             {
-                if (_i == null)
-                {
-                    _i = FindObjectOfType<ObjectiveManager>();
-                }
-                return _i;
+                _i = FindObjectOfType<ObjectiveManager>();
             }
+            return _i;
         }
+    }
 
-        //public GameObject objectiveDisplayPanel;
-        public GameObject objectiveTrackingPanel;
+    public GameObject objectiveDisplayPanel;
+    public GameObject objectiveTrackingPanel;
 
-        public List<SingleObjective> objectives = new List<SingleObjective>();
-        private List<GameObject> objectiveInTrakingPanel = new List<GameObject>();
+    public List<SingleObjective> objectives = new List<SingleObjective>();
+    private List<GameObject> objectiveInTrakingPanel = new List<GameObject>();
 
-        public GameObject objectivePrefab;
+    public GameObject objectivePrefab;
 
-        void Start()
-        {
-            //objectiveDisplayPanel.SetActive(false);
-            //objectiveTrackingPanel.SetActive(false);
-        }
+    void Start()
+    {
+        objectiveDisplayPanel.SetActive(false);
+        //objectiveTrackingPanel.SetActive(false);
+    }
 
-        public void TriggerDisplayPanel(int _objectiveIndex)
-        {
-            //objectiveDisplayPanel.SetActive(true);
-            //objectiveDisplayPanel.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].objectiveName;
+    public void TriggerDisplayPanel(int _objectiveIndex)
+    {
+        objectiveDisplayPanel.SetActive(true);
+        objectiveDisplayPanel.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].objectiveName;
 
-            GameObject o = Instantiate(objectivePrefab);
-            o.transform.SetParent(objectiveTrackingPanel.transform, false);
-            o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
-            objectiveInTrakingPanel.Add(o);
-        }
+        GameObject o = Instantiate(objectivePrefab);
+        o.transform.SetParent(objectiveTrackingPanel.transform, false);
+        o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
+        objectiveInTrakingPanel.Add(o);
+    }
 
-        public void AddItemToObjective(int _objectiveIndex)
-        {
-            objectives[_objectiveIndex].AddCurrentItemNumber();
-            objectiveInTrakingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
-        }
+    public void AddItemToObjective(int _objectiveIndex)
+    {
+        objectives[_objectiveIndex].AddCurrentItemNumber();
+        objectiveInTrakingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
+    }
 
-        public void AllObjectiveCompleted()
-        {
-            //objectiveDisplayPanel.SetActive(true);
-            //objectiveDisplayPanel.GetComponentInChildren<Text>().text = "Completed!";
-        }
+    public void AllObjectiveCompleted()
+    {
+        objectiveDisplayPanel.SetActive(true);
+        objectiveDisplayPanel.GetComponentInChildren<Text>().text = "Completed!";
     }
 }
