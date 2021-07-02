@@ -35,6 +35,8 @@ public class RBMove : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     public Vector3 bounceDir;
+    float reboundForce;
+    public GameObject bouncer;
 
     public Transform groundCheck;
     public float groundDistance = .4f;
@@ -179,6 +181,8 @@ public class RBMove : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
+
+
         //Debug.Log(fallVelocity.y);
         if (colColor == Color.blue)
         {
@@ -187,12 +191,31 @@ public class RBMove : MonoBehaviour
             Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
             float bounceForce = Mathf.Max(mag, bounceHeight);
             //rb.velocity = Vector3.Reflect(fallVelocity, cp.normal);
-            rb.velocity = bounceDir.normalized * bounceForce;
+            if(bouncer != null && collision.gameObject == bouncer)
+            {
+                rb.velocity = bounceDir.normalized * reboundForce;
+                Debug.Log("Do it again" + reboundForce);
+            }
+            else
+            {
+                rb.velocity = bounceDir.normalized * bounceForce;
+                isBouncing = true;
+                reboundForce = bounceForce;
+                
+                Debug.Log("first Bounce on this objkect" + bounceForce);
 
-            Debug.Log(bounceForce);
+            }
+
+            bouncer = collision.gameObject;
 
             //Debug.Log("Boucne " + collision.contacts[0].normal);
         }
+        /*else if (colColor == Color.blue && bouncer == collision.gameObject)
+        {
+            ContactPoint cp = collision.contacts[0];
+            Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
+            
+        }*/
 
         //bounceDir = moveDir;
 
@@ -236,6 +259,7 @@ public class RBMove : MonoBehaviour
         {
             boosted = false;
             isBouncing = false;
+            bouncer = null;
         }
         
 
