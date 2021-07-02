@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d185e359cdc33649899a2838002beffd
     GuidInternal: 
-    m_lastTime: -8585837676502908811
+    m_lastTime: -8585770257899561244
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1ad7f73361ace840af42609fdd7fd554
     GuidInternal: 
-    m_lastTime: -8585768057580391599
+    m_lastTime: -8585766799892769560
     List:
     - name: Ambience
       guid: d6b48f63ffda0f40aced95b3f1979df2
@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585764105947027114
+    m_lastTime: -8585766799892749611
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -224,7 +224,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585764105946917367
+    m_lastTime: -8585766799900239598
     List:
     - name: ev_all_ambience
       guid: 26223d67ad3263488733e6525da99793
@@ -374,7 +374,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d4ef90d6a268b24ab2c9aa2ac58f5fde
     GuidInternal: 
-    m_lastTime: -8585837676503128223
+    m_lastTime: -8585770257902543258
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -388,90 +388,8 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46f609f0b2605447aa33f2db183074af
     GuidInternal: 
-    m_lastTime: -8585764154322936442
-    List:
-    - name: Colour
-      guid: 00c4cbf1bb3eea4e89b57b36a001675d
-      id: 296203157
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 46f609f0b2605447aa33f2db183074af
-      - ElementName: Colour
-        ObjectType: 9
-        guid: 00c4cbf1bb3eea4e89b57b36a001675d
-      Path: States\Default Work Unit\Colour
-      values:
-      - name: Blue
-        guid: c4f679ff96414a4da8335d327e2ea764
-        id: 1325827433
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 46f609f0b2605447aa33f2db183074af
-        - ElementName: Colour
-          ObjectType: 9
-          guid: 00c4cbf1bb3eea4e89b57b36a001675d
-        - ElementName: Blue
-          ObjectType: 8
-          guid: c4f679ff96414a4da8335d327e2ea764
-      - name: Green
-        guid: 302d113b92f55440a7e07149b4cf6c95
-        id: 4147287986
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 46f609f0b2605447aa33f2db183074af
-        - ElementName: Colour
-          ObjectType: 9
-          guid: 00c4cbf1bb3eea4e89b57b36a001675d
-        - ElementName: Green
-          ObjectType: 8
-          guid: 302d113b92f55440a7e07149b4cf6c95
-      - name: None
-        guid: 3c324c82757bbd47895320b9d6c880e0
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 46f609f0b2605447aa33f2db183074af
-        - ElementName: Colour
-          ObjectType: 9
-          guid: 00c4cbf1bb3eea4e89b57b36a001675d
-        - ElementName: None
-          ObjectType: 8
-          guid: 3c324c82757bbd47895320b9d6c880e0
-      - name: Red
-        guid: 192ab61ccab89743acf1568ff1d8d049
-        id: 980603538
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 46f609f0b2605447aa33f2db183074af
-        - ElementName: Colour
-          ObjectType: 9
-          guid: 00c4cbf1bb3eea4e89b57b36a001675d
-        - ElementName: Red
-          ObjectType: 8
-          guid: 192ab61ccab89743acf1568ff1d8d049
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8585770257899571220
+    List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -484,7 +402,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
     GuidInternal: 
-    m_lastTime: -8585768080438120255
+    m_lastTime: -8585766799892739631
     List:
     - name: fs_material_switch_group
       guid: 7d9d9a7f3f7c594dae1105e9af7bfedb
@@ -648,7 +566,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 7dc84a5948a5bc419e20ee63e751d964
     GuidInternal: 
-    m_lastTime: -8585837676502908811
+    m_lastTime: -8585770257899561244
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 010000000200000005000000060000000700000008000000090000000a0000000d0000000e0000000f0000001000000011000000120000001300000014000000
