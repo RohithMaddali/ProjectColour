@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Object
   - Target
+  - BluePrism
+  - GreenPrism
+  - RedPrism
   layers:
   - Default
   - TransparentFX
