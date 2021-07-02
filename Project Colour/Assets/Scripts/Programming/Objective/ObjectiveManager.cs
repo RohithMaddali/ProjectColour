@@ -28,7 +28,7 @@ namespace Quontity
 
         public string GetObjectiveName()
         {
-            return objectiveName + "\t" + currentItemNumber.ToString() + " / " + maxItemNumber.ToString();
+            return objectiveName + "   " + currentItemNumber.ToString() + " / " + maxItemNumber.ToString();
         }
     }
 
