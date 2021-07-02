@@ -37,6 +37,7 @@ public class RBMove : MonoBehaviour
     public Vector3 bounceDir;
     float reboundForce;
     public GameObject bouncer;
+    private float delta;
 
     public Transform groundCheck;
     public float groundDistance = .4f;
@@ -83,6 +84,13 @@ public class RBMove : MonoBehaviour
         if (!isGrounded)
         {
             rb.AddForce(0f, gravity * 2f, 0f);
+        }
+
+        delta += Time.deltaTime;
+
+        if(delta > .1f)
+        {
+            isBouncing = false;
         }
 
     }
@@ -172,7 +180,7 @@ public class RBMove : MonoBehaviour
     }
     void Jump()
     {
-        if (isGrounded && moveCamActive && !isBouncing)
+        if (isGrounded && moveCamActive && ! isBouncing)
         {
             rb.AddForce(0f, jumpHeight, 0f, ForceMode.Impulse);
         }
@@ -200,6 +208,7 @@ public class RBMove : MonoBehaviour
             {
                 rb.velocity = bounceDir.normalized * bounceForce;
                 isBouncing = true;
+                delta = 0f;
                 reboundForce = bounceForce;
                 
                 Debug.Log("first Bounce on this objkect" + bounceForce);
@@ -254,8 +263,7 @@ public class RBMove : MonoBehaviour
             boosted = true;
         }
         
-        if(colColor != Color.blue &&
-            colColor != Color.red)
+        if(colColor != Color.red && colColor != Color.blue)
         {
             boosted = false;
             isBouncing = false;

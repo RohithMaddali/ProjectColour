@@ -5,24 +5,24 @@
 			<ChildrenList>
 				<SoundBank Name="Environment" ID="{9ED921C3-1591-4086-BF31-E616FA2D0806}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_sfx_wind_forrest_vegetation" ID="{9E6804D5-9216-4052-895C-E2F54BFAEE57}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_all_ambience" ID="{673D2226-32AD-4863-8733-E6525DA99793}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_wind_arealoop" ID="{0AC4A353-DEF6-4699-804D-EE5B5967EAD5}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_all_ambience" ID="{673D2226-32AD-4863-8733-E6525DA99793}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Music" ID="{CECF3A7A-0E6E-42A8-BF7E-C64D88447628}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_mx_explore_layer_a" ID="{0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_mx_explore" ID="{0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Vox" ID="{9DFEE26F-6344-4F76-B73B-87DDE9A2B153}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_IdleVox" ID="{C8ED8C94-3637-4762-8816-504F2090DEF8}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_IdleVox" ID="{C8ED8C94-3637-4762-8816-504F2090DEF8}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

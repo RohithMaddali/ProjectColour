@@ -13,13 +13,30 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_ALL_AMBIENCE = 2123621926U;
-        static const AkUniqueID PLAY_IDLEVOX = 2078339439U;
-        static const AkUniqueID PLAY_MX_EXPLORE_LAYER_A = 3531304827U;
-        static const AkUniqueID PLAY_SFX_BIRDS = 1990436654U;
-        static const AkUniqueID PLAY_SFX_RUNNING_WATER = 1969647975U;
-        static const AkUniqueID PLAY_SFX_WIND_FORREST_VEGETATION = 3148266417U;
+        static const AkUniqueID EV_ALL_AMBIENCE = 2745505235U;
+        static const AkUniqueID EV_IDLEVOX = 1133450584U;
+        static const AkUniqueID EV_MX_EXPLORE = 2266659196U;
+        static const AkUniqueID EV_SFX_BIRDS = 1994831277U;
+        static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
+        static const AkUniqueID EV_WIND_AREALOOP = 3254481477U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace COLOUR
+        {
+            static const AkUniqueID GROUP = 296203157U;
+
+            namespace STATE
+            {
+                static const AkUniqueID BLUE = 1325827433U;
+                static const AkUniqueID GREEN = 4147287986U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID RED = 980603538U;
+            } // namespace STATE
+        } // namespace COLOUR
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -57,6 +74,11 @@ namespace AK
         } // namespace MUSICSTATE
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MASTER_VOLUME = 4179668880U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

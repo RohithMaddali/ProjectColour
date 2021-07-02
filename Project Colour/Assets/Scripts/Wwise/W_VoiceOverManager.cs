@@ -43,7 +43,7 @@ public class W_VoiceOverManager : MonoBehaviour
     }
     IEnumerator PlayIdleVox()
     {
-        idleVoxID = AkSoundEngine.PostEvent("Play_IdleVox",gameObject);
+        idleVoxID = AkSoundEngine.PostEvent("ev_IdleVox",gameObject);
         yield return new WaitForSeconds(10);
         toggle = false;
     }

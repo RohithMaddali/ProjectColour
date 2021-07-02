@@ -11,60 +11,20 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="543694036" Language="SFX" Hash="4021816349">
+		<SoundBank Id="543694036" Language="SFX" Hash="2882012103">
 			<ObjectPath>\SoundBanks\Default Work Unit\Vox</ObjectPath>
 			<ShortName>Vox</ShortName>
 			<Path>Vox.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2078339439" Name="Play_IdleVox" ObjectPath="\Events\Default Work Unit\Play_IdleVox" DurationType="OneShot" DurationMin="16.438368" DurationMax="16.438368">
+				<Event Id="1133450584" Name="ev_IdleVox" ObjectPath="\Events\Default Work Unit\ev_IdleVox" DurationType="OneShot" DurationMin="16.438368" DurationMax="16.438368">
 					<IncludedMemoryFiles>
-						<File Id="55166877" Language="SFX">
-							<ShortName>Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049]_10C4C929.wem</Path>
-						</File>
 						<File Id="61681148" Language="SFX">
 							<ShortName>Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550].wav</ShortName>
 							<Path>SFX\Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550]_10C4C929.wem</Path>
 						</File>
-						<File Id="158637950" Language="SFX">
-							<ShortName>Spectrum VO lines 6-10-E01- take 1.wav</ShortName>
-							<Path>SFX\Spectrum VO lines 6-10-E01- take 1_10C4C929.wem</Path>
-						</File>
-						<File Id="164480560" Language="SFX">
-							<ShortName>Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520]_10C4C929.wem</Path>
-						</File>
-						<File Id="225225391" Language="SFX">
-							<ShortName>Spectrum VO lines 4-8-E10- take 1 [2021-06-16 210724].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 4-8-E10- take 1 [2021-06-16 210724]_10C4C929.wem</Path>
-						</File>
-						<File Id="366064581" Language="SFX">
-							<ShortName>Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410]_10C4C929.wem</Path>
-						</File>
-						<File Id="549970528" Language="SFX">
-							<ShortName>Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058]_10C4C929.wem</Path>
-						</File>
-						<File Id="612496692" Language="SFX">
-							<ShortName>Spectrum VO lines 8-12-E04- take 1 [2021-06-16 212313].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 8-12-E04- take 1 [2021-06-16 212313]_10C4C929.wem</Path>
-						</File>
-						<File Id="646458720" Language="SFX">
-							<ShortName>Spectrum VO lines 13-17-E06- take 2 [2021-06-16 213416].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 13-17-E06- take 2 [2021-06-16 213416]_10C4C929.wem</Path>
-						</File>
 						<File Id="668681399" Language="SFX">
 							<ShortName>Spectrum VO lines 1-4-E07- take 1.wav</ShortName>
 							<Path>SFX\Spectrum VO lines 1-4-E07- take 1_10C4C929.wem</Path>
-						</File>
-						<File Id="707900487" Language="SFX">
-							<ShortName>Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457]_10C4C929.wem</Path>
-						</File>
-						<File Id="828871710" Language="SFX">
-							<ShortName>Spectrum VO lines 10-14-E04- take 3 [2021-06-16 212728].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 10-14-E04- take 3 [2021-06-16 212728]_10C4C929.wem</Path>
 						</File>
 						<File Id="920976042" Language="SFX">
 							<ShortName>Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022].wav</ShortName>
@@ -73,19 +33,29 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="296203157" Name="Colour" ObjectPath="\States\Default Work Unit\Colour">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Colour\None"/>
+						<State Id="1325827433" Name="Blue" ObjectPath="\States\Default Work Unit\Colour\Blue"/>
+						<State Id="980603538" Name="Red" ObjectPath="\States\Default Work Unit\Colour\Red"/>
+						<State Id="4147287986" Name="Green" ObjectPath="\States\Default Work Unit\Colour\Green"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="3069234798">
+		<SoundBank Id="1229948536" Language="SFX" Hash="2726505562">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2123621926" Name="Play_all_ambience" ObjectPath="\Events\Default Work Unit\Play_all_ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2745505235" Name="ev_all_ambience" ObjectPath="\Events\Default Work Unit\ev_all_ambience" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionPostEvent>
-						<ActionPostEventEntry Id="1990436654" Name="Play_sfx_birds" ObjectPath="\Events\Default Work Unit\Play_sfx_birds"/>
-						<ActionPostEventEntry Id="3148266417" Name="Play_sfx_wind_forrest_vegetation" ObjectPath="\Events\Default Work Unit\Play_sfx_wind_forrest_vegetation"/>
+						<ActionPostEventEntry Id="1994831277" Name="ev_sfx_birds" ObjectPath="\Events\Default Work Unit\ev_sfx_birds"/>
+						<ActionPostEventEntry Id="3254481477" Name="ev_wind_arealoop" ObjectPath="\Events\Default Work Unit\ev_wind_arealoop"/>
 					</ActionPostEvent>
 				</Event>
-				<Event Id="1990436654" Name="Play_sfx_birds" ObjectPath="\Events\Default Work Unit\Play_sfx_birds" DurationType="Infinite">
+				<Event Id="1994831277" Name="ev_sfx_birds" ObjectPath="\Events\Default Work Unit\ev_sfx_birds" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="56239873" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-003.wav</ShortName>
@@ -109,7 +79,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1969647975" Name="Play_sfx_running_water" ObjectPath="\Events\Default Work Unit\Play_sfx_running_water" DurationType="Infinite">
+				<Event Id="2793993496" Name="ev_sfx_running_water" ObjectPath="\Events\Default Work Unit\ev_sfx_running_water" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1027518291" Language="SFX">
 							<ShortName>Spectrum_running_water.wav</ShortName>
@@ -117,66 +87,231 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3148266417" Name="Play_sfx_wind_forrest_vegetation" ObjectPath="\Events\Default Work Unit\Play_sfx_wind_forrest_vegetation" DurationType="Infinite">
+				<Event Id="3254481477" Name="ev_wind_arealoop" ObjectPath="\Events\Default Work Unit\ev_wind_arealoop" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="370626416" Language="SFX">
 							<ShortName>Spectrum_wind_forrest_vegetation.wav</ShortName>
 							<Path>SFX\Spectrum_wind_forrest_vegetation_D79FB2B7.wem</Path>
 						</File>
+						<File Id="936217840" Language="SFX">
+							<ShortName>Spectrum_atmos_wind_calm_breezy.wav</ShortName>
+							<Path>SFX\Spectrum_atmos_wind_calm_breezy_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2797192337">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3060886359">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3711029003">
+		<SoundBank Id="3991942870" Language="SFX" Hash="402753556">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3531304827" Name="Play_mx_explore_layer_a" ObjectPath="\Events\Default Work Unit\Play_mx_explore_layer_a" DurationType="Infinite">
+				<Event Id="2266659196" Name="ev_mx_explore" ObjectPath="\Events\Default Work Unit\ev_mx_explore" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="23573578" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 16-Kontakt.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 16-Kontakt_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="49553736" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 Kyans volca.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Kyans volca_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="60892728" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 EP melody.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 EP melody_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="115339553" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Synthy pad.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Synthy pad_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="254604164" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Una cordaChords.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Una cordaChords_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="267995335" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 EP chords 2.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 EP chords 2_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="327951146" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Arp plucks.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Arp plucks_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="394090265" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Music box.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Music box_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="411324864" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 17-Mini V3.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 17-Mini V3_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="413958182" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 12-Qin_RV_x64.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 12-Qin_RV_x64_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="415596912" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 48-64 16-Kontakt.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 48-64 16-Kontakt_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="420442598" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 Una cordaChords.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Una cordaChords_7DE7C0C7.wem</Path>
+						</File>
 						<File Id="479703291" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 Una corda melody.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Una corda melody_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Una corda melody_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="484436932" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 48-64 EP chords.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 48-64 EP chords_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="489680500" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 48-64 Una cordaChords.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 48-64 Una cordaChords_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="509542754" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 Ufo landing.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Ufo landing_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Ufo landing_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="509986141" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 Ufo landing.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Ufo landing_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="587872161" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 Una corda melody.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Una corda melody_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="631265261" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Ufo landing.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Ufo landing_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="654144160" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 1-16 EP chords.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 1-16 EP chords_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 1-16 EP chords_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="658842775" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Kyans volca.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Kyans volca_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="681152443" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 Kyans volca.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Kyans volca_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Kyans volca_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="813853291" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 1-16 Una cordaChords.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 1-16 Una cordaChords_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 1-16 Una cordaChords_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="825283440" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Kalimba.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Kalimba_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="830977006" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 16-Kontakt.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 16-Kontakt_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="857655518" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 17-Mini V3.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 17-Mini V3_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="863609679" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 Arp plucks.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Arp plucks_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="883231556" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 EP chords.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 EP chords_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 EP chords_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="924617312" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 Una cordaChords.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Una cordaChords_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Una cordaChords_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="927469935" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 EP chords.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 EP chords_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="1002848807" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 48-64 Ufo landing.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 48-64 Ufo landing_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="1036144694" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 80-96 Una corda melody.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Una corda melody_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="1053166123" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 1-16 Ufo landing.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 1-16 Ufo landing_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 1-16 Ufo landing_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="1060751705" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 4-4 64-80 Synthy pad.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Synthy pad_7DE7C0C7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{FF79F6C4-4196-4D4A-A833-5D327E2EA764}">
+							<Media>
+								<File Id="479703291"/>
+								<File Id="509542754"/>
+								<File Id="654144160"/>
+								<File Id="681152443"/>
+								<File Id="813853291"/>
+								<File Id="883231556"/>
+								<File Id="924617312"/>
+								<File Id="1053166123"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3B112D30-F592-4054-A7E0-7149B4CF6C95}">
+							<Media>
+								<File Id="23573578"/>
+								<File Id="49553736"/>
+								<File Id="60892728"/>
+								<File Id="115339553"/>
+								<File Id="254604164"/>
+								<File Id="267995335"/>
+								<File Id="327951146"/>
+								<File Id="394090265"/>
+								<File Id="411324864"/>
+								<File Id="413958182"/>
+								<File Id="415596912"/>
+								<File Id="420442598"/>
+								<File Id="484436932"/>
+								<File Id="489680500"/>
+								<File Id="509986141"/>
+								<File Id="587872161"/>
+								<File Id="631265261"/>
+								<File Id="658842775"/>
+								<File Id="825283440"/>
+								<File Id="830977006"/>
+								<File Id="857655518"/>
+								<File Id="863609679"/>
+								<File Id="927469935"/>
+								<File Id="1002848807"/>
+								<File Id="1036144694"/>
+								<File Id="1060751705"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="296203157" Name="Colour" ObjectPath="\States\Default Work Unit\Colour">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Colour\None"/>
+						<State Id="1325827433" Name="Blue" ObjectPath="\States\Default Work Unit\Colour\Blue"/>
+						<State Id="980603538" Name="Red" ObjectPath="\States\Default Work Unit\Colour\Red"/>
+						<State Id="4147287986" Name="Green" ObjectPath="\States\Default Work Unit\Colour\Green"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
