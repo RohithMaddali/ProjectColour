@@ -218,7 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4a19b3c1bf9bc4e9dfc80fd84ac07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectiveDisplayPanel: {fileID: 745443477}
   objectiveTrackingPanel: {fileID: 1886842801}
   objectives:
   - objectiveName: Find Prisms in Green Area
@@ -228,8 +227,8 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 193071724}
           m_TargetAssemblyTypeName: ObjectiveManager, Assembly-CSharp
-          m_MethodName: TriggerDisplayPanel
-          m_Mode: 3
+          m_MethodName: 
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -245,8 +244,8 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 193071724}
           m_TargetAssemblyTypeName: ObjectiveManager, Assembly-CSharp
-          m_MethodName: TriggerDisplayPanel
-          m_Mode: 3
+          m_MethodName: 
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -262,8 +261,8 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 193071724}
           m_TargetAssemblyTypeName: ObjectiveManager, Assembly-CSharp
-          m_MethodName: TriggerDisplayPanel
-          m_Mode: 3
+          m_MethodName: 
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -541,6 +540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 709248181}
   - component: {fileID: 709248180}
+  - component: {fileID: 709248182}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -574,6 +574,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &709248182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709248179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c8741744d015445a155be7e0fbc0fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackingPanel: {fileID: 1886842801}
 --- !u!1 &745443477
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,7 +605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &745443478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -665,49 +678,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745443477}
   m_CullTransparentMesh: 0
---- !u!1 &1259638122
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1259638124}
-  - component: {fileID: 1259638123}
-  m_Layer: 0
-  m_Name: TestOut
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1259638123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259638122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c8741744d015445a155be7e0fbc0fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1259638124
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259638122}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 543.3942, y: 538.153, z: -366.047}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351892242
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,7 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -841,10 +811,10 @@ RectTransform:
   m_Father: {fileID: 1351892246}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 349.7, y: 150.7}
-  m_SizeDelta: {x: -699.3551, y: -301.41214}
+  m_AnchoredPosition: {x: -99.79999, y: -116.29393}
+  m_SizeDelta: {x: 199.59998, y: 232.58786}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886842803
 MonoBehaviour:
@@ -860,7 +830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

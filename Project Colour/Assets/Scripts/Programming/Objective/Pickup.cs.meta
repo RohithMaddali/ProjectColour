@@ -1,9 +1,11 @@
 fileFormatVersion: 2
-guid: 95d0b39da20f93b40b3a385e09cb797f
+guid: be7d4cb42cfa5cd47bd11d1eb29f10ea
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - prism: {instanceID: 0}
+  - sfx: {fileID: 873976925274918748, guid: ff0e1a55a5141534f8f785599365340c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
