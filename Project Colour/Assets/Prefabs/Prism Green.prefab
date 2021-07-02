@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prism: {fileID: 4424644306144085483}
+  sfx: {fileID: 873976925274918748, guid: 7254a651548fe2b498b224e852374a3f, type: 3}
 --- !u!1 &6496695792385977998
 GameObject:
   m_ObjectHideFlags: 0
