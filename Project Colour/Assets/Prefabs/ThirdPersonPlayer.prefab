@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45857581}
-  m_LocalRotation: {x: 0.22019096, y: 0.0000000083876825, z: -0.000000001893361, w: 0.9754568}
+  m_LocalRotation: {x: 0.22019096, y: -0.000000008394218, z: 0.0000000018948367, w: 0.9754568}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1502,11 +1502,11 @@ MonoBehaviour:
   maxSpeed: 0
   walkSpeed: 5
   runSpeed: 8
-  boostSpeed: 10
+  boostSpeed: 16
   acceleration: 10
   jumpHeight: 500
   bounceHeight: 15
-  accelBoost: 5
+  accelBoost: 20
   bounceMultiplier: 0
   isBouncing: 0
   boosted: 0
