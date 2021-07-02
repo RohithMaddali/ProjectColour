@@ -20,6 +20,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - ColourMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 9a31767b6e9f79d41b0e29ae8d3f7e89, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -48,7 +52,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _mainNM:
+        m_Texture: {fileID: 2800000, guid: 9a31767b6e9f79d41b0e29ae8d3f7e89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _secondNM:
+        m_Texture: {fileID: 2800000, guid: 815646f16ad3d6b468ecd7a358fd6664, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - metalness:
+        m_Texture: {fileID: 2800000, guid: 15ac44652257a8243bcde63966d45130, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Saturation: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -63,7 +80,7 @@ Material:
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
