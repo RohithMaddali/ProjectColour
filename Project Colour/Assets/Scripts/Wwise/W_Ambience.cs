@@ -9,9 +9,8 @@ public class W_Ambience : MonoBehaviour
     private uint ambienceID;
     void Start()
     {
-        ambienceID = AkSoundEngine.PostEvent("Play_all_ambience", gameObject);
+        ambienceID = AkSoundEngine.PostEvent("ev_all_ambience", gameObject);
     }
-
     private void OnDestroy()
     {
         AkSoundEngine.StopPlayingID(ambienceID);
