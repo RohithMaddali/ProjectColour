@@ -88,7 +88,7 @@ public class RBMove : MonoBehaviour
 
         delta += Time.deltaTime;
 
-        if(delta > .1f)
+        if(delta > .5f)
         {
             isBouncing = false;
         }
@@ -183,6 +183,7 @@ public class RBMove : MonoBehaviour
         if (isGrounded && moveCamActive && ! isBouncing)
         {
             rb.AddForce(0f, jumpHeight, 0f, ForceMode.Impulse);
+            //Debug.Log("JUMP");
         }
     }
 
@@ -202,7 +203,7 @@ public class RBMove : MonoBehaviour
             if(bouncer != null && collision.gameObject == bouncer)
             {
                 rb.velocity = bounceDir.normalized * reboundForce;
-                Debug.Log("Do it again" + reboundForce);
+                //Debug.Log("Do it again" + reboundForce);
             }
             else
             {
@@ -211,7 +212,7 @@ public class RBMove : MonoBehaviour
                 delta = 0f;
                 reboundForce = bounceForce;
                 
-                Debug.Log("first Bounce on this objkect" + bounceForce);
+                //Debug.Log("first Bounce on this objkect" + bounceForce);
 
             }
 
@@ -263,11 +264,13 @@ public class RBMove : MonoBehaviour
             boosted = true;
         }
         
-        if(colColor != Color.red && colColor != Color.blue)
+        if(colColor != Color.red 
+            && colColor != Color.blue)
         {
             boosted = false;
             isBouncing = false;
             bouncer = null;
+            Debug.Log(collision.gameObject);
         }
         
 
