@@ -1,3 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	296203157	Colour			\Default Work Unit\Colour	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Colour			
+	980603538	Red	Colour			
+	1325827433	Blue	Colour			
+	4147287986	Green	Colour			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4179668880	Master_Volume			\Default Work Unit\Master_Volume	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	

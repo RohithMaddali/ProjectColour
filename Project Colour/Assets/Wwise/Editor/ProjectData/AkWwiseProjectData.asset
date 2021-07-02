@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585768096837637918
+    m_lastTime: -8585764105947027114
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -224,11 +224,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585768057580261957
+    m_lastTime: -8585764105946917367
     List:
-    - name: Play_all_ambience
+    - name: ev_all_ambience
       guid: 26223d67ad3263488733e6525da99793
-      id: 2123621926
+      id: 2745505235
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -236,16 +236,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: Play_all_ambience
+      - ElementName: ev_all_ambience
         ObjectType: 3
         guid: 26223d67ad3263488733e6525da99793
-      Path: Events\Default Work Unit\Play_all_ambience
+      Path: Events\Default Work Unit\ev_all_ambience
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_IdleVox
+    - name: ev_IdleVox
       guid: 948cedc8373662478816504f2090def8
-      id: 2078339439
+      id: 1133450584
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -253,16 +253,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: Play_IdleVox
+      - ElementName: ev_IdleVox
         ObjectType: 3
         guid: 948cedc8373662478816504f2090def8
-      Path: Events\Default Work Unit\Play_IdleVox
+      Path: Events\Default Work Unit\ev_IdleVox
       maxAttenuation: 0
       maxDuration: 16.438368
       minDuration: 16.438368
-    - name: Play_mx_explore_layer_a
+    - name: ev_mx_explore
       guid: 5e2a0c0bf09cec4287f732b45caf79b9
-      id: 3531304827
+      id: 2266659196
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -270,16 +270,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: Play_mx_explore_layer_a
+      - ElementName: ev_mx_explore
         ObjectType: 3
         guid: 5e2a0c0bf09cec4287f732b45caf79b9
-      Path: Events\Default Work Unit\Play_mx_explore_layer_a
+      Path: Events\Default Work Unit\ev_mx_explore
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_sfx_birds
+    - name: ev_sfx_birds
       guid: 1746bfc9b92f074098ef4f784e9cd826
-      id: 1990436654
+      id: 1994831277
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -287,33 +287,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: Play_sfx_birds
+      - ElementName: ev_sfx_birds
         ObjectType: 3
         guid: 1746bfc9b92f074098ef4f784e9cd826
-      Path: Events\Default Work Unit\Play_sfx_birds
+      Path: Events\Default Work Unit\ev_sfx_birds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: play_sfx_env_forrest_amb
-      guid: 0de6ad3b7190d2479dda492b30d988d0
-      id: 2852027888
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: play_sfx_env_forrest_amb
-        ObjectType: 3
-        guid: 0de6ad3b7190d2479dda492b30d988d0
-      Path: Events\Default Work Unit\play_sfx_env_forrest_amb
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_sfx_plr_foosteps
+    - name: ev_sfx_plr_foosteps
       guid: f0b153f7b8dd3748b3ca13d65bd4df2c
-      id: 3870925874
+      id: 1061346095
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -321,16 +304,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: Play_sfx_plr_foosteps
+      - ElementName: ev_sfx_plr_foosteps
         ObjectType: 3
         guid: f0b153f7b8dd3748b3ca13d65bd4df2c
-      Path: Events\Default Work Unit\Play_sfx_plr_foosteps
+      Path: Events\Default Work Unit\ev_sfx_plr_foosteps
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_sfx_running_water
+    - name: ev_sfx_running_water
       guid: 3b2e50e839aabb488fece7dc2d7c5e6f
-      id: 1969647975
+      id: 2793993496
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -338,16 +321,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: Play_sfx_running_water
+      - ElementName: ev_sfx_running_water
         ObjectType: 3
         guid: 3b2e50e839aabb488fece7dc2d7c5e6f
-      Path: Events\Default Work Unit\Play_sfx_running_water
+      Path: Events\Default Work Unit\ev_sfx_running_water
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_sfx_wind_forrest_vegetation
+    - name: ev_sfx_wind_forrest_vegetation
       guid: d504689e16925240895ce2f54bfaee57
-      id: 3148266417
+      id: 4171933926
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -355,10 +338,27 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 71fa53559ec40047ac09cc7babdc1a38
-      - ElementName: Play_sfx_wind_forrest_vegetation
+      - ElementName: ev_sfx_wind_forrest_vegetation
         ObjectType: 3
         guid: d504689e16925240895ce2f54bfaee57
-      Path: Events\Default Work Unit\Play_sfx_wind_forrest_vegetation
+      Path: Events\Default Work Unit\ev_sfx_wind_forrest_vegetation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ev_wind_arealoop
+      guid: 53a3c40af6de9946804dee5b5967ead5
+      id: 3254481477
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: ev_wind_arealoop
+        ObjectType: 3
+        guid: 53a3c40af6de9946804dee5b5967ead5
+      Path: Events\Default Work Unit\ev_wind_arealoop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -388,8 +388,90 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46f609f0b2605447aa33f2db183074af
     GuidInternal: 
-    m_lastTime: -8585837676502918693
-    List: []
+    m_lastTime: -8585764154322936442
+    List:
+    - name: Colour
+      guid: 00c4cbf1bb3eea4e89b57b36a001675d
+      id: 296203157
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 46f609f0b2605447aa33f2db183074af
+      - ElementName: Colour
+        ObjectType: 9
+        guid: 00c4cbf1bb3eea4e89b57b36a001675d
+      Path: States\Default Work Unit\Colour
+      values:
+      - name: Blue
+        guid: c4f679ff96414a4da8335d327e2ea764
+        id: 1325827433
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46f609f0b2605447aa33f2db183074af
+        - ElementName: Colour
+          ObjectType: 9
+          guid: 00c4cbf1bb3eea4e89b57b36a001675d
+        - ElementName: Blue
+          ObjectType: 8
+          guid: c4f679ff96414a4da8335d327e2ea764
+      - name: Green
+        guid: 302d113b92f55440a7e07149b4cf6c95
+        id: 4147287986
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46f609f0b2605447aa33f2db183074af
+        - ElementName: Colour
+          ObjectType: 9
+          guid: 00c4cbf1bb3eea4e89b57b36a001675d
+        - ElementName: Green
+          ObjectType: 8
+          guid: 302d113b92f55440a7e07149b4cf6c95
+      - name: None
+        guid: 3c324c82757bbd47895320b9d6c880e0
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46f609f0b2605447aa33f2db183074af
+        - ElementName: Colour
+          ObjectType: 9
+          guid: 00c4cbf1bb3eea4e89b57b36a001675d
+        - ElementName: None
+          ObjectType: 8
+          guid: 3c324c82757bbd47895320b9d6c880e0
+      - name: Red
+        guid: 192ab61ccab89743acf1568ff1d8d049
+        id: 980603538
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46f609f0b2605447aa33f2db183074af
+        - ElementName: Colour
+          ObjectType: 9
+          guid: 00c4cbf1bb3eea4e89b57b36a001675d
+        - ElementName: Red
+          ObjectType: 8
+          guid: 192ab61ccab89743acf1568ff1d8d049
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -569,7 +651,7 @@ MonoBehaviour:
     m_lastTime: -8585837676502908811
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000005000000060000000700000008000000090000000a0000000d0000000e0000000f000000100000001100000012000000
+  ExpandedWaapiItemIds: 010000000200000005000000060000000700000008000000090000000a0000000d0000000e0000000f0000001000000011000000120000001300000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

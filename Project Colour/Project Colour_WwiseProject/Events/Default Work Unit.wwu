@@ -3,18 +3,7 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="play_sfx_env_forrest_amb" ID="{3BADE60D-9071-47D2-9DDA-492B30D988D0}">
-					<ChildrenList>
-						<Action Name="" ID="{A8767BFB-7D28-4F72-B1DB-06E088730F9A}" ShortID="564901905">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="kinoton__forest-winter-light-wind" ID="{AF43A22D-920E-41A7-87FE-8596444E10FA}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_sfx_plr_foosteps" ID="{F753B1F0-DDB8-4837-B3CA-13D65BD4DF2C}">
+				<Event Name="ev_sfx_plr_foosteps" ID="{F753B1F0-DDB8-4837-B3CA-13D65BD4DF2C}">
 					<ChildrenList>
 						<Action Name="" ID="{3E220DB8-07D4-4933-9912-2D926EF72B01}" ShortID="316629275">
 							<ReferenceList>
@@ -25,18 +14,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_mx_explore_layer_a" ID="{0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9}">
+				<Event Name="ev_mx_explore" ID="{0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9}">
 					<ChildrenList>
-						<Action Name="" ID="{5E5DB093-7A42-449C-A62A-7F77C2B3F78B}" ShortID="63361842">
+						<Action Name="" ID="{55EA9F0A-9A72-4D94-9BAF-3D2C8BBC01C1}" ShortID="305162373">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="mx_Blue" ID="{49F2BC9F-AB3C-4E6D-AB81-8D4193295BCF}" WorkUnitID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}"/>
+									<ObjectRef Name="MusicDynamic" ID="{61C4560D-AC9E-4995-AFF7-2B805E6C3DAD}" WorkUnitID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_all_ambience" ID="{673D2226-32AD-4863-8733-E6525DA99793}">
+				<Event Name="ev_all_ambience" ID="{673D2226-32AD-4863-8733-E6525DA99793}">
 					<ChildrenList>
 						<Action Name="" ID="{BC13C4A7-78C7-4A4D-8DA9-18A2F153C337}" ShortID="818949827">
 							<PropertyList>
@@ -44,23 +33,23 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Play_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+									<ObjectRef Name="ev_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{C301FB2D-D676-4BFD-9E5F-03198FAE3253}" ShortID="715168160">
+						<Action Name="" ID="{7D36B0D4-D480-4A9D-BFAB-9B65E09B8FCB}" ShortID="857903258">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="41"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Play_sfx_wind_forrest_vegetation" ID="{9E6804D5-9216-4052-895C-E2F54BFAEE57}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+									<ObjectRef Name="ev_wind_arealoop" ID="{0AC4A353-DEF6-4699-804D-EE5B5967EAD5}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}">
+				<Event Name="ev_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}">
 					<ChildrenList>
 						<Action Name="" ID="{0DCFA65D-9638-4326-A4B5-F953C8069280}" ShortID="721229600">
 							<ReferenceList>
@@ -71,7 +60,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_sfx_wind_forrest_vegetation" ID="{9E6804D5-9216-4052-895C-E2F54BFAEE57}">
+				<Event Name="ev_sfx_wind_forrest_vegetation" ID="{9E6804D5-9216-4052-895C-E2F54BFAEE57}">
 					<ChildrenList>
 						<Action Name="" ID="{DD6D4ED0-547A-43CF-ADCF-401EBC5C0F31}" ShortID="617415111">
 							<ReferenceList>
@@ -82,7 +71,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}">
+				<Event Name="ev_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}">
 					<ChildrenList>
 						<Action Name="" ID="{4A4A0A38-5575-4358-8629-9B486520F968}" ShortID="882284792">
 							<ReferenceList>
@@ -93,12 +82,23 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_IdleVox" ID="{C8ED8C94-3637-4762-8816-504F2090DEF8}">
+				<Event Name="ev_IdleVox" ID="{C8ED8C94-3637-4762-8816-504F2090DEF8}">
 					<ChildrenList>
 						<Action Name="" ID="{A8EBB7BA-83B5-457C-992B-D26B2BA1178C}" ShortID="143138655">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Idlevox" ID="{F6BC51D7-D86F-461A-BF62-AB17C5EB1BD9}" WorkUnitID="{5A4F02DD-E1A5-426E-9457-F53B70C89303}"/>
+									<ObjectRef Name="vox_blue" ID="{F6BC51D7-D86F-461A-BF62-AB17C5EB1BD9}" WorkUnitID="{5A4F02DD-E1A5-426E-9457-F53B70C89303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_wind_arealoop" ID="{0AC4A353-DEF6-4699-804D-EE5B5967EAD5}">
+					<ChildrenList>
+						<Action Name="" ID="{35400891-BEAF-45A9-9616-854E89F40316}" ShortID="30419311">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{590BB86C-FD06-48CB-BE9F-4AEB875EA86C}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
