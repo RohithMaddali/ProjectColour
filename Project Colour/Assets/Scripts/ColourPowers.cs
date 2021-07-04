@@ -10,6 +10,7 @@ public class ColourPowers : MonoBehaviour
 {
     public bool isBlue;
     public bool isRed;
+    public GameObject brokenObject;
     public GameObject repairedObject;
 
 
@@ -18,6 +19,7 @@ public class ColourPowers : MonoBehaviour
     public float bounceHeight;
     public RBMove player;
 
+    public int repairTime;
     public float speedBoost = 50f;
 
     // Start is called before the first frame update
@@ -44,10 +46,7 @@ public class ColourPowers : MonoBehaviour
         }
         if (rend.material.color == Color.green && repairedObject != null)
         {
-            Vector3 pos = gameObject.transform.position;
-            Quaternion rot = gameObject.transform.rotation;
-            Instantiate(repairedObject,pos, rot);
-            Destroy(gameObject);
+            StartCoroutine(repair());
         }
     }
 
@@ -97,4 +96,11 @@ public class ColourPowers : MonoBehaviour
             collision.gameObject.GetComponent<MainPlayerMovementScript>().fAndBStrength = 5;
         }
     }*/
+
+    IEnumerator repair()
+    {
+        brokenObject.GetComponent<MeshRenderer>().enabled = false;
+        yield return new WaitForSeconds(repairTime);
+        repairedObject.SetActive(true);
+    }
 }
