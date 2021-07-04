@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1303241496120242252}
   - component: {fileID: 3887447010145158278}
   - component: {fileID: 5194459892745150978}
+  - component: {fileID: 2175019595046038435}
   m_Layer: 8
   m_Name: brokenbridge
   m_TagString: CanColour
@@ -96,3 +97,24 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302568919011541938, guid: 4bfefc4aa8fd83f40ab186c933a37bd2, type: 3}
+--- !u!114 &2175019595046038435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382766294745277779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a13d9306899b4f4482c021837805379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBlue: 0
+  isRed: 0
+  brokenObject: {fileID: 0}
+  repairedObject: {fileID: 0}
+  rend: {fileID: 0}
+  bounceHeight: 0
+  player: {fileID: 0}
+  repairTime: 1
+  speedBoost: 50

@@ -22,6 +22,7 @@ public class ColourPowers : MonoBehaviour
     public int repairTime;
     public float speedBoost = 50f;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,7 @@ public class ColourPowers : MonoBehaviour
     {
         //Move this to ColourMover script so it happens when when changed instead of constantly checking
 
+        
         if (rend.material.color == Color.red)
         {
             isBlue = false;
@@ -46,7 +48,7 @@ public class ColourPowers : MonoBehaviour
         }
         if (rend.material.color == Color.green && repairedObject != null)
         {
-            StartCoroutine(repair());
+                StartCoroutine(repair());
         }
     }
 
@@ -96,7 +98,7 @@ public class ColourPowers : MonoBehaviour
             collision.gameObject.GetComponent<MainPlayerMovementScript>().fAndBStrength = 5;
         }
     }*/
-
+   
     IEnumerator repair()
     {
         brokenObject.GetComponent<MeshRenderer>().enabled = false;

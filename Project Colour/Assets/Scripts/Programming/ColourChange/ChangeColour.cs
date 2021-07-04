@@ -106,8 +106,7 @@ namespace AJ
                         thisRenderer.material.color = hitRenderer.material.color; //make weapon objects colour
                         hitRenderer.material.color = Color.grey; //make object grey
                         hasColour = true; //no more suck!
-                    }
-                    
+                    }                    
                 }
             }
             Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
