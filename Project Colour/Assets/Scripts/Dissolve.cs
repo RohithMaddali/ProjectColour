@@ -28,7 +28,7 @@ public class Dissolve : MonoBehaviour
 
         if(dissolve == true)
         {
-            StartCoroutine(changeColour());
+            //StartCoroutine(changeColour());
         }
     }
 
