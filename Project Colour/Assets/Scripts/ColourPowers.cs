@@ -48,7 +48,8 @@ public class ColourPowers : MonoBehaviour
         }
         if (rend.material.color == Color.green && repairedObject != null)
         {
-                StartCoroutine(repair());
+            brokenObject.GetComponent<MeshRenderer>().enabled = false;
+            repairedObject.SetActive(true);
         }
     }
 
@@ -99,10 +100,4 @@ public class ColourPowers : MonoBehaviour
         }
     }*/
    
-    IEnumerator repair()
-    {
-        brokenObject.GetComponent<MeshRenderer>().enabled = false;
-        yield return new WaitForSeconds(repairTime);
-        repairedObject.SetActive(true);
-    }
 }

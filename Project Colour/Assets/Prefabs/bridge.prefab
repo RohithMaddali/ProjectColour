@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7734650036191000898}
   - component: {fileID: 8977761599471914813}
   - component: {fileID: 422197788397939344}
+  - component: {fileID: 547941149}
   m_Layer: 8
   m_Name: bridge
   m_TagString: CanColour
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cc97f378ddccbf449b12364b3e376137, type: 2}
+  - {fileID: 2100000, guid: 45873501b6fa5db4e8e389dd5fd1a081, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,3 +116,22 @@ MonoBehaviour:
   Green: {fileID: 2100000, guid: ec65da060d6f31c4581794211a90924e, type: 2}
   dissolve: 0
   countDown: 5
+--- !u!95 &547941149
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8094660998412097687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 60acbe0d2b016884293576145a37b4a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
