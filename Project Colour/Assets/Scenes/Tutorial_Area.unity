@@ -773,11 +773,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 470819039, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016712585
+      value: 0.000000016712589
       objectReference: {fileID: 0}
     - target: {fileID: 470819039, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000040925525
+      value: -0.000000004092553
       objectReference: {fileID: 0}
     - target: {fileID: 470819039, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2154,6 +2154,10 @@ PrefabInstance:
       objectReference: {fileID: 432672159}
     - target: {fileID: 2175019595046038435, guid: fcc3346d14ff2ee4caff1d08e5e03275, type: 3}
       propertyPath: repairedObject
+      value: 
+      objectReference: {fileID: 8977761600034528627}
+    - target: {fileID: 2175019595046038435, guid: fcc3346d14ff2ee4caff1d08e5e03275, type: 3}
+      propertyPath: pairedObject
       value: 
       objectReference: {fileID: 8977761600034528627}
     - target: {fileID: 2718433275013283817, guid: fcc3346d14ff2ee4caff1d08e5e03275, type: 3}
@@ -4462,13 +4466,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlue: 0
   isRed: 0
-  brokenObject: {fileID: 0}
+  pairedObject: {fileID: 0}
   repairedObject: {fileID: 4465213868180594369, guid: dd44db8674e1b844482a8b929096dc82, type: 3}
+  animator: {fileID: 0}
   rend: {fileID: 0}
   bounceHeight: 50
   player: {fileID: 0}
-  repairTime: 0
   speedBoost: 50
+  repaired: 0
+  grey: {fileID: 0}
 --- !u!43 &820754658
 Mesh:
   m_ObjectHideFlags: 0
@@ -5102,7 +5108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898283488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400, y: -188.55585, z: 0}
+  m_LocalPosition: {x: -430, y: -188.55585, z: 0}
   m_LocalScale: {x: 0.72661215, y: 0.72661215, z: 0.72661215}
   m_Children:
   - {fileID: 835728891}
@@ -7007,7 +7013,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316918322}
-  m_LocalRotation: {x: 0.24314782, y: -0.00000001933022, z: 0.0000000048455178, w: 0.9699893}
+  m_LocalRotation: {x: 0.24314782, y: 0.000000031594816, z: -0.000000007919892, w: 0.9699893}
   m_LocalPosition: {x: -21.213642, y: 18.253014, z: -14.7424755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -8006,13 +8012,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlue: 0
   isRed: 0
-  brokenObject: {fileID: 0}
+  pairedObject: {fileID: 0}
   repairedObject: {fileID: 4465213868180594369, guid: dd44db8674e1b844482a8b929096dc82, type: 3}
+  animator: {fileID: 0}
   rend: {fileID: 0}
   bounceHeight: 50
   player: {fileID: 0}
-  repairTime: 0
   speedBoost: 50
+  repaired: 0
+  grey: {fileID: 0}
 --- !u!1 &1558328465
 GameObject:
   m_ObjectHideFlags: 0
@@ -9245,13 +9253,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlue: 0
   isRed: 0
-  brokenObject: {fileID: 0}
+  pairedObject: {fileID: 0}
   repairedObject: {fileID: 4465213868180594369, guid: dd44db8674e1b844482a8b929096dc82, type: 3}
+  animator: {fileID: 0}
   rend: {fileID: 0}
   bounceHeight: 50
   player: {fileID: 0}
-  repairTime: 0
   speedBoost: 50
+  repaired: 0
+  grey: {fileID: 0}
 --- !u!1 &1642317920
 GameObject:
   m_ObjectHideFlags: 0
@@ -10752,6 +10762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 310145390205143633, guid: ffdfda0586ae6f746987d5424b293cef, type: 3}
+      propertyPath: pairedObject
+      value: 
+      objectReference: {fileID: 432672159}
     - target: {fileID: 8094660998412097687, guid: ffdfda0586ae6f746987d5424b293cef, type: 3}
       propertyPath: m_Name
       value: bridge
