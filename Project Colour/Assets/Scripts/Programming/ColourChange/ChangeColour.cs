@@ -27,6 +27,9 @@ namespace AJ
         PlayerControls controls;
         public bool hasColour;
 
+        public Camera cam;
+        public RectTransform crosshair;
+
         private void Awake()
         {
             //get controls
@@ -78,6 +81,7 @@ namespace AJ
                 {
                     if (isCoroutineRunning != true && raycastToTarget.transform.gameObject.layer == 31)
                     {
+                        
                         Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
                         Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>();
                         StartCoroutine(ChangeCurrentColour(hitRenderer));
@@ -97,8 +101,10 @@ namespace AJ
 
             if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))
             {
-                if(raycastToTarget.transform.gameObject.layer == 8 && !hasColour)
+                crosshair.transform.position = cam.WorldToScreenPoint(raycastToTarget.point);
+                if (raycastToTarget.transform.gameObject.layer == 8 && !hasColour)
                 {
+                    
                     Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
                     Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); //get renderer of hit
                     if(hitRenderer.material.color == Color.red || hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green) //chekc if object has special colour
@@ -120,6 +126,7 @@ namespace AJ
 
             if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))
             {
+                crosshair.transform.position = cam.WorldToScreenPoint(raycastToTarget.point);
                 if (raycastToTarget.transform.gameObject.layer == 8 && raycastToTarget.transform.CompareTag("CanColour") && hasColour)
                 {
                     Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
