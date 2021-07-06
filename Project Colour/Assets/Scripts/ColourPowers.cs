@@ -12,14 +12,13 @@ public class ColourPowers : MonoBehaviour
     public bool isRed;
     public GameObject brokenObject;
     public GameObject repairedObject;
-
+    public Animator animator;
 
     public Renderer rend;
 
     public float bounceHeight;
     public RBMove player;
 
-    public int repairTime;
     public float speedBoost = 50f;
 
 
@@ -28,6 +27,7 @@ public class ColourPowers : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         player = FindObjectOfType<RBMove>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,6 +35,10 @@ public class ColourPowers : MonoBehaviour
     {
         //Move this to ColourMover script so it happens when when changed instead of constantly checking
 
+        if(rend.material.color != Color.green && repairedObject == null)
+        {
+            animator.SetBool("Grow", false);
+        }
         
         if (rend.material.color == Color.red)
         {
@@ -46,10 +50,19 @@ public class ColourPowers : MonoBehaviour
             isBlue = true;
             isRed = false;
         }
-        if (rend.material.color == Color.green && repairedObject != null)
+        if (rend.material.color == Color.green)
         {
-            brokenObject.GetComponent<MeshRenderer>().enabled = false;
-            repairedObject.SetActive(true);
+            if(brokenObject != null && repairedObject != null)
+            {
+                brokenObject.GetComponent<MeshRenderer>().enabled = false;
+                repairedObject.SetActive(true);
+            }
+            else if(animator!=null)
+            {
+                Debug.Log("Growwwww");
+                animator.SetBool("Grow", true);
+            }
+
         }
     }
 
