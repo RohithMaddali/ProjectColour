@@ -111,10 +111,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlue: 0
   isRed: 0
-  brokenObject: {fileID: 0}
+  pairedObject: {fileID: 0}
   repairedObject: {fileID: 0}
+  animator: {fileID: 0}
   rend: {fileID: 0}
   bounceHeight: 0
   player: {fileID: 0}
-  repairTime: 1
   speedBoost: 50
+  repaired: 0
+  grey: {fileID: 0}

@@ -10,7 +10,7 @@ public class ColourPowers : MonoBehaviour
 {
     public bool isBlue;
     public bool isRed;
-    public GameObject brokenObject;
+    public GameObject pairedObject;
     public GameObject repairedObject;
     public Animator animator;
 
@@ -20,6 +20,9 @@ public class ColourPowers : MonoBehaviour
     public RBMove player;
 
     public float speedBoost = 50f;
+    public bool repaired = false;
+
+    public Material grey;
 
 
     // Start is called before the first frame update
@@ -50,22 +53,34 @@ public class ColourPowers : MonoBehaviour
             isBlue = true;
             isRed = false;
         }
-        if (rend.material.color == Color.green)
+        if (rend.material.color == Color.green && !repaired)
         {
-            if(brokenObject != null && repairedObject != null)
-            {
-                brokenObject.GetComponent<MeshRenderer>().enabled = false;
-                repairedObject.SetActive(true);
-            }
-            else if(animator!=null)
+            if (animator != null && pairedObject == null)
             {
                 Debug.Log("Growwwww");
                 animator.SetBool("Grow", true);
             }
-
+            else
+            {
+                SwitchActive();
+                rend.material.color = Color.grey;
+            }
+        }
+        if(rend.material.color == Color.grey && repaired)
+        {
+            Debug.Log("LETS GOOOO");
+            SwitchActive();
+            rend.material.color = Color.green;
         }
     }
 
+    void SwitchActive()
+    {
+        pairedObject.SetActive(true);
+        //animation can go here?
+        gameObject.SetActive(false);
+    }
+    
     //      Put this in charactercontroller to check platforms and make them work
 
     /*private void OnCollisionEnter(Collision collision)

@@ -12,15 +12,14 @@ GameObject:
   - component: {fileID: 5526488985824693640}
   - component: {fileID: 7734650036191000898}
   - component: {fileID: 8977761599471914813}
-  - component: {fileID: 422197788397939344}
-  - component: {fileID: 547941149}
+  - component: {fileID: 310145390205143633}
   m_Layer: 8
   m_Name: bridge
   m_TagString: CanColour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8871479829833155117
 Transform:
   m_ObjectHideFlags: 0
@@ -62,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 45873501b6fa5db4e8e389dd5fd1a081, type: 2}
+  - {fileID: 2100000, guid: ec65da060d6f31c4581794211a90924e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,7 +97,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4068373912626513877, guid: ea48ec34e24cb264b8daab648824785d, type: 3}
---- !u!114 &422197788397939344
+--- !u!114 &310145390205143633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,31 +106,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 8094660998412097687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a911d6859f367f41a3c45122427d7fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a13d9306899b4f4482c021837805379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  max: 500
-  disolveMaterial: {fileID: 2100000, guid: cc97f378ddccbf449b12364b3e376137, type: 2}
-  Green: {fileID: 2100000, guid: ec65da060d6f31c4581794211a90924e, type: 2}
-  dissolve: 0
-  countDown: 5
---- !u!95 &547941149
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8094660998412097687}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 60acbe0d2b016884293576145a37b4a2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  isBlue: 0
+  isRed: 0
+  pairedObject: {fileID: 0}
+  repairedObject: {fileID: 3382766294745277779, guid: fcc3346d14ff2ee4caff1d08e5e03275, type: 3}
+  animator: {fileID: 0}
+  rend: {fileID: 0}
+  bounceHeight: 50
+  player: {fileID: 0}
+  speedBoost: 50
+  repaired: 1
+  grey: {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
