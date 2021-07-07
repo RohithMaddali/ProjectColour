@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 205000010057595838}
   - component: {fileID: 136000012746876746}
   - component: {fileID: 208172394076253704}
+  - component: {fileID: 459223211543532182}
   m_Layer: 0
   m_Name: FAE_Palm_B
   m_TagString: Untagged
@@ -262,6 +263,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &459223211543532182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012913631294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.98, y: 6.73, z: 8.1}
+  m_Center: {x: 0, y: 16.4, z: 2.91}
 --- !u!1 &1000013323768830
 GameObject:
   m_ObjectHideFlags: 0

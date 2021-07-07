@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 205000011277626434}
   - component: {fileID: 136000010943234186}
   - component: {fileID: 208461383150380896}
+  - component: {fileID: 8799986698790627229}
   m_Layer: 0
   m_Name: FAE_Spruce_B
   m_TagString: Untagged
@@ -180,6 +181,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 11, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &8799986698790627229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011430780218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2, y: 13.6, z: 6.55}
+  m_Center: {x: 0, y: 14.1, z: 0}
 --- !u!1 &1000011778659660
 GameObject:
   m_ObjectHideFlags: 0
