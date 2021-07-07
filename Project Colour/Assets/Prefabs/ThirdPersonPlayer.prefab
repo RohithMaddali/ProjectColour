@@ -239,7 +239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470819037}
-  m_LocalRotation: {x: 0.2378509, y: 0.0000000083562925, z: -0.0000000020462765, w: 0.9713017}
+  m_LocalRotation: {x: 0.2378509, y: -0.0000000083562925, z: 0.0000000020462765, w: 0.9713017}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1772,13 +1772,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd74e125d4d7db64d95ae066f719fc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootDistance: 10
+  shootDistance: 30
   shootDelay: 2
   raycastHitMask:
     serializedVersion: 2
     m_Bits: 256
   multiObjectShoot: 0
-  orb: {fileID: 0}
+  orb: {fileID: 843363016284420947}
   greenMat: {fileID: 0}
   RedMat: {fileID: 0}
   blueMat: {fileID: 0}
@@ -1829,7 +1829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimCam: 0
-  mouseSensitivity: 100
+  mouseSensitivity: 10
   playerBody: {fileID: 4894964230543866189}
 --- !u!1 &4894964230141002233
 GameObject:
@@ -2115,6 +2115,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba360d6c8ae346b4eb499755b1748a8b, type: 3}
+--- !u!1 &843363016284420947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5106693832817052180, guid: ba360d6c8ae346b4eb499755b1748a8b, type: 3}
+  m_PrefabInstance: {fileID: 3644919744204066495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4491270683096675310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ba360d6c8ae346b4eb499755b1748a8b, type: 3}
