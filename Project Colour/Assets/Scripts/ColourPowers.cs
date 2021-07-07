@@ -2,8 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using AJ;
-using ZachFrench;
 using UnityEngine;
 
 public class ColourPowers : MonoBehaviour
