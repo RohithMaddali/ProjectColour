@@ -75,6 +75,25 @@ namespace AJ
             player = FindObjectOfType<RBMove>();
         }
 
+        void Update()
+        {
+            if(currentColor == Color.green)
+            {
+                Debug.Log("Playing Green Voice Lines");
+                AkSoundEngine.SetState("Colour", "Green");
+            }
+            if (currentColor == Color.blue)
+            {
+                Debug.Log("Playing blue Voice Lines");
+                AkSoundEngine.SetState("Colour", "Blue");
+            }
+            if (currentColor == Color.red)
+            {
+                Debug.Log("Playing red Voice Lines");
+                AkSoundEngine.SetState("Colour", "Red");
+            }
+        }
+
         /*private void FixedUpdate()
         {
             //Check to see if the object has that component, try not to make it dependent or it will break for testing.
