@@ -18,6 +18,13 @@ namespace AJ
         public LayerMask raycastHitMask;
         [Tooltip("Is the colour changing object one object or multiple")]
         public bool multiObjectShoot;
+
+        //These are for material swapping
+        public GameObject orb;
+        public Material greenMat;
+        public Material RedMat;
+        public Material blueMat;
+
         //PRIVATE VARS
         private Color currentColor;
         private Color previousColor;
@@ -53,7 +60,15 @@ namespace AJ
 
         private void Start()
         {
-            thisRenderer = GetComponent<Renderer>();
+            if (hasColour == true)
+            {
+                orb.SetActive(true);
+            }
+            else
+            {
+                orb.SetActive(false);
+            }
+            thisRenderer = orb.GetComponent<Renderer>();
             isCoroutineRunning = false;
             currentColor = thisRenderer.material.color;
             
@@ -110,6 +125,7 @@ namespace AJ
                     Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); //get renderer of hit
                     if(hitRenderer.material.color == Color.red || hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green) //chekc if object has special colour
                     {
+                        orb.SetActive(true);
                         thisRenderer.material.color = hitRenderer.material.color; //make weapon objects colour
                         hitRenderer.material.color = Color.grey; //make object grey
                         hasColour = true; //no more suck!
@@ -134,6 +150,7 @@ namespace AJ
                     Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>();
                     if(hitRenderer.material.color != Color.red && hitRenderer.material.color != Color.blue && hitRenderer.material.color != Color.green) //check if object already has special colour so we can't lose it
                     {
+                        orb.SetActive(false);
                         hitRenderer.material.color = thisRenderer.material.color; //make object stored colour
                         thisRenderer.material.color = Color.grey; //make stored color grey
                         hasColour = false; //allow suck again
