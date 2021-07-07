@@ -36,6 +36,7 @@ namespace AJ
 
         public Camera cam;
         public RectTransform crosshair;
+        RBMove player;
 
         private void Awake()
         {
@@ -71,11 +72,10 @@ namespace AJ
             thisRenderer = orb.GetComponent<Renderer>();
             isCoroutineRunning = false;
             currentColor = thisRenderer.material.color;
-            
+            player = FindObjectOfType<RBMove>();
         }
 
-
-        private void FixedUpdate()
+        /*private void FixedUpdate()
         {
             //Check to see if the object has that component, try not to make it dependent or it will break for testing.
             if (gameObject.GetComponentInParent<RBMove>() != null)
@@ -108,16 +108,16 @@ namespace AJ
                     Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
                 }
             }
-        }
+        }*/
 
         void Suck()
         {
-            Ray ray = new Ray(transform.position, move);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 
             if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))
             {
-                crosshair.transform.position = cam.WorldToScreenPoint(raycastToTarget.point);
+                
                 if (raycastToTarget.transform.gameObject.layer == 8 && !hasColour)
                 {
                     
@@ -138,12 +138,12 @@ namespace AJ
 
         void Shoot()
         {
-            Ray ray = new Ray(transform.position, move);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 
             if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))
             {
-                crosshair.transform.position = cam.WorldToScreenPoint(raycastToTarget.point);
+                
                 if (raycastToTarget.transform.gameObject.layer == 8 && raycastToTarget.transform.CompareTag("CanColour") && hasColour)
                 {
                     Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);

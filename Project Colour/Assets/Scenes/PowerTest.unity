@@ -261,11 +261,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008392041
+      value: -0.000000008392041
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000018943447
+      value: 0.0000000018943447
       objectReference: {fileID: 0}
     - target: {fileID: 470819039, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -275,13 +275,29 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.0000000020462765
       objectReference: {fileID: 0}
+    - target: {fileID: 793460145, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+      propertyPath: orb
+      value: 
+      objectReference: {fileID: 171249797}
+    - target: {fileID: 793460145, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+      propertyPath: shootDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262566789, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1432549403, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+      propertyPath: crossHair
+      value: 
+      objectReference: {fileID: 1157648297}
     - target: {fileID: 1671209984, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018598916
+      value: -0.00000001859892
       objectReference: {fileID: 0}
     - target: {fileID: 1671209984, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000004914731
+      value: 0.0000000049147317
       objectReference: {fileID: 0}
     - target: {fileID: 4894964229178160237, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_Mesh
@@ -291,6 +307,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1748727180}
+    - target: {fileID: 4894964229409736818, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+      propertyPath: mouseSensitivity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4894964230543866188, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_Name
       value: ThirdPersonPlayer
@@ -1599,6 +1619,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &171249797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 843363016284420947, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+  m_PrefabInstance: {fileID: 39149410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &184094992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4516962588153109986, guid: f00065d85aed7b641861a340702bfb62, type: 3}
@@ -5305,7 +5330,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780373895}
-  m_LocalRotation: {x: 0.24314791, y: -0.000000006085007, z: 0.0000000015253331, w: 0.9699893}
+  m_LocalRotation: {x: 0.24314791, y: -0.000000017281002, z: 0.0000000043318407, w: 0.9699893}
   m_LocalPosition: {x: 3.71, y: 11.173015, z: -43.564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7031,6 +7056,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1157648297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1262566789, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+  m_PrefabInstance: {fileID: 39149410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1169353419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 941116114734672462, guid: f00065d85aed7b641861a340702bfb62, type: 3}
@@ -9528,7 +9558,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-118436
+  m_Name: pb_Mesh-4500
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
