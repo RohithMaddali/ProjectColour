@@ -37,6 +37,7 @@ namespace AJ
             //set controls for suck and shoot
             controls.Gameplay.Suck.performed += ctx => Suck();
             controls.Gameplay.Shoot.performed += ctx => Shoot();
+            cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         }
 
         void OnEnable()
