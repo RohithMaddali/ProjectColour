@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 205000013733710172}
   - component: {fileID: 136000012230939912}
   - component: {fileID: 208779752760032894}
+  - component: {fileID: 5299961437463549464}
   m_Layer: 0
   m_Name: FAE_Pine_A
   m_TagString: Untagged
@@ -98,6 +99,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 14, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &5299961437463549464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011250910608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2, y: 17.91, z: 6.55}
+  m_Center: {x: 0, y: 17.2, z: 0}
 --- !u!1 &1000011765854348
 GameObject:
   m_ObjectHideFlags: 0

@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 205000011793690292}
   - component: {fileID: 136000012051260984}
   - component: {fileID: 208700246294110446}
+  - component: {fileID: 6600636917850281240}
   m_Layer: 0
   m_Name: FAE_Birch_B
   m_TagString: Untagged
@@ -442,3 +443,16 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 7, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &6600636917850281240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013451787930}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2, y: 8.62, z: 6.55}
+  m_Center: {x: 0, y: 10.14, z: 0}
