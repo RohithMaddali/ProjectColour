@@ -11,6 +11,7 @@ namespace Pyro
         PlayerControls controls;
         float velocityX;
         public float velocityZ;
+        public bool isAiming;
 
         public void Awake()
         {
@@ -31,6 +32,7 @@ namespace Pyro
 
         public void Update()
         {
+            isAiming = !rbmove.moveCamActive;
             velocityZ = rbmove.speed / 8;
             if (rbmove.moveDir == Vector3.zero)
             {
@@ -38,6 +40,7 @@ namespace Pyro
             }
             animator.SetFloat("VelocityX", velocityX);
             animator.SetFloat("VelocityZ", velocityZ);
+            animator.SetBool("IsAiming", isAiming);
         }
     }
 }
