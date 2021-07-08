@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd74e125d4d7db64d95ae066f719fc7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootDistance: 30
+  shootDistance: 20
   shootDelay: 2
   raycastHitMask:
     serializedVersion: 2
@@ -2099,6 +2099,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e831fc732ed355c4fb7efd71def09bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5707614227416148071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464682364523201348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4151f23b9a842744b2d67abf81cd464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7387811894196682874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,18 +2125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   velocityZ: 0
---- !u!114 &5707614227416148071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8464682364523201348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4151f23b9a842744b2d67abf81cd464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3644919744204066495
 PrefabInstance:
   m_ObjectHideFlags: 0
