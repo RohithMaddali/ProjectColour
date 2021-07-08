@@ -31,7 +31,7 @@ namespace AJ
         //PRIVATE VARS
         private Color currentColor;
         private Color previousColor;
-        private Renderer thisRenderer;
+        public Renderer thisRenderer;
         private bool isCoroutineRunning; //Delay between shots
         Vector3 move;
         PlayerControls controls;
