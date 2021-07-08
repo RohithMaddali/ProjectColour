@@ -14,7 +14,7 @@ namespace Pyro
 
         public void Awake()
         {
-            //animator = GetComponent<Animator>();
+            animator = GetComponent<Animator>();
             controls = new PlayerControls();
             rbmove = GetComponentInParent<RBMove>();
         }
@@ -31,7 +31,11 @@ namespace Pyro
 
         public void Update()
         {
-            velocityZ = controls.Gameplay.Move.ReadValue<Vector2>().magnitude;
+            velocityZ = rbmove.speed / 8;
+            if (rbmove.moveDir == Vector3.zero)
+            {
+                velocityZ = 0;
+            }
             animator.SetFloat("VelocityX", velocityX);
             animator.SetFloat("VelocityZ", velocityZ);
         }
