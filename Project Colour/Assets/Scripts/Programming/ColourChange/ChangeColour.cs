@@ -134,9 +134,6 @@ namespace AJ
 
         void Suck()
         {
-            //shoot
-            animator.SetTrigger("IsShooting");
-
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 
@@ -150,6 +147,8 @@ namespace AJ
                     Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); //get renderer of hit
                     if(hitRenderer.material.color == Color.red || hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green) //chekc if object has special colour
                     {
+                        //shoot
+                        animator.SetTrigger("IsShooting");
                         orb.SetActive(true);
                         thisRenderer.material.color = hitRenderer.material.color; //make weapon objects colour
                         hitRenderer.material.color = Color.grey; //make object grey
@@ -163,9 +162,6 @@ namespace AJ
 
         void Shoot()
         {
-            //shoot
-            animator.SetTrigger("IsShooting");
-
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 
@@ -178,6 +174,8 @@ namespace AJ
                     Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>();
                     if(hitRenderer.material.color != Color.red && hitRenderer.material.color != Color.blue && hitRenderer.material.color != Color.green) //check if object already has special colour so we can't lose it
                     {
+                        //shoot
+                        animator.SetTrigger("IsShooting");
                         orb.SetActive(false);
                         hitRenderer.material.color = thisRenderer.material.color; //make object stored colour
                         thisRenderer.material.color = Color.grey; //make stored color grey
