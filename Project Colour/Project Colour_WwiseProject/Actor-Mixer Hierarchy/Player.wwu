@@ -115,13 +115,15 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}" WorkUnitID="{1F27A04E-7EF4-4CF1-84B2-C05A66F8FE7E}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
@@ -524,14 +526,13 @@
 											<Grouping>
 												<SwitchRef Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}"/>
 												<ItemList>
-													<ItemRef Name="run_clothing" ID="{D983AF8D-1807-4AB4-9360-854836F061BD}"/>
 													<ItemRef Name="Dirt_run" ID="{43FE4090-39C5-45AA-8335-B1F6A227B8E6}"/>
+													<ItemRef Name="run_clothing" ID="{D983AF8D-1807-4AB4-9360-854836F061BD}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="Stone" ID="{8F6F7E8C-6755-494A-81F0-2436E5BDB099}"/>
 												<ItemList>
-													<ItemRef Name="run_clothing" ID="{D983AF8D-1807-4AB4-9360-854836F061BD}"/>
 													<ItemRef Name="Stone_run" ID="{3A5AA75E-4D3C-40F3-A966-01CA8ED78939}"/>
 												</ItemList>
 											</Grouping>
@@ -557,9 +558,6 @@
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}" WorkUnitID="{1F27A04E-7EF4-4CF1-84B2-C05A66F8FE7E}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>

@@ -13,12 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID EV_ALL_AMBIENCE = 2745505235U;
+        static const AkUniqueID EV_AMB_SWITCHER = 2110301309U;
         static const AkUniqueID EV_IDLEVOX = 1133450584U;
         static const AkUniqueID EV_MX_EXPLORE = 2266659196U;
         static const AkUniqueID EV_SFX_BIRDS = 1994831277U;
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
-        static const AkUniqueID EV_WIND_AREALOOP = 3254481477U;
     } // namespace EVENTS
 
     namespace STATES
@@ -40,6 +39,19 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace AMB_AREA
+        {
+            static const AkUniqueID GROUP = 3132623609U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BLUE_AREA = 3704253823U;
+                static const AkUniqueID GREEN_AREA = 3280944338U;
+                static const AkUniqueID HUB_AREA = 3273955074U;
+                static const AkUniqueID RED_AREA = 3617620722U;
+            } // namespace SWITCH
+        } // namespace AMB_AREA
+
         namespace FS_MATERIAL_SWITCH_GROUP
         {
             static const AkUniqueID GROUP = 2371526279U;
@@ -62,16 +74,18 @@ namespace AK
             } // namespace SWITCH
         } // namespace FS_MOVEMENT_SWITCH_GROUP
 
-        namespace MUSICSTATE
+        namespace MUSICSWITCH
         {
-            static const AkUniqueID GROUP = 1021618141U;
+            static const AkUniqueID GROUP = 1445037870U;
 
             namespace SWITCH
             {
                 static const AkUniqueID BLUE = 1325827433U;
                 static const AkUniqueID GREEN = 4147287986U;
+                static const AkUniqueID HUB = 646625282U;
+                static const AkUniqueID RED = 980603538U;
             } // namespace SWITCH
-        } // namespace MUSICSTATE
+        } // namespace MUSICSWITCH
 
     } // namespace SWITCHES
 

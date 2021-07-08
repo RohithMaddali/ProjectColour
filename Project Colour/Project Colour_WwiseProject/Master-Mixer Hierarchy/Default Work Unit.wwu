@@ -41,6 +41,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Ambience" ID="{638FB4D6-DAFF-400F-ACED-95B3F1979DF2}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}">
@@ -50,10 +57,22 @@
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Music" ID="{535F77AE-F0D9-44AC-BAAF-AA7619C7B12B}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="VoiceOver" ID="{3AEB2EE0-CDC0-455F-8B39-101B26688AB3}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>-11</Value>

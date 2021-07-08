@@ -21,7 +21,51 @@
   <component name="ChangeListManager">
     <list default="true" id="5f1ffe9b-57a3-4621-a0da-b0fe9680555b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project Colour/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Fantasy Adventure Environment/Shaders/URP/UniversalRenderPipeline.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial_Area.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial_Area.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wwise/W_Ambience.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wwise/W_Ambience.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wwise/W_VoiceOverManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wwise/W_VoiceOverManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/W_Music.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/W_Music.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3BADE60D-9071-47D2-9DDA-492B30D988D0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/ScriptableObjects/Event/3BADE60D-9071-47D2-9DDA-492B30D988D0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Actor-Mixer Hierarchy/Environment.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Actor-Mixer Hierarchy/Environment.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Actor-Mixer Hierarchy/VoiceOver.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Actor-Mixer Hierarchy/VoiceOver.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Game Parameters/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Game Parameters/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Environment.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Environment.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Init.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Music.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Music.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Music.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Music.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Vox.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Vox.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Vox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Mac/Vox.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Environment.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Environment.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Init.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Init.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Music.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Music.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Music.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Music.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Vox.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Vox.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Vox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/GeneratedSoundBanks/Windows/Vox.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Master-Mixer Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Master-Mixer Hierarchy/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Project Colour_WwiseProject.Kyan.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Project Colour_WwiseProject.Kyan.validationcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Project Colour_WwiseProject.Kyan.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Project Colour_WwiseProject.Kyan.wsettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/SoundBanks/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/SoundBanks/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/Soundcaster Sessions/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/Soundcaster Sessions/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Colour_WwiseProject/States/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/Project Colour_WwiseProject/States/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +84,22 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ConveyerBelt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@8.2.0/Runtime/ShadowUtils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/W_Ui.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wwise/W_PlayerAudio.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Conveyer Belt.cs" />
-      <option value="$PROJECT_DIR$/Assets/ConveyerBelt.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ConveyerBelt.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlatformMovement.cs" />
-    </changedPaths>
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/FMOD/W_Ambience.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Third person movement/RBMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wwise/W_VoiceOverManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wwise/W_Ambience.cs" />
+        <option value="$PROJECT_DIR$/Assets/W_Music.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wwise/W_PlayerAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/W_Ui.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1oolRv0yBiVdwaf5PsTyPJkicBe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,6 +112,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
@@ -73,7 +129,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -82,7 +138,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <list />
+        <set />
       </option>
       <method v="2" />
     </configuration>
@@ -105,6 +161,10 @@
       <workItem from="1617160273409" duration="1000" />
       <workItem from="1617767375187" duration="3998000" />
       <workItem from="1618733602952" duration="935000" />
+      <workItem from="1623838794664" duration="2535000" />
+      <workItem from="1624789571150" duration="5521000" />
+      <workItem from="1624801369686" duration="1387000" />
+      <workItem from="1625195813208" duration="5061000" />
     </task>
     <servers />
   </component>
@@ -127,5 +187,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="741" y="371" key="#Notifications" timestamp="1625195843121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="741" y="371" key="#Notifications/0.0.1920.1040/-1680.23.1680.1010/1920.0.1920.1040@0.0.1920.1040" timestamp="1625195843121" />
   </component>
 </project>

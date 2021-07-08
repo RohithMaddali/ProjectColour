@@ -15,10 +15,20 @@
 						<Switch Name="Running" ID="{A444A2D9-4E8C-4D39-98F2-359B74AA080A}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="MusicState" ID="{58AFBA6F-4E43-4505-B480-64C3BA2981D7}">
+				<SwitchGroup Name="MusicSwitch" ID="{58AFBA6F-4E43-4505-B480-64C3BA2981D7}">
 					<ChildrenList>
 						<Switch Name="Blue" ID="{970B1D6E-B21C-467B-8916-1295B05D5757}"/>
 						<Switch Name="Green" ID="{F199E652-AEA1-4DAC-9B37-F29F0AE1EC21}"/>
+						<Switch Name="Red" ID="{D5F10A84-655A-4B54-A21E-8A3CBD12FB3C}"/>
+						<Switch Name="Hub" ID="{A62A478D-CDF1-4DB3-91E9-BE14714D9D18}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="amb_area" ID="{D64C6178-E85E-4FF2-A58A-2012959F3AB8}">
+					<ChildrenList>
+						<Switch Name="green_area" ID="{88C26644-9701-49FC-9BC9-1B83CD08B99A}"/>
+						<Switch Name="blue_area" ID="{036B9B0D-9695-4BC8-89BD-9FF0F9FFEF48}"/>
+						<Switch Name="red_area" ID="{0344F0E3-6848-4E13-B25F-C3E0F28FB15A}"/>
+						<Switch Name="hub_area" ID="{8E7BE063-4FE8-4B0D-8931-5912FE70C9A4}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

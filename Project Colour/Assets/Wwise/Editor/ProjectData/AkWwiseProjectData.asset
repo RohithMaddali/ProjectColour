@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1ad7f73361ace840af42609fdd7fd554
     GuidInternal: 
-    m_lastTime: -8585764035390688447
+    m_lastTime: -8585758938575694930
     List:
     - name: Ambience
       guid: d6b48f63ffda0f40aced95b3f1979df2
@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585764035390658305
+    m_lastTime: -8585758993994586690
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -224,7 +224,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585764035399674553
+    m_lastTime: -8585758961817339383
     List:
     - name: ev_all_ambience
       guid: 26223d67ad3263488733e6525da99793
@@ -241,8 +241,25 @@ MonoBehaviour:
         guid: 26223d67ad3263488733e6525da99793
       Path: Events\Default Work Unit\ev_all_ambience
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ev_amb_switcher
+      guid: 394ba94e19740e469fd90d96ae39217b
+      id: 2110301309
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 71fa53559ec40047ac09cc7babdc1a38
+      - ElementName: ev_amb_switcher
+        ObjectType: 3
+        guid: 394ba94e19740e469fd90d96ae39217b
+      Path: Events\Default Work Unit\ev_amb_switcher
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ev_IdleVox
       guid: 948cedc8373662478816504f2090def8
       id: 1133450584
@@ -259,7 +276,7 @@ MonoBehaviour:
       Path: Events\Default Work Unit\ev_IdleVox
       maxAttenuation: 0
       maxDuration: 16.438368
-      minDuration: 16.438368
+      minDuration: 13.451712
     - name: ev_mx_explore
       guid: 5e2a0c0bf09cec4287f732b45caf79b9
       id: 2266659196
@@ -402,7 +419,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46f609f0b2605447aa33f2db183074af
     GuidInternal: 
-    m_lastTime: -8585764035390638566
+    m_lastTime: -8585758961817887922
     List:
     - name: Colour
       guid: 00c4cbf1bb3eea4e89b57b36a001675d
@@ -498,8 +515,90 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
     GuidInternal: 
-    m_lastTime: -8585766799892739631
+    m_lastTime: -8585758961817468812
     List:
+    - name: amb_area
+      guid: 78614cd65ee8f24fa58a2012959f3ab8
+      id: 3132623609
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+      - ElementName: amb_area
+        ObjectType: 11
+        guid: 78614cd65ee8f24fa58a2012959f3ab8
+      Path: Switches\Default Work Unit\amb_area
+      values:
+      - name: blue_area
+        guid: 0d9b6b039596c84b89bd9ff0f9ffef48
+        id: 3704253823
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: amb_area
+          ObjectType: 11
+          guid: 78614cd65ee8f24fa58a2012959f3ab8
+        - ElementName: blue_area
+          ObjectType: 10
+          guid: 0d9b6b039596c84b89bd9ff0f9ffef48
+      - name: green_area
+        guid: 4466c2880197fc499bc91b83cd08b99a
+        id: 3280944338
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: amb_area
+          ObjectType: 11
+          guid: 78614cd65ee8f24fa58a2012959f3ab8
+        - ElementName: green_area
+          ObjectType: 10
+          guid: 4466c2880197fc499bc91b83cd08b99a
+      - name: hub_area
+        guid: 63e07b8ee84f0d4b89315912fe70c9a4
+        id: 3273955074
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: amb_area
+          ObjectType: 11
+          guid: 78614cd65ee8f24fa58a2012959f3ab8
+        - ElementName: hub_area
+          ObjectType: 10
+          guid: 63e07b8ee84f0d4b89315912fe70c9a4
+      - name: red_area
+        guid: e3f044034868134eb25fc3e0f28fb15a
+        id: 3617620722
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: amb_area
+          ObjectType: 11
+          guid: 78614cd65ee8f24fa58a2012959f3ab8
+        - ElementName: red_area
+          ObjectType: 10
+          guid: e3f044034868134eb25fc3e0f28fb15a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: fs_material_switch_group
       guid: 7d9d9a7f3f7c594dae1105e9af7bfedb
       id: 2371526279
@@ -600,9 +699,9 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: MusicState
+    - name: MusicSwitch
       guid: 6fbaaf58434e0545b48064c3ba2981d7
-      id: 1021618141
+      id: 1445037870
       PathAndIcons:
       - ElementName: Switches
         ObjectType: 5
@@ -610,10 +709,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
-      - ElementName: MusicState
+      - ElementName: MusicSwitch
         ObjectType: 11
         guid: 6fbaaf58434e0545b48064c3ba2981d7
-      Path: Switches\Default Work Unit\MusicState
+      Path: Switches\Default Work Unit\MusicSwitch
       values:
       - name: Blue
         guid: 6e1d0b971cb27b4689161295b05d5757
@@ -625,7 +724,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
-        - ElementName: MusicState
+        - ElementName: MusicSwitch
           ObjectType: 11
           guid: 6fbaaf58434e0545b48064c3ba2981d7
         - ElementName: Blue
@@ -641,12 +740,44 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
-        - ElementName: MusicState
+        - ElementName: MusicSwitch
           ObjectType: 11
           guid: 6fbaaf58434e0545b48064c3ba2981d7
         - ElementName: Green
           ObjectType: 10
           guid: 52e699f1a1aeac4d9b37f29f0ae1ec21
+      - name: Hub
+        guid: 8d472aa6f1cdb34d91e9be14714d9d18
+        id: 646625282
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: MusicSwitch
+          ObjectType: 11
+          guid: 6fbaaf58434e0545b48064c3ba2981d7
+        - ElementName: Hub
+          ObjectType: 10
+          guid: 8d472aa6f1cdb34d91e9be14714d9d18
+      - name: Red
+        guid: 840af1d55a65544ba21e8a3cbd12fb3c
+        id: 980603538
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
+        - ElementName: MusicSwitch
+          ObjectType: 11
+          guid: 6fbaaf58434e0545b48064c3ba2981d7
+        - ElementName: Red
+          ObjectType: 10
+          guid: 840af1d55a65544ba21e8a3cbd12fb3c
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -665,7 +796,7 @@ MonoBehaviour:
     m_lastTime: -8585770257899561244
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000005000000060000000700000008000000090000000a0000000d0000000e0000000f0000001000000011000000120000001300000014000000
+  ExpandedWaapiItemIds: 01000000020000000300000005000000060000000700000008000000090000000a0000000d0000000e0000000f0000001000000011000000120000001300000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
