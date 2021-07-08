@@ -14,7 +14,7 @@ public class ConveyorBeltJ : MonoBehaviour
     public GameObject powerSwitch;
     public GameObject speedSwitch;
     public GameObject buttonHit;
-    bool beltOn;
+    public bool beltOn;
 
     void Awake()
     {
