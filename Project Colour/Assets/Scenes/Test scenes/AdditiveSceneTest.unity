@@ -737,12 +737,12 @@ GameObject:
   - component: {fileID: 1187809938}
   - component: {fileID: 1187809937}
   m_Layer: 0
-  m_Name: Sun (1)
+  m_Name: Sun 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1187809937
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1470844205
 SphereCollider:
   m_ObjectHideFlags: 0

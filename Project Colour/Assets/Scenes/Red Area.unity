@@ -25413,6 +25413,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: conveyerbeltmodule2
       objectReference: {fileID: 0}
+    - target: {fileID: 1595379215911749687, guid: 61860d7a08d55e141b1030548535f557, type: 3}
+      propertyPath: m_TagString
+      value: CanColour
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595379215911749687, guid: 61860d7a08d55e141b1030548535f557, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2119009995558638221, guid: 61860d7a08d55e141b1030548535f557, type: 3}
       propertyPath: m_LocalPosition.x
       value: -96.12
@@ -38491,6 +38499,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 230
       objectReference: {fileID: 0}
+    - target: {fileID: 2063200059299202988, guid: 7e5fee1ffaeab614cb8d9f9060241458, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
     - target: {fileID: 4957969226021831303, guid: 7e5fee1ffaeab614cb8d9f9060241458, type: 3}
       propertyPath: powerSwitch
       value: 
