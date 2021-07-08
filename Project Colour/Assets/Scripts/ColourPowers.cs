@@ -10,7 +10,7 @@ public class ColourPowers : MonoBehaviour
     public bool isRed;
     public GameObject pairedObject;
     public GameObject repairedObject;
-    public Animator animator;
+    [SerializeField] private Animator animator;
 
     public Renderer rend;
 
@@ -28,7 +28,6 @@ public class ColourPowers : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         player = FindObjectOfType<RBMove>();
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,7 +35,7 @@ public class ColourPowers : MonoBehaviour
     {
         //Move this to ColourMover script so it happens when when changed instead of constantly checking
 
-        if(rend.material.color != Color.green && repairedObject == null)
+        if (animator != null && rend.material.color != Color.green && repairedObject == null)
         {
             animator.SetBool("Grow", false);
         }
