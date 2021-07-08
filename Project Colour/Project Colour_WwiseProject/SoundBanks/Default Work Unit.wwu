@@ -6,8 +6,7 @@
 				<SoundBank Name="Environment" ID="{9ED921C3-1591-4086-BF31-E616FA2D0806}">
 					<ObjectInclusionList>
 						<ObjectRef Name="ev_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ev_wind_arealoop" ID="{0AC4A353-DEF6-4699-804D-EE5B5967EAD5}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ev_all_ambience" ID="{673D2226-32AD-4863-8733-E6525DA99793}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_amb_switcher" ID="{4EA94B39-7419-460E-9FD9-0D96AE39217B}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

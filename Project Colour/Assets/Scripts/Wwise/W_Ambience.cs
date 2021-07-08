@@ -7,12 +7,31 @@ using AK.Wwise;
 public class W_Ambience : MonoBehaviour
 {
     private uint ambienceID;
+    uint waterId;
     void Start()
     {
-        ambienceID = AkSoundEngine.PostEvent("ev_all_ambience", gameObject);
+        AkSoundEngine.SetSwitch("amb_area", "hub_area", gameObject);
+        ambienceID = AkSoundEngine.PostEvent("ev_amb_switcher", gameObject);
+        waterId = AkSoundEngine.PostEvent("ev_sfx_running_water", gameObject);
     }
     private void OnDestroy()
     {
         AkSoundEngine.StopPlayingID(ambienceID);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("GreenTriger"))
+        {
+            Debug.Log("green trigger");
+            AkSoundEngine.SetSwitch("amb_area", "green_area", gameObject);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("GreenTriger") || other.gameObject.CompareTag("BlueTrigger"))
+        {
+            Debug.Log("exit green");
+            AkSoundEngine.SetSwitch("amb_area", "hub_area", gameObject);
+        }
     }
 }
