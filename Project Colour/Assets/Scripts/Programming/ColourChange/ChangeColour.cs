@@ -80,7 +80,8 @@ namespace AJ
 
         void Update()
         {
-            if(currentColor == Color.green)
+            Debug.Log(currentColor);
+            if (currentColor == Color.green)
             {
                 Debug.Log("Playing Green Voice Lines");
                 AkSoundEngine.SetState("Colour", "Green");
@@ -90,6 +91,7 @@ namespace AJ
                 Debug.Log("Playing blue Voice Lines");
                 AkSoundEngine.SetState("Colour", "Blue");
             }
+
             if (currentColor == Color.red)
             {
                 Debug.Log("Playing red Voice Lines");

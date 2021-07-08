@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5997063723744836361}
   - component: {fileID: 8420938448984199107}
   - component: {fileID: -2896538739678356347}
+  - component: {fileID: 1571325386378517438}
   m_Layer: 0
   m_Name: conveyerbeltmodule3
   m_TagString: Untagged
@@ -96,3 +97,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6606501483488557099, guid: 4aa96027708dab148bbc4f0769813462, type: 3}
+--- !u!114 &1571325386378517438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8060830454205279766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone

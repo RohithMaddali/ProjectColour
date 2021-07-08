@@ -725,6 +725,7 @@ GameObject:
   - component: {fileID: 73703868}
   - component: {fileID: 73703867}
   - component: {fileID: 73703866}
+  - component: {fileID: 73703871}
   m_Layer: 0
   m_Name: Stairs (4)
   m_TagString: Untagged
@@ -2910,6 +2911,20 @@ Transform:
   m_Father: {fileID: 1637498996}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &73703871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73703865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!43 &97326728
 Mesh:
   m_ObjectHideFlags: 0
@@ -4013,6 +4028,7 @@ GameObject:
   - component: {fileID: 134745286}
   - component: {fileID: 134745285}
   - component: {fileID: 134745284}
+  - component: {fileID: 134745289}
   m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -4313,6 +4329,20 @@ Transform:
   m_Father: {fileID: 1637498996}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &134745289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134745283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!43 &177955714
 Mesh:
   m_ObjectHideFlags: 0
@@ -5063,17 +5093,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 2080768826}
   m_IsSelectable: 1
-  m_SelectedFaces: 01000000
-  m_SelectedEdges:
-  - a: 4
-    b: 5
-  - a: 6
-    b: 4
-  - a: 5
-    b: 7
-  - a: 7
-    b: 6
-  m_SelectedVertices: 04000000050000000600000007000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!43 &239572661
 Mesh:
   m_ObjectHideFlags: 0
@@ -11750,6 +11772,7 @@ GameObject:
   - component: {fileID: 435995806}
   - component: {fileID: 435995805}
   - component: {fileID: 435995804}
+  - component: {fileID: 435995808}
   m_Layer: 8
   m_Name: Stairs (1)
   m_TagString: Untagged
@@ -13966,6 +13989,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &435995808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435995802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!1 &467471004
 GameObject:
   m_ObjectHideFlags: 0
@@ -14279,6 +14316,50 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &495054620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495054621}
+  - component: {fileID: 495054622}
+  m_Layer: 0
+  m_Name: AudioTriggers
+  m_TagString: RedTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495054621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495054620}
+  m_LocalRotation: {x: -0, y: -0.12999207, z: -0, w: 0.9915151}
+  m_LocalPosition: {x: -76.42, y: 0, z: 16.2}
+  m_LocalScale: {x: 37.445, y: 24.613497, z: 51.335915}
+  m_Children: []
+  m_Father: {fileID: 743832163}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -14.938, z: 0}
+--- !u!65 &495054622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495054620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!43 &548409713
 Mesh:
   m_ObjectHideFlags: 0
@@ -16304,6 +16385,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5fee1ffaeab614cb8d9f9060241458, type: 3}
+--- !u!1 &743832162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 743832163}
+  m_Layer: 0
+  m_Name: --Audio--
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &743832163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743832162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.055034, y: 10.650875, z: -33.57278}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 495054621}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &802031469
 Mesh:
   m_ObjectHideFlags: 0
@@ -16481,6 +16593,7 @@ GameObject:
   - component: {fileID: 814038354}
   - component: {fileID: 814038353}
   - component: {fileID: 814038352}
+  - component: {fileID: 814038357}
   m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
@@ -16632,6 +16745,20 @@ Transform:
   m_Father: {fileID: 1637498996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &814038357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814038351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!1 &827519962
 GameObject:
   m_ObjectHideFlags: 0
@@ -16645,6 +16772,7 @@ GameObject:
   - component: {fileID: 827519965}
   - component: {fileID: 827519964}
   - component: {fileID: 827519963}
+  - component: {fileID: 827519968}
   m_Layer: 8
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -16945,6 +17073,20 @@ Transform:
   m_Father: {fileID: 1637498996}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827519968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827519962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!43 &838480000
 Mesh:
   m_ObjectHideFlags: 0
@@ -17115,7 +17257,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67066
+  m_Name: pb_Mesh57656
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17450,6 +17592,7 @@ GameObject:
   - component: {fileID: 916388186}
   - component: {fileID: 916388185}
   - component: {fileID: 916388184}
+  - component: {fileID: 916388188}
   m_Layer: 8
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -17750,6 +17893,20 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &916388188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916388182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!43 &984260338
 Mesh:
   m_ObjectHideFlags: 0
@@ -17920,7 +18077,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67654
+  m_Name: pb_Mesh58262
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22513,6 +22670,7 @@ GameObject:
   - component: {fileID: 1263269615}
   - component: {fileID: 1263269614}
   - component: {fileID: 1263269613}
+  - component: {fileID: 1263269618}
   m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -22813,13 +22971,27 @@ Transform:
   m_Father: {fileID: 1637498996}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263269618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263269612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!43 &1338771422
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67288
+  m_Name: pb_Mesh57904
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27331,7 +27503,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-141798
+  m_Name: pb_Mesh57832
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28182,7 +28354,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67300
+  m_Name: pb_Mesh57916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28413,7 +28585,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67396
+  m_Name: pb_Mesh58000
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32064,6 +32236,7 @@ GameObject:
   - component: {fileID: 1840950885}
   - component: {fileID: 1840950884}
   - component: {fileID: 1840950883}
+  - component: {fileID: 1840950887}
   m_Layer: 8
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -32364,13 +32537,27 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1840950887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840950881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!43 &1897307820
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67318
+  m_Name: pb_Mesh57934
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32534,7 +32721,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67556
+  m_Name: pb_Mesh58164
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35719,7 +35906,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67118
+  m_Name: pb_Mesh57708
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37813,6 +38000,7 @@ GameObject:
   - component: {fileID: 2145035960}
   - component: {fileID: 2145035959}
   - component: {fileID: 2145035958}
+  - component: {fileID: 2145035963}
   m_Layer: 8
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -38113,6 +38301,20 @@ Transform:
   m_Father: {fileID: 1637498996}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2145035963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145035957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!4 &2537853416961204419
 Transform:
   m_ObjectHideFlags: 0

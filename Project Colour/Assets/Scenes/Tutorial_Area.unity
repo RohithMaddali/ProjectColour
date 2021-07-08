@@ -1007,6 +1007,76 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2297425034801156755, guid: 02ad247a228755a499bbbf1d41586893, type: 3}
+--- !u!114 &150801757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150801747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Dirt
+--- !u!114 &150801758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150801748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+--- !u!114 &150801759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150801749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+--- !u!114 &150801760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150801750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+--- !u!114 &150801761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150801751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!43 &200033409
 Mesh:
   m_ObjectHideFlags: 0
@@ -2271,7 +2341,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh266976
+  m_Name: pb_Mesh34532
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2655,7 +2725,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh267014
+  m_Name: pb_Mesh34570
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2826,11 +2896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000000839204
+      value: -0.00000000839204
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000001894344
+      value: 0.000000001894344
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7243,6 +7313,7 @@ GameObject:
   - component: {fileID: 1470377851}
   - component: {fileID: 1470377850}
   - component: {fileID: 1470377855}
+  - component: {fileID: 1470377856}
   m_Layer: 8
   m_Name: Cube (16)
   m_TagString: CanColour
@@ -7748,6 +7819,20 @@ MonoBehaviour:
   speedBoost: 50
   repaired: 0
   grey: {fileID: 0}
+--- !u!114 &1470377856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470377849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!1 &1558328465
 GameObject:
   m_ObjectHideFlags: 0
@@ -8484,6 +8569,7 @@ GameObject:
   - component: {fileID: 1626282257}
   - component: {fileID: 1626282256}
   - component: {fileID: 1626282261}
+  - component: {fileID: 1626282262}
   m_Layer: 8
   m_Name: Cube (21)
   m_TagString: CanColour
@@ -8989,6 +9075,20 @@ MonoBehaviour:
   speedBoost: 50
   repaired: 0
   grey: {fileID: 0}
+--- !u!114 &1626282262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626282255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
 --- !u!1 &1642317920
 GameObject:
   m_ObjectHideFlags: 0
@@ -9651,7 +9751,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-323252
+  m_Name: pb_Mesh-66012
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

@@ -36,6 +36,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="sfx_amb" ID="{962CED98-24EB-497F-B1A8-A497854D2057}" ShortID="2469068">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -139,11 +142,6 @@
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-15</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -321,12 +319,18 @@
 											<Grouping>
 												<SwitchRef Name="green_area" ID="{88C26644-9701-49FC-9BC9-1B83CD08B99A}"/>
 												<ItemList>
-													<ItemRef Name="Spectrum_wind_forrest_vegetation" ID="{F0C3541F-A2B4-4C6A-B926-FF2C2E0BCE99}"/>
 													<ItemRef Name="sfx_birds" ID="{6088CE7D-1E58-450E-A3EF-6EB5AC46ADC3}"/>
+													<ItemRef Name="Spectrum_wind_forrest_vegetation" ID="{F0C3541F-A2B4-4C6A-B926-FF2C2E0BCE99}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
 												<SwitchRef Name="hub_area" ID="{8E7BE063-4FE8-4B0D-8931-5912FE70C9A4}"/>
+												<ItemList>
+													<ItemRef Name="Spectrum_atmos_wind_calm_breezy" ID="{B5CFE8A9-2A55-43A8-8A5F-EFAEEB738E82}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="red_area" ID="{0344F0E3-6848-4E13-B25F-C3E0F28FB15A}"/>
 												<ItemList>
 													<ItemRef Name="Spectrum_atmos_wind_calm_breezy" ID="{B5CFE8A9-2A55-43A8-8A5F-EFAEEB738E82}"/>
 												</ItemList>

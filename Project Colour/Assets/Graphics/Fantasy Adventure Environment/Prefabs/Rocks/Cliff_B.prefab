@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 205000011427498984}
   - component: {fileID: 64000011487076046}
   - component: {fileID: 65000012427443650}
+  - component: {fileID: 7778173959183367562}
   m_Layer: 0
   m_Name: Cliff_B
   m_TagString: Untagged
@@ -252,6 +253,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.09, y: 16.8, z: 11.6}
   m_Center: {x: 0, y: 9, z: 0}
+--- !u!114 &7778173959183367562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013395707006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Dirt
 --- !u!1 &1000013867484940
 GameObject:
   m_ObjectHideFlags: 0

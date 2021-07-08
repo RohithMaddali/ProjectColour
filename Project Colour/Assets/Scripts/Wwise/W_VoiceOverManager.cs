@@ -22,7 +22,7 @@ public class W_VoiceOverManager : MonoBehaviour
     }
     void NotMoving() //Checks if player isn't moving
     {
-        if (movement.moveDir.y == 0 && movement.moveDir.x == 0 && !toggle)
+        if (movement.moveDir.z == 0 && movement.moveDir.x == 0 && !toggle)
         {
             cooldown += Time.deltaTime;
         }

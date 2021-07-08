@@ -30,10 +30,16 @@ public class W_Music : MonoBehaviour
             AkSoundEngine.SetSwitch("MusicSwitch", "Blue", gameObject);
             AkSoundEngine.SetState("Colour", "Blue");
         }
+        if (other.gameObject.CompareTag("RedTrigger"))
+        {
+            Debug.Log("green trigger");
+            AkSoundEngine.SetSwitch("MusicSwitch", "Red", gameObject);
+            AkSoundEngine.SetState("Colour", "Red");
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("GreenTriger") || other.gameObject.CompareTag("BlueTrigger"))
+        if (other.gameObject.CompareTag("GreenTriger") || other.gameObject.CompareTag("BlueTrigger") || other.gameObject.CompareTag("RedTrigger"))
         {
             Debug.Log("exit green");
             AkSoundEngine.SetState("Colour", "None");

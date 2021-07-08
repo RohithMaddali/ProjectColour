@@ -168,7 +168,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
-    m_lastTime: -8585758993994586690
+    m_lastTime: -8585758555992517514
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -198,6 +198,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 7a3acfce6e0ea842bf7ec64d88447628
       Path: SoundBanks\Default Work Unit\Music
+    - name: Player
+      guid: 8f289dffc8166e4ca945b35117ad0d45
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2a944836521c424da3d49e97a9e03762
+      - ElementName: Player
+        ObjectType: 7
+        guid: 8f289dffc8166e4ca945b35117ad0d45
+      Path: SoundBanks\Default Work Unit\Player
     - name: Vox
       guid: 6fe2fe9d4463764fb73b87dde9a2b153
       id: 543694036
@@ -224,7 +238,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
-    m_lastTime: -8585758961817339383
+    m_lastTime: -8585758923578236588
     List:
     - name: ev_all_ambience
       guid: 26223d67ad3263488733e6525da99793
@@ -326,8 +340,8 @@ MonoBehaviour:
         guid: f0b153f7b8dd3748b3ca13d65bd4df2c
       Path: Events\Default Work Unit\ev_sfx_plr_foosteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.65674
+      minDuration: 0
     - name: ev_sfx_running_water
       guid: 3b2e50e839aabb488fece7dc2d7c5e6f
       id: 2793993496
@@ -419,7 +433,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46f609f0b2605447aa33f2db183074af
     GuidInternal: 
-    m_lastTime: -8585758961817887922
+    m_lastTime: -8585758637907602961
     List:
     - name: Colour
       guid: 00c4cbf1bb3eea4e89b57b36a001675d
@@ -515,7 +529,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
     GuidInternal: 
-    m_lastTime: -8585758961817468812
+    m_lastTime: -8585758610268220251
     List:
     - name: amb_area
       guid: 78614cd65ee8f24fa58a2012959f3ab8
@@ -796,7 +810,7 @@ MonoBehaviour:
     m_lastTime: -8585770257899561244
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000020000000300000005000000060000000700000008000000090000000a0000000d0000000e0000000f0000001000000011000000120000001300000014000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

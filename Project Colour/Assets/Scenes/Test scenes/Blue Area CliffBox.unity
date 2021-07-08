@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236072
+  m_Name: pb_Mesh392428
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -391,6 +391,7 @@ GameObject:
   - component: {fileID: 418860309}
   - component: {fileID: 418860308}
   - component: {fileID: 418860307}
+  - component: {fileID: 418860312}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -1411,6 +1412,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!114 &418860312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418860306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!1 &509090997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,7 +1746,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236102
+  m_Name: pb_Mesh392458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1901,6 +1917,7 @@ GameObject:
   - component: {fileID: 550750528}
   - component: {fileID: 550750527}
   - component: {fileID: 550750526}
+  - component: {fileID: 550750531}
   m_Layer: 8
   m_Name: Cube (5)
   m_TagString: CanColour
@@ -2201,6 +2218,21 @@ Transform:
   m_Father: {fileID: 1536932812}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &550750531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550750525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!1 &593448616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,7 +2270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236214
+  m_Name: pb_Mesh392576
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2409,6 +2441,7 @@ GameObject:
   - component: {fileID: 679071779}
   - component: {fileID: 679071778}
   - component: {fileID: 679071777}
+  - component: {fileID: 679071781}
   m_Layer: 8
   m_Name: Cube (18)
   m_TagString: Untagged
@@ -2709,13 +2742,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &679071781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679071775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!43 &714261553
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236264
+  m_Name: pb_Mesh392626
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3199,6 +3247,7 @@ GameObject:
   - component: {fileID: 753538878}
   - component: {fileID: 753538877}
   - component: {fileID: 753538876}
+  - component: {fileID: 753538880}
   m_Layer: 8
   m_Name: Cube (10)
   m_TagString: Untagged
@@ -3499,13 +3548,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &753538880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753538874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!43 &758493221
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236240
+  m_Name: pb_Mesh392602
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3676,6 +3740,7 @@ GameObject:
   - component: {fileID: 847956334}
   - component: {fileID: 847956333}
   - component: {fileID: 847956332}
+  - component: {fileID: 847956336}
   m_Layer: 8
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -5199,13 +5264,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &847956336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847956330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!43 &924300352
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236114
+  m_Name: pb_Mesh392470
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5369,7 +5449,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236006
+  m_Name: pb_Mesh392358
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5540,6 +5620,7 @@ GameObject:
   - component: {fileID: 1049766057}
   - component: {fileID: 1049766056}
   - component: {fileID: 1049766055}
+  - component: {fileID: 1049766059}
   m_Layer: 8
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -5840,6 +5921,21 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1049766059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049766053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!1 &1050519383
 GameObject:
   m_ObjectHideFlags: 0
@@ -6215,7 +6311,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236032
+  m_Name: pb_Mesh392384
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6379,7 +6475,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236228
+  m_Name: pb_Mesh392590
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6594,6 +6690,7 @@ GameObject:
   - component: {fileID: 1290602864}
   - component: {fileID: 1290602863}
   - component: {fileID: 1290602862}
+  - component: {fileID: 1290602866}
   m_Layer: 8
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -6894,13 +6991,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1290602866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290602860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!43 &1292575516
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236018
+  m_Name: pb_Mesh392370
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7071,6 +7183,7 @@ GameObject:
   - component: {fileID: 1299569062}
   - component: {fileID: 1299569061}
   - component: {fileID: 1299569060}
+  - component: {fileID: 1299569064}
   m_Layer: 8
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -7371,13 +7484,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1299569064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299569058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Dirt
+  - 
 --- !u!43 &1310155950
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236046
+  m_Name: pb_Mesh392402
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7548,6 +7676,7 @@ GameObject:
   - component: {fileID: 1311955223}
   - component: {fileID: 1311955222}
   - component: {fileID: 1311955221}
+  - component: {fileID: 1311955226}
   m_Layer: 8
   m_Name: Cube (4)
   m_TagString: CanColour
@@ -7848,6 +7977,21 @@ Transform:
   m_Father: {fileID: 1536932812}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &1311955226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311955220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!1 &1454079609
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,7 +8364,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236176
+  m_Name: pb_Mesh392538
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8391,6 +8535,7 @@ GameObject:
   - component: {fileID: 1670643027}
   - component: {fileID: 1670643026}
   - component: {fileID: 1670643025}
+  - component: {fileID: 1670643029}
   m_Layer: 8
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -8691,13 +8836,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1670643029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670643023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Dirt
+  - 
 --- !u!43 &1724131773
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236252
+  m_Name: pb_Mesh392614
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8861,7 +9021,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236060
+  m_Name: pb_Mesh392416
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9025,7 +9185,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236282
+  m_Name: pb_Mesh392644
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9189,7 +9349,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236164
+  m_Name: pb_Mesh392526
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9666,7 +9826,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236150
+  m_Name: pb_Mesh392512
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9837,6 +9997,7 @@ GameObject:
   - component: {fileID: 1839253953}
   - component: {fileID: 1839253952}
   - component: {fileID: 1839253951}
+  - component: {fileID: 1839253955}
   m_Layer: 8
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -11457,6 +11618,21 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1839253955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839253949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!1 &1858106651
 GameObject:
   m_ObjectHideFlags: 0
@@ -11470,6 +11646,7 @@ GameObject:
   - component: {fileID: 1858106655}
   - component: {fileID: 1858106654}
   - component: {fileID: 1858106653}
+  - component: {fileID: 1858106657}
   m_Layer: 8
   m_Name: Stairs
   m_TagString: Untagged
@@ -18601,6 +18778,21 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1858106657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858106651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!1 &1881469424
 GameObject:
   m_ObjectHideFlags: 0
@@ -18614,6 +18806,7 @@ GameObject:
   - component: {fileID: 1881469427}
   - component: {fileID: 1881469426}
   - component: {fileID: 1881469425}
+  - component: {fileID: 1881469430}
   m_Layer: 8
   m_Name: Cube (3)
   m_TagString: CanColour
@@ -18914,6 +19107,21 @@ Transform:
   m_Father: {fileID: 1536932812}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!114 &1881469430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881469424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!1 &1887117996
 GameObject:
   m_ObjectHideFlags: 0
@@ -18927,6 +19135,7 @@ GameObject:
   - component: {fileID: 1887118000}
   - component: {fileID: 1887117999}
   - component: {fileID: 1887117998}
+  - component: {fileID: 1887118002}
   m_Layer: 8
   m_Name: Cube (17)
   m_TagString: Untagged
@@ -19227,13 +19436,28 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1887118002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887117996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
+  - 
 --- !u!43 &2006433976
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236136
+  m_Name: pb_Mesh392498
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19397,7 +19621,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236194
+  m_Name: pb_Mesh392556
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19561,7 +19785,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh236086
+  m_Name: pb_Mesh392442
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

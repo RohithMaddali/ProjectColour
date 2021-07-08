@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID EV_IDLEVOX = 1133450584U;
         static const AkUniqueID EV_MX_EXPLORE = 2266659196U;
         static const AkUniqueID EV_SFX_BIRDS = 1994831277U;
+        static const AkUniqueID EV_SFX_PLR_FOOSTEPS = 1061346095U;
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
     } // namespace EVENTS
 
@@ -99,6 +100,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID VOX = 543694036U;
     } // namespace BANKS
 

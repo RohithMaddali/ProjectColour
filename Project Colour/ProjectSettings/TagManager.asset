@@ -12,6 +12,9 @@ TagManager:
   - CanColour
   - GreenTriger
   - BlueTrigger
+  - Stone
+  - Dirt
+  - RedTrigger
   layers:
   - Default
   - TransparentFX

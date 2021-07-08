@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="543694036" Language="SFX" Hash="3243047168">
+		<SoundBank Id="543694036" Language="SFX" Hash="3844111975">
 			<ObjectPath>\SoundBanks\Default Work Unit\Vox</ObjectPath>
 			<ShortName>Vox</ShortName>
 			<Path>Vox.bnk</Path>
@@ -20,39 +20,39 @@
 					<IncludedMemoryFiles>
 						<File Id="55166877" Language="SFX">
 							<ShortName>Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049]_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 11-15-E05- take 1 [2021-06-16 213049]_060BE4F9.wem</Path>
 						</File>
 						<File Id="61681148" Language="SFX">
 							<ShortName>Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550]_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 9-13-E04- take 2 [2021-06-16 212550]_060BE4F9.wem</Path>
 						</File>
 						<File Id="158637950" Language="SFX">
 							<ShortName>Spectrum VO lines 6-10-E01- take 1.wav</ShortName>
-							<Path>SFX\Spectrum VO lines 6-10-E01- take 1_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 6-10-E01- take 1_060BE4F9.wem</Path>
 						</File>
 						<File Id="164480560" Language="SFX">
 							<ShortName>Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520]_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 2-5-E08- take 1 [2021-06-16 221520]_060BE4F9.wem</Path>
 						</File>
 						<File Id="366064581" Language="SFX">
 							<ShortName>Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410]_D3BBF221.wem</Path>
+							<Path>SFX\Spectrum VO lines 12-16-E06- take 1 [2021-06-16 213410]_7C5E7971.wem</Path>
 						</File>
 						<File Id="549970528" Language="SFX">
 							<ShortName>Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058]_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 5-9-E10- take 2 [2021-06-16 211058]_060BE4F9.wem</Path>
 						</File>
 						<File Id="668681399" Language="SFX">
 							<ShortName>Spectrum VO lines 1-4-E07- take 1.wav</ShortName>
-							<Path>SFX\Spectrum VO lines 1-4-E07- take 1_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 1-4-E07- take 1_060BE4F9.wem</Path>
 						</File>
 						<File Id="707900487" Language="SFX">
 							<ShortName>Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457]_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457]_060BE4F9.wem</Path>
 						</File>
 						<File Id="920976042" Language="SFX">
 							<ShortName>Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022].wav</ShortName>
-							<Path>SFX\Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022]_10C4C929.wem</Path>
+							<Path>SFX\Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022]_060BE4F9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -95,7 +95,263 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="1374850773">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3453916995">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1061346095" Name="ev_sfx_plr_foosteps" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_foosteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.656740">
+					<IncludedMemoryFiles>
+						<File Id="55356466" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (7).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (7)_060BE4F9.wem</Path>
+						</File>
+						<File Id="80957804" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-003.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-003_060BE4F9.wem</Path>
+						</File>
+						<File Id="81348802" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-005.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-005_060BE4F9.wem</Path>
+						</File>
+						<File Id="108999697" Language="SFX">
+							<ShortName>fs_dirt_running-003.wav</ShortName>
+							<Path>SFX\fs_dirt_running-003_060BE4F9.wem</Path>
+						</File>
+						<File Id="143323330" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-013.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-013_060BE4F9.wem</Path>
+						</File>
+						<File Id="143735425" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (4).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (4)_060BE4F9.wem</Path>
+						</File>
+						<File Id="155170770" Language="SFX">
+							<ShortName>fs_dirt_running-006.wav</ShortName>
+							<Path>SFX\fs_dirt_running-006_060BE4F9.wem</Path>
+						</File>
+						<File Id="156441822" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (2).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (2)_060BE4F9.wem</Path>
+						</File>
+						<File Id="218238065" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-002.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-002_060BE4F9.wem</Path>
+						</File>
+						<File Id="238284446" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-007.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-007_060BE4F9.wem</Path>
+						</File>
+						<File Id="254056045" Language="SFX">
+							<ShortName>fs_dirt_running-002.wav</ShortName>
+							<Path>SFX\fs_dirt_running-002_060BE4F9.wem</Path>
+						</File>
+						<File Id="280029834" Language="SFX">
+							<ShortName>fs_dirt_running-009.wav</ShortName>
+							<Path>SFX\fs_dirt_running-009_060BE4F9.wem</Path>
+						</File>
+						<File Id="291821182" Language="SFX">
+							<ShortName>fs_dirt_running-005.wav</ShortName>
+							<Path>SFX\fs_dirt_running-005_060BE4F9.wem</Path>
+						</File>
+						<File Id="320824849" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-011.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-011_060BE4F9.wem</Path>
+						</File>
+						<File Id="321077639" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-016.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-016_060BE4F9.wem</Path>
+						</File>
+						<File Id="445902592" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-009.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-009_060BE4F9.wem</Path>
+						</File>
+						<File Id="447494125" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-014.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-014_060BE4F9.wem</Path>
+						</File>
+						<File Id="459513931" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-015.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-015_060BE4F9.wem</Path>
+						</File>
+						<File Id="471272253" Language="SFX">
+							<ShortName>fs_dirt_running-001.wav</ShortName>
+							<Path>SFX\fs_dirt_running-001_060BE4F9.wem</Path>
+						</File>
+						<File Id="492846475" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (5).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (5)_060BE4F9.wem</Path>
+						</File>
+						<File Id="508375124" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-001.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-001_060BE4F9.wem</Path>
+						</File>
+						<File Id="532747377" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes_060BE4F9.wem</Path>
+						</File>
+						<File Id="535031681" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-008.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-008_060BE4F9.wem</Path>
+						</File>
+						<File Id="543251089" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-004.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-004_060BE4F9.wem</Path>
+						</File>
+						<File Id="569264173" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Walking_48khz_24bit (2).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Walking_48khz_24bit (2)_060BE4F9.wem</Path>
+						</File>
+						<File Id="572765189" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Walking_48khz_24bit (3).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Walking_48khz_24bit (3)_060BE4F9.wem</Path>
+						</File>
+						<File Id="584848934" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (1).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (1)_060BE4F9.wem</Path>
+						</File>
+						<File Id="590818647" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-009.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-009_060BE4F9.wem</Path>
+						</File>
+						<File Id="677514057" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-008.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-008_060BE4F9.wem</Path>
+						</File>
+						<File Id="686760089" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-004.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-004_060BE4F9.wem</Path>
+						</File>
+						<File Id="696393340" Language="SFX">
+							<ShortName>fs_dirt_running-008.wav</ShortName>
+							<Path>SFX\fs_dirt_running-008_060BE4F9.wem</Path>
+						</File>
+						<File Id="749583954" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Walking_48khz_24bit (5).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Walking_48khz_24bit (5)_060BE4F9.wem</Path>
+						</File>
+						<File Id="835710548" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-012.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-012_060BE4F9.wem</Path>
+						</File>
+						<File Id="849394483" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-001.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-001_060BE4F9.wem</Path>
+						</File>
+						<File Id="857922440" Language="SFX">
+							<ShortName>FS_Jeans_Rustle_Walking_48khz_24bit (4).wav</ShortName>
+							<Path>SFX\FS_Jeans_Rustle_Walking_48khz_24bit (4)_060BE4F9.wem</Path>
+						</File>
+						<File Id="884210378" Language="SFX">
+							<ShortName>FS_Ashphalt_Walking_Shoes-007.wav</ShortName>
+							<Path>SFX\FS_Ashphalt_Walking_Shoes-007_060BE4F9.wem</Path>
+						</File>
+						<File Id="961183373" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-005.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-005_060BE4F9.wem</Path>
+						</File>
+						<File Id="973283944" Language="SFX">
+							<ShortName>fs_dirt_running-004.wav</ShortName>
+							<Path>SFX\fs_dirt_running-004_060BE4F9.wem</Path>
+						</File>
+						<File Id="974782771" Language="SFX">
+							<ShortName>fs_dirt_running-007.wav</ShortName>
+							<Path>SFX\fs_dirt_running-007_060BE4F9.wem</Path>
+						</File>
+						<File Id="1037418212" Language="SFX">
+							<ShortName>FS_Dirt_48000_24-006.wav</ShortName>
+							<Path>SFX\FS_Dirt_48000_24-006_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{2A0FDD90-F596-4079-B787-F334223344EE}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{A444A2D9-4E8C-4D39-98F2-359B74AA080A}">
+							<Children>
+								<SwitchContainer SwitchValue="{FCFCF67E-9E33-4313-8AC9-02871383162A}">
+									<Media>
+										<File Id="108999697"/>
+										<File Id="155170770"/>
+										<File Id="254056045"/>
+										<File Id="280029834"/>
+										<File Id="291821182"/>
+										<File Id="471272253"/>
+										<File Id="696393340"/>
+										<File Id="973283944"/>
+										<File Id="974782771"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{FCFCF67E-9E33-4313-8AC9-02871383162A}">
+									<Media>
+										<File Id="55356466"/>
+										<File Id="143735425"/>
+										<File Id="156441822"/>
+										<File Id="492846475"/>
+										<File Id="584848934"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2A0FDD90-F596-4079-B787-F334223344EE}">
+							<Children>
+								<SwitchContainer SwitchValue="{FCFCF67E-9E33-4313-8AC9-02871383162A}">
+									<Media>
+										<File Id="80957804"/>
+										<File Id="218238065"/>
+										<File Id="238284446"/>
+										<File Id="508375124"/>
+										<File Id="543251089"/>
+										<File Id="590818647"/>
+										<File Id="677514057"/>
+										<File Id="961183373"/>
+										<File Id="1037418212"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{8F6F7E8C-6755-494A-81F0-2436E5BDB099}">
+									<Media>
+										<File Id="81348802"/>
+										<File Id="143323330"/>
+										<File Id="320824849"/>
+										<File Id="321077639"/>
+										<File Id="445902592"/>
+										<File Id="447494125"/>
+										<File Id="459513931"/>
+										<File Id="532747377"/>
+										<File Id="535031681"/>
+										<File Id="686760089"/>
+										<File Id="835710548"/>
+										<File Id="849394483"/>
+										<File Id="884210378"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{FCFCF67E-9E33-4313-8AC9-02871383162A}">
+									<Media>
+										<File Id="569264173"/>
+										<File Id="572765189"/>
+										<File Id="749583954"/>
+										<File Id="857922440"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="2371526279" Name="fs_material_switch_group" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group">
+					<Switches>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Dirt"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Stone"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2905878991" Name="fs_movement_switch_group" ObjectPath="\Switches\Default Work Unit\fs_movement_switch_group">
+					<Switches>
+						<Switch Id="340271938" Name="Walking" ObjectPath="\Switches\Default Work Unit\fs_movement_switch_group\Walking"/>
+						<Switch Id="3863236874" Name="Running" ObjectPath="\Switches\Default Work Unit\fs_movement_switch_group\Running"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1229948536" Language="SFX" Hash="3836248723">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
@@ -104,31 +360,31 @@
 					<IncludedMemoryFiles>
 						<File Id="56239873" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-003.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-003_00B2541D.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-003_5E4A15ED.wem</Path>
 						</File>
 						<File Id="150453628" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping_CF534753.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping_5A8E5503.wem</Path>
 						</File>
 						<File Id="317469201" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-001.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-001_D8153223.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-001_E1374F13.wem</Path>
 						</File>
 						<File Id="317553922" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-004.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-004_142B70BF.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-004_EF319F8F.wem</Path>
 						</File>
 						<File Id="370626416" Language="SFX">
 							<ShortName>Spectrum_wind_forrest_vegetation.wav</ShortName>
-							<Path>SFX\Spectrum_wind_forrest_vegetation_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum_wind_forrest_vegetation_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="709356173" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-002.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-002_7A84413B.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-002_BA32FC8B.wem</Path>
 						</File>
 						<File Id="936217840" Language="SFX">
 							<ShortName>Spectrum_atmos_wind_calm_breezy.wav</ShortName>
-							<Path>SFX\Spectrum_atmos_wind_calm_breezy_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum_atmos_wind_calm_breezy_7DE7C0C7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -136,23 +392,23 @@
 					<IncludedMemoryFiles>
 						<File Id="56239873" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-003.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-003_00B2541D.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-003_5E4A15ED.wem</Path>
 						</File>
 						<File Id="150453628" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping_CF534753.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping_5A8E5503.wem</Path>
 						</File>
 						<File Id="317469201" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-001.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-001_D8153223.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-001_E1374F13.wem</Path>
 						</File>
 						<File Id="317553922" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-004.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-004_142B70BF.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-004_EF319F8F.wem</Path>
 						</File>
 						<File Id="709356173" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-002.wav</ShortName>
-							<Path>SFX\Spectrum_ambience_birds_chirping-002_7A84413B.wem</Path>
+							<Path>SFX\Spectrum_ambience_birds_chirping-002_BA32FC8B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -160,7 +416,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1027518291" Language="SFX">
 							<ShortName>Spectrum_running_water.wav</ShortName>
-							<Path>SFX\Spectrum_running_water_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum_running_water_7DE7C0C7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -187,7 +443,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2770252633">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3363455387">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -206,17 +462,25 @@
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 EP melody.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 EP melody_BD3A0862.wem</Path>
 						</File>
+						<File Id="69160459" Language="SFX">
+							<ShortName>Spectrum 4 74bpm drums.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm drums_7DE7C0C7.wem</Path>
+						</File>
 						<File Id="115339553" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 Synthy pad.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Synthy pad_BD3A0862.wem</Path>
 						</File>
 						<File Id="181296428" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 48-64 16-Kontakt.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 48-64 16-Kontakt_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 48-64 16-Kontakt_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="254604164" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 Una cordaChords.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Una cordaChords_BD3A0862.wem</Path>
+						</File>
+						<File Id="263510647" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 9-Kontakt.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 9-Kontakt_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="267995335" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 EP chords 2.wav</ShortName>
@@ -224,15 +488,23 @@
 						</File>
 						<File Id="319489435" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 Synthy pad.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Synthy pad_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Synthy pad_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="327951146" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 Arp plucks.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Arp plucks_BD3A0862.wem</Path>
 						</File>
+						<File Id="342846500" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 8-Kontakt.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 8-Kontakt_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="377151784" Language="SFX">
+							<ShortName>Spectrum 4 green zone 74bpm stringy thing.wav</ShortName>
+							<Path>SFX\Spectrum 4 green zone 74bpm stringy thing_BD3A0862.wem</Path>
+						</File>
 						<File Id="390558793" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 64-80 Synthy pad.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Synthy pad_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Synthy pad_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="394090265" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 Music box.wav</ShortName>
@@ -256,7 +528,7 @@
 						</File>
 						<File Id="460428463" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 64-80 16-Kontakt.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 16-Kontakt_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 16-Kontakt_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="479703291" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 Una corda melody.wav</ShortName>
@@ -278,13 +550,17 @@
 							<ShortName>Spectrum 4 74bpm 4-4 64-80 Ufo landing.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Ufo landing_BD3A0862.wem</Path>
 						</File>
+						<File Id="523326865" Language="SFX">
+							<ShortName>Spectrum 4 74bpm horns 2.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm horns 2_7DE7C0C7.wem</Path>
+						</File>
 						<File Id="587872161" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 64-80 Una corda melody.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 Una corda melody_BD3A0862.wem</Path>
 						</File>
 						<File Id="618922227" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 16-Kontakt.wav</ShortName>
-							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 16-Kontakt_D79FB2B7.wem</Path>
+							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 16-Kontakt_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="631265261" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 Ufo landing.wav</ShortName>
@@ -301,6 +577,10 @@
 						<File Id="681152443" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 Kyans volca.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Kyans volca_BD3A0862.wem</Path>
+						</File>
+						<File Id="708931522" Language="SFX">
+							<ShortName>Spectrum 4 74bpm shukakachi2.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm shukakachi2_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="813853291" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 1-16 Una cordaChords.wav</ShortName>
@@ -326,6 +606,14 @@
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 EP chords.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 EP chords_BD3A0862.wem</Path>
 						</File>
+						<File Id="892759213" Language="SFX">
+							<ShortName>Spectrum 4 74bpm roll.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm roll_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="905689831" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 5-Kontakt.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 5-Kontakt_7DE7C0C7.wem</Path>
+						</File>
 						<File Id="924617312" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 16-32 Una cordaChords.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 16-32 Una cordaChords_BD3A0862.wem</Path>
@@ -334,13 +622,29 @@
 							<ShortName>Spectrum 4 74bpm 4-4 64-80 EP chords.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 64-80 EP chords_BD3A0862.wem</Path>
 						</File>
+						<File Id="960659919" Language="SFX">
+							<ShortName>Spectrum 4 green zone 74bpm rolls.wav</ShortName>
+							<Path>SFX\Spectrum 4 green zone 74bpm rolls_BD3A0862.wem</Path>
+						</File>
 						<File Id="1002848807" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 48-64 Ufo landing.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 48-64 Ufo landing_BD3A0862.wem</Path>
 						</File>
+						<File Id="1003961889" Language="SFX">
+							<ShortName>Spectrum 4 74bpm 3-Qin_RV_x64.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm 3-Qin_RV_x64_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="1025920503" Language="SFX">
+							<ShortName>Spectrum 4 74bpm percussion.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm percussion_7DE7C0C7.wem</Path>
+						</File>
 						<File Id="1036144694" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 Una corda melody.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 4-4 80-96 Una corda melody_BD3A0862.wem</Path>
+						</File>
+						<File Id="1052226812" Language="SFX">
+							<ShortName>Spectrum 4 74bpm shukakachi.wav</ShortName>
+							<Path>SFX\Spectrum 4 74bpm shukakachi_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="1053166123" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 1-16 Ufo landing.wav</ShortName>
@@ -373,6 +677,7 @@
 								<File Id="254604164"/>
 								<File Id="267995335"/>
 								<File Id="327951146"/>
+								<File Id="377151784"/>
 								<File Id="394090265"/>
 								<File Id="411324864"/>
 								<File Id="413958182"/>
@@ -389,6 +694,7 @@
 								<File Id="857655518"/>
 								<File Id="863609679"/>
 								<File Id="927469935"/>
+								<File Id="960659919"/>
 								<File Id="1002848807"/>
 								<File Id="1036144694"/>
 								<File Id="1060751705"/>
@@ -401,6 +707,20 @@
 								<File Id="390558793"/>
 								<File Id="460428463"/>
 								<File Id="618922227"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D5F10A84-655A-4B54-A21E-8A3CBD12FB3C}">
+							<Media>
+								<File Id="69160459"/>
+								<File Id="263510647"/>
+								<File Id="342846500"/>
+								<File Id="523326865"/>
+								<File Id="708931522"/>
+								<File Id="892759213"/>
+								<File Id="905689831"/>
+								<File Id="1003961889"/>
+								<File Id="1025920503"/>
+								<File Id="1052226812"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
