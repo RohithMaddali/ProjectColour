@@ -25,6 +25,9 @@ namespace AJ
         public Material RedMat;
         public Material blueMat;
 
+        //for animation
+        public Animator animator;
+
         //PRIVATE VARS
         private Color currentColor;
         private Color previousColor;
@@ -131,6 +134,9 @@ namespace AJ
 
         void Suck()
         {
+            //shoot
+            animator.SetTrigger("IsShooting");
+
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 
@@ -157,6 +163,9 @@ namespace AJ
 
         void Shoot()
         {
+            //shoot
+            animator.SetTrigger("IsShooting");
+
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 

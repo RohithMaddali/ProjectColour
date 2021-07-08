@@ -1782,6 +1782,7 @@ MonoBehaviour:
   greenMat: {fileID: 0}
   RedMat: {fileID: 0}
   blueMat: {fileID: 0}
+  animator: {fileID: 2941813434085720964}
   hasColour: 0
   cam: {fileID: 0}
   crosshair: {fileID: 1262566790}
@@ -2221,6 +2222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   velocityZ: 0
+  isAiming: 0
 --- !u!1001 &3644919744204066495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3517,11 +3519,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c162dc3f097f851418257cc9585dd76c, type: 3}
---- !u!4 &9093690618338286078 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c162dc3f097f851418257cc9585dd76c, type: 3}
-  m_PrefabInstance: {fileID: 8771321105326964245}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4944541311355334692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4406618521680891441, guid: c162dc3f097f851418257cc9585dd76c, type: 3}
@@ -3530,5 +3527,15 @@ Transform:
 --- !u!1 &8464682364523201348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c162dc3f097f851418257cc9585dd76c, type: 3}
+  m_PrefabInstance: {fileID: 8771321105326964245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9093690618338286078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c162dc3f097f851418257cc9585dd76c, type: 3}
+  m_PrefabInstance: {fileID: 8771321105326964245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2941813434085720964 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: c162dc3f097f851418257cc9585dd76c, type: 3}
   m_PrefabInstance: {fileID: 8771321105326964245}
   m_PrefabAsset: {fileID: 0}
