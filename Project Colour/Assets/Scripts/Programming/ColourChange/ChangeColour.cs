@@ -41,6 +41,8 @@ namespace AJ
         public RectTransform crosshair;
         RBMove player;
 
+        private Ray ray;
+
         private void Awake()
         {
             //get controls
@@ -97,6 +99,18 @@ namespace AJ
                 Debug.Log("Playing red Voice Lines");
                 AkSoundEngine.SetState("Colour", "Red");
             }
+
+            move = gameObject.transform.forward;
+
+            if (!player.moveCamActive)
+            {
+                ray = cam.ScreenPointToRay(Input.mousePosition);
+            }
+            else if (player.moveCamActive)
+            {
+                ray = new Ray(transform.position, move);
+            }
+            Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
         }
 
         /*private void FixedUpdate()
@@ -136,7 +150,6 @@ namespace AJ
 
         void Suck()
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 
             if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))
@@ -164,7 +177,6 @@ namespace AJ
 
         void Shoot()
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit raycastToTarget;
 
             if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))

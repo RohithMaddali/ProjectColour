@@ -46,7 +46,7 @@ Material:
     - _Depth: 7.24
     - _Depthdarkness: 0.541
     - _EdgeFade: 0.077
-    - _FlowSpeed: 0.5
+    - _FlowSpeed: 0.6
     - _Fresnelexponent: 4
     - _Glossiness: 0.663
     - _Metallicness: 0.1
@@ -61,7 +61,7 @@ Material:
     - _SurfaceHighlight: 0.05
     - _SurfaceHightlighttiling: 0.25
     - _Surfacehightlightsize: 0
-    - _Tiling: 0.46
+    - _Tiling: 0.1
     - _Transparency: 0.348
     - _Wavesspeed: 0.75
     - _Wavesstrength: 0.207
@@ -70,6 +70,6 @@ Material:
     - Color_D0289068: {r: 0, g: 0.9394503, b: 1, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColor: {r: 0, g: 0.503546, b: 1, a: 0}
+    - _WaterColor: {r: 0.39056596, g: 0.84465414, b: 1, a: 0.14901961}
     - _WaterShallowColor: {r: 0, g: 0.9394503, b: 1, a: 0}
   m_BuildTextureStacks: []
