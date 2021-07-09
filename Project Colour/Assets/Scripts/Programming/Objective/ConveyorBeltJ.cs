@@ -99,11 +99,11 @@ public class ConveyorBeltJ : MonoBehaviour
         return rayHitButton;
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider player)
     {
         if (beltOn)
         {
-            other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
+            player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
         }
     }
 
