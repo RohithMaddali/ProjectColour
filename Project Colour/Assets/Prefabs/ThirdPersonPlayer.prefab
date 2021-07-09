@@ -2280,7 +2280,7 @@ MonoBehaviour:
   boostSpeed: 16
   acceleration: 10
   jumpHeight: 500
-  bounceHeight: 15
+  bounceHeight: 800
   accelBoost: 20
   bounceMultiplier: 0
   isBouncing: 0
