@@ -19,11 +19,19 @@ public class ConveyorBeltJ : MonoBehaviour
     public Material redMat;
     public Material greyMat;
     public bool isPowered;
+    Vector3 pushDir;
+    Rigidbody player;
 
     void Awake()
     {
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         buttonHit = null;
+    }
+
+    private void Start()
+    {
+        player = FindObjectOfType<Rigidbody>();
+        pushDir = (endpoint.transform.position - transform.position).normalized;
     }
 
     void Update()
@@ -99,11 +107,12 @@ public class ConveyorBeltJ : MonoBehaviour
         return rayHitButton;
     }
 
-    void OnTriggerStay(Collider player)
+    void OnTriggerStay(Collider col)
     {
         if (beltOn)
         {
-            player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
+            //player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
+            player.AddForce(pushDir * currentSpeed);
         }
     }
 
