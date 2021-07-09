@@ -70,6 +70,6 @@ Material:
     - Color_D0289068: {r: 0, g: 0.9394503, b: 1, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColor: {r: 0.39056596, g: 0.84465414, b: 1, a: 0.14901961}
+    - _WaterColor: {r: 0.3905659, g: 0.84465414, b: 1, a: 0.40392157}
     - _WaterShallowColor: {r: 0, g: 0.9394503, b: 1, a: 0}
   m_BuildTextureStacks: []
