@@ -128,7 +128,11 @@ namespace AJ
                 }
 
             }
-            
+            else
+            {
+                focused.SetActive(false);
+                unfocused.SetActive(true);
+            }
             Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
         }
 
