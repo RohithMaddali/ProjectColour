@@ -24,7 +24,11 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d185e359cdc33649899a2838002beffd
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585770257899561244
+=======
+    m_lastTime: -8585764199612304302
+>>>>>>> Stashed changes
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +42,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1ad7f73361ace840af42609fdd7fd554
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585758174310198041
+=======
+    m_lastTime: -8585758094717660078
+>>>>>>> Stashed changes
     List:
     - name: Ambience
       guid: d6b48f63ffda0f40aced95b3f1979df2
@@ -168,7 +176,11 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 2a944836521c424da3d49e97a9e03762
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585758174310188082
+=======
+    m_lastTime: -8585758094717650106
+>>>>>>> Stashed changes
     List:
     - name: Environment
       guid: c321d99e91158640bf31e616fa2d0806
@@ -238,7 +250,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 71fa53559ec40047ac09cc7babdc1a38
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585758174315404136
+=======
+    m_lastTime: -8585758094723043087
+>>>>>>> Stashed changes
     List:
     - name: ev_all_ambience
       guid: 26223d67ad3263488733e6525da99793
@@ -405,7 +421,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: d4ef90d6a268b24ab2c9aa2ac58f5fde
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585764033855010414
+=======
+    m_lastTime: -8585758176754359111
+>>>>>>> Stashed changes
     List:
     - name: Master_Volume
       guid: d9561b4c72baf545af5091bb37962680
@@ -433,7 +453,11 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46f609f0b2605447aa33f2db183074af
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585764033850546110
+=======
+    m_lastTime: -8585758176750439724
+>>>>>>> Stashed changes
     List:
     - name: Colour
       guid: 00c4cbf1bb3eea4e89b57b36a001675d
@@ -529,7 +553,11 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4ea0271ff47ef14c84b2c05a66f8fe7e
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585758174310178094
+=======
+    m_lastTime: -8585758094717640132
+>>>>>>> Stashed changes
     List:
     - name: amb_area
       guid: 78614cd65ee8f24fa58a2012959f3ab8
@@ -807,7 +835,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 7dc84a5948a5bc419e20ee63e751d964
     GuidInternal: 
+<<<<<<< Updated upstream
     m_lastTime: -8585770257899561244
+=======
+    m_lastTime: -8585764199612314277
+>>>>>>> Stashed changes
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

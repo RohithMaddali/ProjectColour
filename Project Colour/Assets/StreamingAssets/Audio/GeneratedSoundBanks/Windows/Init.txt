@@ -1,0 +1,30 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	296203157	Colour			\Default Work Unit\Colour	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Colour			
+	980603538	Red	Colour			
+	1325827433	Blue	Colour			
+	4147287986	Green	Colour			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4179668880	Master_Volume			\Default Work Unit\Master_Volume	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\Player	
+	2299321487	Enemy			\Default Work Unit\Master Audio Bus\Enemy	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+	4041657371	VoiceOver			\Default Work Unit\Master Audio Bus\VoiceOver	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	813255135	Room_Small (Custom)	Wwise RoomVerb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
