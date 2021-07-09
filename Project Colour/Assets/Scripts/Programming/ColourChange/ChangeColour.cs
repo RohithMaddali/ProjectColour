@@ -116,14 +116,19 @@ namespace AJ
 
             if (Physics.Raycast(ray, out raycastCheck, shootDistance, raycastHitMask))
             {
-                focused.SetActive(true);
-                unfocused.SetActive(false);
+                if (raycastCheck.transform.gameObject.CompareTag("CanColour"))
+                {
+                    focused.SetActive(true);
+                    unfocused.SetActive(false);
+                }
+                else
+                {
+                    focused.SetActive(false);
+                    unfocused.SetActive(true);
+                }
+
             }
-            else
-            {
-                focused.SetActive(false);
-                unfocused.SetActive(true);
-            }
+            
             Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
         }
 
