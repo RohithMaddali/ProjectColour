@@ -7,6 +7,7 @@ using AJ;
 public class ConveyorBeltJ : MonoBehaviour
 {
     public GameObject belt;
+    public GameObject indicator;
     public Transform endpoint;
     public int currentSpeed;
     public int maxSpeed;
@@ -15,6 +16,9 @@ public class ConveyorBeltJ : MonoBehaviour
     public GameObject speedSwitch;
     public GameObject buttonHit;
     public bool beltOn;
+    public Material redMat;
+    public Material greyMat;
+    public bool isPowered;
 
     void Awake()
     {
@@ -56,11 +60,17 @@ public class ConveyorBeltJ : MonoBehaviour
     {
         if (beltOn)
         {
+            powerSwitch.GetComponent<Animator>().SetBool("on", false);
             beltOn = false;
+            isPowered = false;
+            indicator.GetComponent<Renderer>().material = greyMat;
         }
         else
         {
+            powerSwitch.GetComponent<Animator>().SetBool("on", true);
             beltOn = true;
+            isPowered = false;
+            indicator.GetComponent<Renderer>().material = redMat;
         }
     }
 
