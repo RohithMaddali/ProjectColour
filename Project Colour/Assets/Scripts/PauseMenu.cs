@@ -10,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject controlsMenu;
     public GameObject pauseMenuUI;
     public GameObject settingsMenu;
+    public GameObject quitMenu;
     public bool submenu = false;
     // Update is called once per frame
     void Update()
@@ -68,6 +69,8 @@ public class PauseMenu : MonoBehaviour
         controlsMenu.SetActive(false);
         pauseMenuUI.SetActive(true);
         settingsMenu.SetActive(false);
+        pauseMenuUI.SetActive(true);
+        quitMenu.SetActive(false);
         submenu = false;
     }  
     
@@ -81,6 +84,9 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit()
     {
+        submenu = true;
+        quitMenu.SetActive(true);
+        pauseMenuUI.SetActive(false);
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
