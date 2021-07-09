@@ -87,6 +87,10 @@ public class PauseMenu : MonoBehaviour
         submenu = true;
         quitMenu.SetActive(true);
         pauseMenuUI.SetActive(false);
+    }
+
+    public void CloseGame()
+    {
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
