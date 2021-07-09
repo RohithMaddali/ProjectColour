@@ -195,22 +195,25 @@ public class RBMove : MonoBehaviour
         //Debug.Log(fallVelocity.y);
         if (colColor == Color.blue)
         {
-            float mag = fallVelocity.magnitude;
-            ContactPoint cp = collision.contacts[0];
-            Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
+            float mag = fallVelocity.magnitude * 50;
+            //ContactPoint cp = collision.contacts[0];
+            //Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
             float bounceForce = Mathf.Max(mag, bounceHeight);
             //rb.velocity = Vector3.Reflect(fallVelocity, cp.normal);
             if(bouncer != null && collision.gameObject == bouncer)
             {
-                rb.velocity = bounceDir.normalized * reboundForce;
+                rb.velocity = Vector3.zero;
+                rb.AddForce(0f, reboundForce, 0f, ForceMode.Impulse);
                 //Debug.Log("Do it again" + reboundForce);
             }
             else
             {
-                rb.velocity = bounceDir.normalized * bounceForce;
+                rb.velocity = Vector3.zero;
+                rb.AddForce(0f, bounceForce, 0f, ForceMode.Impulse);
                 isBouncing = true;
                 delta = 0f;
                 reboundForce = bounceForce;
+                Debug.Log("fall velocity force is " + mag);
                 
                 //Debug.Log("first Bounce on this objkect" + bounceForce);
 
