@@ -38,7 +38,8 @@ namespace AJ
         public bool hasColour;
 
         public Camera cam;
-        public RectTransform crosshair;
+        public GameObject unfocused;
+        public GameObject focused;
         RBMove player;
 
         private Ray ray;
@@ -110,6 +111,19 @@ namespace AJ
             {
                 ray = new Ray(transform.position, move);
             }
+
+            RaycastHit raycastCheck;
+
+            if (Physics.Raycast(ray, out raycastCheck, shootDistance, raycastHitMask))
+            {
+                focused.SetActive(true);
+                unfocused.SetActive(false);
+            }
+            else
+            {
+                focused.SetActive(false);
+                unfocused.SetActive(true);
+            }
             Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
         }
 
@@ -157,7 +171,6 @@ namespace AJ
                 
                 if (raycastToTarget.transform.gameObject.layer == 8 && !hasColour)
                 {
-                    
                     Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
                     Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); //get renderer of hit
                     if(hitRenderer.material.color == Color.red || hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green) //chekc if object has special colour
