@@ -8,8 +8,7 @@ public class ConveyorBeltJ : MonoBehaviour
 {
     public GameObject belt;
     public GameObject indicator;
-    public Transform endpoint;
-    public int currentSpeed;
+    public float speed;
     public int maxSpeed;
     public Camera cam;
     public GameObject powerSwitch;
@@ -19,7 +18,6 @@ public class ConveyorBeltJ : MonoBehaviour
     public Material redMat;
     public Material greyMat;
     public bool isPowered;
-    Vector3 pushDir;
     Rigidbody player;
 
     void Awake()
@@ -30,8 +28,7 @@ public class ConveyorBeltJ : MonoBehaviour
 
     private void Start()
     {
-        player = FindObjectOfType<Rigidbody>();
-        pushDir = (endpoint.transform.position - transform.position).normalized;
+        player = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -50,17 +47,26 @@ public class ConveyorBeltJ : MonoBehaviour
                 }
             }
         }
+
+        if (beltOn)
+        {
+            //player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
+            //player.AddForce(pushDir * currentSpeed);
+            Vector3 pos = player.position;
+            player.position += Vector3.back * speed * Time.deltaTime;
+            player.MovePosition(pos);
+        }
     }
 
     void ChangeSpeed()
     {
-        if (currentSpeed >= maxSpeed)
+        if (speed >= maxSpeed)
         {
-            currentSpeed = 0;
+            speed = 0;
         }
         else
         {
-            currentSpeed++;
+            speed += 5;
         }
     }
 
@@ -109,11 +115,7 @@ public class ConveyorBeltJ : MonoBehaviour
 
     void OnTriggerStay(Collider col)
     {
-        if (beltOn)
-        {
-            //player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
-            player.AddForce(pushDir * currentSpeed);
-        }
+        
     }
 
 }
