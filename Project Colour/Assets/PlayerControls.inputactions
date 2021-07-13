@@ -52,6 +52,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "14df85b4-c345-4165-91f8-c64ad3aa7ec0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Objectives",
+                    "type": "Button",
+                    "id": "d4105d38-718a-4fa0-893a-843bebc1342a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -82,7 +98,7 @@
                     "id": "94055285-9432-4bac-8a3b-30c440d224d5",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
-                    "processors": "StickDeadzone(min=0.05)",
+                    "processors": "StickDeadzone(min=0.01)",
                     "groups": "Gamepad",
                     "action": "Move",
                     "isComposite": false,
@@ -212,7 +228,7 @@
                 {
                     "name": "",
                     "id": "6ca61017-0c05-4e0b-b428-64f8d3a069ae",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -228,6 +244,28 @@
                     "processors": "",
                     "groups": "Keyboard and Mouse",
                     "action": "CamChange",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5bc00124-e5d0-4237-a644-7493139b6423",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa1e0b83-2ffb-482f-bf8e-1844d7af696d",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Objectives",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

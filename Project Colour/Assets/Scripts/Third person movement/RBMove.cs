@@ -166,6 +166,9 @@ public class RBMove : MonoBehaviour
     {
         if (moveCamActive)
         {
+            Vector3 newRotation = gameObject.transform.eulerAngles;
+            newRotation.y = Camera.main.transform.eulerAngles.y;
+            gameObject.transform.eulerAngles = newRotation;
             moveCam.Priority = 0;
             aimCam.Priority = 1;
             aimScript.aimCam = true;

@@ -65,6 +65,22 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""14df85b4-c345-4165-91f8-c64ad3aa7ec0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Objectives"",
+                    ""type"": ""Button"",
+                    ""id"": ""d4105d38-718a-4fa0-893a-843bebc1342a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -95,7 +111,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""id"": ""94055285-9432-4bac-8a3b-30c440d224d5"",
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
-                    ""processors"": ""StickDeadzone(min=0.05)"",
+                    ""processors"": ""StickDeadzone(min=0.01)"",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
@@ -225,7 +241,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6ca61017-0c05-4e0b-b428-64f8d3a069ae"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
@@ -241,6 +257,28 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
                     ""action"": ""CamChange"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5bc00124-e5d0-4237-a644-7493139b6423"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aa1e0b83-2ffb-482f-bf8e-1844d7af696d"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Objectives"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -285,6 +323,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Gameplay_Suck = m_Gameplay.FindAction("Suck", throwIfNotFound: true);
         m_Gameplay_Shoot = m_Gameplay.FindAction("Shoot", throwIfNotFound: true);
         m_Gameplay_CamChange = m_Gameplay.FindAction("CamChange", throwIfNotFound: true);
+        m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
+        m_Gameplay_Objectives = m_Gameplay.FindAction("Objectives", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -340,6 +380,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Gameplay_Suck;
     private readonly InputAction m_Gameplay_Shoot;
     private readonly InputAction m_Gameplay_CamChange;
+    private readonly InputAction m_Gameplay_Pause;
+    private readonly InputAction m_Gameplay_Objectives;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -350,6 +392,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Suck => m_Wrapper.m_Gameplay_Suck;
         public InputAction @Shoot => m_Wrapper.m_Gameplay_Shoot;
         public InputAction @CamChange => m_Wrapper.m_Gameplay_CamChange;
+        public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
+        public InputAction @Objectives => m_Wrapper.m_Gameplay_Objectives;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -377,6 +421,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @CamChange.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamChange;
                 @CamChange.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamChange;
                 @CamChange.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamChange;
+                @Pause.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPause;
+                @Objectives.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnObjectives;
+                @Objectives.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnObjectives;
+                @Objectives.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnObjectives;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -399,6 +449,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @CamChange.started += instance.OnCamChange;
                 @CamChange.performed += instance.OnCamChange;
                 @CamChange.canceled += instance.OnCamChange;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
+                @Objectives.started += instance.OnObjectives;
+                @Objectives.performed += instance.OnObjectives;
+                @Objectives.canceled += instance.OnObjectives;
             }
         }
     }
@@ -429,5 +485,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnSuck(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
         void OnCamChange(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+        void OnObjectives(InputAction.CallbackContext context);
     }
 }
