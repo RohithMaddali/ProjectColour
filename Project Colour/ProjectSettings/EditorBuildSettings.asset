@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test scenes/AdditiveSceneTest.unity
     guid: 8abd80d1b121ff54e85e8325687b7817
+  - enabled: 1
+    path: Assets/Scenes/Feedback.unity
+    guid: 268849bb1718b9a41ba6d4eff689aff3
   m_configObjects: {}

@@ -11,7 +11,11 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     public GameObject settingsMenu;
     public GameObject quitMenu;
+    public GameObject MainMenuPrompt;
+    public GameObject mainMenu;
     public bool submenu = false;
+
+    public int itemsPicked;
     // Update is called once per frame
 
     void Update()
@@ -27,7 +31,12 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
                 
-        }        
+        } 
+        if(itemsPicked == 6)
+        {
+            SceneManager.LoadScene(6);
+        }
+        Debug.Log("Items picked " + itemsPicked);
     }
 
     public void Resume()
@@ -72,6 +81,7 @@ public class PauseMenu : MonoBehaviour
         settingsMenu.SetActive(false);
         pauseMenuUI.SetActive(true);
         quitMenu.SetActive(false);
+        MainMenuPrompt.SetActive(false);
         submenu = false;
     }  
     
@@ -94,5 +104,13 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Quitting Game...");
         Application.Quit();
+    }
+
+    public void mainMenuPrompt()
+    {
+        submenu = true;
+        MainMenuPrompt.SetActive(true);
+        mainMenu.SetActive(false);
+
     }
 }

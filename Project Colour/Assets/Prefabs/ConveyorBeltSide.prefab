@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2483496190274546989}
   - component: {fileID: 7304477941439640218}
   - component: {fileID: 3215765613249802982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ConveyorBeltSide
-  m_TagString: Untagged
+  m_TagString: CanColour
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

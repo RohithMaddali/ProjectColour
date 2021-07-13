@@ -39829,6 +39829,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyorBeltSide
       objectReference: {fileID: 0}
+    - target: {fileID: 1922716424080742488, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922716424080742488, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_TagString
+      value: CanColour
+      objectReference: {fileID: 0}
     - target: {fileID: 3215765613249802982, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
       propertyPath: indicator
       value: 
