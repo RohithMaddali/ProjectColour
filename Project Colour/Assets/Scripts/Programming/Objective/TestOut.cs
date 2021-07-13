@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Quontity
 {
@@ -10,6 +11,23 @@ namespace Quontity
         public GameObject trackingPanel;
         //keeps tracking panel hidden when played
         bool Paused = false;
+        PlayerControls controls;
+
+        private void Awake()
+        {
+            controls = new PlayerControls();
+
+            controls.Gameplay.Objectives.performed += ctx => ObjectiveMenu();
+        }
+        void OnEnable()
+        {
+            controls.Gameplay.Enable();
+        }
+
+        void OnDisable()
+        {
+            controls.Gameplay.Disable();
+        }
         void Start()
         {
             //loads all objective onto the tracking panel
@@ -19,25 +37,26 @@ namespace Quontity
             trackingPanel.gameObject.SetActive(false);
         }
 
+        void ObjectiveMenu()
+        {
+            if (Paused == true)
+            {
+                Time.timeScale = 1.0f;
+                trackingPanel.gameObject.SetActive(false);
+                Paused = false;
+            }
+            else
+            {
+                Time.timeScale = 0.0f;
+                trackingPanel.gameObject.SetActive(true);
+                Paused = true;
+
+            }
+        }
+
         void Update()
         {
-            //acts similiar to a pause menu, pressing TAB will pause the menu and display current objectives
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                if (Paused == true)
-                {
-                    Time.timeScale = 1.0f;
-                    trackingPanel.gameObject.SetActive(false);
-                    Paused = false;
-                }
-                else
-                {
-                    Time.timeScale = 0.0f;
-                    trackingPanel.gameObject.SetActive(true);
-                    Paused = true;
-
-                }
-            }
+           
         }
 
     }
