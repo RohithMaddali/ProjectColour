@@ -27,6 +27,8 @@ namespace AJ
 
         bool canShoot = true;
 
+        public GameObject colourTarget;
+
         //for animation
         public Animator animator;
 
@@ -122,11 +124,13 @@ namespace AJ
                 {
                     focused.SetActive(true);
                     unfocused.SetActive(false);
+                    colourTarget = raycastCheck.transform.gameObject;
                 }
                 else
                 {
                     focused.SetActive(false);
                     unfocused.SetActive(true);
+                    colourTarget = null;
                 }
 
             }
@@ -134,6 +138,7 @@ namespace AJ
             {
                 focused.SetActive(false);
                 unfocused.SetActive(true);
+                colourTarget = null;
             }
             Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
         }
