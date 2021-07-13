@@ -9,6 +9,7 @@ public class ConveyorBeltJ : MonoBehaviour
     public GameObject belt;
     public GameObject indicator;
     public float speed;
+    public float visualScalarSpeed;
     public int maxSpeed;
     public Camera cam;
     public GameObject powerSwitch;
@@ -19,6 +20,8 @@ public class ConveyorBeltJ : MonoBehaviour
     public Material greyMat;
     public bool isPowered;
     Rigidbody player;
+
+    public float currentScroll;
 
     void Awake()
     {
@@ -58,6 +61,8 @@ public class ConveyorBeltJ : MonoBehaviour
             Vector3 pos = player.position;
             player.position -= transform.forward * speed * Time.deltaTime;
             player.MovePosition(pos);
+            currentScroll = currentScroll + visualScalarSpeed * speed * Time.deltaTime;
+            GetComponent<Renderer>().material.mainTextureOffset = new Vector3(currentScroll, 0);
         }
     }
 
