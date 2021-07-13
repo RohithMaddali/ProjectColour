@@ -15,7 +15,7 @@ public class ConveyorBeltJ : MonoBehaviour
     public GameObject speedSwitch;
     public GameObject buttonHit;
     public bool beltOn;
-    public Material redMat;
+    public Material LightMat;
     public Material greyMat;
     public bool isPowered;
     Rigidbody player;
@@ -47,13 +47,16 @@ public class ConveyorBeltJ : MonoBehaviour
                 }
             }
         }
+    }
 
+    void FixedUpdate()
+    {
         if (beltOn)
         {
             //player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
             //player.AddForce(pushDir * currentSpeed);
             Vector3 pos = player.position;
-            player.position += Vector3.back * speed * Time.deltaTime;
+            player.position -= transform.forward * speed * Time.deltaTime;
             player.MovePosition(pos);
         }
     }
@@ -84,7 +87,7 @@ public class ConveyorBeltJ : MonoBehaviour
             powerSwitch.GetComponent<Animator>().SetBool("on", true);
             beltOn = true;
             isPowered = false;
-            indicator.GetComponent<Renderer>().material = redMat;
+            indicator.GetComponent<Renderer>().material = LightMat;
         }
     }
 
@@ -112,11 +115,5 @@ public class ConveyorBeltJ : MonoBehaviour
         }
         return rayHitButton;
     }
-
-    void OnTriggerStay(Collider col)
-    {
-        
-    }
-
 }
 
