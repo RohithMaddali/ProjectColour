@@ -30,17 +30,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Suck",
+                    "name": "Weapon",
                     "type": "Button",
                     "id": "57d400e1-062e-4e47-973f-d3d209b522d4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "2dc0ab81-d80b-4747-887e-29a8f8ff7750",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -184,11 +176,11 @@
                 {
                     "name": "",
                     "id": "dc3bd854-e53c-458b-a207-c37876a6fdf5",
-                    "path": "<Gamepad>/leftTrigger",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Suck",
+                    "action": "Weapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -199,29 +191,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
-                    "action": "Suck",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6444644c-fccd-41a6-a4f2-5261b06a7f20",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c4140fad-6c3f-4e1d-99c3-c376ce62802a",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard and Mouse",
-                    "action": "Shoot",
+                    "action": "Weapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -264,7 +234,7 @@
                     "path": "<Gamepad>/select",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Objectives",
                     "isComposite": false,
                     "isPartOfComposite": false

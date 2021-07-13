@@ -53,8 +53,7 @@ namespace AJ
             //get controls
             controls = new PlayerControls();
             //set controls for suck and shoot
-            controls.Gameplay.Suck.performed += ctx => Suck();
-            controls.Gameplay.Shoot.performed += ctx => Shoot();
+            controls.Gameplay.Weapon.performed += ctx => SuckandShoot();
             cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         }
 
@@ -178,7 +177,7 @@ namespace AJ
             }
         }*/
 
-        void Suck()
+        void SuckandShoot()
         {
             if (canShoot == true)
             {
@@ -243,12 +242,6 @@ namespace AJ
             yield return new WaitForSeconds(1);
             canShoot = true;
         }
-
-        void Shoot()
-        {
-            
-        }
-
         IEnumerator ChangeCurrentColour(Renderer hitRenderer)
         {
             isCoroutineRunning = true;

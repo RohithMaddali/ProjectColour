@@ -43,17 +43,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Suck"",
+                    ""name"": ""Weapon"",
                     ""type"": ""Button"",
                     ""id"": ""57d400e1-062e-4e47-973f-d3d209b522d4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Shoot"",
-                    ""type"": ""Button"",
-                    ""id"": ""2dc0ab81-d80b-4747-887e-29a8f8ff7750"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -197,11 +189,11 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""dc3bd854-e53c-458b-a207-c37876a6fdf5"",
-                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Suck"",
+                    ""action"": ""Weapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -212,29 +204,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard and Mouse"",
-                    ""action"": ""Suck"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6444644c-fccd-41a6-a4f2-5261b06a7f20"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Shoot"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c4140fad-6c3f-4e1d-99c3-c376ce62802a"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard and Mouse"",
-                    ""action"": ""Shoot"",
+                    ""action"": ""Weapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -277,7 +247,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""path"": ""<Gamepad>/select"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Gamepad"",
                     ""action"": ""Objectives"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -320,8 +290,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Camera = m_Gameplay.FindAction("Camera", throwIfNotFound: true);
-        m_Gameplay_Suck = m_Gameplay.FindAction("Suck", throwIfNotFound: true);
-        m_Gameplay_Shoot = m_Gameplay.FindAction("Shoot", throwIfNotFound: true);
+        m_Gameplay_Weapon = m_Gameplay.FindAction("Weapon", throwIfNotFound: true);
         m_Gameplay_CamChange = m_Gameplay.FindAction("CamChange", throwIfNotFound: true);
         m_Gameplay_Pause = m_Gameplay.FindAction("Pause", throwIfNotFound: true);
         m_Gameplay_Objectives = m_Gameplay.FindAction("Objectives", throwIfNotFound: true);
@@ -377,8 +346,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Camera;
-    private readonly InputAction m_Gameplay_Suck;
-    private readonly InputAction m_Gameplay_Shoot;
+    private readonly InputAction m_Gameplay_Weapon;
     private readonly InputAction m_Gameplay_CamChange;
     private readonly InputAction m_Gameplay_Pause;
     private readonly InputAction m_Gameplay_Objectives;
@@ -389,8 +357,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Camera => m_Wrapper.m_Gameplay_Camera;
-        public InputAction @Suck => m_Wrapper.m_Gameplay_Suck;
-        public InputAction @Shoot => m_Wrapper.m_Gameplay_Shoot;
+        public InputAction @Weapon => m_Wrapper.m_Gameplay_Weapon;
         public InputAction @CamChange => m_Wrapper.m_Gameplay_CamChange;
         public InputAction @Pause => m_Wrapper.m_Gameplay_Pause;
         public InputAction @Objectives => m_Wrapper.m_Gameplay_Objectives;
@@ -412,12 +379,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Camera.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamera;
                 @Camera.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamera;
                 @Camera.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamera;
-                @Suck.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnSuck;
-                @Suck.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnSuck;
-                @Suck.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnSuck;
-                @Shoot.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShoot;
-                @Shoot.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShoot;
-                @Shoot.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnShoot;
+                @Weapon.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnWeapon;
+                @Weapon.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnWeapon;
+                @Weapon.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnWeapon;
                 @CamChange.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamChange;
                 @CamChange.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamChange;
                 @CamChange.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCamChange;
@@ -440,12 +404,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Camera.started += instance.OnCamera;
                 @Camera.performed += instance.OnCamera;
                 @Camera.canceled += instance.OnCamera;
-                @Suck.started += instance.OnSuck;
-                @Suck.performed += instance.OnSuck;
-                @Suck.canceled += instance.OnSuck;
-                @Shoot.started += instance.OnShoot;
-                @Shoot.performed += instance.OnShoot;
-                @Shoot.canceled += instance.OnShoot;
+                @Weapon.started += instance.OnWeapon;
+                @Weapon.performed += instance.OnWeapon;
+                @Weapon.canceled += instance.OnWeapon;
                 @CamChange.started += instance.OnCamChange;
                 @CamChange.performed += instance.OnCamChange;
                 @CamChange.canceled += instance.OnCamChange;
@@ -482,8 +443,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnCamera(InputAction.CallbackContext context);
-        void OnSuck(InputAction.CallbackContext context);
-        void OnShoot(InputAction.CallbackContext context);
+        void OnWeapon(InputAction.CallbackContext context);
         void OnCamChange(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnObjectives(InputAction.CallbackContext context);

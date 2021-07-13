@@ -53,7 +53,8 @@ public class RBMove : MonoBehaviour
         controls = new PlayerControls();
 
         controls.Gameplay.Jump.performed += ctx => Jump();
-        controls.Gameplay.CamChange.performed += ctx => SwitchCam();
+        controls.Gameplay.CamChange.performed += ctx => SwitchToAimCam();
+        controls.Gameplay.CamChange.canceled += ctx => SwitchToMoveCam();
 
         controls.Gameplay.Move.performed += ctx => move = ctx.ReadValue<Vector2>();
         controls.Gameplay.Move.canceled += ctx => move = Vector2.zero;
@@ -73,7 +74,6 @@ public class RBMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-    
     }
 
     // Update is called once per frame
@@ -162,7 +162,7 @@ public class RBMove : MonoBehaviour
         rb.AddForce(0f, gravity, 0f);
     }
 
-    private void SwitchCam()
+    private void SwitchToAimCam()
     {
         if (moveCamActive)
         {
@@ -173,13 +173,18 @@ public class RBMove : MonoBehaviour
             aimCam.Priority = 1;
             aimScript.aimCam = true;
         }
-        else
+        
+        moveCamActive = false;
+    }
+    private void SwitchToMoveCam()
+    {
+        if (!moveCamActive)
         {
             moveCam.Priority = 1;
             aimCam.Priority = 0;
             aimScript.aimCam = false;
         }
-        moveCamActive = !moveCamActive;
+        moveCamActive = true;
     }
     void Jump()
     {
