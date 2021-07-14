@@ -781,12 +781,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 302507202}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -61.3}
-  m_SizeDelta: {x: 200, y: 250}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135529593
 MonoBehaviour:
@@ -832,17 +832,21 @@ MonoBehaviour:
 
     Absorb/Shoot Colour: Left Click
 
+    Check Objectives : Tab
 
 
-    Move : Left Stick
 
-    Camera
-    : Right Stick
+    Move
+    : Left Stick
+
+    Camera : Right Stick
 
     Aim : Left Trigger (Hold)
 
-    Absorb/Shoot Colour : Right
-    Trigger
+    Absorb/Shoot
+    Colour : Right Trigger
+
+    Check Objectives : Select Button
 
 '
 --- !u!222 &135529594
@@ -1578,8 +1582,8 @@ RectTransform:
   - {fileID: 1518431630}
   - {fileID: 251221805}
   - {fileID: 148279945}
-  - {fileID: 135529592}
   - {fileID: 1262026853}
+  - {fileID: 135529592}
   m_Father: {fileID: 1288538492}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4446,11 +4450,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 302507202}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -40}
+  m_AnchoredPosition: {x: 0, y: -56}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1262026854
