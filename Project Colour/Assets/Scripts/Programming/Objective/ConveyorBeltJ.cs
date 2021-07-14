@@ -36,7 +36,7 @@ public class ConveyorBeltJ : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (CheckForButton())
             {
@@ -78,7 +78,7 @@ public class ConveyorBeltJ : MonoBehaviour
         }
     }
 
-    void PowerSwitch()
+    public void PowerSwitch()
     {
         if (beltOn)
         {
@@ -103,7 +103,7 @@ public class ConveyorBeltJ : MonoBehaviour
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 5))
+        if (Physics.Raycast(ray, out hit, 10))
         {
             if (hit.collider.gameObject == powerSwitch)
             {

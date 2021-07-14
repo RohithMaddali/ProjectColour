@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1288906407857529359}
   - component: {fileID: 1084628246434590308}
   - component: {fileID: 314989978}
+  - component: {fileID: 1333689228}
+  - component: {fileID: 1333689229}
   m_Layer: 0
-  m_Name: Switch
+  m_Name: switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410244578262225643}
-  m_LocalRotation: {x: 0, y: 0.13052632, z: 0, w: -0.9914448}
+  m_LocalRotation: {x: 0, y: -0.13052624, z: 0, w: 0.9914449}
   m_LocalPosition: {x: -83.76111, y: 5.5400004, z: -14.241773}
   m_LocalScale: {x: 27.279, y: 27.279, z: 27.279}
   m_Children:
@@ -45,8 +47,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.042070456, y: 0.05576627, z: 0.03037458}
-  m_Center: {x: -0.001942416, y: 0.027052958, z: -0.0009414471}
+  m_Size: {x: 0.042070456, y: 0.055827774, z: 0.026547303}
+  m_Center: {x: -0.0019424157, y: 0.027022066, z: -0.0012055569}
 --- !u!95 &314989978
 Animator:
   serializedVersion: 3
@@ -66,6 +68,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1333689228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410244578262225643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.041125413, y: 0.05581719, z: 0.067921735}
+  m_Center: {x: -0.0015635344, y: 0.02708707, z: -0.002815595}
+--- !u!114 &1333689229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410244578262225643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c428b2543e9184e46952cc5ce8793e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cb: {fileID: 0}
 --- !u!1 &3967894849172669792
 GameObject:
   m_ObjectHideFlags: 0
