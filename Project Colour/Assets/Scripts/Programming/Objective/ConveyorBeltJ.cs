@@ -34,23 +34,23 @@ public class ConveyorBeltJ : MonoBehaviour
         player = GetComponent<Rigidbody>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (CheckForButton())
-            {
-                if (buttonHit == powerSwitch)
-                {
-                    PowerSwitch();
-                }
-                else if (buttonHit == speedSwitch)
-                {
-                    ChangeSpeed();
-                }
-            }
-        }
-    }
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.E))
+    //    {
+    //        if (CheckForButton())
+    //        {
+    //            if (buttonHit == powerSwitch)
+    //            {
+    //                PowerSwitch();
+    //            }
+    //            else if (buttonHit == speedSwitch)
+    //            {
+    //                ChangeSpeed();
+    //            }
+    //        }
+    //    }
+    //}
 
     void FixedUpdate()
     {
@@ -96,29 +96,29 @@ public class ConveyorBeltJ : MonoBehaviour
         }
     }
 
-    bool CheckForButton()
-    {
-        bool rayHitButton = false;
+    //bool CheckForButton()
+    //{
+    //    bool rayHitButton = false;
 
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+    //    Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+    //    RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 10))
-        {
-            if (hit.collider.gameObject == powerSwitch)
-            {
-                rayHitButton = true;
-                buttonHit = powerSwitch;
-                Debug.Log("power");
-            }
-            else if (hit.collider.gameObject == speedSwitch)
-            {
-                rayHitButton = true;
-                buttonHit = speedSwitch;
-                Debug.Log("speed");
-            }
-        }
-        return rayHitButton;
-    }
+    //    if (Physics.Raycast(ray, out hit, 10))
+    //    {
+    //        if (hit.collider.gameObject == powerSwitch)
+    //        {
+    //            rayHitButton = true;
+    //            buttonHit = powerSwitch;
+    //            Debug.Log("power");
+    //        }
+    //        else if (hit.collider.gameObject == speedSwitch)
+    //        {
+    //            rayHitButton = true;
+    //            buttonHit = speedSwitch;
+    //            Debug.Log("speed");
+    //        }
+    //    }
+    //    return rayHitButton;
+    //}
 }
 
