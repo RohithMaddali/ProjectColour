@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    PlayerControls controls;
+
     public bool GameIsPaused = false;
     public GameObject controlsMenu;
     public GameObject pauseMenuUI;
@@ -17,6 +19,22 @@ public class PauseMenu : MonoBehaviour
 
     public int itemsPicked;
     // Update is called once per frame
+
+    void Awake()
+    {
+        controls = new PlayerControls();
+
+        controls.Gameplay.Pause.performed += ctx => Pause();
+    }
+    void OnEnable()
+    {
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
 
     void Update()
     {
