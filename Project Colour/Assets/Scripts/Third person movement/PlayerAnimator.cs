@@ -12,6 +12,7 @@ namespace Pyro
         float velocityX;
         public float velocityZ;
         public bool isAiming;
+        public bool isFalling;
 
         public void Awake()
         {
@@ -38,9 +39,21 @@ namespace Pyro
             {
                 velocityZ = 0;
             }
+
+            if (!rbmove.isGrounded)
+            {
+                //if Y velocity < 0
+                isFalling = true;
+            }
+            else
+            {
+                isFalling = false;
+            }
+
             animator.SetFloat("VelocityX", velocityX);
             animator.SetFloat("VelocityZ", velocityZ);
             animator.SetBool("IsAiming", isAiming);
+            animator.SetBool("IsFalling", isFalling);
         }
     }
 }
