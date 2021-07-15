@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 310145390205143633}
   - component: {fileID: 1714582831539246785}
   - component: {fileID: -648836813138667205}
-  - component: {fileID: 5882866694225238338}
   m_Layer: 8
   m_Name: bridge
   m_TagString: CanColour
@@ -155,15 +154,3 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &5882866694225238338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8094660998412097687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e80a1e1b4e130f84596ebceffab34100, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
