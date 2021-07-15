@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45857581}
-  m_LocalRotation: {x: 0.22019096, y: 0.000000008392041, z: -0.0000000018943447, w: 0.97545683}
+  m_LocalRotation: {x: 0.22019088, y: -0.00000000839204, z: 0.000000001894344, w: 0.97545683}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -239,7 +239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470819037}
-  m_LocalRotation: {x: 0.2378509, y: 0.0000000083562925, z: -0.0000000020462765, w: 0.9713017}
+  m_LocalRotation: {x: 0.23785086, y: 0.000000016712585, z: -0.0000000040925525, w: 0.9713017}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -317,7 +317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474378061}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.093015, z: -14.2439995}
+  m_LocalPosition: {x: 0, y: 8.093014, z: -14.244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1671209984}
@@ -516,7 +516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616322535}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1700001, y: 0.9000001, z: -4.2750015}
+  m_LocalPosition: {x: 1.1700001, y: 0.8999996, z: -4.2750006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 374072961}
@@ -1121,6 +1121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   crossHair: {fileID: 1262566789}
+  pm: {fileID: 0}
 --- !u!1 &1470918877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1221,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671209982}
-  m_LocalRotation: {x: 0.255479, y: -0.000000018598916, z: 0.000000004914731, w: 0.96681464}
+  m_LocalRotation: {x: 0.25547898, y: 1.6584587e-15, z: -4.635546e-16, w: 0.96681464}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2030,6 +2031,7 @@ MonoBehaviour:
   greenMat: {fileID: 0}
   RedMat: {fileID: 0}
   blueMat: {fileID: 0}
+  colourTarget: {fileID: 0}
   animator: {fileID: 2941813434085720964}
   thisRenderer: {fileID: 0}
   hasColour: 0
@@ -2666,6 +2668,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   velocityZ: 0
   isAiming: 0
+  isFalling: 0
+  isJumping: 0
 --- !u!1001 &3644919744204066495
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject MainMenuPrompt;
     public GameObject mainMenu;
     public bool submenu = false;
+    public GameObject player;
 
     public int itemsPicked;
     // Update is called once per frame
@@ -25,6 +26,11 @@ public class PauseMenu : MonoBehaviour
         controls = new PlayerControls();
 
         controls.Gameplay.Pause.performed += ctx => Pause();
+    }
+
+    void Start()
+    {
+        
     }
     void OnEnable()
     {
@@ -40,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && submenu == false)
         {
+            player = GameObject.Find("ThirdPersonPlayer");
             if (GameIsPaused)
             {
                 Resume();
@@ -59,6 +66,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        player.GetComponent<RBMove>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         pauseMenuUI.SetActive(false);
@@ -68,6 +76,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Pause()
     {
+        player.GetComponent<RBMove>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseMenuUI.SetActive(true);
