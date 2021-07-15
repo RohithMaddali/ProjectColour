@@ -83,8 +83,9 @@ public class ConveyorBeltJ : MonoBehaviour
             powerSwitch.GetComponent<Animator>().SetBool("on", false);
             beltOn = false;
             indicator.GetComponent<Renderer>().material = greyMat;
+            
         }
-        else
+        else 
         {
             powerSwitch.GetComponent<Animator>().SetBool("on", true);
             beltOn = true;
