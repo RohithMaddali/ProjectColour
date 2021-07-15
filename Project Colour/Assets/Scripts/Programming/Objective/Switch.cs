@@ -6,36 +6,38 @@ public class Switch : MonoBehaviour
 {
     public ConveyorBeltJ cb;
     PlayerControls controls;
-    public GameObject g;
+    public GameObject player;
     private void Awake()
     {
         controls = new PlayerControls();
-        controls.Gameplay.Switch.performed += ctx => SwitchOn();
+        //controls.Gameplay.Switch.performed += ctx => SwitchOn();
     }
 
     void OnEnable()
     {
         controls.Gameplay.Enable();
     }
-
     void OnDisable()
     {
         controls.Gameplay.Disable();
     }
 
-    public void SwitchOn()
-    {
-        Debug.Log("Switch on function is working");
-        cb.PowerSwitch();
-    }
-
     public void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        Debug.Log("Check for collider");
+        if(other.gameObject.tag == "Player")
         {
-            g = other.gameObject;
-            SwitchOn();
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                //controls.Gameplay.Switch.triggered
+                Debug.Log("Switch on function is working");
+                cb.PowerSwitch();
+            }
+            else if (controls.Gameplay.Switch.triggered)
+            {
+                Debug.Log("Switch");
+                cb.PowerSwitch();
+            }
         }
-        
     }
 }
