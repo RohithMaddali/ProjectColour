@@ -5,26 +5,37 @@ using UnityEngine;
 public class Switch : MonoBehaviour
 {
     public ConveyorBeltJ cb;
-    // Start is called before the first frame update
-
-    private void OnTriggerEnter(Collider other)
+    PlayerControls controls;
+    public GameObject g;
+    private void Awake()
     {
-        if (other.tag == "Player")
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                cb.PowerSwitch();
-            }
-        }
+        controls = new PlayerControls();
+        controls.Gameplay.Switch.performed += ctx => SwitchOn();
     }
-    private void OnTriggerStay(Collider other)
+
+    void OnEnable()
     {
-        if(other.tag == "Player")
+        controls.Gameplay.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Gameplay.Disable();
+    }
+
+    public void SwitchOn()
+    {
+        Debug.Log("Switch on function is working");
+        cb.PowerSwitch();
+    }
+
+    public void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                cb.PowerSwitch();
-            }
+            g = other.gameObject;
+            SwitchOn();
         }
+        
     }
 }

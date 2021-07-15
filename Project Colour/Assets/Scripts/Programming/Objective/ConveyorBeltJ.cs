@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using AJ;
 
 public class ConveyorBeltJ : MonoBehaviour
 {
@@ -18,7 +17,6 @@ public class ConveyorBeltJ : MonoBehaviour
     public bool beltOn;
     public Material LightMat;
     public Material greyMat;
-    public bool isPowered;
     Rigidbody player;
 
     public float currentScroll;
@@ -84,14 +82,12 @@ public class ConveyorBeltJ : MonoBehaviour
         {
             powerSwitch.GetComponent<Animator>().SetBool("on", false);
             beltOn = false;
-            isPowered = false;
             indicator.GetComponent<Renderer>().material = greyMat;
         }
         else
         {
             powerSwitch.GetComponent<Animator>().SetBool("on", true);
             beltOn = true;
-            isPowered = false;
             indicator.GetComponent<Renderer>().material = LightMat;
         }
     }
