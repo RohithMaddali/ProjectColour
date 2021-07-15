@@ -25,7 +25,7 @@ public class PauseMenu : MonoBehaviour
     {
         controls = new PlayerControls();
 
-        controls.Gameplay.Pause.performed += ctx => Pause();
+        controls.Gameplay.Pause.performed += ctx => PauseActive();
     }
 
     void Start()
@@ -42,9 +42,9 @@ public class PauseMenu : MonoBehaviour
         controls.Gameplay.Disable();
     }
 
-    void Update()
+    void PauseActive()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && submenu == false)
+        if (submenu == false)
         {
             player = GameObject.Find("ThirdPersonPlayer");
             if (GameIsPaused)
@@ -74,7 +74,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
-    private void Pause()
+    public void Pause()
     {
         player.GetComponent<RBMove>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
