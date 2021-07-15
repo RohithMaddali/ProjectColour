@@ -15,6 +15,11 @@ TagManager:
   - Stone
   - Dirt
   - RedTrigger
+  - Switch
+  - newGame
+  - settings
+  - quit
+  - controls
   layers:
   - Default
   - TransparentFX

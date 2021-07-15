@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -14,9 +15,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject quitMenu;
     public GameObject MainMenuPrompt;
-    public GameObject mainMenu;
     public bool submenu = false;
     public GameObject player;
+
+    public GameObject pauseMenu;
+    public GameObject mainMenuFirst;
+    public GameObject settingsFirst;
+    public GameObject controlsFirst;
+    public GameObject quitFirst;
 
     public int itemsPicked;
     // Update is called once per frame
@@ -80,8 +86,11 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseMenuUI.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pauseMenu);
         Time.timeScale = 0f;
         GameIsPaused = true;
+ 
     }
 
     public void Settings()
@@ -90,6 +99,8 @@ public class PauseMenu : MonoBehaviour
         settingsMenu.SetActive(true);
         pauseMenuUI.SetActive(false);
         Debug.Log("Loading Settings...");
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(settingsFirst);
     }
 
     public void Controls()
@@ -98,6 +109,8 @@ public class PauseMenu : MonoBehaviour
         controlsMenu.SetActive(true);
         pauseMenuUI.SetActive(false);
         Debug.Log("Loading Controls...");
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(controlsFirst);
     }
 
     public void Back()
@@ -110,6 +123,8 @@ public class PauseMenu : MonoBehaviour
         quitMenu.SetActive(false);
         MainMenuPrompt.SetActive(false);
         submenu = false;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pauseMenu);
     }  
     
 
@@ -125,6 +140,8 @@ public class PauseMenu : MonoBehaviour
         submenu = true;
         quitMenu.SetActive(true);
         pauseMenuUI.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(quitFirst);
     }
 
     public void CloseGame()
@@ -137,7 +154,8 @@ public class PauseMenu : MonoBehaviour
     {
         submenu = true;
         MainMenuPrompt.SetActive(true);
-        mainMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(mainMenuFirst);
 
     }
 }
