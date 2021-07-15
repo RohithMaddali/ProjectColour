@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 73703867}
   - component: {fileID: 73703866}
   - component: {fileID: 73703871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stairs (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 856685124}
 --- !u!33 &73703867
@@ -11380,7 +11380,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67082
+  m_Name: pb_Mesh3250458
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17008,7 +17008,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh66608
+  m_Name: pb_Mesh3249952
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17843,7 +17843,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh66456
+  m_Name: pb_Mesh3249800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29154,7 +29154,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh66638
+  m_Name: pb_Mesh3249998
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36535,7 +36535,7 @@ GameObject:
   - component: {fileID: 1972758531}
   - component: {fileID: 1972758530}
   - component: {fileID: 1972758529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stairs (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36553,7 +36553,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 407570527}
 --- !u!33 &1972758530
