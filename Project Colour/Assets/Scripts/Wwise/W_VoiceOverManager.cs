@@ -5,26 +5,24 @@ using UnityEngine;
 
 public class W_VoiceOverManager : MonoBehaviour
 {
-    private Rigidbody rb;
     private RBMove movement;
     uint idleVoxID;
     private bool toggle;
     [SerializeField] private float cooldown;
-    [SerializeField] private float waitTime;
+    [SerializeField] private float waitTime = 6;
     void Start()
     {
         movement = GetComponent<RBMove>();
-        rb = GetComponent<Rigidbody>();
     }
     private void Update()
     {
         NotMoving();
     }
-    void NotMoving() //Checks if player isn't moving
+    void NotMoving() //Checks if player isn't moving or aiming 
     {
-        if (movement.moveDir.z == 0 && movement.moveDir.x == 0 && !toggle)
+        if (movement.moveDir.z == 0 && movement.moveDir.x == 0 && !toggle && movement.moveCamActive)
         {
-            cooldown += Time.deltaTime;
+            cooldown += Time.deltaTime; 
         }
         else
         {
@@ -38,7 +36,6 @@ public class W_VoiceOverManager : MonoBehaviour
                 cooldown = 0;
                 toggle = true;
             }
-
         }
     }
     IEnumerator PlayIdleVox()
@@ -46,9 +43,5 @@ public class W_VoiceOverManager : MonoBehaviour
         idleVoxID = AkSoundEngine.PostEvent("ev_IdleVox",gameObject);
         yield return new WaitForSeconds(10);
         toggle = false;
-    }
-    void BlueAreaVox()
-    {
-        //play blue area vox 
     }
 }
