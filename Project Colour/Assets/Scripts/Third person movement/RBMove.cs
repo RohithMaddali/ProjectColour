@@ -9,6 +9,7 @@ public class RBMove : MonoBehaviour
     PlayerControls controls;
     Vector2 move;
     public Rigidbody rb;
+    private GameManager gm;
     
     public CinemachineFreeLook moveCam;
     public CinemachineVirtualCamera aimCam;
@@ -74,6 +75,9 @@ public class RBMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        gm = FindObjectOfType<GameManager>();
+        gm.moveCam = moveCam;
+        gm.ChangeMouseSensitivity();
     }
 
     // Update is called once per frame
@@ -92,7 +96,6 @@ public class RBMove : MonoBehaviour
         {
             isBouncing = false;
         }
-
     }
     void FixedUpdate()
     {
