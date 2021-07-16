@@ -21,6 +21,11 @@ namespace Quontity
         {
             if (collision.gameObject.CompareTag("Player"))
             {
+                if(gm.itemsPicked == 5)
+                {
+                    gm.isPicked = true;
+                }
+
                 if (CompareTag("GreenPrism"))
                 {
                     ObjectiveManager.i.AddItemToObjective(0);
@@ -39,7 +44,7 @@ namespace Quontity
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
                     Destroy(prism);
-                    Debug.Log("BlueGone");
+                    Debug.Log("BlueGone");    
                 }
             }
 
@@ -51,10 +56,9 @@ namespace Quontity
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
                     Destroy(prism);
-                    Debug.Log("RedGone");
+                    Debug.Log("RedGone");  
                 }
             }
-
         }
     }
 }

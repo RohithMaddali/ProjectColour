@@ -330,18 +330,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 320526531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b23e5f56a9c3ec4b8def78a2f3d1806, type: 3}
+  m_Script: {fileID: 11500000, guid: c96de52c89574e049adf1fe9f77bbf15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameIsPaused: 0
-  controlsMenu: {fileID: 0}
-  pauseMenuUI: {fileID: 0}
-  settingsMenu: {fileID: 0}
-  quitMenu: {fileID: 0}
-  MainMenuPrompt: {fileID: 0}
-  mainMenu: {fileID: 0}
-  submenu: 0
-  itemsPicked: 0
 --- !u!1 &331090530
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +715,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 320526536}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: BackToMenu, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:

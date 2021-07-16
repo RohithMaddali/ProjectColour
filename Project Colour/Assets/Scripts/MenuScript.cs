@@ -20,6 +20,7 @@ namespace Pyro
         public GameObject settingsMenuFirst;
         public GameObject controlsMenu;
         public GameObject quitFirst;
+        public GameManager gm;
 
         private void Start()
         {
@@ -60,6 +61,8 @@ namespace Pyro
 
         public void LoadScene()
         {
+            gm.isPicked = false;
+            gm.itemsPicked = 0;
             SceneManager.LoadScene("AdditiveSceneTest", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Slider aimSlider;
     public float mouseSenX = 100f;
     public float mouseSenY = 1.5f;
+    public bool isPicked = false;
 
     public float aimSen;
     public CharacterAim ca;
@@ -22,21 +23,15 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(this);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if(itemsPicked == 6)
+        if (itemsPicked == 6 && isPicked == true)
         {
             SceneManager.LoadScene(6);
+            isPicked = false;
         }
     }
-    
 
     public void ChangeMouseSensitivity()
     {
