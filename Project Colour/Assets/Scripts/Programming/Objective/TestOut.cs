@@ -8,6 +8,7 @@ namespace Quontity
     public class TestOut : MonoBehaviour
     {
         public PauseMenu pm;
+        public GameObject mm;
         //var for tracking panel 
         public GameObject trackingPanel;
         //keeps tracking panel hidden when played
@@ -40,7 +41,7 @@ namespace Quontity
 
         void ObjectiveMenu()
         {
-            if (!pm.pauseMenuUI.activeInHierarchy)
+            if (!pm.pauseMenuUI.activeInHierarchy && !mm.activeSelf)
             {
                 if (trackingPanel.gameObject.activeInHierarchy)
                 {
