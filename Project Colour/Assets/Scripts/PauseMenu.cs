@@ -68,6 +68,11 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        submenu = false;
+        controlsMenu.SetActive(false);
+        quitMenu.SetActive(false);
+        MainMenuPrompt.SetActive(false);
+        settingsMenu.SetActive(false);
         player.GetComponent<RBMove>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
