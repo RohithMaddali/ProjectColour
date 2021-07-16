@@ -9,6 +9,8 @@ public class SettingsMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject pauseMenu;
     public PauseMenu pm;
+    public GameObject mainMenuFirst;
+    public GameObject pauseMenuFirst;
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,16 @@ public class SettingsMenu : MonoBehaviour
     public void Back()
     {
         lastMenu.SetActive(true);
+        if(lastMenu == mainMenu)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(mainMenuFirst);
+        }
+        else if(lastMenu == pauseMenu)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(pauseMenuFirst);
+        }
         gameObject.SetActive(false);
         pm.submenu = false;
     }
