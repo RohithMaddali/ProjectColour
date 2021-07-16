@@ -10,13 +10,22 @@ namespace Pyro
     {
         public GameObject confirm;
         public GameObject settingsMenu;
+        public GameObject MainMenu;
+        public GameObject PauseMenu;
+
+        public SettingsMenu sm;
 
         public GameObject mainMenuFirst;
         public GameObject newGameFirst;
         public GameObject settingsMenuFirst;
         public GameObject controlsMenu;
         public GameObject quitFirst;
-        
+
+        private void Start()
+        {
+            sm = settingsMenu.GetComponent<SettingsMenu>();
+        }
+
         public void Quit()
         {
             Application.Quit();
@@ -32,7 +41,10 @@ namespace Pyro
                 Debug.Log("Setting first selection to yes");
             EventSystem.current.SetSelectedGameObject(newGameFirst);
             if (delta.gameObject.tag == "settings")
+            {
                 EventSystem.current.SetSelectedGameObject(settingsMenuFirst);
+                sm.lastMenu = sm.mainMenu;
+            }
             if (delta.gameObject.tag == "controls")
                 EventSystem.current.SetSelectedGameObject(controlsMenu);
             if (delta.gameObject.tag == "quit")
@@ -49,6 +61,8 @@ namespace Pyro
         public void LoadScene()
         {
             SceneManager.LoadScene("AdditiveSceneTest", LoadSceneMode.Single);
+            MainMenu.SetActive(false);
+            PauseMenu.SetActive(true);
         }
     }
 }

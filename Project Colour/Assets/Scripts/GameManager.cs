@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     public Slider mouseSlider;
     public float mouseSenX = 100f;
     public float mouseSenY = 1.5f;
+
+    public int itemsPicked;
 
     private void Awake()
     {
@@ -24,7 +27,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(itemsPicked == 6)
+        {
+            SceneManager.LoadScene(6);
+        }
     }
     
 

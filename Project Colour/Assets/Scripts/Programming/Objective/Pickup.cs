@@ -10,10 +10,10 @@ namespace Quontity
         //var for prism
         public GameObject prism;
         public GameObject sfx;
-        public PauseMenu pm;
+        public GameManager gm;
         void Awake()
         {
-            pm = FindObjectOfType<PauseMenu>();
+            gm = FindObjectOfType<GameManager>();
         }
 
         //when the player collides with object, it will check for tag, then add item to objective and destroy it
@@ -25,7 +25,7 @@ namespace Quontity
                 {
                     ObjectiveManager.i.AddItemToObjective(0);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
-                    pm.itemsPicked += 1;
+                    gm.itemsPicked += 1;
                     Destroy(prism);
                     Debug.Log("GreenGone");
                 }
@@ -37,7 +37,7 @@ namespace Quontity
                 {
                     ObjectiveManager.i.AddItemToObjective(1);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
-                    pm.itemsPicked += 1;
+                    gm.itemsPicked += 1;
                     Destroy(prism);
                     Debug.Log("BlueGone");
                 }
@@ -49,7 +49,7 @@ namespace Quontity
                 {
                     ObjectiveManager.i.AddItemToObjective(2);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
-                    pm.itemsPicked += 1;
+                    gm.itemsPicked += 1;
                     Destroy(prism);
                     Debug.Log("RedGone");
                 }

@@ -18,13 +18,13 @@ public class PauseMenu : MonoBehaviour
     public bool submenu = false;
     public GameObject player;
 
+    public SettingsMenu sm;
+
     public GameObject pauseMenu;
     public GameObject mainMenuFirst;
     public GameObject settingsFirst;
     public GameObject controlsFirst;
     public GameObject quitFirst;
-
-    public int itemsPicked;
     // Update is called once per frame
 
     void Awake()
@@ -36,7 +36,7 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        
+        sm = settingsMenu.GetComponent<SettingsMenu>();
     }
     void OnEnable()
     {
@@ -47,7 +47,7 @@ public class PauseMenu : MonoBehaviour
     {
         controls.Gameplay.Disable();
     }
-
+    
     void PauseActive()
     {
         if (submenu == false)
@@ -63,11 +63,7 @@ public class PauseMenu : MonoBehaviour
             }
                 
         } 
-        if(itemsPicked == 6)
-        {
-            SceneManager.LoadScene(6);
-        }
-        Debug.Log("Items picked " + itemsPicked);
+        
     }
 
     public void Resume()
@@ -97,6 +93,7 @@ public class PauseMenu : MonoBehaviour
     {
         submenu = true;
         settingsMenu.SetActive(true);
+        sm.lastMenu = sm.pauseMenu;
         pauseMenuUI.SetActive(false);
         Debug.Log("Loading Settings...");
         EventSystem.current.SetSelectedGameObject(null);
@@ -132,6 +129,8 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         Debug.Log("Loading Main Menu...");
+        pauseMenuUI.SetActive(false);
+        MainMenuPrompt.SetActive(false);
         SceneManager.LoadScene(0);
     }
 
