@@ -6,8 +6,15 @@
 				<SoundBank Name="Environment" ID="{9ED921C3-1591-4086-BF31-E616FA2D0806}">
 					<ObjectInclusionList>
 						<ObjectRef Name="ev_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_servo" ID="{13011332-F431-4152-A482-6A3B2EE761D2}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_impact_move" ID="{DD276169-A380-42E1-B114-08A0BBD9A919}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_screaching_metal" ID="{95326A84-DF45-452F-9AC1-62F36E7DBB5D}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_amb_switcher" ID="{4EA94B39-7419-460E-9FD9-0D96AE39217B}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_conveyer_belt" ID="{B35BF30F-8C7A-4761-BFF2-42A79FDA0618}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_whoosh" ID="{98BA5100-220C-4B31-822F-26302B56B03E}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_switch_on" ID="{AD071FE9-9E56-4F0A-B9B1-698531D4FF2D}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_machinery_move" ID="{955E39B8-A4D7-4F4A-A24A-C5CF4C9F4C54}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -28,7 +35,9 @@
 				</SoundBank>
 				<SoundBank Name="Player" ID="{FF9D288F-16C8-4C6E-A945-B35117AD0D45}">
 					<ObjectInclusionList>
+						<ObjectRef Name="ev_colour_place_sequence" ID="{0647F295-3EA2-47EB-9C03-4F18B956A5C3}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_plr_foosteps" ID="{F753B1F0-DDB8-4837-B3CA-13D65BD4DF2C}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_colour_grab_sequence" ID="{A8A6FFB9-1AA5-4C9E-BD5E-42F486BF5CCA}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2483496190274546989}
   - component: {fileID: 7304477941439640218}
   - component: {fileID: 3215765613249802982}
+  - component: {fileID: -1253127306151739631}
   m_Layer: 8
   m_Name: ConveyorBeltSide
   m_TagString: CanColour
@@ -137,5 +138,16 @@ MonoBehaviour:
   beltOn: 0
   LightMat: {fileID: 2100000, guid: 6d0c9940a352bd74d99b46eb1a6bd83a, type: 2}
   greyMat: {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
-  isPowered: 0
   currentScroll: 0
+--- !u!114 &-1253127306151739631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922716424080742488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ef8c5818230f3418ae2d926ab80509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

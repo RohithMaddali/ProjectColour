@@ -10,10 +10,13 @@ public class Pusher : MonoBehaviour
     public Transform start;
     public Transform end;
     public bool moving;
+    bool playOnce;
+    W_Pusher_Audio pusherSound;
     // Start is called before the first frame update
     void Start()
     {
         destination = end;
+        pusherSound = GetComponent<W_Pusher_Audio>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,11 @@ public class Pusher : MonoBehaviour
         if (moving)
         {
             transform.position = Vector3.MoveTowards(transform.position, destination.position, speed * Time.deltaTime);
+            if (!playOnce)
+            {
+                pusherSound.PusherSound();
+                playOnce = true;
+            }
             if(transform.position == destination.position)
             {
                 StartCoroutine(Pause());
@@ -45,5 +53,6 @@ public class Pusher : MonoBehaviour
 
         Debug.Log("Moving towards " + destination);
         moving = true;
+        playOnce = false;
     }
 }

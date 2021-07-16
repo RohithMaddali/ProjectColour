@@ -32,10 +32,10 @@
 						<CurrentStateRef Name="None" ID="{824C323C-7B75-47BD-8953-20B9D6C880E0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Walking" ID="{2A0FDD90-F596-4079-B787-F334223344EE}"/>
+						<CurrentSwitchRef Name="Running" ID="{A444A2D9-4E8C-4D39-98F2-359B74AA080A}"/>
 						<CurrentSwitchRef Name="Blue" ID="{970B1D6E-B21C-467B-8916-1295B05D5757}"/>
 						<CurrentSwitchRef Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}"/>
-						<CurrentSwitchRef Name="green_area" ID="{88C26644-9701-49FC-9BC9-1B83CD08B99A}"/>
+						<CurrentSwitchRef Name="blue_area" ID="{036B9B0D-9695-4BC8-89BD-9FF0F9FFEF48}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

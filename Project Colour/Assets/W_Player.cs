@@ -15,6 +15,10 @@ public class W_Player : MonoBehaviour
         SetInitialSwitches();
         movement = GetComponentInParent<RBMove>();
     }
+    void Update()
+    {
+        MaterialCheck();
+    }
     void SetInitialSwitches()
     {
         AkSoundEngine.SetSwitch("fs_material_switch_group", "Dirt", gameObject);
@@ -22,13 +26,17 @@ public class W_Player : MonoBehaviour
     }
     public void Step()
     {
-        footsteps =  AkSoundEngine.PostEvent("ev_sfx_plr_foosteps", gameObject);
-        Debug.Log("step");
+        if (movement.isGrounded)
+        {
+            footsteps = AkSoundEngine.PostEvent("ev_sfx_plr_foosteps", gameObject);
+            Debug.Log("step");
+        }
     }
-    void Update()
+    public void GrabColour()
     {
-        MaterialCheck();
+        AkSoundEngine.PostEvent("ev_colour_grab_sequence", gameObject); 
     }
+
     void MaterialCheck()
     {
         Physics.Raycast(raycastPos.position, Vector3.down, out hit, 1.5f, lm);

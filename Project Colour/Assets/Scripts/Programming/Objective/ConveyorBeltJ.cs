@@ -18,6 +18,8 @@ public class ConveyorBeltJ : MonoBehaviour
     public Material LightMat;
     public Material greyMat;
     Rigidbody player;
+    W_ConveyerBeltAudio conveyAudio;
+    bool playOnce;
 
     public float currentScroll;
 
@@ -30,6 +32,7 @@ public class ConveyorBeltJ : MonoBehaviour
     private void Start()
     {
         player = GetComponent<Rigidbody>();
+        conveyAudio = GetComponent<W_ConveyerBeltAudio>();
     }
 
     //void Update()
@@ -54,6 +57,7 @@ public class ConveyorBeltJ : MonoBehaviour
     {
         if (beltOn)
         {
+
             //player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
             //player.AddForce(pushDir * currentSpeed);
             Vector3 pos = player.position;
@@ -80,13 +84,14 @@ public class ConveyorBeltJ : MonoBehaviour
     {
         if (beltOn)
         {
+            conveyAudio.ConveyerBeltSound();
             powerSwitch.GetComponent<Animator>().SetBool("on", false);
             beltOn = false;
-            indicator.GetComponent<Renderer>().material = greyMat;
-            
+            indicator.GetComponent<Renderer>().material = greyMat;        
         }
         else 
         {
+            conveyAudio.ConveyerBeltSound();
             powerSwitch.GetComponent<Animator>().SetBool("on", true);
             beltOn = true;
             indicator.GetComponent<Renderer>().material = LightMat;

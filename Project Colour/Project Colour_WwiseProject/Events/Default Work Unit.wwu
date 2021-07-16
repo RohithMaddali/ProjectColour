@@ -134,6 +134,138 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_colour_grab_sequence" ID="{A8A6FFB9-1AA5-4C9E-BD5E-42F486BF5CCA}">
+					<ChildrenList>
+						<Action Name="" ID="{C936A5CB-12A1-4DB1-91BD-2958BFB16E42}" ShortID="1011063545">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_colour_grab_sequence" ID="{D40CF6BF-3785-48C2-A1D9-DE78FA3213F9}" WorkUnitID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_colour_place_sequence" ID="{0647F295-3EA2-47EB-9C03-4F18B956A5C3}">
+					<ChildrenList>
+						<Action Name="" ID="{A6F8859F-AB2B-4ADD-8BEA-AE10B22BC9FA}" ShortID="889429299">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_colour_place_sequence" ID="{016F842E-0A3C-480B-A5CC-889F9202E9D6}" WorkUnitID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_machinery_move" ID="{955E39B8-A4D7-4F4A-A24A-C5CF4C9F4C54}">
+					<ChildrenList>
+						<Action Name="" ID="{9C77F099-05D4-4098-B194-2F84F7D2921D}" ShortID="103757300">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ev_servo" ID="{13011332-F431-4152-A482-6A3B2EE761D2}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6911E921-1A3F-4EFD-B384-B8C038F307FE}" ShortID="219879283">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ev_whoosh" ID="{98BA5100-220C-4B31-822F-26302B56B03E}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0FE0950F-8B3E-427B-B5ED-0E3076D920B5}" ShortID="430666984">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ev_impact_move" ID="{DD276169-A380-42E1-B114-08A0BBD9A919}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F13F4F79-3A04-4DDD-9FB1-B95295AF440F}" ShortID="117328973">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ev_screaching_metal" ID="{95326A84-DF45-452F-9AC1-62F36E7DBB5D}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_impact_move" ID="{DD276169-A380-42E1-B114-08A0BBD9A919}">
+					<ChildrenList>
+						<Action Name="" ID="{60692F40-4691-4FF8-B1E6-282E272D72DF}" ShortID="31268523">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_impact_move" ID="{A1E62D65-B6D6-4A8F-9588-E775B0FA6CF3}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_screaching_metal" ID="{95326A84-DF45-452F-9AC1-62F36E7DBB5D}">
+					<ChildrenList>
+						<Action Name="" ID="{5081EA56-85B3-4E4D-B111-9E327A9E11A1}" ShortID="77804748">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_screaching_metal" ID="{18631583-8057-456E-9EDF-0E1127F5CCD7}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_servo" ID="{13011332-F431-4152-A482-6A3B2EE761D2}">
+					<ChildrenList>
+						<Action Name="" ID="{DE988FD5-50E9-427D-AF49-1243688E7BAA}" ShortID="292160254">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_servo" ID="{9293E5EB-3206-4D04-9F4E-5D8CC92DD342}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_whoosh" ID="{98BA5100-220C-4B31-822F-26302B56B03E}">
+					<ChildrenList>
+						<Action Name="" ID="{56C76B84-F2D1-4E94-B3C9-670897E27889}" ShortID="224473238">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_whoosh" ID="{E46A15D4-3EFF-4430-A431-8BFD4406FFAA}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_conveyer_belt" ID="{B35BF30F-8C7A-4761-BFF2-42A79FDA0618}">
+					<ChildrenList>
+						<Action Name="" ID="{52D315B0-FA30-4273-8AD4-FDC288BA3164}" ShortID="362340675">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spectrum_sfx_conveyer_belt" ID="{731AC860-3883-4FD0-A870-49C5B8CEA91C}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_switch_on" ID="{AD071FE9-9E56-4F0A-B9B1-698531D4FF2D}">
+					<ChildrenList>
+						<Action Name="" ID="{0C618CE5-D1DD-4A58-842D-BE5159F38AD9}" ShortID="584577739">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_switch_on" ID="{7929D1F4-AFB3-4E57-B333-0C2BDC7562A1}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

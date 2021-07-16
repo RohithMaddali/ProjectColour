@@ -95,11 +95,75 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3453916995">
+		<SoundBank Id="1069431850" Language="SFX" Hash="1691386986">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1156092748" Name="ev_colour_grab_sequence" ObjectPath="\Events\Default Work Unit\ev_colour_grab_sequence" DurationType="OneShot" DurationMin="0.494065" DurationMax="0.789775">
+					<IncludedMemoryFiles>
+						<File Id="270396341" Language="SFX">
+							<ShortName>Spectrum_sfx_staff_wing_big.wav</ShortName>
+							<Path>SFX\Spectrum_sfx_staff_wing_big_060BE4F9.wem</Path>
+						</File>
+						<File Id="286467554" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_place-001.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_place-001_51028E19.wem</Path>
+						</File>
+						<File Id="524337744" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_place-002.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_place-002_060BE4F9.wem</Path>
+						</File>
+						<File Id="588632048" Language="SFX">
+							<ShortName>Spectrum_sfx_staff_wing_small.wav</ShortName>
+							<Path>SFX\Spectrum_sfx_staff_wing_small_060BE4F9.wem</Path>
+						</File>
+						<File Id="869924751" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_place-003.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_place-003_060BE4F9.wem</Path>
+						</File>
+						<File Id="998041608" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_place.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_place_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2911027737" Name="ev_colour_place_sequence" ObjectPath="\Events\Default Work Unit\ev_colour_place_sequence" DurationType="OneShot" DurationMin="0.619083" DurationMax="0.659208">
+					<IncludedMemoryFiles>
+						<File Id="270396341" Language="SFX">
+							<ShortName>Spectrum_sfx_staff_wing_big.wav</ShortName>
+							<Path>SFX\Spectrum_sfx_staff_wing_big_060BE4F9.wem</Path>
+						</File>
+						<File Id="588632048" Language="SFX">
+							<ShortName>Spectrum_sfx_staff_wing_small.wav</ShortName>
+							<Path>SFX\Spectrum_sfx_staff_wing_small_060BE4F9.wem</Path>
+						</File>
+						<File Id="702679723" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_grab-001.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_grab-001_060BE4F9.wem</Path>
+						</File>
+						<File Id="708090424" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_grab-005.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_grab-005_060BE4F9.wem</Path>
+						</File>
+						<File Id="717527099" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_grab-004.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_grab-004_060BE4F9.wem</Path>
+						</File>
+						<File Id="734400573" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_grab-002.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_grab-002_060BE4F9.wem</Path>
+						</File>
+						<File Id="900154767" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_grab-003.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_grab-003_060BE4F9.wem</Path>
+						</File>
+						<File Id="1009060801" Language="SFX">
+							<ShortName>Spectrum - sfx_colour_grab.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_colour_grab_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1061346095" Name="ev_sfx_plr_foosteps" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_foosteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.656740">
 					<IncludedMemoryFiles>
 						<File Id="55356466" Language="SFX">
@@ -351,7 +415,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="3836248723">
+		<SoundBank Id="1229948536" Language="SFX" Hash="2167846214">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
@@ -388,6 +452,62 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="203475710" Name="ev_conveyer_belt" ObjectPath="\Events\Default Work Unit\ev_conveyer_belt" MaxAttenuation="40.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="668779060" Language="SFX">
+							<ShortName>Spectrum_sfx_conveyer_belt.wav</ShortName>
+							<Path>SFX\Spectrum_sfx_conveyer_belt_7DE7C0C7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="546473655" Name="ev_impact_move" ObjectPath="\Events\Default Work Unit\ev_impact_move" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="1.388298" DurationMax="2.080097">
+					<IncludedMemoryFiles>
+						<File Id="5092265" Language="SFX">
+							<ShortName>Spectrum - Impact_move_02.wav</ShortName>
+							<Path>SFX\Spectrum - Impact_move_02_060BE4F9.wem</Path>
+						</File>
+						<File Id="430924442" Language="SFX">
+							<ShortName>Spectrum - impact_move_01.wav</ShortName>
+							<Path>SFX\Spectrum - impact_move_01_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3244770519" Name="ev_machinery_move" ObjectPath="\Events\Default Work Unit\ev_machinery_move" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="546473655" Name="ev_impact_move" ObjectPath="\Events\Default Work Unit\ev_impact_move"/>
+						<ActionPostEventEntry Id="794110178" Name="ev_screaching_metal" ObjectPath="\Events\Default Work Unit\ev_screaching_metal"/>
+						<ActionPostEventEntry Id="878682118" Name="ev_servo" ObjectPath="\Events\Default Work Unit\ev_servo"/>
+						<ActionPostEventEntry Id="2635617457" Name="ev_whoosh" ObjectPath="\Events\Default Work Unit\ev_whoosh"/>
+					</ActionPostEvent>
+				</Event>
+				<Event Id="794110178" Name="ev_screaching_metal" ObjectPath="\Events\Default Work Unit\ev_screaching_metal" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="1.388298" DurationMax="2.080097">
+					<IncludedMemoryFiles>
+						<File Id="392369088" Language="SFX">
+							<ShortName>Spectrum - screaching_metal_03.wav</ShortName>
+							<Path>SFX\Spectrum - screaching_metal_03_73469320.wem</Path>
+						</File>
+						<File Id="712379345" Language="SFX">
+							<ShortName>Spectrum - screaching_metal_01.wav</ShortName>
+							<Path>SFX\Spectrum - screaching_metal_01_BED15728.wem</Path>
+						</File>
+						<File Id="870740259" Language="SFX">
+							<ShortName>Spectrum - screaching_metal_02.wav</ShortName>
+							<Path>SFX\Spectrum - screaching_metal_02_BED15728.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="878682118" Name="ev_servo" ObjectPath="\Events\Default Work Unit\ev_servo" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="1.388298" DurationMax="2.080097">
+					<IncludedMemoryFiles>
+						<File Id="92162275" Language="SFX">
+							<ShortName>Spectrum - servo_move_02.wav</ShortName>
+							<Path>SFX\Spectrum - servo_move_02_060BE4F9.wem</Path>
+						</File>
+						<File Id="506994785" Language="SFX">
+							<ShortName>Spectrum - servo_move_01.wav</ShortName>
+							<Path>SFX\Spectrum - servo_move_01_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1994831277" Name="ev_sfx_birds" ObjectPath="\Events\Default Work Unit\ev_sfx_birds" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="56239873" Language="SFX">
@@ -417,6 +537,30 @@
 						<File Id="1027518291" Language="SFX">
 							<ShortName>Spectrum_running_water.wav</ShortName>
 							<Path>SFX\Spectrum_running_water_7DE7C0C7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1635355777" Name="ev_switch_on" ObjectPath="\Events\Default Work Unit\ev_switch_on" DurationType="OneShot" DurationMin="1.049000" DurationMax="1.049000">
+					<IncludedMemoryFiles>
+						<File Id="41154255" Language="SFX">
+							<ShortName>Spectrum - sfx_switch_on.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_switch_on_060BE4F9.wem</Path>
+						</File>
+						<File Id="787196854" Language="SFX">
+							<ShortName>Spectrum - sfx_switch_on_end_position.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_switch_on_end_position_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2635617457" Name="ev_whoosh" ObjectPath="\Events\Default Work Unit\ev_whoosh" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="1.388298" DurationMax="2.080097">
+					<IncludedMemoryFiles>
+						<File Id="125247896" Language="SFX">
+							<ShortName>Spectrum - whoosh_02.wav</ShortName>
+							<Path>SFX\Spectrum - whoosh_02_060BE4F9.wem</Path>
+						</File>
+						<File Id="835684440" Language="SFX">
+							<ShortName>Spectrum - whoosh_01.wav</ShortName>
+							<Path>SFX\Spectrum - whoosh_01_060BE4F9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

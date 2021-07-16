@@ -1318,6 +1318,439 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
+				<ActorMixer Name="ColourGrab" ID="{E1E3511E-2EFA-4E62-A83C-1DBEC25BDC9C}" ShortID="749061397">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="sfx_colour_grab_sequence" ID="{D40CF6BF-3785-48C2-A1D9-DE78FA3213F9}" ShortID="176061177">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Spectrum_sfx_staff_swing_small" ID="{7529F7CB-D2DC-4BAF-B5EB-5FC4B974E1BF}" ShortID="78788395">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_sfx_staff_wing_small" ID="{A6EDA6C0-0479-4A32-BA65-C8D15BDA23FA}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum_sfx_staff_wing_small.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="588632048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_sfx_staff_wing_small" ID="{A6EDA6C0-0479-4A32-BA65-C8D15BDA23FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_sfx_staff_swing_big" ID="{52F6F173-6A30-4F7C-9F2F-E575F487991A}" ShortID="533482229">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_sfx_staff_wing_big" ID="{2D2ED852-3D2B-4C86-B62B-1903F1CF32C4}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum_sfx_staff_wing_big.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="270396341"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_sfx_staff_wing_big" ID="{2D2ED852-3D2B-4C86-B62B-1903F1CF32C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="sfx_color_place_spell" ID="{B1DBD0B7-F597-4677-96A0-DAB359B63CFE}" ShortID="636739843">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-50</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Spectrum - sfx_colour_place" ID="{6EAFEC31-B27D-4706-B381-F5660826F2A0}" ShortID="409476513">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_place" ID="{C1041196-DF8A-41FA-942A-9B8A6F2E9135}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_place.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="998041608"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_place" ID="{C1041196-DF8A-41FA-942A-9B8A6F2E9135}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_place-002" ID="{B4B0779D-26AF-4115-98A2-EAE4C59A8D25}" ShortID="56450262">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_place-002" ID="{C3475FC3-00EB-44BD-A569-370E3C8309C6}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_place-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="524337744"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_place-002" ID="{C3475FC3-00EB-44BD-A569-370E3C8309C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_place-003" ID="{C6E41DD3-4292-425C-9841-DDE652C38B00}" ShortID="672330006">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_place-003" ID="{5A5D9B34-1F84-4F4B-BC60-D9A316C12879}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_place-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="869924751"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_place-003" ID="{5A5D9B34-1F84-4F4B-BC60-D9A316C12879}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_place-001" ID="{CB3AF11E-6415-4E3A-9573-995EB9662FEC}" ShortID="352584588">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_place-001" ID="{95B74FCE-06A1-4834-B481-8086DFD6E129}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0404711492608488"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_place-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="286467554"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_place-001" ID="{95B74FCE-06A1-4834-B481-8086DFD6E129}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="sfx_color_place_spell" ID="{B1DBD0B7-F597-4677-96A0-DAB359B63CFE}"/>
+								<ItemRef Name="Spectrum_sfx_staff_swing_small" ID="{7529F7CB-D2DC-4BAF-B5EB-5FC4B974E1BF}"/>
+								<ItemRef Name="Spectrum_sfx_staff_swing_big" ID="{52F6F173-6A30-4F7C-9F2F-E575F487991A}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="ColourPlace" ID="{6F10C795-F7BE-4E1A-A8BE-E865A0DEC7AC}" ShortID="697235767">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="sfx_colour_place_sequence" ID="{016F842E-0A3C-480B-A5CC-889F9202E9D6}" ShortID="532623078">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Spectrum_sfx_staff_swing_small" ID="{548ADFA0-AB43-4570-9A77-D6A51A514C1A}" ShortID="61861393">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_sfx_staff_wing_small" ID="{64053AF7-DF3A-4492-A606-0191F1857B0F}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum_sfx_staff_wing_small.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="588632048"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_sfx_staff_wing_small" ID="{64053AF7-DF3A-4492-A606-0191F1857B0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Spectrum_sfx_staff_swing_big" ID="{55F29172-3079-4AAA-B171-19A16BCB88F4}" ShortID="466788970">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Spectrum_sfx_staff_wing_big" ID="{83A2DE6B-9D58-45AD-A346-B878FEE5DA04}">
+											<Language>SFX</Language>
+											<AudioFile>Spectrum_sfx_staff_wing_big.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="270396341"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Spectrum_sfx_staff_wing_big" ID="{83A2DE6B-9D58-45AD-A346-B878FEE5DA04}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="sfx_colour_grab_spell" ID="{23CA1FDF-9041-4DB7-AEDC-EF78CC41D07E}" ShortID="861029266">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Spectrum - sfx_colour_grab-001" ID="{69C8E0D8-C071-4A1C-B233-7993BC7D238B}" ShortID="770999314">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_grab-001" ID="{6B6C0DFF-E4BB-423C-8883-B0E5CAAF5636}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_grab-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="702679723"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_grab-001" ID="{6B6C0DFF-E4BB-423C-8883-B0E5CAAF5636}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_grab-002" ID="{C07C7CE2-8011-4BCE-8B4C-843D5070FBEF}" ShortID="971157695">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_grab-002" ID="{4BA01D16-32AD-4945-9683-0063612309F7}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_grab-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="734400573"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_grab-002" ID="{4BA01D16-32AD-4945-9683-0063612309F7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_grab-003" ID="{BC4D3E33-EB88-49AE-98B8-711B41F94E55}" ShortID="489735335">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_grab-003" ID="{7CB4AFF7-7AEB-4253-80E8-80788D292BF3}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_grab-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="900154767"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_grab-003" ID="{7CB4AFF7-7AEB-4253-80E8-80788D292BF3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_grab-004" ID="{76EC2CE0-4EF7-4099-8C53-5EE7EEB095A6}" ShortID="485556210">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_grab-004" ID="{164AA192-611C-4765-8DCD-7FB38E49558F}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_grab-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="717527099"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_grab-004" ID="{164AA192-611C-4765-8DCD-7FB38E49558F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_grab-005" ID="{C22111E2-5198-412C-A7EC-46350584BF75}" ShortID="220980063">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_grab-005" ID="{C0CF6C14-AA6E-40A8-8027-9D4603A1C5B8}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_grab-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="708090424"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_grab-005" ID="{C0CF6C14-AA6E-40A8-8027-9D4603A1C5B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_colour_grab" ID="{8CBAE171-8B88-4C8F-BA19-90D323776ED2}" ShortID="310588932">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_colour_grab" ID="{DC8AA782-FFDD-4BE9-B6D7-F602E5B67905}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_colour_grab.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1009060801"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_colour_grab" ID="{DC8AA782-FFDD-4BE9-B6D7-F602E5B67905}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="Spectrum_sfx_staff_swing_small" ID="{548ADFA0-AB43-4570-9A77-D6A51A514C1A}"/>
+								<ItemRef Name="Spectrum_sfx_staff_swing_big" ID="{55F29172-3079-4AAA-B171-19A16BCB88F4}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

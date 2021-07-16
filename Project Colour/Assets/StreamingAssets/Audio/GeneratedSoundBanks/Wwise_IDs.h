@@ -14,11 +14,20 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID EV_AMB_SWITCHER = 2110301309U;
+        static const AkUniqueID EV_COLOUR_GRAB_SEQUENCE = 1156092748U;
+        static const AkUniqueID EV_COLOUR_PLACE_SEQUENCE = 2911027737U;
+        static const AkUniqueID EV_CONVEYER_BELT = 203475710U;
         static const AkUniqueID EV_IDLEVOX = 1133450584U;
+        static const AkUniqueID EV_IMPACT_MOVE = 546473655U;
+        static const AkUniqueID EV_MACHINERY_MOVE = 3244770519U;
         static const AkUniqueID EV_MX_EXPLORE = 2266659196U;
+        static const AkUniqueID EV_SCREACHING_METAL = 794110178U;
+        static const AkUniqueID EV_SERVO = 878682118U;
         static const AkUniqueID EV_SFX_BIRDS = 1994831277U;
         static const AkUniqueID EV_SFX_PLR_FOOSTEPS = 1061346095U;
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
+        static const AkUniqueID EV_SWITCH_ON = 1635355777U;
+        static const AkUniqueID EV_WHOOSH = 2635617457U;
     } // namespace EVENTS
 
     namespace STATES

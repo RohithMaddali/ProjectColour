@@ -29,6 +29,7 @@ public class Switch : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                AkSoundEngine.PostEvent("ev_switch_on", gameObject);
                 //controls.Gameplay.Switch.triggered
                 Debug.Log("Switch on function is working");
                 cb.PowerSwitch();
