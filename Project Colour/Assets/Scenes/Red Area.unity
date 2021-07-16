@@ -4892,7 +4892,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh66574
+  m_Name: pb_Mesh165178
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5719,9 +5719,9 @@ GameObject:
   - component: {fileID: 265080969}
   - component: {fileID: 265080973}
   - component: {fileID: 265080974}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Pusher/Smasher
-  m_TagString: Untagged
+  m_TagString: Pusher
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6019,7 +6019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  pauseTime: 1
+  pauseTime: 0
   destination: {fileID: 0}
   start: {fileID: 1486483484}
   end: {fileID: 514230703}
@@ -14570,6 +14570,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Industrial_Smasher (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_TagString
+      value: Pusher
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2079106681066939815, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.92
@@ -14689,7 +14697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514230702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.77, y: 5, z: 22.750004}
+  m_LocalPosition: {x: 32.27, y: 5, z: 22.750002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1637498996}
@@ -18663,7 +18671,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67168
+  m_Name: pb_Mesh125012
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21141,6 +21149,18 @@ PrefabInstance:
       propertyPath: key
       value: 
       objectReference: {fileID: 1333689228}
+    - target: {fileID: 7304477941439640218, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.012223252
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304477941439640218, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Center.x
+      value: 1.876676e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304477941439640218, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Center.y
+      value: 0.0005671771
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
 --- !u!114 &1034675386 stripped
@@ -22100,9 +22120,9 @@ GameObject:
   - component: {fileID: 1070925172}
   - component: {fileID: 1070925176}
   - component: {fileID: 1070925177}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Pusher/Smasher
-  m_TagString: Untagged
+  m_TagString: Pusher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22400,7 +22420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  pauseTime: 1
+  pauseTime: 0
   destination: {fileID: 0}
   start: {fileID: 1153776981}
   end: {fileID: 1376000287}
@@ -26816,7 +26836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376000286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.769993, y: 5, z: 17.49998}
+  m_LocalPosition: {x: 27.54, y: 5, z: 17.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1637498996}
@@ -29096,6 +29116,14 @@ PrefabInstance:
     - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_Name
       value: Industrial_Smasher (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_TagString
+      value: Pusher
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2079106681066939815, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33768,7 +33796,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh66814
+  m_Name: pb_Mesh165436
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33988,7 +34016,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh67116
+  m_Name: pb_Mesh165752
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34272,8 +34300,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.488997, y: 0.46020746, z: 16.613222}
-  m_Center: {x: 0, y: 0.18731809, z: 0}
+  m_Size: {x: 3.488997, y: 0.77191687, z: 16.613222}
+  m_Center: {x: 0, y: 0.031463563, z: 0}
 --- !u!43 &1803526439
 Mesh:
   m_ObjectHideFlags: 0
@@ -39103,7 +39131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032919944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.76999, y: 5, z: 28.500002}
+  m_LocalPosition: {x: 27.54, y: 5, z: 28.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1637498996}
@@ -39600,9 +39628,9 @@ GameObject:
   - component: {fileID: 2054264105}
   - component: {fileID: 2054264109}
   - component: {fileID: 2054264110}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Pusher/Smasher
-  m_TagString: Untagged
+  m_TagString: Pusher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39900,7 +39928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  pauseTime: 0.25
+  pauseTime: 0
   destination: {fileID: 0}
   start: {fileID: 1050708172}
   end: {fileID: 2032919945}
@@ -41230,6 +41258,22 @@ PrefabInstance:
       propertyPath: beltOn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7304477941439640218, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.012136514
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304477941439640218, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Center.x
+      value: -4.672241e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304477941439640218, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Center.y
+      value: 0.00061055424
+      objectReference: {fileID: 0}
+    - target: {fileID: 7304477941439640218, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0000000014305116
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0688b26d9341d4248bfbdb63274e83b6, type: 3}
 --- !u!114 &2142347978 stripped
@@ -41586,6 +41630,14 @@ PrefabInstance:
     - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_Name
       value: Industrial_Smasher
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_TagString
+      value: Pusher
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2079106681066939815, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_LocalPosition.x

@@ -111,8 +111,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.013956011, y: 0.0023364655, z: 0.013357501}
-  m_Center: {x: -2.332841e-23, y: 0.0055105337, z: -4.768372e-10}
+  m_Size: {x: 0.013956011, y: 0.011772948, z: 0.013357501}
+  m_Center: {x: -1.2394212e-23, y: 0.0007923122, z: -4.768372e-10}
 --- !u!114 &3258820068603990379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,5 +137,4 @@ MonoBehaviour:
   beltOn: 0
   LightMat: {fileID: 2100000, guid: 6d0c9940a352bd74d99b46eb1a6bd83a, type: 2}
   greyMat: {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
-  isPowered: 0
   currentScroll: 0
