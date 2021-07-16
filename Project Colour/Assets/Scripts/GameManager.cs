@@ -8,9 +8,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public CinemachineFreeLook moveCam;
-    public Slider mouseSlider;
+    public Slider camSlider;
+    public Slider aimSlider;
     public float mouseSenX = 100f;
     public float mouseSenY = 1.5f;
+
+    public float aimSen;
+    public CharacterAim ca;
 
     public int itemsPicked;
 
@@ -36,8 +40,8 @@ public class GameManager : MonoBehaviour
 
     public void ChangeMouseSensitivity()
     {
-        mouseSenX = Mathf.Clamp(mouseSlider.value * 150f, 40, 150);
-        mouseSenY = Mathf.Clamp(mouseSlider.value * 3f, .3f, 3);
+        mouseSenX = Mathf.Clamp(camSlider.value * 150f, 40, 150);
+        mouseSenY = Mathf.Clamp(camSlider.value * 3f, .3f, 3);
         if (moveCam != null)
         {
             moveCam.m_XAxis.m_MaxSpeed = mouseSenX;
@@ -45,5 +49,15 @@ public class GameManager : MonoBehaviour
         }
         Debug.Log("MOUSEX SENSITIVITY IS " + mouseSenX);
         Debug.Log("MOUSEY SENSITIVITY IS " + mouseSenY);
+    }
+
+    public void ChangeAimSensitivity()
+    {
+        aimSen = Mathf.Clamp(aimSlider.value * 20f, 1, 20);
+        if(ca != null)
+        {
+            ca.mouseSensitivity = aimSen;
+        }
+        Debug.Log("AIM SENSITIVITY IS " + aimSen);
     }
 }

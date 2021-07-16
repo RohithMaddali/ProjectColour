@@ -7,6 +7,7 @@ public class CharacterAim : MonoBehaviour
 {
     PlayerControls controls;
     Vector2 rotate;
+    GameManager gm;
 
     public bool aimCam = false;
     Camera mainCam;
@@ -33,9 +34,12 @@ public class CharacterAim : MonoBehaviour
 
     void Start()
     {
+        gm = FindObjectOfType<GameManager>();
+        gm.ca = this;
         mainCam = Camera.main;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        gm.ChangeAimSensitivity();
     }
     
     void Update()
