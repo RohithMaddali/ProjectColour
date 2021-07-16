@@ -35,6 +35,7 @@ namespace Quontity
     public class ObjectiveManager : MonoBehaviour
     {
         private static ObjectiveManager _i;
+        public GameObject mm;
         public static ObjectiveManager i
         {
             get
@@ -65,11 +66,14 @@ namespace Quontity
         {
             //objectiveDisplayPanel.SetActive(true);
             //objectiveDisplayPanel.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].objectiveName;
-
-            GameObject o = Instantiate(objectivePrefab);
-            o.transform.SetParent(objectiveTrackingPanel.transform, false);
-            o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
-            objectiveInTrakingPanel.Add(o);
+            if (mm.activeSelf) 
+            {
+                GameObject o = Instantiate(objectivePrefab);
+                o.transform.SetParent(objectiveTrackingPanel.transform, false);
+                o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
+                objectiveInTrakingPanel.Add(o);
+            }
+            
         }
 
         public void AddItemToObjective(int _objectiveIndex)
