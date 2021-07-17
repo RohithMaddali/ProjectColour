@@ -468,7 +468,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 856685124}
 --- !u!33 &73703867
@@ -11589,7 +11589,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh319782
+  m_Name: pb_Mesh5778664
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18480,7 +18480,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh319082
+  m_Name: pb_Mesh5777946
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37738,7 +37738,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 407570527}
 --- !u!33 &1972758530
