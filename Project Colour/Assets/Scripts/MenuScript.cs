@@ -12,6 +12,7 @@ namespace Pyro
         public GameObject settingsMenu;
         public GameObject MainMenu;
         public GameObject PauseMenu;
+        public GameObject Title;
 
         public SettingsMenu sm;
 
@@ -25,6 +26,14 @@ namespace Pyro
         private void Start()
         {
             sm = settingsMenu.GetComponent<SettingsMenu>();
+        }
+
+        public void TitleButton()
+        {
+            Title.SetActive(false);
+            SceneManager.LoadScene(0);
+            MainMenu.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(mainMenuFirst);
         }
 
         public void Quit()

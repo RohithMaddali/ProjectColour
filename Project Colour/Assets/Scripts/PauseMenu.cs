@@ -17,6 +17,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject MainMenuPrompt;
     public bool submenu = false;
     public GameObject player;
+    public GameObject mainMenu;
 
     public SettingsMenu sm;
 
@@ -133,10 +134,14 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
+        submenu = false;
         Debug.Log("Loading Main Menu...");
         pauseMenuUI.SetActive(false);
         MainMenuPrompt.SetActive(false);
         SceneManager.LoadScene(0);
+        mainMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(mainMenuFirst);
     }
 
     public void Quit()

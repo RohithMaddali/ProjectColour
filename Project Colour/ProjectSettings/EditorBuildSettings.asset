@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Feedback.unity
     guid: 268849bb1718b9a41ba6d4eff689aff3
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: fd70c242a241cdf4db4bcfe74e22db1f
   m_configObjects: {}
