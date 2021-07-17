@@ -9,6 +9,7 @@ public class Pusher : MonoBehaviour
     public Transform destination;
     public Transform start;
     public Transform end;
+    public Renderer pusherMat;
     public bool moving;
     bool playOnce;
     W_Pusher_Audio pusherSound;
@@ -17,12 +18,13 @@ public class Pusher : MonoBehaviour
     {
         destination = end;
         pusherSound = GetComponent<W_Pusher_Audio>();
+        pusherMat = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (moving)
+        if (moving && pusherMat.material.color != Color.green)
         {
             transform.position = Vector3.MoveTowards(transform.position, destination.position, speed * Time.deltaTime);
             if (!playOnce)

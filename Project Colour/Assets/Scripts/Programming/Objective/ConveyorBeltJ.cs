@@ -17,6 +17,7 @@ public class ConveyorBeltJ : MonoBehaviour
     public bool beltOn;
     public Material LightMat;
     public Material greyMat;
+    public Renderer beltMat;
     Rigidbody player;
     W_ConveyerBeltAudio conveyAudio;
     bool playOnce;
@@ -33,6 +34,7 @@ public class ConveyorBeltJ : MonoBehaviour
     {
         player = GetComponent<Rigidbody>();
         conveyAudio = GetComponent<W_ConveyerBeltAudio>();
+        beltMat = GetComponent<Renderer>();
     }
 
     //void Update()
@@ -55,7 +57,8 @@ public class ConveyorBeltJ : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (beltOn)
+
+        if (beltOn && beltMat.material.color != Color.green)
         {
 
             //player.transform.position = Vector3.MoveTowards(player.transform.position, endpoint.position, currentSpeed * Time.deltaTime);
