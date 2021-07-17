@@ -33,6 +33,7 @@ namespace Pyro
             Title.SetActive(false);
             SceneManager.LoadScene(0);
             MainMenu.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(mainMenuFirst);
         }
 

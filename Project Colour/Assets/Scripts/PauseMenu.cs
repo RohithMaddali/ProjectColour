@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using Pyro;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class PauseMenu : MonoBehaviour
     public bool submenu = false;
     public GameObject player;
     public GameObject mainMenu;
+    public GameObject mainMenuPromptprompt;
+    public GameObject controllerMainMenuFirst;
 
     public SettingsMenu sm;
 
@@ -136,12 +139,13 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         submenu = false;
         Debug.Log("Loading Main Menu...");
+        mainMenu.SetActive(true);
+        mainMenuPromptprompt.SetActive(false);
         pauseMenuUI.SetActive(false);
         MainMenuPrompt.SetActive(false);
         SceneManager.LoadScene(0);
-        mainMenu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(mainMenuFirst);
+        EventSystem.current.SetSelectedGameObject(controllerMainMenuFirst);
     }
 
     public void Quit()

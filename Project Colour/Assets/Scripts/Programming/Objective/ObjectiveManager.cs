@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Quontity
 {
@@ -36,6 +37,7 @@ namespace Quontity
     {
         private static ObjectiveManager _i;
         public GameObject mm;
+        public GameObject tm;
         public static ObjectiveManager i
         {
             get
@@ -55,25 +57,27 @@ namespace Quontity
         private List<GameObject> objectiveInTrakingPanel = new List<GameObject>();
 
         public GameObject objectivePrefab;
+        [SerializeField] private Scene currentScene;
 
         void Start()
         {
+            currentScene = SceneManager.GetActiveScene();
             //objectiveDisplayPanel.SetActive(false);
             //objectiveTrackingPanel.SetActive(false);
         }
 
         public void TriggerDisplayPanel(int _objectiveIndex)
         {
+            string sceneName = currentScene.name;
             //objectiveDisplayPanel.SetActive(true);
             //objectiveDisplayPanel.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].objectiveName;
-            if (mm.activeSelf) 
+            if (!mm.activeSelf) 
             {
-                GameObject o = Instantiate(objectivePrefab);
-                o.transform.SetParent(objectiveTrackingPanel.transform, false);
-                o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
-                objectiveInTrakingPanel.Add(o);
-            }
-            
+               GameObject o = Instantiate(objectivePrefab);
+               o.transform.SetParent(objectiveTrackingPanel.transform, false);
+               o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
+               objectiveInTrakingPanel.Add(o);
+            } 
         }
 
         public void AddItemToObjective(int _objectiveIndex)

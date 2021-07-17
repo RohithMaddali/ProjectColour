@@ -9,6 +9,7 @@ namespace Quontity
     {
         public PauseMenu pm;
         public GameObject mm;
+        public GameObject tm;
         //var for tracking panel 
         public GameObject trackingPanel;
         //keeps tracking panel hidden when played
@@ -41,7 +42,7 @@ namespace Quontity
 
         void ObjectiveMenu()
         {
-            if (!pm.pauseMenuUI.activeInHierarchy && !mm.activeSelf)
+            if (!pm.pauseMenuUI.activeInHierarchy && !mm.activeSelf && !tm.activeSelf)
             {
                 if (trackingPanel.gameObject.activeInHierarchy)
                 {
