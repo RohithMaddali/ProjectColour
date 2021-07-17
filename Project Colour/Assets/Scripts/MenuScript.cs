@@ -13,6 +13,8 @@ namespace Pyro
         public GameObject MainMenu;
         public GameObject PauseMenu;
         public GameObject Title;
+        public GameObject feedbackButton;
+        public GameObject mainMenuPrompt;
 
         public SettingsMenu sm;
 
@@ -22,6 +24,8 @@ namespace Pyro
         public GameObject controlsMenu;
         public GameObject quitFirst;
         public GameManager gm;
+
+        public Scene feed;
 
         private void Start()
         {
@@ -76,6 +80,29 @@ namespace Pyro
             SceneManager.LoadScene("AdditiveSceneTest", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);
+        }
+
+        public void feedback()
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            MainMenu.SetActive(false);
+            PauseMenu.SetActive(false);
+            feedbackButton.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(feedbackButton);
+        }
+
+        public void backFromFeedback()
+        {
+            SceneManager.LoadScene(0);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            mainMenuPrompt.SetActive(false);
+            feedbackButton.SetActive(false);
+            MainMenu.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(mainMenuFirst);
         }
     }
 }

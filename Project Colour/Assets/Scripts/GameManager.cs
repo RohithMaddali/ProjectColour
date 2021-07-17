@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Cinemachine;
 using UnityEngine.SceneManagement;
+using Pyro;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,10 +18,13 @@ public class GameManager : MonoBehaviour
     public float aimSen;
     public CharacterAim ca;
 
+    public MenuScript mm;
+
     public int itemsPicked;
 
     private void Awake()
     {
+        mm = FindObjectOfType<MenuScript>();
         DontDestroyOnLoad(this);
     }
 
@@ -29,6 +33,7 @@ public class GameManager : MonoBehaviour
         if (itemsPicked == 6 && isPicked == true)
         {
             SceneManager.LoadScene(6);
+            mm.feedback();
             isPicked = false;
         }
     }
