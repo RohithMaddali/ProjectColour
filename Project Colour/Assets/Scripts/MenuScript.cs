@@ -34,6 +34,7 @@ namespace Pyro
 
         public void TitleButton()
         {
+            //StartCoroutine(loadTransitionAnim());
             Title.SetActive(false);
             SceneManager.LoadScene(0);
             MainMenu.SetActive(true);
