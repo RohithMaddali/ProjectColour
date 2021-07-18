@@ -38,7 +38,7 @@ namespace Pyro
         {
             //StartCoroutine(loadTransitionAnim());
             Title.SetActive(false);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(7);
             MainMenu.SetActive(true);
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(mainMenuFirst);
@@ -98,7 +98,7 @@ namespace Pyro
 
         public void backFromFeedback()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(7);
             gameInfo.anim.SetBool("infoSpawn", false);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

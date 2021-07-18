@@ -146,7 +146,7 @@ public class PauseMenu : MonoBehaviour
         mainMenuPromptprompt.SetActive(false);
         pauseMenuUI.SetActive(false);
         MainMenuPrompt.SetActive(false);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(7);
         gameInfo.anim.SetBool("infoSpawn", false);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(controllerMainMenuFirst);
