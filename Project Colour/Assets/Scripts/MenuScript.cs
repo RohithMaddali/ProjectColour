@@ -24,12 +24,14 @@ namespace Pyro
         public GameObject controlsMenu;
         public GameObject quitFirst;
         public GameManager gm;
+        public GameGoalInfo gameInfo;
 
         public Scene feed;
 
         private void Start()
         {
             sm = settingsMenu.GetComponent<SettingsMenu>();
+            gameInfo = gm.GetComponent<GameGoalInfo>();
         }
 
         public void TitleButton()
@@ -97,6 +99,7 @@ namespace Pyro
         public void backFromFeedback()
         {
             SceneManager.LoadScene(0);
+            gameInfo.anim.SetBool("infoSpawn", false);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             mainMenuPrompt.SetActive(false);

@@ -21,6 +21,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject mainMenuPromptprompt;
     public GameObject controllerMainMenuFirst;
+    public GameManager gm;
+    public GameGoalInfo gameInfo;
 
     public SettingsMenu sm;
 
@@ -41,6 +43,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         sm = settingsMenu.GetComponent<SettingsMenu>();
+        gameInfo = gm.GetComponent<GameGoalInfo>();
     }
     void OnEnable()
     {
@@ -144,6 +147,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         MainMenuPrompt.SetActive(false);
         SceneManager.LoadScene(0);
+        gameInfo.anim.SetBool("infoSpawn", false);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(controllerMainMenuFirst);
     }
