@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -23,6 +24,15 @@ public class Saving : MonoBehaviour
         }
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<RBMove>())
+        {
+            SaveGame();
+        }
+    }
+
 
     public void SaveGame()
     {
@@ -51,8 +61,7 @@ public class Saving : MonoBehaviour
         save.xLocation = player.transform.position.x;
         save.yLocation = player.transform.position.y;
         save.zLocation = player.transform.position.z;
-
-        //save.playerLocation = FindObjectOfType<RBMove>().transform.position;
+        
         return save;
     }
     

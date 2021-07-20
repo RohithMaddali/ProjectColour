@@ -6,14 +6,11 @@
     <e p="C:\Users\predi\OneDrive\Documents\ProjectColour\Project Colour" t="IncludeRecursive">
       <e p="Ak.Wwise.Api.WAAPI.csproj" t="IncludeRecursive" />
       <e p="AK.Wwise.Unity.API.csproj" t="IncludeRecursive" />
-      <e p="AK.Wwise.Unity.API.Editor.csproj" t="IncludeRecursive" />
       <e p="AK.Wwise.Unity.API.WwiseTypes.csproj" t="IncludeRecursive" />
       <e p="AK.Wwise.Unity.MonoBehaviour.csproj" t="IncludeRecursive" />
       <e p="AK.Wwise.Unity.MonoBehaviour.Editor.csproj" t="IncludeRecursive" />
       <e p="AK.Wwise.Unity.Timeline.csproj" t="IncludeRecursive" />
       <e p="AK.Wwise.Unity.Timeline.Editor.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="ColourManRb.cs" t="Include" />
