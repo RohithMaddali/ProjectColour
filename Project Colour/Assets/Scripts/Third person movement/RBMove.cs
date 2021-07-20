@@ -76,8 +76,11 @@ public class RBMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         gm = FindObjectOfType<GameManager>();
-        gm.moveCam = moveCam;
-        gm.ChangeMouseSensitivity();
+        if (gm != null)
+        {
+            gm.moveCam = moveCam;
+            gm.ChangeMouseSensitivity();
+        }
     }
 
     // Update is called once per frame

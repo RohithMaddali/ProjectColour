@@ -7,8 +7,12 @@ using UnityEngine;
 [System.Serializable]
 public class Save
 {
-    /*[SerializeField]
-    public Vector3 playerLocation;*/
+    public float xLocation;
 
+    public float yLocation;
+
+    public float zLocation;
+
+    //todo Remove this when done testing
     public int testingInt;
 }

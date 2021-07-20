@@ -18,17 +18,20 @@ public class Crosshair : MonoBehaviour
 
     void Update()
     {
-        if (player.moveCamActive && !pm.GameIsPaused)
+        if (pm != null)
         {
-            crossHair.SetActive(false);
-        }
-        else if (!player.moveCamActive && !pm.GameIsPaused)
-        {
-            crossHair.SetActive(true);
-        }
-        else if (pm.GameIsPaused)
-        {
-            crossHair.SetActive(false);
+            if (player.moveCamActive && !pm.GameIsPaused)
+            {
+                crossHair.SetActive(false);
+            }
+            else if (!player.moveCamActive && !pm.GameIsPaused)
+            {
+                crossHair.SetActive(true);
+            }
+            else if (pm.GameIsPaused)
+            {
+                crossHair.SetActive(false);
+            }
         }
     }
 

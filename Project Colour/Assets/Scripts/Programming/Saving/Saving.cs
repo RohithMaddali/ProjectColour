@@ -36,8 +36,6 @@ public class Saving : MonoBehaviour
         //closes file so that it can't be edited again during this instance 
         file.Close();
         
-        //Reset the player position TODO remove this as it is just here for testing purposes
-        FindObjectOfType<RBMove>().transform.position = new Vector3(0, 0, 0);
         Debug.Log("Game Saved");
     }
     
@@ -46,9 +44,14 @@ public class Saving : MonoBehaviour
     {
         //Creates an instance of Save 
         Save save = new Save();
+        //Finds a player and temporarily save their reference  
+        GameObject player = FindObjectOfType<RBMove>().gameObject;
         //Holds the information that we want to track
         save.testingInt = 3;
-        
+        save.xLocation = player.transform.position.x;
+        save.yLocation = player.transform.position.y;
+        save.zLocation = player.transform.position.z;
+
         //save.playerLocation = FindObjectOfType<RBMove>().transform.position;
         return save;
     }
@@ -64,7 +67,12 @@ public class Saving : MonoBehaviour
             fileStream.Close();
             
             Debug.Log(save.testingInt);
+            //Setting a variable to hold the player's transform
+            Transform playerLocation = FindObjectOfType<RBMove>().transform;
             
+            //Setting a local vector3 to the saved location
+            Vector3 transformPosition = new Vector3 {x = save.xLocation, y = save.yLocation, z = save.zLocation};
+            playerLocation.position = transformPosition;
         }
         else
         {
