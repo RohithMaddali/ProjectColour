@@ -10,6 +10,8 @@ public class Saving : MonoBehaviour
     public bool saving;
 
     public bool loading;
+    
+    public float loadTimer = .05f;
     // Update is called once per frame
     void Update()
     {
@@ -64,10 +66,18 @@ public class Saving : MonoBehaviour
         
         return save;
     }
-    
+
     //Function for loading the game, it refers to the instance of the save file that exists within the assets folder
     public void Load()
     {
+        StartCoroutine(loader());
+    }
+    
+    
+    IEnumerator loader()
+    {
+        yield return new WaitForSeconds(loadTimer);
+        Debug.Log("Loading");
         if (File.Exists(Application.dataPath + "/gamesave.save"))
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
@@ -78,14 +88,22 @@ public class Saving : MonoBehaviour
             Debug.Log(save.testingInt);
             //Setting a variable to hold the player's transform
             Transform playerLocation = FindObjectOfType<RBMove>().transform;
+            if (playerLocation != null)
+            {
+                //Setting a local vector3 to the saved location
+                Vector3 transformPosition = new Vector3 {x = save.xLocation, y = save.yLocation, z = save.zLocation};
+                playerLocation.position = transformPosition;
             
-            //Setting a local vector3 to the saved location
-            Vector3 transformPosition = new Vector3 {x = save.xLocation, y = save.yLocation, z = save.zLocation};
-            playerLocation.position = transformPosition;
+                Debug.Log("Load has completed");
+            }
         }
         else
         {
             Debug.Log("No Save File");
         }
     }
+    
+    
+    
+   
 }
