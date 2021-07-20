@@ -32,9 +32,13 @@ public class Pusher : MonoBehaviour
                 pusherSound.PusherSound();
                 playOnce = true;
             }
-            if(transform.position == destination.position)
+            if(transform.position == start.position)
             {
                 StartCoroutine(Pause());
+            }
+            else if(transform.position == end.position)
+            {
+                destination = start;
             }
         }
     }
@@ -44,14 +48,7 @@ public class Pusher : MonoBehaviour
         moving = false;
         Debug.Log("SWITCH TURN AROUND NOW HIT IT");
         yield return new WaitForSeconds(pauseTime);
-        if (destination == start)
-        {
-            destination = end;
-        }
-        else if (destination == end)
-        {
-            destination = start;
-        }
+        destination = end;
 
         Debug.Log("Moving towards " + destination);
         moving = true;
