@@ -26,6 +26,8 @@ namespace Pyro
         public GameManager gm;
         public GameGoalInfo gameInfo;
 
+        public GameObject tips;
+
         public Scene feed;
 
         private void Start()
@@ -83,6 +85,8 @@ namespace Pyro
             SceneManager.LoadScene("AdditiveSceneTest", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);
+            tips.SetActive(true);
+
         }
 
         public void feedback()
