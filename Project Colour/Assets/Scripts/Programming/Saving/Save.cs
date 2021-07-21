@@ -15,4 +15,9 @@ public class Save
 
     //todo Remove this when done testing
     public int testingInt;
+
+    public int firstObjectiveNumber;
+    public int secondObjectiveNumber;
+    public int thirdObjectiveNumber;
+
 }

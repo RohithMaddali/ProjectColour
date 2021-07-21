@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using Quontity;
 
 public class Saving : MonoBehaviour
 {
     public bool saving;
-
     public bool loading;
     
     public float loadTimer = .05f;
@@ -63,7 +63,9 @@ public class Saving : MonoBehaviour
         save.xLocation = player.transform.position.x;
         save.yLocation = player.transform.position.y;
         save.zLocation = player.transform.position.z;
-        
+        save.firstObjectiveNumber = ObjectiveManager.i.objectives[0].GetCurrentItemValue();
+        save.secondObjectiveNumber = ObjectiveManager.i.objectives[1].GetCurrentItemValue();
+        save.thirdObjectiveNumber = ObjectiveManager.i.objectives[2].GetCurrentItemValue();
         return save;
     }
 
@@ -93,7 +95,9 @@ public class Saving : MonoBehaviour
                 //Setting a local vector3 to the saved location
                 Vector3 transformPosition = new Vector3 {x = save.xLocation, y = save.yLocation, z = save.zLocation};
                 playerLocation.position = transformPosition;
-            
+                ObjectiveManager.i.objectives[0].LoadValues(save.firstObjectiveNumber);
+                ObjectiveManager.i.objectives[1].LoadValues(save.secondObjectiveNumber);
+                ObjectiveManager.i.objectives[2].LoadValues(save.thirdObjectiveNumber);
                 Debug.Log("Load has completed");
             }
         }

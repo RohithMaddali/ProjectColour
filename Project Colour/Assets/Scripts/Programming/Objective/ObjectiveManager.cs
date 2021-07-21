@@ -15,6 +15,14 @@ namespace Quontity
         private int currentItemNumber;
         public UnityEvent OnCompletedObjective;
 
+        public void LoadValues(int value)
+        {
+            currentItemNumber = value;
+        }
+        public int GetCurrentItemValue()
+        {
+            return currentItemNumber;
+        }
         public void AddCurrentItemNumber()
         {
             if (currentItemNumber < maxItemNumber)
