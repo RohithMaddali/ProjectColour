@@ -15,6 +15,14 @@ namespace Quontity
         private int currentItemNumber;
         public UnityEvent OnCompletedObjective;
 
+        public void LoadValues(int value)
+        {
+            currentItemNumber = value;
+        }
+        public int GetCurrentItemValue()
+        {
+            return currentItemNumber;
+        }
         public void AddCurrentItemNumber()
         {
             if (currentItemNumber < maxItemNumber)
@@ -54,7 +62,7 @@ namespace Quontity
         public GameObject objectiveTrackingPanel;
 
         public List<SingleObjective> objectives = new List<SingleObjective>();
-        private List<GameObject> objectiveInTrakingPanel = new List<GameObject>();
+        private List<GameObject> objectiveInTrackingPanel = new List<GameObject>();
 
         public GameObject objectivePrefab;
         [SerializeField] private Scene currentScene;
@@ -76,14 +84,14 @@ namespace Quontity
                GameObject o = Instantiate(objectivePrefab);
                o.transform.SetParent(objectiveTrackingPanel.transform, false);
                o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
-               objectiveInTrakingPanel.Add(o);
+               objectiveInTrackingPanel.Add(o);
             } 
         }
 
         public void AddItemToObjective(int _objectiveIndex)
         {
             objectives[_objectiveIndex].AddCurrentItemNumber();
-            objectiveInTrakingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
+            objectiveInTrackingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
         }
 
         public void AllObjectiveCompleted()

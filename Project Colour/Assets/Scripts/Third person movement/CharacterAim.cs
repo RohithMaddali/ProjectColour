@@ -35,11 +35,14 @@ public class CharacterAim : MonoBehaviour
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
-        gm.ca = this;
-        mainCam = Camera.main;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
-        gm.ChangeAimSensitivity();
+        if (gm != null)
+        {
+            gm.ca = this;
+            mainCam = Camera.main;
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            gm.ChangeAimSensitivity();
+        }
     }
     
     void Update()

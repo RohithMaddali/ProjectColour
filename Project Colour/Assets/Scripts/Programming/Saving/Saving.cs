@@ -1,14 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using Quontity;
 
 public class Saving : MonoBehaviour
 {
     public bool saving;
-
     public bool loading;
+    
+    public float loadTimer = .05f;
     // Update is called once per frame
     void Update()
     {
@@ -24,6 +27,15 @@ public class Saving : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<RBMove>())
+        {
+            SaveGame();
+        }
+    }
+
+
     public void SaveGame()
     {
         //creates and runs the instance save
@@ -36,8 +48,6 @@ public class Saving : MonoBehaviour
         //closes file so that it can't be edited again during this instance 
         file.Close();
         
-        //Reset the player position TODO remove this as it is just here for testing purposes
-        FindObjectOfType<RBMove>().transform.position = new Vector3(0, 0, 0);
         Debug.Log("Game Saved");
     }
     
@@ -46,16 +56,30 @@ public class Saving : MonoBehaviour
     {
         //Creates an instance of Save 
         Save save = new Save();
+        //Finds a player and temporarily save their reference  
+        GameObject player = FindObjectOfType<RBMove>().gameObject;
         //Holds the information that we want to track
         save.testingInt = 3;
-        
-        //save.playerLocation = FindObjectOfType<RBMove>().transform.position;
+        save.xLocation = player.transform.position.x;
+        save.yLocation = player.transform.position.y;
+        save.zLocation = player.transform.position.z;
+        save.firstObjectiveNumber = ObjectiveManager.i.objectives[0].GetCurrentItemValue();
+        save.secondObjectiveNumber = ObjectiveManager.i.objectives[1].GetCurrentItemValue();
+        save.thirdObjectiveNumber = ObjectiveManager.i.objectives[2].GetCurrentItemValue();
         return save;
     }
-    
+
     //Function for loading the game, it refers to the instance of the save file that exists within the assets folder
     public void Load()
     {
+        StartCoroutine(loader());
+    }
+    
+    
+    IEnumerator loader()
+    {
+        yield return new WaitForSeconds(loadTimer);
+        Debug.Log("Loading");
         if (File.Exists(Application.dataPath + "/gamesave.save"))
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
@@ -64,11 +88,26 @@ public class Saving : MonoBehaviour
             fileStream.Close();
             
             Debug.Log(save.testingInt);
-            
+            //Setting a variable to hold the player's transform
+            Transform playerLocation = FindObjectOfType<RBMove>().transform;
+            if (playerLocation != null)
+            {
+                //Setting a local vector3 to the saved location
+                Vector3 transformPosition = new Vector3 {x = save.xLocation, y = save.yLocation, z = save.zLocation};
+                playerLocation.position = transformPosition;
+                ObjectiveManager.i.objectives[0].LoadValues(save.firstObjectiveNumber);
+                ObjectiveManager.i.objectives[1].LoadValues(save.secondObjectiveNumber);
+                ObjectiveManager.i.objectives[2].LoadValues(save.thirdObjectiveNumber);
+                Debug.Log("Load has completed");
+            }
         }
         else
         {
             Debug.Log("No Save File");
         }
     }
+    
+    
+    
+   
 }
