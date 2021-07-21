@@ -74,8 +74,6 @@ public class ControlTips : MonoBehaviour
             KeyboardMouseInUse();
             StartCoroutine(DisplayTip(kmCam));
         }
-
-
     }
     
     // Update is called once per frame
@@ -131,11 +129,11 @@ public class ControlTips : MonoBehaviour
     public void DisplayAimTip()
     {
         Debug.Log("Display Aim Tip");
-        if (gm.gamepadInUse)
+        if (gm.gamepadInUse && !aimed)
         {
             StartCoroutine(DisplayTip(gpAim));
         }
-        else if (!gm.gamepadInUse)
+        else if (!gm.gamepadInUse && !aimed)
         {
             StartCoroutine(DisplayTip(kmAim));
         }
