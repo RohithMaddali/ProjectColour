@@ -180,16 +180,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: c5a9dcad6fb70dd408c449661572baeb, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 6
 --- !u!222 &7458256
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -941,10 +941,10 @@ RectTransform:
   m_Father: {fileID: 432952916}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMin: {x: 0.006249999, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5.48, y: 0}
+  m_SizeDelta: {x: -10.961502, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152115184
 MonoBehaviour:
@@ -966,7 +966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7d82dc5a72ca1ec4d8bf418f27e85b14, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 6
 --- !u!222 &152115185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2341,7 +2341,6 @@ GameObject:
   m_Component:
   - component: {fileID: 432952916}
   - component: {fileID: 432952914}
-  - component: {fileID: 432952915}
   m_Layer: 5
   m_Name: Camera Sensitivity
   m_TagString: Untagged
@@ -2369,10 +2368,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.6039216, g: 0.7882353, b: 0.8039216, a: 1}
-    m_HighlightedColor: {r: 0.45882353, g: 0.5921569, b: 0.6039216, a: 1}
-    m_PressedColor: {r: 0.14901961, g: 0.19607843, b: 0.2, a: 1}
-    m_SelectedColor: {r: 0.45882353, g: 0.5921569, b: 0.6039216, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.78221786, g: 0.8783134, b: 0.8867924, a: 1}
+    m_PressedColor: {r: 0.4710306, g: 0.6669144, b: 0.6886792, a: 1}
+    m_SelectedColor: {r: 0.73268956, g: 0.8309524, b: 0.8396226, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2411,21 +2410,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &432952915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 432952913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 4, y: -4}
-  m_UseGraphicAlpha: 1
 --- !u!224 &432952916
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2446,7 +2430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120, y: 64}
+  m_AnchoredPosition: {x: -119.999985, y: 64.00001}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &443480672
@@ -2613,7 +2597,6 @@ GameObject:
   m_Component:
   - component: {fileID: 500526388}
   - component: {fileID: 500526386}
-  - component: {fileID: 500526387}
   m_Layer: 5
   m_Name: Aim Sensitivity
   m_TagString: Untagged
@@ -2641,10 +2624,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.6039216, g: 0.7882353, b: 0.8039216, a: 1}
-    m_HighlightedColor: {r: 0.45882353, g: 0.5921569, b: 0.6039216, a: 1}
-    m_PressedColor: {r: 0.14901961, g: 0.19607843, b: 0.2, a: 1}
-    m_SelectedColor: {r: 0.45882353, g: 0.5921569, b: 0.6039216, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.67737633, g: 0.80046046, b: 0.8113208, a: 1}
+    m_PressedColor: {r: 0.45803666, g: 0.6709374, b: 0.6886792, a: 1}
+    m_SelectedColor: {r: 0.70096123, g: 0.8197108, b: 0.8301887, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2683,21 +2666,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &500526387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500526385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 4, y: -4}
-  m_UseGraphicAlpha: 1
 --- !u!224 &500526388
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3343,8 +3311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0.5}
+  m_SizeDelta: {x: 4, y: -16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &557951434
 CanvasRenderer:
@@ -3374,7 +3342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 8a662106aa506894993e7e7cffe2703d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7485,16 +7453,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: c5a9dcad6fb70dd408c449661572baeb, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.5
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 6
 --- !u!222 &1187286681
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9374,8 +9342,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0.5}
+  m_SizeDelta: {x: 4, y: -16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1442007842
 CanvasRenderer:
@@ -9405,7 +9373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 8a662106aa506894993e7e7cffe2703d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11976,10 +11944,10 @@ RectTransform:
   m_Father: {fileID: 500526388}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMin: {x: 0.006249999, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5.48, y: 0}
+  m_SizeDelta: {x: -10.961502, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878904080
 MonoBehaviour:
@@ -12001,8 +11969,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7d82dc5a72ca1ec4d8bf418f27e85b14, type: 3}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12010,7 +11978,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 7
 --- !u!222 &1878904081
 CanvasRenderer:
   m_ObjectHideFlags: 0
