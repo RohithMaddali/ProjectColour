@@ -11,11 +11,18 @@ namespace Quontity
         public GameObject prism;
         public GameObject sfx;
         public GameManager gm;
+        public int index;
         void Awake()
         {
             gm = FindObjectOfType<GameManager>();
         }
-
+        void Start()
+        {
+            if (ObjectiveManager.i.storedItem.Contains(transform.tag + index.ToString()))
+            {
+                Destroy(this.gameObject);
+            }
+        }
         //when the player collides with object, it will check for tag, then add item to objective and destroy it
         private void OnTriggerEnter(Collider collision)
         {
@@ -29,10 +36,10 @@ namespace Quontity
                 if (CompareTag("GreenPrism"))
                 {
                     ObjectiveManager.i.AddItemToObjective(0);
+                    ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
                     Destroy(prism);
-                    Debug.Log("GreenGone");
                 }
             }
 
@@ -41,10 +48,10 @@ namespace Quontity
                 if (CompareTag("BluePrism"))
                 {
                     ObjectiveManager.i.AddItemToObjective(1);
+                    ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
-                    Destroy(prism);
-                    Debug.Log("BlueGone");    
+                    Destroy(prism); 
                 }
             }
 
@@ -53,10 +60,10 @@ namespace Quontity
                 if (CompareTag("RedPrism"))
                 {
                     ObjectiveManager.i.AddItemToObjective(2);
+                    ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
                     Destroy(prism);
-                    Debug.Log("RedGone");  
                 }
             }
         }

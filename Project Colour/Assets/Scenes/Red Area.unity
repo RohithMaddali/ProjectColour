@@ -22934,6 +22934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prism Red
       objectReference: {fileID: 0}
+    - target: {fileID: 1506795410393900796, guid: 6f8cdc7683db0774fa2172c66739171d, type: 3}
+      propertyPath: index
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1894083559699815462, guid: 6f8cdc7683db0774fa2172c66739171d, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -40965,6 +40969,7 @@ MonoBehaviour:
   prism: {fileID: 9003199256070490811}
   sfx: {fileID: 873976925274918748, guid: 0a1bce4dc2a1850458614923253fdaa2, type: 3}
   gm: {fileID: 0}
+  index: 1
 --- !u!1 &7809757836726693526
 GameObject:
   m_ObjectHideFlags: 0

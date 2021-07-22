@@ -20319,6 +20319,7 @@ MonoBehaviour:
   prism: {fileID: 3300205154193780872}
   sfx: {fileID: 873976925274918748, guid: ff0e1a55a5141534f8f785599365340c, type: 3}
   gm: {fileID: 0}
+  index: 1
 --- !u!23 &2063778857714326340
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20533,6 +20534,7 @@ MonoBehaviour:
   prism: {fileID: 7243358315899252264}
   sfx: {fileID: 873976925274918748, guid: ff0e1a55a5141534f8f785599365340c, type: 3}
   gm: {fileID: 0}
+  index: 0
 --- !u!1 &7243358315899252264
 GameObject:
   m_ObjectHideFlags: 0

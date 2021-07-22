@@ -66,6 +66,7 @@ public class Saving : MonoBehaviour
         save.firstObjectiveNumber = ObjectiveManager.i.objectives[0].GetCurrentItemValue();
         save.secondObjectiveNumber = ObjectiveManager.i.objectives[1].GetCurrentItemValue();
         save.thirdObjectiveNumber = ObjectiveManager.i.objectives[2].GetCurrentItemValue();
+        save.itemValue = ObjectiveManager.i.storedItem;
         return save;
     }
 
@@ -98,6 +99,7 @@ public class Saving : MonoBehaviour
                 ObjectiveManager.i.objectives[0].LoadValues(save.firstObjectiveNumber);
                 ObjectiveManager.i.objectives[1].LoadValues(save.secondObjectiveNumber);
                 ObjectiveManager.i.objectives[2].LoadValues(save.thirdObjectiveNumber);
+                ObjectiveManager.i.storedItem = save.itemValue;
                 Debug.Log("Load has completed");
             }
         }

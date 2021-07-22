@@ -20,4 +20,6 @@ public class Save
     public int secondObjectiveNumber;
     public int thirdObjectiveNumber;
 
+    public List<string> itemValue;
+
 }

@@ -46,6 +46,7 @@ namespace Quontity
         private static ObjectiveManager _i;
         public GameObject mm;
         public GameObject tm;
+        public List<string> storedItem;
         public static ObjectiveManager i
         {
             get
@@ -92,6 +93,12 @@ namespace Quontity
         {
             objectives[_objectiveIndex].AddCurrentItemNumber();
             objectiveInTrackingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
+
+        }
+
+        public void AddToStore(Pickup StoreIndex)
+        {
+            storedItem.Add(StoreIndex.tag + StoreIndex.index.ToString());
         }
 
         public void AllObjectiveCompleted()
