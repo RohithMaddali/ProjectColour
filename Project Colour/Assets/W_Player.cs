@@ -15,7 +15,7 @@ public class W_Player : MonoBehaviour
         SetInitialSwitches();
         movement = GetComponentInParent<RBMove>();
     }
-    void Update()
+    void FixedUpdate()
     {
         MaterialCheck();
     }
@@ -39,8 +39,8 @@ public class W_Player : MonoBehaviour
 
     void MaterialCheck()
     {
-        Physics.Raycast(raycastPos.position, Vector3.down, out hit, 1.5f, lm);
-        Debug.DrawRay(raycastPos.position, Vector3.down * 1.5f, Color.red);
+        Physics.Raycast(raycastPos.position, Vector3.down, out hit, 1f, lm);
+        Debug.DrawRay(raycastPos.position, Vector3.down * 1f, Color.red);
         if (hit.collider)
         {
             if (hit.collider.GetComponent<W_TagExtender>() != null && hit.collider.GetComponent<W_TagExtender>().tags[0] == "Dirt")

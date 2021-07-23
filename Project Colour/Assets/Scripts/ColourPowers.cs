@@ -19,7 +19,8 @@ public class ColourPowers : MonoBehaviour
 
     public float speedBoost = 50f;
     public bool repaired = false;
-
+    bool hasGrown;
+    bool isFixed;
     public Material grey;
 
 
@@ -38,6 +39,11 @@ public class ColourPowers : MonoBehaviour
         if (animator != null && rend.material.color != Color.green && repairedObject == null)
         {
             animator.SetBool("Grow", false);
+            if (hasGrown)
+            {
+                W_Events.ObjectInteractFunction("Plant");
+                hasGrown = false;
+            }
         }
         
         if (rend.material.color == Color.red)
@@ -55,11 +61,21 @@ public class ColourPowers : MonoBehaviour
             if (animator != null && pairedObject == null)
             {
                 Debug.Log("Growwwww");
+                if (!hasGrown)
+                {
+                    W_Events.ObjectInteractFunction("Plant");
+                    hasGrown = true;
+                }
                 animator.SetBool("Grow", true);
             }
             else
             {
                 SwitchActive();
+                if (!isFixed)
+                {
+                    W_Events.ObjectInteractFunction("Bridge");
+                    isFixed = true;
+                }
                 rend.material.color = Color.grey;
             }
         }

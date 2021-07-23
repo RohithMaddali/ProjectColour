@@ -22,4 +22,13 @@ public class W_Events : MonoBehaviour
             ConveyerBeltEvent();
         }
     }
+    public delegate void ObjectInteract(string obj);
+    public static event ObjectInteract ObjectInteractEvent;
+    public static void ObjectInteractFunction(string objColour)
+    {
+        if (ObjectInteractEvent != null)
+        {
+            ObjectInteractEvent(objColour);
+        }
+    }
 }

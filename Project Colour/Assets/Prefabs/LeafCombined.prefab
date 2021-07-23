@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5933372556581648949}
   - component: {fileID: 7692936529843270234}
   - component: {fileID: 1543260521184678487}
+  - component: {fileID: 5252304133601464614}
   m_Layer: 8
   m_Name: LeafCombined
   m_TagString: CanColour
@@ -176,6 +177,18 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &5252304133601464614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815911297684899681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b2379b03a93e14fb7cefca98b5ef4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2251617996394930993
 PrefabInstance:
   m_ObjectHideFlags: 0

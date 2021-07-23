@@ -9,7 +9,7 @@ public class W_VoiceOverManager : MonoBehaviour
     uint idleVoxID;
     private bool toggle;
     [SerializeField] private float cooldown;
-    [SerializeField] private float waitTime = 6;
+    private float waitTime = 8;
     void Start()
     {
         movement = GetComponent<RBMove>();
@@ -41,7 +41,7 @@ public class W_VoiceOverManager : MonoBehaviour
     IEnumerator PlayIdleVox()
     {
         idleVoxID = AkSoundEngine.PostEvent("ev_IdleVox",gameObject);
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(25);
         toggle = false;
     }
 }
