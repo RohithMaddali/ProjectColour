@@ -14,6 +14,8 @@ public class CharacterAim : MonoBehaviour
     public float mouseSensitivity = 100f;
     public Transform playerBody;
     float xRotation = 0f;
+    public float minYClamp;
+    public float maxYClamp;
 
     void Awake()
     {
@@ -54,7 +56,7 @@ public class CharacterAim : MonoBehaviour
             float mouseY = rotate.y * mouseSensitivity * Time.deltaTime;
 
             xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            xRotation = Mathf.Clamp(xRotation, minYClamp, maxYClamp);
             transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
             playerBody.Rotate(Vector3.up * mouseX);
         }
