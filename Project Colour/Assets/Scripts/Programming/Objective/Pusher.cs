@@ -11,11 +11,15 @@ public class Pusher : MonoBehaviour
     public Transform end;
     public Renderer pusherMat;
     public bool moving;
+    Vector3 movement;
+    Rigidbody rb;
     bool playOnce;
     W_Pusher_Audio pusherSound;
     // Start is called before the first frame update
     void Start()
     {
+
+        rb = GetComponent<Rigidbody>();
         destination = end;
         pusherSound = GetComponent<W_Pusher_Audio>();
         pusherMat = GetComponent<Renderer>();
@@ -26,7 +30,8 @@ public class Pusher : MonoBehaviour
     {
         if (moving && pusherMat.material.color != Color.green)
         {
-            transform.position = Vector3.MoveTowards(transform.position, destination.position, speed * Time.deltaTime);
+            movement = Vector3.MoveTowards(transform.position, destination.position, speed * Time.deltaTime);
+            rb.MovePosition(movement);
             if (!playOnce)
             {
                 pusherSound.PusherSound();
