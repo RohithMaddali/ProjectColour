@@ -2084,8 +2084,8 @@ MonoBehaviour:
   aimCam: 0
   mouseSensitivity: 10
   playerBody: {fileID: 4894964230543866189}
-  minYClamp: -30
-  maxYClamp: 30
+  minYClamp: -45
+  maxYClamp: 45
 --- !u!1 &4894964230141002233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,7 +2334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  waitTime: 6
 --- !u!114 &8182444545584490508
 MonoBehaviour:
   m_ObjectHideFlags: 0
