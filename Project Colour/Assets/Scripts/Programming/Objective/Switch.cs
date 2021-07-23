@@ -8,12 +8,12 @@ public class Switch : MonoBehaviour
     PlayerControls controls;
     public GameObject player;
     public Canvas interact;
+    public bool cooldown = false;
+
     private void Awake()
     {
         controls = new PlayerControls();
-        //controls.Gameplay.Switch.performed += ctx => SwitchOn();
     }
-
     void OnEnable()
     {
         controls.Gameplay.Enable();
@@ -26,26 +26,29 @@ public class Switch : MonoBehaviour
     public void OnTriggerStay(Collider other)
     {
         interact.gameObject.SetActive(true);
-        Debug.Log("Check for collider");
         if(other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && cooldown == false)
             {
                 AkSoundEngine.PostEvent("ev_switch_on", gameObject);
-                Debug.Log("Switch on function is working");
                 cb.PowerSwitch();
+                Invoke("ResetCooldown", 3.0f);
+                cooldown = true;
             }
             else if (controls.Gameplay.Switch.triggered)
             {
-                Debug.Log("Switch");
                 cb.PowerSwitch();
             }
         }
     }
 
+    void ResetCooldown()
+    {
+        cooldown = false;
+    }
+
     public void OnTriggerExit(Collider other)
     {
-        
         interact.gameObject.SetActive(false);
     }
 }
