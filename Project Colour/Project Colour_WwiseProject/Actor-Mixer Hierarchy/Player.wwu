@@ -570,6 +570,9 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}" WorkUnitID="{1F27A04E-7EF4-4CF1-84B2-C05A66F8FE7E}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 										</Reference>

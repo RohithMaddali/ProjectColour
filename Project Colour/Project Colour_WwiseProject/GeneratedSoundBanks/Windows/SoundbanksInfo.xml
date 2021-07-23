@@ -95,7 +95,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="684070782">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3567606858">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -356,6 +356,7 @@
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{2A0FDD90-F596-4079-B787-F334223344EE}">
+							<DefaultSwitchValue>{FCFCF67E-9E33-4313-8AC9-02871383162A}</DefaultSwitchValue>
 							<Children>
 								<SwitchContainer SwitchValue="{FCFCF67E-9E33-4313-8AC9-02871383162A}">
 									<Media>
@@ -415,20 +416,40 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="4142136440">
+		<SoundBank Id="1229948536" Language="SFX" Hash="2905680874">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2110301309" Name="ev_amb_switcher" ObjectPath="\Events\Default Work Unit\ev_amb_switcher" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="13258466" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-005.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-005_05842A19.wem</Path>
+						</File>
 						<File Id="56239873" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-003.wav</ShortName>
 							<Path>SFX\Spectrum_ambience_birds_chirping-003_9F08964D.wem</Path>
 						</File>
+						<File Id="91397311" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_birds_wings_flapping.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping_D9363DA3.wem</Path>
+						</File>
 						<File Id="150453628" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping.wav</ShortName>
 							<Path>SFX\Spectrum_ambience_birds_chirping_6E2618E3.wem</Path>
+						</File>
+						<File Id="177898016" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-002.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-002_05842A19.wem</Path>
+						</File>
+						<File Id="195011568" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-002.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-002_0D28E25F.wem</Path>
+						</File>
+						<File Id="224567792" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-003.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-003_05842A19.wem</Path>
 						</File>
 						<File Id="317469201" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-001.wav</ShortName>
@@ -438,17 +459,75 @@
 							<ShortName>Spectrum_ambience_birds_chirping-004.wav</ShortName>
 							<Path>SFX\Spectrum_ambience_birds_chirping-004_067411EF.wem</Path>
 						</File>
+						<File Id="365078953" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls_05842A19.wem</Path>
+						</File>
 						<File Id="370626416" Language="SFX">
 							<ShortName>Spectrum_wind_forrest_vegetation.wav</ShortName>
 							<Path>SFX\Spectrum_wind_forrest_vegetation_6AF693E7.wem</Path>
+						</File>
+						<File Id="554511978" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-006.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-006_05842A19.wem</Path>
+						</File>
+						<File Id="606227974" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-001.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-001_C0376E11.wem</Path>
+						</File>
+						<File Id="657077841" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-001.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-001_05842A19.wem</Path>
+						</File>
+						<File Id="709311407" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-004.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-004_05842A19.wem</Path>
 						</File>
 						<File Id="709356173" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping-002.wav</ShortName>
 							<Path>SFX\Spectrum_ambience_birds_chirping-002_3E956AEB.wem</Path>
 						</File>
+						<File Id="714852729" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-008.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-008_05842A19.wem</Path>
+						</File>
+						<File Id="798389682" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-007.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-007_05842A19.wem</Path>
+						</File>
 						<File Id="936217840" Language="SFX">
 							<ShortName>Spectrum_atmos_wind_calm_breezy.wav</ShortName>
 							<Path>SFX\Spectrum_atmos_wind_calm_breezy_6AF693E7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3702741518" Name="ev_birds_wings_flapping" ObjectPath="\Events\Default Work Unit\ev_birds_wings_flapping" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="91397311" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_birds_wings_flapping.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping_D9363DA3.wem</Path>
+						</File>
+						<File Id="195011568" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-002.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-002_0D28E25F.wem</Path>
+						</File>
+						<File Id="606227974" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-001.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-001_C0376E11.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="761977599" Name="ev_bridge_fixed_01" ObjectPath="\Events\Default Work Unit\ev_bridge_fixed_01" DurationType="OneShot" DurationMin="0.726324" DurationMax="1.027178">
+					<IncludedMemoryFiles>
+						<File Id="866540893" Language="SFX">
+							<ShortName>Spectrum - sfx_bridge_fixed_01.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_bridge_fixed_01_05842A19.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -480,21 +559,88 @@
 						<ActionPostEventEntry Id="2635617457" Name="ev_whoosh" ObjectPath="\Events\Default Work Unit\ev_whoosh"/>
 					</ActionPostEvent>
 				</Event>
+				<Event Id="1125063709" Name="ev_mushroom" ObjectPath="\Events\Default Work Unit\ev_mushroom" DurationType="OneShot" DurationMin="1.027263" DurationMax="1.539156">
+					<IncludedMemoryFiles>
+						<File Id="87814680" Language="SFX">
+							<ShortName>Spectrum - sfx_plant_skrink_02.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_plant_skrink_02_05842A19.wem</Path>
+						</File>
+						<File Id="537259335" Language="SFX">
+							<ShortName>Spectrum - sfx_plant_grow_02.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_plant_grow_02_05842A19.wem</Path>
+						</File>
+						<File Id="710267600" Language="SFX">
+							<ShortName>Spectrum - sfx_plant_grow_01.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_plant_grow_01_05842A19.wem</Path>
+						</File>
+						<File Id="761359097" Language="SFX">
+							<ShortName>Spectrum - sfx_plant_skrink_01.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_plant_skrink_01_05842A19.wem</Path>
+						</File>
+						<File Id="1016953576" Language="SFX">
+							<ShortName>Spectrum - sfx_plant_grow_03.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_plant_grow_03_05842A19.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="794110178" Name="ev_screaching_metal" ObjectPath="\Events\Default Work Unit\ev_screaching_metal" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="1.388298" DurationMax="2.080097">
 					<IncludedMemoryFiles>
 						<File Id="392369088" Language="SFX">
 							<ShortName>Spectrum - screaching_metal_03.wav</ShortName>
-							<Path>SFX\Spectrum - screaching_metal_03_9A164F00.wem</Path>
+							<Path>SFX\Spectrum - screaching_metal_03_66BF105A.wem</Path>
 						</File>
 						<File Id="712379345" Language="SFX">
 							<ShortName>Spectrum - screaching_metal_01.wav</ShortName>
-							<Path>SFX\Spectrum - screaching_metal_01_31A00048.wem</Path>
+							<Path>SFX\Spectrum - screaching_metal_01_0839D1BB.wem</Path>
 						</File>
 						<File Id="870740259" Language="SFX">
 							<ShortName>Spectrum - screaching_metal_02.wav</ShortName>
-							<Path>SFX\Spectrum - screaching_metal_02_31A00048.wem</Path>
+							<Path>SFX\Spectrum - screaching_metal_02_0839D1BB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3893023783" Name="ev_seagulls" ObjectPath="\Events\Default Work Unit\ev_seagulls" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="13258466" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-005.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-005_05842A19.wem</Path>
+						</File>
+						<File Id="177898016" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-002.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-002_05842A19.wem</Path>
+						</File>
+						<File Id="224567792" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-003.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-003_05842A19.wem</Path>
+						</File>
+						<File Id="365078953" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls_05842A19.wem</Path>
+						</File>
+						<File Id="554511978" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-006.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-006_05842A19.wem</Path>
+						</File>
+						<File Id="657077841" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-001.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-001_05842A19.wem</Path>
+						</File>
+						<File Id="709311407" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-004.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-004_05842A19.wem</Path>
+						</File>
+						<File Id="714852729" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-008.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-008_05842A19.wem</Path>
+						</File>
+						<File Id="798389682" Language="SFX">
+							<ShortName>Matter2D - sfx_amb_seagulls-007.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_amb_seagulls-007_05842A19.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="878682118" Name="ev_servo" ObjectPath="\Events\Default Work Unit\ev_servo" MaxAttenuation="60.000000" DurationType="OneShot" DurationMin="1.388298" DurationMax="2.080097">
 					<IncludedMemoryFiles>

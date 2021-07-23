@@ -142,6 +142,19 @@
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A0C893EC-5C8F-49A0-AF26-C8C1882798F1}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -295,6 +308,417 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="sfx_seagulls" ID="{A816108B-28DD-4576-AC74-9E6016260835}" ShortID="623150876">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{27A4CA87-7B95-49F2-BD07-7C2482D4E805}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambience" ID="{638FB4D6-DAFF-400F-ACED-95B3F1979DF2}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{A71C2A53-1409-4559-946E-6163CFC1BE6F}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Matter2D - sfx_amb_seagulls-001" ID="{C6BF0196-3911-48DF-B8E4-AFD71FBDDAEC}" ShortID="290341251">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-001" ID="{DD04DC42-35F1-4F5C-B018-DFADB4EAE987}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="657077841"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-001" ID="{DD04DC42-35F1-4F5C-B018-DFADB4EAE987}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls-002" ID="{66914632-D430-4B38-8DC8-2E59BF51DD91}" ShortID="395594718">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-002" ID="{88867311-80C0-4188-9792-03BC55049AE3}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="177898016"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-002" ID="{88867311-80C0-4188-9792-03BC55049AE3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls-003" ID="{F8308BB6-CB09-4FD8-ABEA-A85C0F09EDD6}" ShortID="78895241">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-003" ID="{A3EEAB6D-2033-44DA-AC77-5F6F63EC1024}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="224567792"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-003" ID="{A3EEAB6D-2033-44DA-AC77-5F6F63EC1024}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls-004" ID="{0075F6B4-4940-4494-A0E0-DC30341DFB6C}" ShortID="286104378">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-004" ID="{B9AEA7AE-326B-4263-9EBA-467EE4F910D5}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="709311407"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-004" ID="{B9AEA7AE-326B-4263-9EBA-467EE4F910D5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls-005" ID="{0667F007-5B65-4D0C-9935-A1C629035E4A}" ShortID="812708705">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-005" ID="{CBA7DA5E-B155-4DA9-954F-75F107ED51DB}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="13258466"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-005" ID="{CBA7DA5E-B155-4DA9-954F-75F107ED51DB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls-006" ID="{76467AA0-9E49-4880-8811-49C64E551034}" ShortID="386353742">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-006" ID="{A89F00B5-09B4-46DF-9E09-2EB976B441A0}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="554511978"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-006" ID="{A89F00B5-09B4-46DF-9E09-2EB976B441A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls-007" ID="{C0B5A879-2E8D-41E2-9565-5789D500CD24}" ShortID="438935016">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-007" ID="{7C84054E-035F-4F66-AB44-D913506F7B06}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="798389682"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-007" ID="{7C84054E-035F-4F66-AB44-D913506F7B06}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls-008" ID="{D29921EB-67DF-48C8-A010-ECB3F07CF25A}" ShortID="193663217">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls-008" ID="{4667BC8B-3E50-4CB3-899D-0A58D67DE602}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="714852729"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls-008" ID="{4667BC8B-3E50-4CB3-899D-0A58D67DE602}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_seagulls" ID="{3C0FE7DD-6430-414C-B28B-03588E7FE9A0}" ShortID="616922272">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_seagulls" ID="{BC7FD1CC-F87D-4E75-BF3B-D4B1342ECB57}">
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_seagulls.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="365078953"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_seagulls" ID="{BC7FD1CC-F87D-4E75-BF3B-D4B1342ECB57}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="sfx_birds_wings_flapping" ID="{FFD12FC8-0453-4303-83EB-79B1829C42AD}" ShortID="921622684">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{89DEB16D-0A0B-4FFB-ADC6-BF368483DD99}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E6E9EF48-9459-4DA8-8929-7610CD328AAD}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="8"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="UserAuxSendVolume0" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{269B540A-BFDE-42CC-8F50-AA63BCDB1337}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{A71C2A53-1409-4559-946E-6163CFC1BE6F}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Matter2D - sfx_amb_birds_wings_flapping-001" ID="{73559638-EA54-4DE5-9CD3-F4BCDC025095}" ShortID="143894152">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_birds_wings_flapping-001" ID="{903BDB87-CD7C-4AC2-BE27-CE4878703CBC}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.0237683297568"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_birds_wings_flapping-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="606227974"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_birds_wings_flapping-001" ID="{903BDB87-CD7C-4AC2-BE27-CE4878703CBC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_birds_wings_flapping-002" ID="{4F379D99-1449-4585-AE2B-D30EB4AE7C10}" ShortID="455537486">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_birds_wings_flapping-002" ID="{211B09E2-4FAC-4A1E-A2C6-1F216BA7903A}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.829241326895565"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_birds_wings_flapping-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="195011568"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_birds_wings_flapping-002" ID="{211B09E2-4FAC-4A1E-A2C6-1F216BA7903A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Matter2D - sfx_amb_birds_wings_flapping" ID="{725394DC-EE01-4A0C-A978-73B3C5178240}" ShortID="767043942">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Matter2D - sfx_amb_birds_wings_flapping" ID="{33A8941A-AFC2-43B6-89EB-154190C3F56F}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.871759758141762"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Matter2D - sfx_amb_birds_wings_flapping.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="91397311"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Matter2D - sfx_amb_birds_wings_flapping" ID="{33A8941A-AFC2-43B6-89EB-154190C3F56F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists/>
 									<GroupingInfo>
@@ -306,7 +730,13 @@
 												<ItemRef Name="sfx_birds" ID="{6088CE7D-1E58-450E-A3EF-6EB5AC46ADC3}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
+												<ItemRef Name="sfx_seagulls" ID="{A816108B-28DD-4576-AC74-9E6016260835}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
 												<ItemRef Name="Spectrum_atmos_wind_calm_breezy" ID="{B5CFE8A9-2A55-43A8-8A5F-EFAEEB738E82}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_birds_wings_flapping" ID="{FFD12FC8-0453-4303-83EB-79B1829C42AD}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
 										<GroupingList>
@@ -327,6 +757,8 @@
 												<SwitchRef Name="hub_area" ID="{8E7BE063-4FE8-4B0D-8931-5912FE70C9A4}"/>
 												<ItemList>
 													<ItemRef Name="Spectrum_atmos_wind_calm_breezy" ID="{B5CFE8A9-2A55-43A8-8A5F-EFAEEB738E82}"/>
+													<ItemRef Name="sfx_seagulls" ID="{A816108B-28DD-4576-AC74-9E6016260835}"/>
+													<ItemRef Name="sfx_birds_wings_flapping" ID="{FFD12FC8-0453-4303-83EB-79B1829C42AD}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -1139,6 +1571,294 @@
 								<ItemRef Name="Spectrum - sfx_switch_on_end_position" ID="{63048DAC-47C0-418B-95E3-1433F32852A5}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Interactables" ID="{0EE61221-FF5E-4395-802E-EA7241A2D491}" ShortID="349169530">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="sfx_mushroom" ID="{A2520CE3-2C9F-4F8E-8B66-16AB9B778881}" ShortID="82557844">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1EB9B18E-170F-4170-BCF3-BF22E367E4A1}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="sfx_mushroom_grow" ID="{E8646719-3F49-45C5-92D7-533BC1476F55}" ShortID="973787312">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1BAB78BE-C9F3-46B2-9A63-83A9B46CCFAF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="400"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1B2F94A6-4745-47CE-A816-3014D3322EEA}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Spectrum - sfx_plant_grow_01" ID="{2F316ABA-2C12-47D8-9A4F-FC6F82378D8B}" ShortID="294156307">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_plant_grow_01" ID="{411620AE-C7F5-4A17-A728-ED850333087E}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_plant_grow_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="710267600"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_plant_grow_01" ID="{411620AE-C7F5-4A17-A728-ED850333087E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_plant_grow_02" ID="{E3714322-9036-45F1-97A1-2DB913701C94}" ShortID="902465841">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_plant_grow_02" ID="{7160577D-0A7A-45FB-805F-D90EC13BBCDC}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_plant_grow_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="537259335"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_plant_grow_02" ID="{7160577D-0A7A-45FB-805F-D90EC13BBCDC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_plant_grow_03" ID="{9D199CA9-3837-46F1-877F-2AED0137C9C9}" ShortID="433096908">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_plant_grow_03" ID="{91D9B565-2AAF-4BB3-BD39-58C205891651}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_plant_grow_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1016953576"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_plant_grow_03" ID="{91D9B565-2AAF-4BB3-BD39-58C205891651}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="sfx_mushroom_srink" ID="{0838BB86-1449-4072-BF3C-E382C7D3F9D2}" ShortID="1047894075">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AB499939-0874-4B0E-A09E-1CAC2EB0235C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="400"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{169CF8CD-AC2F-4808-A994-DF9A1E4991BB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Spectrum - sfx_plant_skrink_01" ID="{AC61EA28-5A9E-4E58-90A0-A768EC2C16D0}" ShortID="879466577">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_plant_skrink_01" ID="{32A54B21-D333-4A55-8975-CC78E165F18A}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_plant_skrink_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="761359097"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_plant_skrink_01" ID="{32A54B21-D333-4A55-8975-CC78E165F18A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Spectrum - sfx_plant_skrink_02" ID="{7467D3BE-ECF2-4B43-AF74-4B645AE53792}" ShortID="997795849">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Spectrum - sfx_plant_skrink_02" ID="{F8A754B4-B3F3-412F-9DAE-D588F3975F95}">
+													<Language>SFX</Language>
+													<AudioFile>Spectrum - sfx_plant_skrink_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="87814680"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Spectrum - sfx_plant_skrink_02" ID="{F8A754B4-B3F3-412F-9DAE-D588F3975F95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="sfx_mushroom_grow" ID="{E8646719-3F49-45C5-92D7-533BC1476F55}"/>
+								<ItemRef Name="sfx_mushroom_srink" ID="{0838BB86-1449-4072-BF3C-E382C7D3F9D2}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<Sound Name="Spectrum - sfx_bridge_fixed_01" ID="{77DCF8E2-D35B-41B8-8509-7F2ACE9CCBDE}" ShortID="372848092">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FDDBF423-34FB-49CA-80CE-CE72243D2EE1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{43E2B551-AF0A-4323-AB16-EDA4DB88CEFC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Spectrum - sfx_bridge_fixed_01" ID="{C345A24A-AAA1-4EAE-B8EA-CBFCF17540DD}">
+									<Language>SFX</Language>
+									<AudioFile>Spectrum - sfx_bridge_fixed_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="866540893"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Spectrum - sfx_bridge_fixed_01" ID="{C345A24A-AAA1-4EAE-B8EA-CBFCF17540DD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

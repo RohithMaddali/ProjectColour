@@ -266,6 +266,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_mushroom" ID="{561C8AF1-158A-4610-9879-4CEF54794D5A}">
+					<ChildrenList>
+						<Action Name="" ID="{B3D4FE95-86B3-41C0-88EE-291DE349CFA3}" ShortID="593709795">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_mushroom" ID="{A2520CE3-2C9F-4F8E-8B66-16AB9B778881}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_bridge_fixed_01" ID="{100C2751-87E0-41FA-8931-F9DE10C113AA}">
+					<ChildrenList>
+						<Action Name="" ID="{55B883AF-43E2-43F1-B684-BC4FFB373829}" ShortID="461674065">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spectrum - sfx_bridge_fixed_01" ID="{77DCF8E2-D35B-41B8-8509-7F2ACE9CCBDE}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_seagulls" ID="{8E335118-CF7C-46DA-9EB7-84A3EE93C2FC}">
+					<ChildrenList>
+						<Action Name="" ID="{AC42DC37-B8C4-4F23-B71A-593CBDC652C6}" ShortID="479271837">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_seagulls" ID="{A816108B-28DD-4576-AC74-9E6016260835}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_birds_wings_flapping" ID="{5BEC35CC-6C01-447F-9494-2A028587426E}">
+					<ChildrenList>
+						<Action Name="" ID="{7000F9DC-7D15-440D-8B0B-9447824527D5}" ShortID="84533658">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_birds_wings_flapping" ID="{FFD12FC8-0453-4303-83EB-79B1829C42AD}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

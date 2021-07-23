@@ -7,9 +7,13 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="ev_sfx_birds" ID="{C9BF4617-2FB9-4007-98EF-4F784E9CD826}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_servo" ID="{13011332-F431-4152-A482-6A3B2EE761D2}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_bridge_fixed_01" ID="{100C2751-87E0-41FA-8931-F9DE10C113AA}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_impact_move" ID="{DD276169-A380-42E1-B114-08A0BBD9A919}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_birds_wings_flapping" ID="{5BEC35CC-6C01-447F-9494-2A028587426E}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_screaching_metal" ID="{95326A84-DF45-452F-9AC1-62F36E7DBB5D}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_amb_switcher" ID="{4EA94B39-7419-460E-9FD9-0D96AE39217B}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_mushroom" ID="{561C8AF1-158A-4610-9879-4CEF54794D5A}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_seagulls" ID="{8E335118-CF7C-46DA-9EB7-84A3EE93C2FC}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_conveyer_belt" ID="{B35BF30F-8C7A-4761-BFF2-42A79FDA0618}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_whoosh" ID="{98BA5100-220C-4B31-822F-26302B56B03E}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
