@@ -44,6 +44,7 @@ public class RBMove : MonoBehaviour
     public float groundDistance = .4f;
     public LayerMask groundMask;
     public bool isGrounded;
+    public CapsuleCollider myCollider;
 
     public Material red;
     public Material blue;
@@ -206,47 +207,49 @@ public class RBMove : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
+        ContactPoint contact = collision.contacts[0];
 
-
-        //Debug.Log(fallVelocity.y);
-        if (colColor == Color.blue)
+        if(contact.thisCollider == myCollider)
         {
-            float mag = fallVelocity.magnitude * 50;
-            //ContactPoint cp = collision.contacts[0];
-            //Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
-            float bounceForce = Mathf.Max(mag, bounceHeight);
-            //rb.velocity = Vector3.Reflect(fallVelocity, cp.normal);
-            if(bouncer != null && collision.gameObject == bouncer)
+            //Debug.Log(fallVelocity.y);
+            if (colColor == Color.blue)
             {
-                rb.velocity = Vector3.zero;
-                rb.AddForce(0f, reboundForce, 0f, ForceMode.Impulse);
-                //Debug.Log("Do it again" + reboundForce);
+                float mag = fallVelocity.magnitude * 50;
+                //ContactPoint cp = collision.contacts[0];
+                //Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
+                float bounceForce = Mathf.Max(mag, bounceHeight);
+                //rb.velocity = Vector3.Reflect(fallVelocity, cp.normal);
+                if (bouncer != null && collision.gameObject == bouncer)
+                {
+                    rb.velocity = Vector3.zero;
+                    rb.AddForce(0f, reboundForce, 0f, ForceMode.Impulse);
+                    //Debug.Log("Do it again" + reboundForce);
+                }
+                else
+                {
+                    rb.velocity = Vector3.zero;
+                    rb.AddForce(0f, bounceForce, 0f, ForceMode.Impulse);
+                    isBouncing = true;
+                    delta = 0f;
+                    reboundForce = bounceForce;
+                    Debug.Log("fall velocity force is " + mag);
+
+                    //Debug.Log("first Bounce on this objkect" + bounceForce);
+
+                }
+
+                bouncer = collision.gameObject;
+
+                //Debug.Log("Boucne " + collision.contacts[0].normal);
             }
-            else
+            /*else if (colColor == Color.blue && bouncer == collision.gameObject)
             {
-                rb.velocity = Vector3.zero;
-                rb.AddForce(0f, bounceForce, 0f, ForceMode.Impulse);
-                isBouncing = true;
-                delta = 0f;
-                reboundForce = bounceForce;
-                Debug.Log("fall velocity force is " + mag);
-                
-                //Debug.Log("first Bounce on this objkect" + bounceForce);
+                ContactPoint cp = collision.contacts[0];
+                Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
 
-            }
+            }*/
 
-            bouncer = collision.gameObject;
-
-            //Debug.Log("Boucne " + collision.contacts[0].normal);
-        }
-        /*else if (colColor == Color.blue && bouncer == collision.gameObject)
-        {
-            ContactPoint cp = collision.contacts[0];
-            Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
-            
-        }*/
-
-        //bounceDir = moveDir;
+            //bounceDir = moveDir;
 
 
             /*if (colColor == Color.blue && fallVelocity.y < 0)
@@ -276,23 +279,36 @@ public class RBMove : MonoBehaviour
                 Debug.Log("BOUNCE BACK 2");
             }*/
 
-        if (colColor == Color.red)
-        {
-            maxSpeed = boostSpeed;
-            acceleration = accelBoost;
-            boosted = true;
+            if (colColor == Color.red)
+            {
+                maxSpeed = boostSpeed;
+                acceleration = accelBoost;
+                boosted = true;
+            }
+
+            if (colColor != Color.red
+                && colColor != Color.blue)
+            {
+                boosted = false;
+                isBouncing = false;
+                bouncer = null;
+                Debug.Log(collision.gameObject);
+            }
+
+            Debug.Log("COLLIDEED WITH" + contact.thisCollider.name);
         }
-        
-        if(colColor != Color.red 
-            && colColor != Color.blue)
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
+
+        if (colColor != Color.red
+                && colColor != Color.blue)
         {
             boosted = false;
             isBouncing = false;
             bouncer = null;
             Debug.Log(collision.gameObject);
         }
-        
-
     }
-
 }
