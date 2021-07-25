@@ -88,10 +88,7 @@ public class RBMove : MonoBehaviour
     private void Update()
     {
         moveDir = new Vector3(move.x, move.y);
-        if (!isGrounded)
-        {
-            rb.AddForce(0f, gravity * 2f, 0f);
-        }
+        
 
         delta += Time.deltaTime;
 
@@ -103,6 +100,11 @@ public class RBMove : MonoBehaviour
     void FixedUpdate()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        if (!isGrounded)
+        {
+            rb.AddForce(0f, gravity * 50 * Time.fixedDeltaTime, 0f);
+        }
 
         if (moveCamActive)
         {
