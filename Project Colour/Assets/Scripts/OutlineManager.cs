@@ -26,15 +26,21 @@ public class OutlineManager : MonoBehaviour
         {
             if (changeColour.colourTarget == self)
             {
+                outline.enabled = true;
+                outline.OutlineColor = changeColour.thisRenderer.material.color;
                 outline.OutlineWidth = 3;
             }
             else
             {
+                outline.OutlineColor = Color.white;
+                outline.enabled = false;
                 outline.OutlineWidth = 0;
             }
         }
         else
         {
+            outline.OutlineColor = Color.white;
+            outline.enabled = false;
             outline.OutlineWidth = 0;
         }
     }
