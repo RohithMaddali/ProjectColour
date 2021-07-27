@@ -81,6 +81,7 @@ namespace AJ
             thisRenderer = orb.GetComponent<Renderer>();
             isCoroutineRunning = false;
             currentColor = thisRenderer.material.color;
+            previousColor = Color.grey;
             player = FindObjectOfType<RBMove>();
         }
 
@@ -181,7 +182,32 @@ namespace AJ
         {
             if (canShoot == true)
             {
-                if (!hasColour)
+                RaycastHit raycastToTarget;
+
+                if (Physics.Raycast(ray, out raycastToTarget, shootDistance, raycastHitMask))
+                {
+
+                    if (raycastToTarget.transform.gameObject.layer == 8 && raycastToTarget.transform.CompareTag("CanColour"))
+                    {
+                        Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
+                        Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); //get renderer of hit
+                        //if (hitRenderer.material.color == Color.red || hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green) //chekc if object has special colour
+                        //{
+                            //shoot
+                        StartCoroutine(Wait());
+                        canShoot = false;
+                        animator.SetTrigger("IsShooting");
+                        orb.SetActive(true);
+                        thisRenderer.material.color = hitRenderer.material.color; //make weapon objects colour
+                        hitRenderer.material.color = previousColor; //make object held colour
+                        previousColor = thisRenderer.material.color;
+                            //hasColour = true; //no more suck!
+                            
+                        //}
+                    }
+                }
+                Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
+                /*if (!hasColour)
                 {
                     RaycastHit raycastToTarget;
 
@@ -233,7 +259,7 @@ namespace AJ
                         }
                     }
                     Debug.DrawLine(ray.origin, ray.origin + ray.direction * shootDistance, Color.red);
-                }
+                }*/
             }
         }
 

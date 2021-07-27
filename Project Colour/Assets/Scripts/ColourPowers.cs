@@ -13,6 +13,7 @@ public class ColourPowers : MonoBehaviour
     [SerializeField] private Animator animator;
 
     public Renderer rend;
+    public Renderer pairedRend;
 
     public float bounceHeight;
     public RBMove player;
@@ -28,6 +29,7 @@ public class ColourPowers : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
+        pairedRend = pairedObject.GetComponent<Renderer>();
         player = FindObjectOfType<RBMove>();
     }
 
@@ -79,7 +81,7 @@ public class ColourPowers : MonoBehaviour
                 rend.material.color = Color.grey;
             }
         }
-        if(rend.material.color == Color.grey && repaired)
+        if(rend.material.color != Color.green && repaired)
         {
             Debug.Log("LETS GOOOO");
             SwitchActive();
@@ -89,6 +91,7 @@ public class ColourPowers : MonoBehaviour
 
     void SwitchActive()
     {
+        pairedRend.material.color = rend.material.color;
         pairedObject.SetActive(true);
         //animation can go here?
         gameObject.SetActive(false);
