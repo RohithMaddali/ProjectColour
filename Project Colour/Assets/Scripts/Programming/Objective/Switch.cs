@@ -8,7 +8,8 @@ public class Switch : MonoBehaviour
     PlayerControls controls;
     public GameObject player;
     public Canvas interact;
-    public bool cooldown = false;
+    public float waitForCooldown = 1f;
+    public bool isCooldown = false;
 
     private void Awake()
     {
@@ -28,23 +29,23 @@ public class Switch : MonoBehaviour
         interact.gameObject.SetActive(true);
         if(other.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E) && cooldown == false)
+            if (!isCooldown)
             {
-                AkSoundEngine.PostEvent("ev_switch_on", gameObject);
-                cb.PowerSwitch();
-                Invoke("ResetCooldown", 3.0f);
-                cooldown = true;
-            }
-            else if (controls.Gameplay.Switch.triggered)
-            {
-                cb.PowerSwitch();
+                if (controls.Gameplay.Switch.triggered)
+                {
+                    AkSoundEngine.PostEvent("ev_switch_on", gameObject);
+                    cb.PowerSwitch();
+                    StartCoroutine(WaitSeconds());
+                }
             }
         }
     }
 
-    void ResetCooldown()
+    IEnumerator WaitSeconds()
     {
-        cooldown = false;
+        isCooldown = true;
+        yield return new WaitForSeconds(waitForCooldown);
+        isCooldown = false;
     }
 
     public void OnTriggerExit(Collider other)
