@@ -45,6 +45,7 @@ public class RBMove : MonoBehaviour
     public LayerMask groundMask;
     public bool isGrounded;
     public CapsuleCollider myCollider;
+    public SphereCollider potBelly;
 
     public Material red;
     public Material blue;
@@ -209,10 +210,21 @@ public class RBMove : MonoBehaviour
         Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
         ContactPoint contact = collision.contacts[0];
 
+        if(contact.thisCollider == potBelly)
+        {
+            if (colColor == Color.blue && collision.gameObject.GetComponent<Rigidbody>() != null)
+            {
+                //Vector3 bounceDir = Vector3.Reflect(collision.gameObject.GetComponent<Rigidbody>().velocity, contact.normal);
+                rb.AddForce(collision.gameObject.GetComponent<Rigidbody>().velocity * bounceHeight * 5);
+                isBouncing = true;
+                Debug.Log("BELLY BOUNCE");
+            }
+        }
+
         if(contact.thisCollider == myCollider)
         {
             //Debug.Log(fallVelocity.y);
-            if (colColor == Color.blue)
+            if (colColor == Color.blue && !isBouncing && collision.gameObject.GetComponent<Rigidbody>() == null)
             {
                 float mag = fallVelocity.magnitude * 50;
                 //ContactPoint cp = collision.contacts[0];
@@ -225,7 +237,7 @@ public class RBMove : MonoBehaviour
                     rb.AddForce(0f, reboundForce, 0f, ForceMode.Impulse);
                     //Debug.Log("Do it again" + reboundForce);
                 }
-                else
+                else if(!isBouncing)
                 {
                     rb.velocity = Vector3.zero;
                     rb.AddForce(0f, bounceForce, 0f, ForceMode.Impulse);
