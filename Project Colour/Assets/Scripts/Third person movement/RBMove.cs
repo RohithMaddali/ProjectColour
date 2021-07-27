@@ -212,7 +212,7 @@ public class RBMove : MonoBehaviour
 
         if(contact.thisCollider == potBelly)
         {
-            if (colColor == Color.blue && collision.gameObject.GetComponent<Rigidbody>() != null)
+            if (colColor == Color.blue && collision.gameObject.GetComponent<Pusher>() != null)
             {
                 //Vector3 bounceDir = Vector3.Reflect(collision.gameObject.GetComponent<Rigidbody>().velocity, contact.normal);
                 rb.AddForce(collision.gameObject.GetComponent<Rigidbody>().velocity * bounceHeight * 5);
@@ -224,7 +224,7 @@ public class RBMove : MonoBehaviour
         if(contact.thisCollider == myCollider)
         {
             //Debug.Log(fallVelocity.y);
-            if (colColor == Color.blue && !isBouncing && collision.gameObject.GetComponent<Rigidbody>() == null)
+            if (colColor == Color.blue && !isBouncing)
             {
                 float mag = fallVelocity.magnitude * 50;
                 //ContactPoint cp = collision.contacts[0];
