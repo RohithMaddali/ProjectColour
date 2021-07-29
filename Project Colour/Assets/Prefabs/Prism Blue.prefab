@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f320d0ba87f6b354ab27e89c2a03f398, type: 2}
+  - {fileID: 2100000, guid: 18d83a52a840468448114275e9cddf96, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,7 +140,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f320d0ba87f6b354ab27e89c2a03f398, type: 2}
+  - {fileID: 2100000, guid: 18d83a52a840468448114275e9cddf96, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -224,6 +224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prism: {fileID: 5846019858254455324}
   sfx: {fileID: 873976925274918748, guid: ff0e1a55a5141534f8f785599365340c, type: 3}
+  gm: {fileID: 0}
+  index: 0
 --- !u!1 &7976365250835485466
 GameObject:
   m_ObjectHideFlags: 0
