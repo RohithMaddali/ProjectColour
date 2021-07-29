@@ -24,7 +24,6 @@ namespace Pyro
         public GameObject controlsMenu;
         public GameObject quitFirst;
         public GameManager gm;
-        public GameGoalInfo gameInfo;
 
         public GameObject tips;
 
@@ -33,7 +32,6 @@ namespace Pyro
         private void Start()
         {
             sm = settingsMenu.GetComponent<SettingsMenu>();
-            gameInfo = gm.GetComponent<GameGoalInfo>();
         }
 
         public void TitleButton()
@@ -82,7 +80,7 @@ namespace Pyro
         {
             gm.isPicked = false;
             gm.itemsPicked = 0;
-            SceneManager.LoadScene("AdditiveSceneTest", LoadSceneMode.Single);
+            SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);
             tips.SetActive(true);
@@ -103,7 +101,6 @@ namespace Pyro
         public void backFromFeedback()
         {
             SceneManager.LoadScene(7);
-            gameInfo.anim.SetBool("infoSpawn", false);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             mainMenuPrompt.SetActive(false);

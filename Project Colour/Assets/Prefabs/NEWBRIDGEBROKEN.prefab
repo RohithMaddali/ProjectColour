@@ -102,6 +102,7 @@ MonoBehaviour:
   repairedObject: {fileID: 0}
   animator: {fileID: 0}
   rend: {fileID: 0}
+  pairedRend: {fileID: 0}
   bounceHeight: 0
   player: {fileID: 0}
   speedBoost: 50
@@ -118,7 +119,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3166067689511220740, guid: 5cfd7d304d6bc514c988c7a7dde00993, type: 3}
 --- !u!114 &919132149381708300

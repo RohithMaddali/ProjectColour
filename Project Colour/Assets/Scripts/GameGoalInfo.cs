@@ -12,27 +12,23 @@ public class GameGoalInfo : MonoBehaviour
 
     void Start()
     {
-
+        StartCoroutine(info());
     }
 
     void Update()
     {
-        thisScene = SceneManager.GetActiveScene();
-        Debug.Log("this scene is " + thisScene.buildIndex);
-        if(thisScene.buildIndex == 5 && infoGiven == false)
-        {
-            infoGiven = true;
-            Debug.Log("Spawning info");
-            StartCoroutine(info());
-        }
-        if(thisScene.buildIndex != 5)
-        {
-            infoGiven = false;
-        }
+
     }
     IEnumerator info()
     {
         yield return new WaitForSeconds(delayTimer);
         anim.SetBool("infoSpawn", true);
+        yield return new WaitForSeconds(18f);
+        loadScene();
+    }
+
+    public void loadScene()
+    {
+        SceneManager.LoadScene("AdditiveSceneTest", LoadSceneMode.Single);
     }
 }
