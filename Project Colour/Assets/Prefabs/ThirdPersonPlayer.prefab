@@ -2028,11 +2028,13 @@ MonoBehaviour:
     m_Bits: 256
   multiObjectShoot: 0
   orb: {fileID: 843363016284420947}
+  orbRend: {fileID: 0}
   greenMat: {fileID: 0}
   RedMat: {fileID: 0}
   blueMat: {fileID: 0}
   colourTarget: {fileID: 0}
   animator: {fileID: 2941813434085720964}
+  previousColor: {r: 0, g: 0, b: 0, a: 0}
   thisRenderer: {fileID: 0}
   hasColour: 0
   cam: {fileID: 0}
@@ -2285,7 +2287,7 @@ MonoBehaviour:
   maxSpeed: 0
   walkSpeed: 5
   runSpeed: 8
-  boostSpeed: 16
+  boostSpeed: 12
   acceleration: 10
   jumpHeight: 400
   bounceHeight: 800
