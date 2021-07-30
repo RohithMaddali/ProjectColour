@@ -34,7 +34,7 @@ namespace AJ
 
         //PRIVATE VARS
         private Color currentColor;
-        private Color previousColor;
+        public Color previousColor;
         public Renderer thisRenderer; //I needed this
         private bool isCoroutineRunning; //Delay between shots
         Vector3 move;
