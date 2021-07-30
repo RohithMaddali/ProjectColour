@@ -29,6 +29,7 @@ public class ColourSnatcher : MonoBehaviour
             if(snatcher.material.color != Color.green && snatcher.material.color != Color.blue && snatcher.material.color != Color.red)
             {
                 cc.thisRenderer.material.color = Color.grey;
+                cc.previousColor = Color.grey;
                 cc.hasColour = false;
                 snatcher.material.color = previousColor;
             }
