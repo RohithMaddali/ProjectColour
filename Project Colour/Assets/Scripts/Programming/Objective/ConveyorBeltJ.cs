@@ -67,7 +67,7 @@ public class ConveyorBeltJ : MonoBehaviour
             player.position -= transform.forward * speed * Time.deltaTime;
             player.MovePosition(pos);
             currentScroll = currentScroll + visualScalarSpeed * speed * Time.deltaTime;
-            GetComponent<Renderer>().material.mainTextureOffset = new Vector3(currentScroll, 0);
+            GetComponent<Renderer>().material.SetVector("_Offset", new Vector4(currentScroll, 0, 0, 0));
         }
     }
 
