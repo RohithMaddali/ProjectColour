@@ -10,6 +10,7 @@ public class Switch : MonoBehaviour
     public Canvas interact;
     public float waitForCooldown = 1f;
     public bool isCooldown = false;
+    public bool canUseSwitch;
 
     private void Awake()
     {
@@ -23,21 +24,27 @@ public class Switch : MonoBehaviour
     {
         controls.Gameplay.Disable();
     }
-    
-    public void OnTriggerStay(Collider other)
+
+    public void Update()
+    {
+        if (canUseSwitch)
+        {
+            if (controls.Gameplay.Switch.triggered && !isCooldown)
+            {
+                canUseSwitch = false;
+                AkSoundEngine.PostEvent("ev_switch_on", gameObject);
+                cb.PowerSwitch();
+                StartCoroutine(WaitSeconds());
+            }
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
     {
         interact.gameObject.SetActive(true);
-        if(other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
-            if (!isCooldown)
-            {
-                if (controls.Gameplay.Switch.triggered)
-                {
-                    AkSoundEngine.PostEvent("ev_switch_on", gameObject);
-                    cb.PowerSwitch();
-                    StartCoroutine(WaitSeconds());
-                }
-            }
+            canUseSwitch = true;
         }
     }
 
@@ -46,10 +53,12 @@ public class Switch : MonoBehaviour
         isCooldown = true;
         yield return new WaitForSeconds(waitForCooldown);
         isCooldown = false;
+        canUseSwitch = true;
     }
 
     public void OnTriggerExit(Collider other)
     {
         interact.gameObject.SetActive(false);
+        canUseSwitch = true;
     }
 }
