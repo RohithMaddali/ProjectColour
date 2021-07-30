@@ -114,7 +114,7 @@ public class RBMove : MonoBehaviour
             {
                 speed += acceleration * Time.deltaTime;
             }
-            else if (speed > maxSpeed)
+            else if (speed > maxSpeed && isGrounded)
             {
                 //reset down to new max speed if running then walking
                 speed = maxSpeed;
@@ -310,7 +310,15 @@ public class RBMove : MonoBehaviour
             Debug.Log("COLLIDEED WITH" + contact.thisCollider.name);
         }
     }
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionExit(Collision collision)
+    {
+        Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
+        if(colColor == Color.red || colColor == Color.blue)
+            boosted = false;
+        else if( colColor == Color.blue)
+            isBouncing = false;
+    }
+    /*private void OnCollisionStay(Collision collision)
     {
         Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
 
@@ -322,5 +330,5 @@ public class RBMove : MonoBehaviour
             bouncer = null;
             Debug.Log(collision.gameObject);
         }
-    }
+    }*/
 }
