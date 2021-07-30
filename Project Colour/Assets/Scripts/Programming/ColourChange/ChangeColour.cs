@@ -21,6 +21,7 @@ namespace AJ
 
         //These are for material swapping
         public GameObject orb;
+        public Renderer orbRend;
         public Material greenMat;
         public Material RedMat;
         public Material blueMat;
@@ -40,6 +41,7 @@ namespace AJ
         Vector3 move;
         PlayerControls controls;
         public bool hasColour;
+        bool hitColoured;
 
         public Camera cam;
         public GameObject unfocused;
@@ -70,6 +72,7 @@ namespace AJ
 
         private void Start()
         {
+            orbRend = orb.GetComponent<Renderer>();
             if (hasColour == true)
             {
                 orb.SetActive(true);
@@ -78,10 +81,10 @@ namespace AJ
             {
                 orb.SetActive(false);
             }
-            thisRenderer = orb.GetComponent<Renderer>();
+            thisRenderer = orbRend;
             isCoroutineRunning = false;
             currentColor = thisRenderer.material.color;
-            previousColor = Color.grey;
+            previousColor = Color.black;
             player = FindObjectOfType<RBMove>();
         }
 
@@ -191,7 +194,11 @@ namespace AJ
                     {
                         
                         Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
-                        Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); 
+                        Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>();
+                        if (hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green || hitRenderer.material.color == Color.red)
+                            hitColoured = true;
+                        else
+                            hitColoured = false;
                         //get renderer of hit
                                                                                                               
                         //if (hitRenderer.material.color == Color.red || hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green) //chekc if object has special colour
@@ -199,16 +206,28 @@ namespace AJ
                         //{
                                                                                                               
                         //shoot
-                        if ((hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green || hitRenderer.material.color == Color.red) ||
-                            (thisRenderer.material.color == Color.blue || thisRenderer.material.color == Color.green || thisRenderer.material.color == Color.red))
-                        {
+                        if ( hitColoured || (thisRenderer.material.color == Color.blue || thisRenderer.material.color == Color.green || thisRenderer.material.color == Color.red))
+                        {                            
                             StartCoroutine(Wait());
                             canShoot = false;
                             animator.SetTrigger("IsShooting");
                             orb.SetActive(true);
-                            thisRenderer.material.color = hitRenderer.material.color; //make weapon objects colour
-                            hitRenderer.material.color = previousColor; //make object held colour
-                            previousColor = thisRenderer.material.color;
+                            if (hitColoured)
+                            {
+                                thisRenderer.material.color = hitRenderer.material.color;
+                                hitRenderer.material.color = previousColor;
+                                previousColor = thisRenderer.material.color;
+                            }
+                            else
+                            {
+                                thisRenderer.material.color = Color.black;
+                                hitRenderer.material.color = previousColor;
+                                previousColor = Color.black;
+                                orbRend.material.color = Color.white;
+                                orb.SetActive(false);
+                            }
+                             //make object held colour
+                            
                         }
                             
                             //hasColour = true; //no more suck!
