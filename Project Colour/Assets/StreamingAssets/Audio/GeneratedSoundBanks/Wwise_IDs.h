@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID EV_SFX_PLR_FOOSTEPS = 1061346095U;
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
         static const AkUniqueID EV_SWITCH_ON = 1635355777U;
+        static const AkUniqueID EV_WATER_SPLASH = 1186802106U;
         static const AkUniqueID EV_WHOOSH = 2635617457U;
     } // namespace EVENTS
 

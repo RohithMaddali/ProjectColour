@@ -95,7 +95,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3566791791">
+		<SoundBank Id="1069431850" Language="SFX" Hash="3329019675">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -458,6 +458,18 @@
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1186802106" Name="ev_water_splash" ObjectPath="\Events\Default Work Unit\ev_water_splash" DurationType="OneShot" DurationMin="1.086133" DurationMax="1.501606">
+					<IncludedMemoryFiles>
+						<File Id="546331495" Language="SFX">
+							<ShortName>Spectrum - sfx_water_splash_01.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_water_splash_01_F2E47B0F.wem</Path>
+						</File>
+						<File Id="958022662" Language="SFX">
+							<ShortName>Spectrum - sfx_water_splash_02.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_water_splash_02_A6979645.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<SwitchGroups>

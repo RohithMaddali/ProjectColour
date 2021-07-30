@@ -321,6 +321,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_water_splash" ID="{04BE43AE-DF87-4BE4-9F15-4468D2052311}">
+					<ChildrenList>
+						<Action Name="" ID="{F02929E4-766F-48FE-8061-6B453EA1E4D1}" ShortID="304741887">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_water_splash" ID="{7FB11D43-558C-485B-8380-67450060105A}" WorkUnitID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
