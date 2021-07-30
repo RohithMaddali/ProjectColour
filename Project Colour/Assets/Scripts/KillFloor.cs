@@ -7,23 +7,19 @@ public class KillFloor : MonoBehaviour
     public Transform respawnPoint;
     public Rigidbody playerRB;
     public GameObject player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] float respawnDelay = 0.2f;
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject == player)
         {
-            playerRB.velocity = Vector3.zero;
-            player.transform.position = respawnPoint.position;
+            AkSoundEngine.PostEvent("ev_water_splash", gameObject);
+            StartCoroutine(Respawn());
         }
+    }
+    IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(respawnDelay);
+        playerRB.velocity = Vector3.zero;
+        player.transform.position = respawnPoint.position;
     }
 }
