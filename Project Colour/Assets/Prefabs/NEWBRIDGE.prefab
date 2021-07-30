@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3930315631988299191}
   - component: {fileID: 919132148802236897}
   - component: {fileID: 919132148802236898}
+  - component: {fileID: 4156378544741044324}
+  - component: {fileID: 3977738846699192368}
   m_Layer: 8
   m_Name: NEWBRIDGE
   m_TagString: CanColour
@@ -62,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ec65da060d6f31c4581794211a90924e, type: 2}
+  - {fileID: 2100000, guid: 8dc65e2f7dc56dc42944c1fd6f47cea6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,6 +104,7 @@ MonoBehaviour:
   repairedObject: {fileID: 0}
   animator: {fileID: 0}
   rend: {fileID: 0}
+  pairedRend: {fileID: 0}
   bounceHeight: 0
   player: {fileID: 0}
   speedBoost: 50
@@ -135,3 +138,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - Stone
+--- !u!114 &4156378544741044324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4200205816564738276}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 0
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &3977738846699192368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4200205816564738276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80a1e1b4e130f84596ebceffab34100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 0}
+  outline: {fileID: 0}

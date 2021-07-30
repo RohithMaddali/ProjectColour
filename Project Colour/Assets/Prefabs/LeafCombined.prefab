@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7692936529843270234}
   - component: {fileID: 1543260521184678487}
   - component: {fileID: 5252304133601464614}
+  - component: {fileID: 5293620131180759755}
   m_Layer: 8
   m_Name: LeafCombined
   m_TagString: CanColour
@@ -140,6 +141,7 @@ MonoBehaviour:
   repairedObject: {fileID: 0}
   animator: {fileID: 5933372556581648946}
   rend: {fileID: 0}
+  pairedRend: {fileID: 0}
   bounceHeight: 0
   player: {fileID: 0}
   speedBoost: 50
@@ -189,6 +191,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b2379b03a93e14fb7cefca98b5ef4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5293620131180759755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815911297684899681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80a1e1b4e130f84596ebceffab34100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 0}
+  outline: {fileID: 0}
 --- !u!1001 &2251617996394930993
 PrefabInstance:
   m_ObjectHideFlags: 0
