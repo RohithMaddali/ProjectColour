@@ -17,6 +17,7 @@
 						<ObjectRef Name="ev_conveyer_belt" ID="{B35BF30F-8C7A-4761-BFF2-42A79FDA0618}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_running_water" ID="{E8502E3B-AA39-48BB-8FEC-E7DC2D7C5E6F}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_whoosh" ID="{98BA5100-220C-4B31-822F-26302B56B03E}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_gem_collect" ID="{A7D4A264-FCFC-4C5F-B67C-DDC1BCA96536}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_switch_on" ID="{AD071FE9-9E56-4F0A-B9B1-698531D4FF2D}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_machinery_move" ID="{955E39B8-A4D7-4F4A-A24A-C5CF4C9F4C54}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

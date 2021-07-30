@@ -310,6 +310,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_gem_collect" ID="{A7D4A264-FCFC-4C5F-B67C-DDC1BCA96536}">
+					<ChildrenList>
+						<Action Name="" ID="{CFA0C6E6-1E2B-4269-A830-46FC081EE8C8}" ShortID="813850806">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spectrum - sfx_gem_collect" ID="{2CC7C818-EBB6-4B28-9098-5D0BCD63084B}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

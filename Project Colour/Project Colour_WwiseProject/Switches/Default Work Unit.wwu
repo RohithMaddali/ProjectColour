@@ -7,6 +7,7 @@
 					<ChildrenList>
 						<Switch Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}"/>
 						<Switch Name="Stone" ID="{8F6F7E8C-6755-494A-81F0-2436E5BDB099}"/>
+						<Switch Name="Metal" ID="{E6F3B48A-5B55-4E0D-A9F5-C4BF9F720DB1}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="fs_movement_switch_group" ID="{27BE6CE0-6580-4343-AB9B-4407B598097A}">

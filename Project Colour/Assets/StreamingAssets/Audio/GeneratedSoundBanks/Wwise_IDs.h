@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID EV_COLOUR_GRAB_SEQUENCE = 1156092748U;
         static const AkUniqueID EV_COLOUR_PLACE_SEQUENCE = 2911027737U;
         static const AkUniqueID EV_CONVEYER_BELT = 203475710U;
+        static const AkUniqueID EV_GEM_COLLECT = 1858076951U;
         static const AkUniqueID EV_IDLEVOX = 1133450584U;
         static const AkUniqueID EV_IMPACT_MOVE = 546473655U;
         static const AkUniqueID EV_MACHINERY_MOVE = 3244770519U;
@@ -73,6 +74,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID METAL = 2473969246U;
                 static const AkUniqueID STONE = 1216965916U;
             } // namespace SWITCH
         } // namespace FS_MATERIAL_SWITCH_GROUP

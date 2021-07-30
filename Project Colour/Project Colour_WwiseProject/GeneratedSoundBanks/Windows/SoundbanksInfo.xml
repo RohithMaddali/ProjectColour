@@ -95,7 +95,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3567606858">
+		<SoundBank Id="1069431850" Language="SFX" Hash="1121591382">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -164,8 +164,20 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1061346095" Name="ev_sfx_plr_foosteps" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_foosteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.656740">
+				<Event Id="1061346095" Name="ev_sfx_plr_foosteps" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_foosteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.109725">
 					<IncludedMemoryFiles>
+						<File Id="29753083" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000_05842A19.wem</Path>
+						</File>
+						<File Id="46897575" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-009.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-009_05842A19.wem</Path>
+						</File>
+						<File Id="49006312" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-004.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-004_05842A19.wem</Path>
+						</File>
 						<File Id="55356466" Language="SFX">
 							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (7).wav</ShortName>
 							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (7)_05842A19.wem</Path>
@@ -190,6 +202,10 @@
 							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (4).wav</ShortName>
 							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (4)_05842A19.wem</Path>
 						</File>
+						<File Id="150487645" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-005.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-005_05842A19.wem</Path>
+						</File>
 						<File Id="155170770" Language="SFX">
 							<ShortName>fs_dirt_running-006.wav</ShortName>
 							<Path>SFX\fs_dirt_running-006_05842A19.wem</Path>
@@ -197,6 +213,10 @@
 						<File Id="156441822" Language="SFX">
 							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (2).wav</ShortName>
 							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (2)_05842A19.wem</Path>
+						</File>
+						<File Id="169469015" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-002.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-002_05842A19.wem</Path>
 						</File>
 						<File Id="218238065" Language="SFX">
 							<ShortName>FS_Dirt_48000_24-002.wav</ShortName>
@@ -226,6 +246,10 @@
 							<ShortName>FS_Ashphalt_Walking_Shoes-016.wav</ShortName>
 							<Path>SFX\FS_Ashphalt_Walking_Shoes-016_05842A19.wem</Path>
 						</File>
+						<File Id="334553297" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-007.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-007_05842A19.wem</Path>
+						</File>
 						<File Id="445902592" Language="SFX">
 							<ShortName>FS_Ashphalt_Walking_Shoes-009.wav</ShortName>
 							<Path>SFX\FS_Ashphalt_Walking_Shoes-009_05842A19.wem</Path>
@@ -249,6 +273,10 @@
 						<File Id="508375124" Language="SFX">
 							<ShortName>FS_Dirt_48000_24-001.wav</ShortName>
 							<Path>SFX\FS_Dirt_48000_24-001_05842A19.wem</Path>
+						</File>
+						<File Id="511895776" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-006.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-006_05842A19.wem</Path>
 						</File>
 						<File Id="532747377" Language="SFX">
 							<ShortName>FS_Ashphalt_Walking_Shoes.wav</ShortName>
@@ -286,6 +314,10 @@
 							<ShortName>FS_Ashphalt_Walking_Shoes-004.wav</ShortName>
 							<Path>SFX\FS_Ashphalt_Walking_Shoes-004_05842A19.wem</Path>
 						</File>
+						<File Id="692330984" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-010.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-010_05842A19.wem</Path>
+						</File>
 						<File Id="696393340" Language="SFX">
 							<ShortName>fs_dirt_running-008.wav</ShortName>
 							<Path>SFX\fs_dirt_running-008_05842A19.wem</Path>
@@ -310,6 +342,10 @@
 							<ShortName>FS_Ashphalt_Walking_Shoes-007.wav</ShortName>
 							<Path>SFX\FS_Ashphalt_Walking_Shoes-007_05842A19.wem</Path>
 						</File>
+						<File Id="938227647" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-001.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-001_05842A19.wem</Path>
+						</File>
 						<File Id="961183373" Language="SFX">
 							<ShortName>FS_Dirt_48000_24-005.wav</ShortName>
 							<Path>SFX\FS_Dirt_48000_24-005_05842A19.wem</Path>
@@ -321,6 +357,14 @@
 						<File Id="974782771" Language="SFX">
 							<ShortName>fs_dirt_running-007.wav</ShortName>
 							<Path>SFX\fs_dirt_running-007_05842A19.wem</Path>
+						</File>
+						<File Id="1010346032" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-003.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-003_05842A19.wem</Path>
+						</File>
+						<File Id="1033739068" Language="SFX">
+							<ShortName>GravityZero - FS_Tin_48000-008.wav</ShortName>
+							<Path>SFX\GravityZero - FS_Tin_48000-008_05842A19.wem</Path>
 						</File>
 						<File Id="1037418212" Language="SFX">
 							<ShortName>FS_Dirt_48000_24-006.wav</ShortName>
@@ -396,6 +440,21 @@
 										<File Id="857922440"/>
 									</Media>
 								</SwitchContainer>
+								<SwitchContainer SwitchValue="{E6F3B48A-5B55-4E0D-A9F5-C4BF9F720DB1}">
+									<Media>
+										<File Id="29753083"/>
+										<File Id="46897575"/>
+										<File Id="49006312"/>
+										<File Id="150487645"/>
+										<File Id="169469015"/>
+										<File Id="334553297"/>
+										<File Id="511895776"/>
+										<File Id="692330984"/>
+										<File Id="938227647"/>
+										<File Id="1010346032"/>
+										<File Id="1033739068"/>
+									</Media>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -406,6 +465,7 @@
 					<Switches>
 						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Dirt"/>
 						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Stone"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Metal"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="2905878991" Name="fs_movement_switch_group" ObjectPath="\Switches\Default Work Unit\fs_movement_switch_group">
@@ -416,7 +476,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="2905680874">
+		<SoundBank Id="1229948536" Language="SFX" Hash="1899179517">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
@@ -433,7 +493,7 @@
 						</File>
 						<File Id="91397311" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_birds_wings_flapping.wav</ShortName>
-							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping_D9363DA3.wem</Path>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping_9B1DA8E7.wem</Path>
 						</File>
 						<File Id="150453628" Language="SFX">
 							<ShortName>Spectrum_ambience_birds_chirping.wav</ShortName>
@@ -445,7 +505,7 @@
 						</File>
 						<File Id="195011568" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-002.wav</ShortName>
-							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-002_0D28E25F.wem</Path>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-002_DDE33003.wem</Path>
 						</File>
 						<File Id="224567792" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_seagulls-003.wav</ShortName>
@@ -473,7 +533,7 @@
 						</File>
 						<File Id="606227974" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-001.wav</ShortName>
-							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-001_C0376E11.wem</Path>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-001_7D0E7714.wem</Path>
 						</File>
 						<File Id="657077841" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_seagulls-001.wav</ShortName>
@@ -508,15 +568,15 @@
 					<IncludedMemoryFiles>
 						<File Id="91397311" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_birds_wings_flapping.wav</ShortName>
-							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping_D9363DA3.wem</Path>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping_9B1DA8E7.wem</Path>
 						</File>
 						<File Id="195011568" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-002.wav</ShortName>
-							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-002_0D28E25F.wem</Path>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-002_DDE33003.wem</Path>
 						</File>
 						<File Id="606227974" Language="SFX">
 							<ShortName>Matter2D - sfx_amb_birds_wings_flapping-001.wav</ShortName>
-							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-001_C0376E11.wem</Path>
+							<Path>SFX\Matter2D - sfx_amb_birds_wings_flapping-001_7D0E7714.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -536,6 +596,14 @@
 						<File Id="668779060" Language="SFX">
 							<ShortName>Spectrum_sfx_conveyer_belt.wav</ShortName>
 							<Path>SFX\Spectrum_sfx_conveyer_belt_6AF693E7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1858076951" Name="ev_gem_collect" ObjectPath="\Events\Default Work Unit\ev_gem_collect" DurationType="OneShot" DurationMin="2.815400" DurationMax="3.160180">
+					<IncludedMemoryFiles>
+						<File Id="569287605" Language="SFX">
+							<ShortName>Spectrum - sfx_gem_collect.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_gem_collect_05842A19.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -559,27 +627,15 @@
 						<ActionPostEventEntry Id="2635617457" Name="ev_whoosh" ObjectPath="\Events\Default Work Unit\ev_whoosh"/>
 					</ActionPostEvent>
 				</Event>
-				<Event Id="1125063709" Name="ev_mushroom" ObjectPath="\Events\Default Work Unit\ev_mushroom" DurationType="OneShot" DurationMin="1.027263" DurationMax="1.539156">
+				<Event Id="1125063709" Name="ev_mushroom" ObjectPath="\Events\Default Work Unit\ev_mushroom" DurationType="OneShot" DurationMin="0.930912" DurationMax="1.894791">
 					<IncludedMemoryFiles>
-						<File Id="87814680" Language="SFX">
-							<ShortName>Spectrum - sfx_plant_skrink_02.wav</ShortName>
-							<Path>SFX\Spectrum - sfx_plant_skrink_02_05842A19.wem</Path>
+						<File Id="419029107" Language="SFX">
+							<ShortName>Spectrum - sfx_plants_srink_03.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_plants_srink_03_05842A19.wem</Path>
 						</File>
-						<File Id="537259335" Language="SFX">
-							<ShortName>Spectrum - sfx_plant_grow_02.wav</ShortName>
-							<Path>SFX\Spectrum - sfx_plant_grow_02_05842A19.wem</Path>
-						</File>
-						<File Id="710267600" Language="SFX">
-							<ShortName>Spectrum - sfx_plant_grow_01.wav</ShortName>
-							<Path>SFX\Spectrum - sfx_plant_grow_01_05842A19.wem</Path>
-						</File>
-						<File Id="761359097" Language="SFX">
-							<ShortName>Spectrum - sfx_plant_skrink_01.wav</ShortName>
-							<Path>SFX\Spectrum - sfx_plant_skrink_01_05842A19.wem</Path>
-						</File>
-						<File Id="1016953576" Language="SFX">
-							<ShortName>Spectrum - sfx_plant_grow_03.wav</ShortName>
-							<Path>SFX\Spectrum - sfx_plant_grow_03_05842A19.wem</Path>
+						<File Id="582231924" Language="SFX">
+							<ShortName>Spectrum - sfx_plants_grow_02.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_plants_grow_02_05842A19.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
