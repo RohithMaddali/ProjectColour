@@ -53,6 +53,11 @@ public class W_Player : MonoBehaviour
                 Debug.Log("Stone");
                 AkSoundEngine.SetSwitch("fs_material_switch_group", "Stone", gameObject);
             }
+            if (hit.collider.GetComponent<W_TagExtender>() != null && hit.collider.GetComponent<W_TagExtender>().tags[0] == "Metal")
+            {
+                Debug.Log("Stone");
+                AkSoundEngine.SetSwitch("fs_material_switch_group", "Metal", gameObject);
+            }
         }
     }
 }

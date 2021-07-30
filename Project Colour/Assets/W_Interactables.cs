@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class W_Interactables : MonoBehaviour
 {
-    private void OnEnable()
-    {
-        W_Events.ObjectInteractEvent += Interactions;
-    }
-    private void OnDisable()
-    {
-        W_Events.ObjectInteractEvent -= Interactions;
-    }
-    void Interactions(string obj)
+    public void Interactions(string obj)
     {
         if (obj == "Plant")
         {

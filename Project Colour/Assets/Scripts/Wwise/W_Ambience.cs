@@ -8,11 +8,21 @@ public class W_Ambience : MonoBehaviour
 {
     private uint ambienceID;
     uint waterId;
+    [SerializeField] bool isMainMenu;
     void Start()
     {
-        AkSoundEngine.SetSwitch("amb_area", "hub_area", gameObject);
-        ambienceID = AkSoundEngine.PostEvent("ev_amb_switcher", gameObject);
-        waterId = AkSoundEngine.PostEvent("ev_sfx_running_water", gameObject);
+        if (isMainMenu)
+        {
+            AkSoundEngine.SetSwitch("amb_area", "green_area", gameObject);
+            ambienceID = AkSoundEngine.PostEvent("ev_amb_switcher", gameObject);
+            waterId = AkSoundEngine.PostEvent("ev_sfx_running_water", gameObject);
+        }
+        else
+        {
+            AkSoundEngine.SetSwitch("amb_area", "hub_area", gameObject);
+            ambienceID = AkSoundEngine.PostEvent("ev_amb_switcher", gameObject);
+            waterId = AkSoundEngine.PostEvent("ev_sfx_running_water", gameObject);
+        }
     }
     private void OnDestroy()
     {

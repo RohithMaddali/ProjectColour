@@ -35,6 +35,7 @@ namespace Quontity
 
                 if (CompareTag("GreenPrism"))
                 {
+                    AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
                     ObjectiveManager.i.AddItemToObjective(0);
                     ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
@@ -47,6 +48,7 @@ namespace Quontity
             {
                 if (CompareTag("BluePrism"))
                 {
+                    AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
                     ObjectiveManager.i.AddItemToObjective(1);
                     ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
@@ -59,6 +61,7 @@ namespace Quontity
             {
                 if (CompareTag("RedPrism"))
                 {
+                    AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
                     ObjectiveManager.i.AddItemToObjective(2);
                     ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);

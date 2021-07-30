@@ -23,11 +23,12 @@ public class ColourPowers : MonoBehaviour
     bool hasGrown;
     bool isFixed;
     public Material grey;
-
+    W_Interactables interactSound;
 
     // Start is called before the first frame update
     void Start()
     {
+        interactSound = GetComponent<W_Interactables>();
         rend = GetComponent<Renderer>();
         pairedRend = pairedObject.GetComponent<Renderer>();
         player = FindObjectOfType<RBMove>();
@@ -43,7 +44,7 @@ public class ColourPowers : MonoBehaviour
             animator.SetBool("Grow", false);
             if (hasGrown)
             {
-                W_Events.ObjectInteractFunction("Plant");
+                interactSound.Interactions("Plant");
                 hasGrown = false;
             }
         }
@@ -65,7 +66,7 @@ public class ColourPowers : MonoBehaviour
                 Debug.Log("Growwwww");
                 if (!hasGrown)
                 {
-                    W_Events.ObjectInteractFunction("Plant");
+                    interactSound.Interactions("Plant");
                     hasGrown = true;
                 }
                 animator.SetBool("Grow", true);
@@ -75,7 +76,7 @@ public class ColourPowers : MonoBehaviour
                 SwitchActive();
                 if (!isFixed)
                 {
-                    W_Events.ObjectInteractFunction("Bridge");
+                    interactSound.Interactions("Bridge");
                     isFixed = true;
                 }
                 rend.material.color = Color.grey;
