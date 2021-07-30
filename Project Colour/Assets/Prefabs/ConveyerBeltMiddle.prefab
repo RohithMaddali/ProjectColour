@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3258820068603990377}
   - component: {fileID: 3258820068603990379}
   - component: {fileID: 5060027371144854809}
+  - component: {fileID: 172763872429400578}
+  - component: {fileID: 1254436369229865739}
   m_Layer: 8
   m_Name: ConveyerBeltMiddle
   m_TagString: CanColour
@@ -138,6 +140,7 @@ MonoBehaviour:
   beltOn: 0
   LightMat: {fileID: 2100000, guid: 6d0c9940a352bd74d99b46eb1a6bd83a, type: 2}
   greyMat: {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
+  beltMat: {fileID: 0}
   currentScroll: 0
 --- !u!114 &5060027371144854809
 MonoBehaviour:
@@ -151,3 +154,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ef8c5818230f3418ae2d926ab80509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &172763872429400578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2447933205932545976}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 0
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1254436369229865739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2447933205932545976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80a1e1b4e130f84596ebceffab34100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 0}
+  outline: {fileID: 0}

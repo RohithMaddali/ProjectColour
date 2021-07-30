@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2331874234614619849}
   - component: {fileID: 2048203052945394390}
   - component: {fileID: 2829830957984605958}
+  - component: {fileID: 509841792179109522}
+  - component: {fileID: 4258820820229968471}
   m_Layer: 8
   m_Name: Sphere
   m_TagString: CanColour
@@ -97,6 +99,38 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: d044fb64713855b4b96134f9f55a8e1f, type: 3}
+--- !u!114 &509841792179109522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187462967007080506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 0
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &4258820820229968471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4187462967007080506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80a1e1b4e130f84596ebceffab34100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 0}
+  outline: {fileID: 0}
 --- !u!1 &5116450425058153213
 GameObject:
   m_ObjectHideFlags: 0
