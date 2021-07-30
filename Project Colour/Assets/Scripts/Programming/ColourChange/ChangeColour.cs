@@ -189,18 +189,28 @@ namespace AJ
 
                     if (raycastToTarget.transform.gameObject.layer == 8 && raycastToTarget.transform.CompareTag("CanColour"))
                     {
+                        
                         Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
-                        Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); //get renderer of hit
+                        Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>(); 
+                        //get renderer of hit
+                                                                                                              
                         //if (hitRenderer.material.color == Color.red || hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green) //chekc if object has special colour
+                                                                                                              
                         //{
-                            //shoot
-                        StartCoroutine(Wait());
-                        canShoot = false;
-                        animator.SetTrigger("IsShooting");
-                        orb.SetActive(true);
-                        thisRenderer.material.color = hitRenderer.material.color; //make weapon objects colour
-                        hitRenderer.material.color = previousColor; //make object held colour
-                        previousColor = thisRenderer.material.color;
+                                                                                                              
+                        //shoot
+                        if ((hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green || hitRenderer.material.color == Color.red) ||
+                            (thisRenderer.material.color == Color.blue || thisRenderer.material.color == Color.green || thisRenderer.material.color == Color.red))
+                        {
+                            StartCoroutine(Wait());
+                            canShoot = false;
+                            animator.SetTrigger("IsShooting");
+                            orb.SetActive(true);
+                            thisRenderer.material.color = hitRenderer.material.color; //make weapon objects colour
+                            hitRenderer.material.color = previousColor; //make object held colour
+                            previousColor = thisRenderer.material.color;
+                        }
+                            
                             //hasColour = true; //no more suck!
                             
                         //}
