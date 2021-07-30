@@ -2268,11 +2268,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0015121816
+      value: 0.0015121443
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00037789356
+      value: -0.00037788422
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2416,6 +2416,16 @@ PrefabInstance:
       objectReference: {fileID: 1316918325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+--- !u!54 &532286102 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4894964230543866191, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+  m_PrefabInstance: {fileID: 532286101}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &532286103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4894964230543866188, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
+  m_PrefabInstance: {fileID: 532286101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &728852472
 GameObject:
   m_ObjectHideFlags: 0
@@ -4707,6 +4717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1257384086}
+  playerRB: {fileID: 532286102}
+  player: {fileID: 532286103}
 --- !u!1001 &996956382
 PrefabInstance:
   m_ObjectHideFlags: 0

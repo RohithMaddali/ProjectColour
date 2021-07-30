@@ -5,6 +5,8 @@ using UnityEngine;
 public class KillFloor : MonoBehaviour
 {
     public Transform respawnPoint;
+    public Rigidbody playerRB;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +20,10 @@ public class KillFloor : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject == player)
         {
-            other.gameObject.transform.position = respawnPoint.position;
+            playerRB.velocity = Vector3.zero;
+            player.transform.position = respawnPoint.position;
         }
     }
 }
