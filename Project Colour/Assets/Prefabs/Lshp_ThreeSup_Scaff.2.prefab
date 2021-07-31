@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 168188612417104572}
   - component: {fileID: 3006952732486422317}
   - component: {fileID: 5042671232657589176}
+  - component: {fileID: 6078347615643568729}
   m_Layer: 0
   m_Name: R_L_Shp_Scaf
   m_TagString: Untagged
@@ -235,6 +236,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6182213, y: 0.10591221, z: 0.1130743}
   m_Center: {x: -0.010194778, y: 2.06, z: 1.18}
+--- !u!114 &6078347615643568729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596319625110351519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Metal
 --- !u!1 &8553714951322419024
 GameObject:
   m_ObjectHideFlags: 0

@@ -52,6 +52,7 @@ GameObject:
   - component: {fileID: 7241742734606859705}
   - component: {fileID: 1916262487787724287}
   - component: {fileID: 2656780120865963375}
+  - component: {fileID: 2330673381668668664}
   m_Layer: 0
   m_Name: Top_Scaf
   m_TagString: Untagged
@@ -252,3 +253,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.7487335, y: 1.3372822, z: 0.15730476}
   m_Center: {x: 0.0008392334, y: 4.9640684, z: -1.2066612}
+--- !u!114 &2330673381668668664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7604755870677478485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Metal

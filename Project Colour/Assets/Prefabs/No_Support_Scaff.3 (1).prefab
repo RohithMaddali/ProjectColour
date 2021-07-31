@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 3397600913490615864}
   - component: {fileID: 6398884758154438721}
   - component: {fileID: 3032865619550507554}
+  - component: {fileID: 592694457373141255}
   m_Layer: 8
   m_Name: Scaf_No_Support
   m_TagString: Untagged
@@ -207,6 +208,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6005573, y: 0.11838007, z: 0.16284166}
   m_Center: {x: 0.00000034783375, y: 2.04, z: 1.13}
+--- !u!114 &592694457373141255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4476020975330151998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Metal
 --- !u!1 &7559797953667853778
 GameObject:
   m_ObjectHideFlags: 0

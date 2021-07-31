@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 6323950763179527310}
   - component: {fileID: 7215366899493961538}
   - component: {fileID: 5874014286337082663}
+  - component: {fileID: 9180220851659659948}
   m_Layer: 0
   m_Name: R_Lshp_ThreeSup_Scaff.1
   m_TagString: Untagged
@@ -235,3 +236,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6222382, y: 0.103720665, z: 0.15409636}
   m_Center: {x: 0.03855133, y: -1.71, z: 1.23}
+--- !u!114 &9180220851659659948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979597092650590576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Metal

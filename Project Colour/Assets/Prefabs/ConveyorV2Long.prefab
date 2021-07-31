@@ -117,7 +117,7 @@ MonoBehaviour:
   belt: {fileID: 0}
   indicator: {fileID: 0}
   speed: 5
-  visualScalarSpeed: 0.05
+  visualScalarSpeed: -0.05
   maxSpeed: 0
   cam: {fileID: 0}
   powerSwitch: {fileID: 0}
