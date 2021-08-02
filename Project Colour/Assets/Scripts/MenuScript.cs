@@ -80,6 +80,9 @@ namespace Pyro
         {
             gm.isPicked = false;
             gm.itemsPicked = 0;
+            gm.r = false;
+            gm.b = false;
+            gm.g = false;
             SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);

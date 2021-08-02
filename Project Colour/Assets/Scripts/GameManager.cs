@@ -37,9 +37,6 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        g = false;
-        r = false;
-        b = false;
         if(Gamepad.current == null)
         {
             Debug.Log("no gamepad connected");
