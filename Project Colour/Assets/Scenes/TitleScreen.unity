@@ -13010,6 +13010,18 @@ MonoBehaviour:
   ca: {fileID: 0}
   mm: {fileID: 0}
   itemsPicked: 0
+  gPrism: 0
+  rPrism: 0
+  bPrism: 0
+  r: 0
+  g: 0
+  b: 0
+  red: {fileID: 0}
+  green: {fileID: 0}
+  blue: {fileID: 0}
+  Red: {fileID: 2100000, guid: 7df9d01f76b89534ba0d73f19fcd0183, type: 2}
+  Green: {fileID: 2100000, guid: 59473c30a46f7b64f90e6a2275c2b064, type: 2}
+  Blue: {fileID: 2100000, guid: 18ce1dbdc1019e84d941826040cf2535, type: 2}
 --- !u!114 &1961343004
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour
     public MenuScript mm;
 
     public int itemsPicked;
+    public int gPrism, rPrism, bPrism;
+    public bool r, g, b;
+
+    public GameObject red, green, blue;
+    public Material Red, Green, Blue;
 
     private void Awake()
     {
@@ -32,6 +37,9 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        g = false;
+        r = false;
+        b = false;
         if(Gamepad.current == null)
         {
             Debug.Log("no gamepad connected");
@@ -52,6 +60,27 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(6);
             mm.feedback();
             isPicked = false;
+        }
+
+        if(gPrism == 2 && g== false)
+        {
+            green = GameObject.FindGameObjectWithTag("GreenPrism");
+            g = true;
+            green.GetComponent<Renderer>().material = Green;
+        }
+
+        if (bPrism == 2 && b == false)
+        {
+            blue = GameObject.FindGameObjectWithTag("BluePrism");
+            b = true;
+            blue.GetComponent<Renderer>().material = Blue;
+        }
+
+        if (rPrism == 2 && r == false)
+        {
+            red = GameObject.FindGameObjectWithTag("RedPrism");
+            r = true;
+            red.GetComponent<Renderer>().material = Red;
         }
 
         InputSystem.onDeviceChange +=

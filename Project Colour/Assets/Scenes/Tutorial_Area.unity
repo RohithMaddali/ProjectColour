@@ -1650,7 +1650,7 @@ GameObject:
   - component: {fileID: 360984363}
   m_Layer: 0
   m_Name: Prism (3)
-  m_TagString: Untagged
+  m_TagString: RedPrism
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1696,7 +1696,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7df9d01f76b89534ba0d73f19fcd0183, type: 2}
+  - {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2678,11 +2678,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0015121816
+      value: 0.0015121443
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00037789356
+      value: -0.00037788422
       objectReference: {fileID: 0}
     - target: {fileID: 45857583, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2746,15 +2746,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1671209984, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2775263
+      value: 0.27752626
       objectReference: {fileID: 0}
     - target: {fileID: 1671209984, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0014974666
+      value: 0.001497438
       objectReference: {fileID: 0}
     - target: {fileID: 1671209984, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00043257698
+      value: -0.00043256878
       objectReference: {fileID: 0}
     - target: {fileID: 1671209984, guid: 07003cf052533f143a69d3e7012c603e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7409,7 +7409,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316918322}
-  m_LocalRotation: {x: 0.26527095, y: 0.0015028325, z: -0.0004134714, w: 0.96417266}
+  m_LocalRotation: {x: 0.26527095, y: 0.0015028153, z: -0.00041346665, w: 0.96417266}
   m_LocalPosition: {x: -35.24, y: 19.953014, z: -19.874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -8473,7 +8473,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4094068
+  m_Name: pb_Mesh204884
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9240,7 +9240,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1601162
+  m_Name: pb_Mesh204896
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9881,7 +9881,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1600810
+  m_Name: pb_Mesh204544
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10054,7 +10054,7 @@ GameObject:
   - component: {fileID: 2080725739}
   m_Layer: 0
   m_Name: Prism (4)
-  m_TagString: Untagged
+  m_TagString: BluePrism
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10100,7 +10100,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 18ce1dbdc1019e84d941826040cf2535, type: 2}
+  - {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10464,7 +10464,7 @@ GameObject:
   - component: {fileID: 2089012341}
   m_Layer: 0
   m_Name: Prism (5)
-  m_TagString: Untagged
+  m_TagString: GreenPrism
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10510,7 +10510,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 59473c30a46f7b64f90e6a2275c2b064, type: 2}
+  - {fileID: 2100000, guid: 3a245f005f1dd0d45a5ffab0f2264329, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
