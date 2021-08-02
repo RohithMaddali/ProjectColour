@@ -59,6 +59,6 @@ public class Switch : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
         interact.gameObject.SetActive(false);
-        canUseSwitch = true;
+        canUseSwitch = false;
     }
 }
