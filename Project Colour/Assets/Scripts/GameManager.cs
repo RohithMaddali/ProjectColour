@@ -55,8 +55,8 @@ public class GameManager : MonoBehaviour
     {
         if (itemsPicked == 6 && isPicked == true)
         {
-            SceneManager.LoadScene(6);
-            mm.feedback();
+            //SceneManager.LoadScene(6);
+            //mm.feedback();
             isPicked = false;
         }
 
