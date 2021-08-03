@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     public GameObject red, green, blue;
     public Material Red, Green, Blue;
 
+    public ColourList[] colourLists;
+
     private void Awake()
     {
         mm = FindObjectOfType<MenuScript>();
@@ -128,5 +130,18 @@ public class GameManager : MonoBehaviour
             ca.mouseSensitivity = aimSen;
         }
         Debug.Log("AIM SENSITIVITY IS " + aimSen);
+    }
+
+    public void Endgame()
+    {
+        colourLists = FindObjectsOfType<ColourList>();
+        foreach (ColourList colourList in colourLists)
+        {
+            foreach (GameObject colourableObject in colourList.colourableObjects)
+            {
+                colourableObject.GetComponent<Renderer>().material.color = colourList.mycolour;
+            }
+        }
+        
     }
 }
