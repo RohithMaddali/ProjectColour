@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public float mouseSenX = 100f;
     public float mouseSenY = 1.5f;
     public bool isPicked = false;
+    public bool displayTips = true;
 
     public float aimSen;
     public CharacterAim ca;
@@ -99,6 +100,11 @@ public class GameManager : MonoBehaviour
                 }
             };
 
+    }
+
+    public void TipDisplay()
+    {
+        displayTips = !displayTips;
     }
 
     public void ChangeMouseSensitivity()

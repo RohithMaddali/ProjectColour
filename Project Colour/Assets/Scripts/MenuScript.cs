@@ -86,8 +86,6 @@ namespace Pyro
             SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);
-            tips.SetActive(true);
-
         }
 
         public void feedback()

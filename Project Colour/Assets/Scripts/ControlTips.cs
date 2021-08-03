@@ -67,12 +67,12 @@ public class ControlTips : MonoBehaviour
         if (gm.gamepadInUse)
         {
             GamepadInUse();
-            StartCoroutine(DisplayTip(gpCam));
+            StartCoroutine(DelayTipDisplay(gpCam));
         }
         else
         {
             KeyboardMouseInUse();
-            StartCoroutine(DisplayTip(kmCam));
+            StartCoroutine(DelayTipDisplay(kmCam));
         }
     }
     
@@ -91,6 +91,11 @@ public class ControlTips : MonoBehaviour
             DisplayJumpTip();
         }
 
+    }
+    IEnumerator DelayTipDisplay(GameObject tip)
+    {
+        yield return new WaitForEndOfFrame();
+        StartCoroutine(DisplayTip(tip));
     }
     IEnumerator DisplayTip(GameObject tip)
     {
