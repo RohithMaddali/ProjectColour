@@ -8,6 +8,7 @@ public class ColourSnatcher : MonoBehaviour
     public ChangeColour cc;
     private Color previousColor;
     [SerializeField] private Renderer snatcher;
+    public bool canSnatchColour;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,15 +19,10 @@ public class ColourSnatcher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        previousColor = cc.thisRenderer.material.color;
-        if(other.gameObject.tag == "Player")
+        if (canSnatchColour)
         {
-            if(snatcher.material.color != Color.green && snatcher.material.color != Color.blue && snatcher.material.color != Color.red)
+            previousColor = cc.thisRenderer.material.color;
+            if (snatcher.material.color != Color.green && snatcher.material.color != Color.blue && snatcher.material.color != Color.red)
             {
                 cc.thisRenderer.material.color = Color.grey;
                 cc.previousColor = Color.grey;
@@ -35,17 +31,19 @@ public class ColourSnatcher : MonoBehaviour
             }
         }
     }
-    void OnTriggerStay(Collider other)
+
+    void OnTriggerEnter(Collider other)
     {
-        previousColor = cc.thisRenderer.material.color;
+        if(other.gameObject.tag == "Player")
+        {
+            canSnatchColour = true;
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
         if (other.gameObject.tag == "Player")
         {
-            if (snatcher.material.color != Color.green && snatcher.material.color != Color.blue && snatcher.material.color != Color.red)
-            {
-                cc.thisRenderer.material.color = Color.grey;
-                cc.hasColour = false;
-                snatcher.material.color = previousColor;
-            }
+            canSnatchColour = false;
         }
     }
 }
