@@ -30,14 +30,14 @@ public class GameManager : MonoBehaviour
 
     public GameObject red, green, blue;
     public Material Red, Green, Blue;
-
     public ColourList[] colourLists;
-
+    public static bool isVoicePlaying;
     private void Awake()
     {
         mm = FindObjectOfType<MenuScript>();
         DontDestroyOnLoad(this);
     }
+    
     private void Start()
     {
         if(Gamepad.current == null)
@@ -51,6 +51,14 @@ public class GameManager : MonoBehaviour
             Debug.Log(Gamepad.current.displayName + "Gamepad connected");
             gamepadInUse = true;
             //use gamepad ui
+        }
+    }
+    public AK.Wwise.Event voiceOver;
+    void CallBackFunction(object in_cookie, AkCallbackType callType, object in_info)
+    {
+        if (callType == AkCallbackType.AK_EndOfEvent)
+        {
+            isVoicePlaying = false;
         }
     }
     public void Update()
@@ -67,6 +75,8 @@ public class GameManager : MonoBehaviour
             green = GameObject.FindGameObjectWithTag("GreenPrism");
             g = true;
             green.GetComponent<Renderer>().material = Green;
+            voiceOver.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
+            isVoicePlaying = true;
         }
 
         if (bPrism == 2 && b == false)
@@ -74,6 +84,8 @@ public class GameManager : MonoBehaviour
             blue = GameObject.FindGameObjectWithTag("BluePrism");
             b = true;
             blue.GetComponent<Renderer>().material = Blue;
+            voiceOver.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
+            isVoicePlaying = true;
         }
 
         if (rPrism == 2 && r == false)
@@ -81,6 +93,8 @@ public class GameManager : MonoBehaviour
             red = GameObject.FindGameObjectWithTag("RedPrism");
             r = true;
             red.GetComponent<Renderer>().material = Red;
+            voiceOver.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
+            isVoicePlaying = true;
         }
 
         InputSystem.onDeviceChange +=
