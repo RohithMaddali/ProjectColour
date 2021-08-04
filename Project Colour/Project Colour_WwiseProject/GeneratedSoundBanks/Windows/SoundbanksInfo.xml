@@ -11,10 +11,10 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="543694036" Language="SFX" Hash="3456239794">
+		<SoundBank Id="543694036" Language="English(US)" Hash="3332688372">
 			<ObjectPath>\SoundBanks\Default Work Unit\Vox</ObjectPath>
 			<ShortName>Vox</ShortName>
-			<Path>Vox.bnk</Path>
+			<Path>English(US)\Vox.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1133450584" Name="ev_IdleVox" ObjectPath="\Events\Default Work Unit\ev_IdleVox" DurationType="OneShot" DurationMin="13.451712" DurationMax="16.438368">
 					<IncludedMemoryFiles>
@@ -82,6 +82,22 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="729850778" Name="ev_vx_prisms" ObjectPath="\Events\Default Work Unit\ev_vx_prisms" DurationType="OneShot" DurationMin="7.435042" DurationMax="16.941105">
+					<IncludedMemoryFiles>
+						<File Id="91365112" Language="English(US)">
+							<ShortName>Spectrum_16-S08- take 2 restoring_the_3rd.wav</ShortName>
+							<Path>Voices\English(US)\Spectrum_16-S08- take 2 restoring_the_3rd_05842A19.wem</Path>
+						</File>
+						<File Id="221752951" Language="English(US)">
+							<ShortName>Spectrum_13-S06- take 1 Restoring_first_prism.wav</ShortName>
+							<Path>Voices\English(US)\Spectrum_13-S06- take 1 Restoring_first_prism_05842A19.wem</Path>
+						</File>
+						<File Id="580709224" Language="English(US)">
+							<ShortName>Spectrum_14-S07- take 1 Restoring_second_prism.wav</ShortName>
+							<Path>Voices\English(US)\Spectrum_14-S07- take 1 Restoring_second_prism_05842A19.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<StateGroups>

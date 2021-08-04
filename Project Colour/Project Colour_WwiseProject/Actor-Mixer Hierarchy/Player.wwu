@@ -1261,20 +1261,24 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Metal_walk" ID="{F7666E1B-653C-49FE-B4C9-29E753D2BE24}" ShortID="751828046">
 											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{662E4874-1230-44BB-B62F-DEDCCA770537}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="200"/>
-																	<Property Name="Min" Type="Real64" Value="-200"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{EA204EAD-A2F1-4244-8716-70BBD3EF83CE}">
@@ -1292,12 +1296,26 @@
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
 												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Parametric EQ (Custom)" ID="{D731A9CC-7851-4E7A-9B1C-141AEA6C4D0A}" ShortID="722449831" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand1" Type="Real32" Value="200"/>
+																<Property Name="FrequencyBand3" Type="Real32" Value="6000"/>
+																<Property Name="GainBand1" Type="Real32" Value="-24"/>
+																<Property Name="GainBand3" Type="Real32" Value="-5"/>
+																<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																<Property Name="OnOffBand3" Type="bool" Value="False"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="GravityZero - FS_Tin_48000-001" ID="{A8C5EF0D-835D-4EB5-A211-78C3904B0850}" ShortID="877843509">
+												<Sound Name="Spectrum - sfx_fs_metal-001" ID="{78F88FBF-73C4-4673-AB00-535E4AAEFC53}" ShortID="478848296">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1307,20 +1325,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-001" ID="{981C8E5F-F23A-46DC-8A1E-E24E8C0F071A}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-001" ID="{AD486D1D-B6A7-4236-8A9C-89788AB85C6B}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-001.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="938227647"/>
+																<MediaID ID="782314459"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-001" ID="{981C8E5F-F23A-46DC-8A1E-E24E8C0F071A}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-001" ID="{AD486D1D-B6A7-4236-8A9C-89788AB85C6B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-002" ID="{F5CDEA7C-6B25-4881-B974-E241622D7E8F}" ShortID="726450844">
+												<Sound Name="Spectrum - sfx_fs_metal-002" ID="{21D262E6-1735-4BE1-B099-41A02307F0CC}" ShortID="7781329">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1330,20 +1348,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-002" ID="{54BCEEE5-0064-4A38-AB39-CD7CF4E993F5}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-002" ID="{751E73BF-64A4-4170-B8C7-65E2016A0CF3}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-002.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="169469015"/>
+																<MediaID ID="947121648"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-002" ID="{54BCEEE5-0064-4A38-AB39-CD7CF4E993F5}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-002" ID="{751E73BF-64A4-4170-B8C7-65E2016A0CF3}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-003" ID="{09144C07-4521-4628-9F5C-3ADC09C42775}" ShortID="736122526">
+												<Sound Name="Spectrum - sfx_fs_metal-003" ID="{390C569A-DF6B-4E26-83D6-713968302DE4}" ShortID="37478290">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1353,20 +1371,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-003" ID="{E8D42EA8-68BC-4059-89CD-E3A06DA1B99A}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-003" ID="{1D8F8440-F201-407B-9118-C8A8F51BC929}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-003.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1010346032"/>
+																<MediaID ID="486842485"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-003" ID="{E8D42EA8-68BC-4059-89CD-E3A06DA1B99A}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-003" ID="{1D8F8440-F201-407B-9118-C8A8F51BC929}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-004" ID="{87C28DEE-A39D-4306-8FED-AE4311374AEA}" ShortID="292945398">
+												<Sound Name="Spectrum - sfx_fs_metal-004" ID="{FB391082-4335-484F-875E-97B7B231FCDF}" ShortID="433185452">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1376,20 +1394,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-004" ID="{B56951AD-EFC7-4DD9-B39C-B562E3D24940}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-004" ID="{9E107C77-C804-498E-8A65-4D5A878C536C}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-004.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="49006312"/>
+																<MediaID ID="6347590"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-004" ID="{B56951AD-EFC7-4DD9-B39C-B562E3D24940}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-004" ID="{9E107C77-C804-498E-8A65-4D5A878C536C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-005" ID="{60F45805-F80D-4AF3-907E-12478E4D8FE4}" ShortID="339088107">
+												<Sound Name="Spectrum - sfx_fs_metal-005" ID="{2DF7D71C-6FC5-488C-AA7C-6D07F6A58EAD}" ShortID="451899198">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1399,20 +1417,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-005" ID="{56D91D6B-D334-4AF1-9E86-ED2B04FAA78D}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-005" ID="{0CED04FC-360E-4995-96E9-EF0CA6D5C465}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-005.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="150487645"/>
+																<MediaID ID="995057878"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-005" ID="{56D91D6B-D334-4AF1-9E86-ED2B04FAA78D}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-005" ID="{0CED04FC-360E-4995-96E9-EF0CA6D5C465}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-006" ID="{E301F167-83E5-4682-9925-8238BC462AF7}" ShortID="6176982">
+												<Sound Name="Spectrum - sfx_fs_metal-006" ID="{894CEA98-F175-4FF7-BC0E-4416EE1A241F}" ShortID="128775529">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1422,20 +1440,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-006" ID="{E2AD6385-84B6-4E51-B11F-317649D080F4}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-006" ID="{E53A017D-41BB-49A9-A084-B60A84637A69}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-006.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-006.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="511895776"/>
+																<MediaID ID="412988602"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-006" ID="{E2AD6385-84B6-4E51-B11F-317649D080F4}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-006" ID="{E53A017D-41BB-49A9-A084-B60A84637A69}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-007" ID="{C6B9CDD8-4A77-4C6E-99CD-9BF365A72EB2}" ShortID="156155788">
+												<Sound Name="Spectrum - sfx_fs_metal-007" ID="{90F7D98E-0657-4D5C-B868-8CC59A2B0D4A}" ShortID="584026450">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1445,20 +1463,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-007" ID="{C0E1041F-5E23-4BC9-9BC2-5180A70D22B1}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-007" ID="{B6A430D3-8E29-4D1B-AE4A-53E9A9389C8F}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-007.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-007.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="334553297"/>
+																<MediaID ID="598115069"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-007" ID="{C0E1041F-5E23-4BC9-9BC2-5180A70D22B1}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-007" ID="{B6A430D3-8E29-4D1B-AE4A-53E9A9389C8F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-008" ID="{CF2347FA-7C21-4DBB-A1B6-CBC18266981C}" ShortID="901471759">
+												<Sound Name="Spectrum - sfx_fs_metal-008" ID="{3FA84CA3-77AA-49EB-BE00-63BEF8E0C9E6}" ShortID="196003340">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1468,20 +1486,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-008" ID="{B1965E43-43F7-4D1F-A1AF-96BDDF9F6EBB}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-008" ID="{89E8BD90-60C0-4102-95BC-6F5E7E9FD148}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-008.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-008.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1033739068"/>
+																<MediaID ID="1053912346"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-008" ID="{B1965E43-43F7-4D1F-A1AF-96BDDF9F6EBB}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-008" ID="{89E8BD90-60C0-4102-95BC-6F5E7E9FD148}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-009" ID="{B19E77D6-8187-48FD-B67A-CF5A92123884}" ShortID="123930864">
+												<Sound Name="Spectrum - sfx_fs_metal-009" ID="{AE9CA59D-0A7C-428D-9F84-1FB86AE8459C}" ShortID="775997649">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1491,20 +1509,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-009" ID="{CB7321D2-C6C0-42A5-81D2-827880263156}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-009" ID="{CAEAEA0A-3488-45AE-8A24-CFFD9864E55A}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-009.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-009.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="46897575"/>
+																<MediaID ID="674103976"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-009" ID="{CB7321D2-C6C0-42A5-81D2-827880263156}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-009" ID="{CAEAEA0A-3488-45AE-8A24-CFFD9864E55A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000-010" ID="{5BB8E88E-BA41-4B69-A166-FEBBE707D9F0}" ShortID="434389222">
+												<Sound Name="Spectrum - sfx_fs_metal-010" ID="{E151F7D9-1750-4FE3-86CA-38CFA76A4536}" ShortID="339459588">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1514,20 +1532,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000-010" ID="{634250D1-D0C6-4EB2-BC6C-8EED4B62717C}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal-010" ID="{DD17A9AE-4BF6-4FF5-920C-D5F069BBC80E}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000-010.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal-010.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="692330984"/>
+																<MediaID ID="580518320"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000-010" ID="{634250D1-D0C6-4EB2-BC6C-8EED4B62717C}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal-010" ID="{DD17A9AE-4BF6-4FF5-920C-D5F069BBC80E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="GravityZero - FS_Tin_48000" ID="{E3D6B078-47AB-4CBD-8181-3F5B870BCCED}" ShortID="363857690">
+												<Sound Name="Spectrum - sfx_fs_metal" ID="{9537B191-5860-4B38-B708-C3C643883A8E}" ShortID="274573980">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1537,17 +1555,17 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="GravityZero - FS_Tin_48000" ID="{A979EB3E-7AAC-4512-ADAC-2F81B652EDA4}">
+														<AudioFileSource Name="Spectrum - sfx_fs_metal" ID="{F5DE8460-6C19-4197-A291-98100601E9AD}">
 															<Language>SFX</Language>
-															<AudioFile>GravityZero - FS_Tin_48000.wav</AudioFile>
+															<AudioFile>Spectrum - sfx_fs_metal.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="29753083"/>
+																<MediaID ID="347775869"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="GravityZero - FS_Tin_48000" ID="{A979EB3E-7AAC-4512-ADAC-2F81B652EDA4}" Platform="Linked"/>
+														<ActiveSource Name="Spectrum - sfx_fs_metal" ID="{F5DE8460-6C19-4197-A291-98100601E9AD}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>

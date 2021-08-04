@@ -332,6 +332,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_vx_prisms" ID="{94F851F2-4393-48D2-8ED6-D344F6B41C8D}">
+					<ChildrenList>
+						<Action Name="" ID="{03A70ABD-4844-4E08-B02B-B614CAAFDB0B}" ShortID="43454111">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vx_prisms" ID="{FE75F4CE-8319-487F-8A8F-6CF85EE6FCCF}" WorkUnitID="{5A4F02DD-E1A5-426E-9457-F53B70C89303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
