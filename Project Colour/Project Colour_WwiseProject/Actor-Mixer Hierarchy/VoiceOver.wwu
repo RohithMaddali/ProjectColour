@@ -28,7 +28,17 @@
 							<ChildrenList>
 								<Sound Name="Spectrum_5-S01- take 1 waking the weapon" ID="{D843ADBF-859B-4294-A812-6F82EA6C2205}" ShortID="101577962">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -40,6 +50,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Spectrum_5-S01- take 1 waking the weapon" ID="{F43740FF-FE39-40AA-A75F-C2D4AD235947}">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="4.57949301541426"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.60708032273603"/>
+											</PropertyList>
 											<Language>English(US)</Language>
 											<AudioFile>Spectrum_5-S01- take 1 waking the weapon.wav</AudioFile>
 											<MediaIDList>

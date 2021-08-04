@@ -343,6 +343,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_mx_mainmenu_and_intro_music" ID="{1C5815A4-73B6-4D50-9322-32C9DE63690E}">
+					<ChildrenList>
+						<Action Name="" ID="{F72383C7-E49E-4E2A-A02B-981899635247}" ShortID="937632261">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="mx_mainmenu_and_intro_music" ID="{1244F5BC-B27D-4709-8EE5-7A36CAE585BA}" WorkUnitID="{5E879D58-8D2E-4832-A35A-63F0F5AC8157}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_waking_the_weapon" ID="{35EC095B-8034-46B0-8639-7A13ED7C542B}">
+					<ChildrenList>
+						<Action Name="" ID="{A8AC2730-ED3B-44A3-BC6A-C6EC1DC63E18}" ShortID="154207283">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spectrum_5-S01- take 1 waking the weapon" ID="{D843ADBF-859B-4294-A812-6F82EA6C2205}" WorkUnitID="{5A4F02DD-E1A5-426E-9457-F53B70C89303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

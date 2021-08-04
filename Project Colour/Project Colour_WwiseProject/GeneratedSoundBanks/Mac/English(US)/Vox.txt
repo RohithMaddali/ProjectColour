@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	729850778	ev_vx_prisms			\Default Work Unit\ev_vx_prisms	
 	1133450584	ev_IdleVox			\Default Work Unit\ev_IdleVox	
+	2410568545	ev_waking_the_weapon			\Default Work Unit\ev_waking_the_weapon	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	296203157	Colour			\Default Work Unit\Colour	
@@ -24,4 +25,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	668681399	Blue_Idle- take 1	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum VO lines 1-4-E07- take 1_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\VoiceOver\Idle\vox_colours\vox_blue\Blue_Idle- take 1		258404
 	707900487	General_Idle_02	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum VO lines 7-11-E02- take 1 [2021-06-16 211457]_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\VoiceOver\Idle\vox_colours\vox_general\General_Idle_02		280397
 	920976042	Blue_Idle_01	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum VO lines 3-7-E09- take 2 [2021-06-16 195022]_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\VoiceOver\Idle\vox_colours\vox_blue\Blue_Idle_01		272751
+	932068419	Spectrum_5-S01- take 1 waking the weapon	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\Voices\English(US)\Spectrum_5-S01- take 1 waking the weapon_155F58F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\VoiceOver\Story\Storyvox\Spectrum_5-S01- take 1 waking the weapon		55514
 

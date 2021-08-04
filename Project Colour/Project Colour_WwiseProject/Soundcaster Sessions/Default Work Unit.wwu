@@ -25,7 +25,15 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{4C1B56D9-BA72-45F5-AF50-91BB37962680}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="track_volume" ID="{8E739B6C-4D17-472E-B551-6CDCE271309B}"/>
 							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="main_menu_music_volume" ID="{AC094864-75FD-4D4F-ABC4-794606D79A13}"/>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

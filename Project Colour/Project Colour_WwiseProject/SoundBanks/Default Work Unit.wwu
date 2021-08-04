@@ -27,12 +27,14 @@
 				<SoundBank Name="Music" ID="{CECF3A7A-0E6E-42A8-BF7E-C64D88447628}">
 					<ObjectInclusionList>
 						<ObjectRef Name="ev_mx_explore" ID="{0B0C2A5E-9CF0-42EC-87F7-32B45CAF79B9}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_mx_mainmenu_and_intro_music" ID="{1C5815A4-73B6-4D50-9322-32C9DE63690E}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Vox" ID="{9DFEE26F-6344-4F76-B73B-87DDE9A2B153}">
 					<ObjectInclusionList>
+						<ObjectRef Name="ev_waking_the_weapon" ID="{35EC095B-8034-46B0-8639-7A13ED7C542B}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_IdleVox" ID="{C8ED8C94-3637-4762-8816-504F2090DEF8}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_vx_prisms" ID="{94F851F2-4393-48D2-8ED6-D344F6B41C8D}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

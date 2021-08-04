@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="543694036" Language="English(US)" Hash="3213852252">
+		<SoundBank Id="543694036" Language="English(US)" Hash="1246692556">
 			<ObjectPath>\SoundBanks\Default Work Unit\Vox</ObjectPath>
 			<ShortName>Vox</ShortName>
 			<Path>English(US)\Vox.bnk</Path>
@@ -96,6 +96,14 @@
 						<File Id="580709224" Language="English(US)">
 							<ShortName>Spectrum_14-S07- take 1 Restoring_second_prism.wav</ShortName>
 							<Path>Voices\English(US)\Spectrum_14-S07- take 1 Restoring_second_prism_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2410568545" Name="ev_waking_the_weapon" ObjectPath="\Events\Default Work Unit\ev_waking_the_weapon" DurationType="OneShot" DurationMin="5.607080" DurationMax="5.607080">
+					<IncludedMemoryFiles>
+						<File Id="932068419" Language="English(US)">
+							<ShortName>Spectrum_5-S01- take 1 waking the weapon.wav</ShortName>
+							<Path>Voices\English(US)\Spectrum_5-S01- take 1 waking the weapon_155F58F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -806,7 +814,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3443138116">
+		<SoundBank Id="1355168291" Language="SFX" Hash="109004806">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -817,7 +825,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3363455387">
+		<SoundBank Id="3991942870" Language="SFX" Hash="1235680456">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -1099,7 +1107,27 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="4214391848" Name="ev_mx_mainmenu_and_intro_music" ObjectPath="\Events\Default Work Unit\ev_mx_mainmenu_and_intro_music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="144292907" Language="SFX">
+							<ShortName>Main menu 32 bars 4 4 110 bpm Analog strings.wav</ShortName>
+							<Path>SFX\Main menu 32 bars 4 4 110 bpm Analog strings_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="943386256" Language="SFX">
+							<ShortName>Main menu 32 bars 4 4 110 bpm 1-Scaler 2.wav</ShortName>
+							<Path>SFX\Main menu 32 bars 4 4 110 bpm 1-Scaler 2_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="1056697219" Language="SFX">
+							<ShortName>Main menu 32 bars 4 4 110 bpm Main menu paino.wav</ShortName>
+							<Path>SFX\Main menu 32 bars 4 4 110 bpm Main menu paino_7DE7C0C7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="914035509" Name="main_menu_music_volume" ObjectPath="\Game Parameters\Default Work Unit\main_menu_music_volume"/>
+				<GameParameter Id="2557772815" Name="track_volume" ObjectPath="\Game Parameters\Default Work Unit\track_volume"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1445037870" Name="MusicSwitch" ObjectPath="\Switches\Default Work Unit\MusicSwitch">
 					<Switches>

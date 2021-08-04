@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID EV_MACHINERY_MOVE = 3244770519U;
         static const AkUniqueID EV_MUSHROOM = 1125063709U;
         static const AkUniqueID EV_MX_EXPLORE = 2266659196U;
+        static const AkUniqueID EV_MX_MAINMENU_AND_INTRO_MUSIC = 4214391848U;
         static const AkUniqueID EV_SCREACHING_METAL = 794110178U;
         static const AkUniqueID EV_SEAGULLS = 3893023783U;
         static const AkUniqueID EV_SERVO = 878682118U;
@@ -33,6 +34,7 @@ namespace AK
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
         static const AkUniqueID EV_SWITCH_ON = 1635355777U;
         static const AkUniqueID EV_VX_PRISMS = 729850778U;
+        static const AkUniqueID EV_WAKING_THE_WEAPON = 2410568545U;
         static const AkUniqueID EV_WATER_SPLASH = 1186802106U;
         static const AkUniqueID EV_WHOOSH = 2635617457U;
     } // namespace EVENTS
@@ -109,7 +111,9 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MAIN_MENU_MUSIC_VOLUME = 914035509U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
+        static const AkUniqueID TRACK_VOLUME = 2557772815U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
