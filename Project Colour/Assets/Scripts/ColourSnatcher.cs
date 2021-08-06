@@ -24,10 +24,12 @@ public class ColourSnatcher : MonoBehaviour
             previousColor = cc.thisRenderer.material.color;
             if (snatcher.material.color != Color.green && snatcher.material.color != Color.blue && snatcher.material.color != Color.red)
             {
-                cc.thisRenderer.material.color = Color.grey;
-                cc.previousColor = Color.grey;
+                cc.thisRenderer.material.color = Color.black;
+                cc.previousColor = Color.black;
                 cc.hasColour = false;
                 snatcher.material.color = previousColor;
+                cc.orbRend.material.color = Color.white;
+                cc.orb.SetActive(false);
             }
         }
     }
