@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FAE_TreeBush
-  m_Shader: {fileID: -6465566751694194690, guid: 85827a98514358f438446da0fc64b0f0, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 5fa1de45e13824d4b85d644ca036d50d, type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHATEST_ON
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - ColourMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Alpha:
         m_Texture: {fileID: 1279659258, guid: 520815e513b5368499c87f5ecd748eb8, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -87,6 +91,14 @@ Material:
         m_Texture: {fileID: -1077550208, guid: b6620978afaf9234f9e6fe1cfa32c8ff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _mainNM:
+        m_Texture: {fileID: 2800000, guid: 75f8ecf62ae77bf48a5fa08ef39335e9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _secondNM:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -95,7 +107,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - metalness:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Saturation: 0.25
+    - Smooth_C048DD43: 0
     - _AO: 1
     - _Alphacutoff: 0.547
     - _AmbientOcclusion: 1
@@ -108,6 +126,7 @@ Material:
     - _Debug: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Emission: 0
     - _FlatLighting: 1
     - _FresnelScale: 1
     - _GlossMapScale: 1
@@ -150,11 +169,12 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.51724136, b: 0, a: 0.19607843}
     - _MainColor: {r: 0.5441177, g: 0.9052481, b: 1, a: 0}
     - _ObjectPosition: {r: 0, g: 22.15737, b: 0, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 0}
     - _Transmisioncolor: {r: 1, g: 0.9724137, b: 0, a: 0}
     - _TransmissionColor: {r: 0.6965517, g: 1, b: 0, a: 0.059}
