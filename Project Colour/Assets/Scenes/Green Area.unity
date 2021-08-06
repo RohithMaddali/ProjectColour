@@ -1709,7 +1709,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-234286
+  m_Name: pb_Mesh-258228
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3693,13 +3693,33 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4885046
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8799986698790627229, guid: 9064929bb9122724684ed7abbf313f4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9064929bb9122724684ed7abbf313f4d, type: 3}
 --- !u!4 &101485111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011889476344, guid: 9064929bb9122724684ed7abbf313f4d, type: 3}
   m_PrefabInstance: {fileID: 101485110}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &101485112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011430780218, guid: 9064929bb9122724684ed7abbf313f4d, type: 3}
+  m_PrefabInstance: {fileID: 101485110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &101485113
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101485112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.4
+  m_Height: 14.45
+  m_Direction: 1
+  m_Center: {x: 0, y: 13.72, z: 0}
 --- !u!1001 &102935460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45412,13 +45432,33 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.3352997
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6029103542652551589, guid: e70352c946d2d3249b00e9e0a8b5a18f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e70352c946d2d3249b00e9e0a8b5a18f, type: 3}
 --- !u!4 &1044457173 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011386335912, guid: e70352c946d2d3249b00e9e0a8b5a18f, type: 3}
   m_PrefabInstance: {fileID: 1044457172}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1044457174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013552779140, guid: e70352c946d2d3249b00e9e0a8b5a18f, type: 3}
+  m_PrefabInstance: {fileID: 1044457172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1044457175
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044457174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.8
+  m_Height: 13.38
+  m_Direction: 1
+  m_Center: {x: 0, y: 10.03, z: 0}
 --- !u!4 &1046471129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010509172042, guid: daf963f55dae25f47949ddb85d06c0f7, type: 3}
@@ -54807,7 +54847,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh90482
+  m_Name: pb_Mesh107484
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -56538,13 +56578,33 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.8783793
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5244141013569991441, guid: 7ae254bddcf0def478298b88c82e882a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ae254bddcf0def478298b88c82e882a, type: 3}
 --- !u!4 &1309282042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010392036792, guid: 7ae254bddcf0def478298b88c82e882a, type: 3}
   m_PrefabInstance: {fileID: 1309282041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1309282043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000012542690338, guid: 7ae254bddcf0def478298b88c82e882a, type: 3}
+  m_PrefabInstance: {fileID: 1309282041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1309282044
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309282043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.24
+  m_Height: 10.28
+  m_Direction: 0
+  m_Center: {x: 0.7, y: 8.8, z: 0}
 --- !u!1001 &1310280109
 PrefabInstance:
   m_ObjectHideFlags: 0

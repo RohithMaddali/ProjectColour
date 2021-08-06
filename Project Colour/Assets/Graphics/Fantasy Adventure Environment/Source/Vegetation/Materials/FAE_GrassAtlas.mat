@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FAE_GrassAtlas
-  m_Shader: {fileID: -6465566751694194690, guid: dc1a634184354e343a9a36dd032cf2bf, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 5fa1de45e13824d4b85d644ca036d50d, type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - ColourMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - PigmentMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -111,13 +115,27 @@ Material:
         m_Texture: {fileID: -1077550208, guid: b6620978afaf9234f9e6fe1cfa32c8ff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _mainNM:
+        m_Texture: {fileID: 2800000, guid: 574adf8e8917e7241bb6fc68350cb7c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _secondNM:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - metalness:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - BendingRadius: 0
     - BendingStrength: 0
+    - Saturation: 0.25
+    - Smooth_C048DD43: 0
     - WindSpeed: 0.3
     - _AO: 0
     - _ASEOutlineWidth: 0
@@ -137,6 +155,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _Detailstrength: 1
     - _DstBlend: 0
+    - _Emission: 0
     - _Float0: 0.498
     - _Float17: 1
     - _Float18: 0
@@ -193,7 +212,7 @@ Material:
     - ObstaclePosition: {r: 0, g: 0, b: 0, a: 0}
     - WindDirection: {r: 0, g: 0, b: 1, a: 0}
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.6140652, g: 0.8396226, b: 0.3920879, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _ColorBottom: {r: 0.25492513, g: 0.5147059, b: 0, a: 1}
     - _ColorTop: {r: 0.31585774, g: 0.6102941, b: 0.02692473, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
@@ -201,6 +220,7 @@ Material:
     - _GlobalColor: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectColor: {r: 1, g: 1, b: 1, a: 0}
     - _ObstaclePosition: {r: -118.41, g: 0.365, b: -132.43, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SSSColor: {r: 1, g: 0.76551723, b: 0, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _SubsurfaceColor: {r: 0.654902, g: 1, b: 0, a: 0}
