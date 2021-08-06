@@ -22,7 +22,7 @@ public class ColourSnatcher : MonoBehaviour
         if (canSnatchColour)
         {
             previousColor = cc.thisRenderer.material.color;
-            if (snatcher.material.color != Color.green && snatcher.material.color != Color.blue && snatcher.material.color != Color.red)
+            if (snatcher.material.color != Color.green && snatcher.material.color != Color.blue && snatcher.material.color != Color.red && cc.orbRend.material.color != Color.white)
             {
                 cc.thisRenderer.material.color = Color.black;
                 cc.previousColor = Color.black;
