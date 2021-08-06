@@ -65,7 +65,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Saturatiom: 1
-    - Saturation: 1
+    - Saturation: 0.25
     - Smooth_C048DD43: 0
     - _AlphaClip: 0
     - _Blend: 0
