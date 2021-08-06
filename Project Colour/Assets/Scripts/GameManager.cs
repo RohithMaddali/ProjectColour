@@ -153,7 +153,8 @@ public class GameManager : MonoBehaviour
         {
             foreach (GameObject colourableObject in colourList.colourableObjects)
             {
-                colourableObject.GetComponent<Renderer>().material.color = colourList.mycolour;
+                //colourableObject.GetComponent<Renderer>().material.color = colourList.mycolour;
+                colourableObject.GetComponent<Renderer>().material.SetFloat("Saturation", 1f);
             }
         }
         
