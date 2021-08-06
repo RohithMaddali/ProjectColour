@@ -37,6 +37,7 @@ public class ControlTips : MonoBehaviour
     public bool moved;
     public bool camMoved;
     public bool powersShown;
+    public bool delay = true;
 
     public float displayTime;
     Vector2 move;
@@ -79,13 +80,13 @@ public class ControlTips : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!camMoved && !moved && rotate.magnitude > 0f)
+        if(!camMoved && !moved && !delay && rotate.magnitude > 0f)
         {
             camMoved = true;
             DisplayMoveTip();
         }
 
-        if (!moved && camMoved && move.magnitude > 0)
+        if (!moved && camMoved && !delay && move.magnitude > 0)
         {
             moved = true;
             DisplayJumpTip();
@@ -96,6 +97,8 @@ public class ControlTips : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
         StartCoroutine(DisplayTip(tip));
+        delay = false;
+        
     }
     IEnumerator DisplayTip(GameObject tip)
     {
