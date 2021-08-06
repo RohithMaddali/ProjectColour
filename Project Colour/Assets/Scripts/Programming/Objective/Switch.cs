@@ -10,7 +10,7 @@ public class Switch : MonoBehaviour
     public Canvas interact;
     public float waitForCooldown = 1f;
     public bool isCooldown = false;
-    public bool canUseSwitch;
+    public bool canUseSwitch = false;
 
     private void Awake()
     {
@@ -31,10 +31,10 @@ public class Switch : MonoBehaviour
         {
             if (controls.Gameplay.Switch.triggered && !isCooldown)
             {
-                canUseSwitch = false;
                 AkSoundEngine.PostEvent("ev_switch_on", gameObject);
                 cb.PowerSwitch();
                 StartCoroutine(WaitSeconds());
+                isCooldown = true;
             }
         }
     }
@@ -50,10 +50,8 @@ public class Switch : MonoBehaviour
 
     IEnumerator WaitSeconds()
     {
-        isCooldown = true;
         yield return new WaitForSeconds(waitForCooldown);
         isCooldown = false;
-        canUseSwitch = true;
     }
 
     public void OnTriggerExit(Collider other)
