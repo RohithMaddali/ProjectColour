@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 64000013571711988}
   - component: {fileID: 65000013294652238}
   - component: {fileID: 160084085215739075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cliff_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000010017310506}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.54049, y: 0.54049, z: 0.54049}
   m_Children:
   - {fileID: 4000011333500372}
   - {fileID: 4000011086050516}
@@ -76,7 +76,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 380d93012933c5b43b1345f636831ebb, type: 2}
 --- !u!65 &65000013294652238
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 4000014132793472}
   - component: {fileID: 33000012100584626}
   - component: {fileID: 23000010582669138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cliff_A_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 4000011333500372}
   - component: {fileID: 33000010974649698}
   - component: {fileID: 23000010402929834}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cliff_A_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 4000011086050516}
   - component: {fileID: 33000012056544436}
   - component: {fileID: 23000012606156224}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cliff_A_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 368320118006487538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
