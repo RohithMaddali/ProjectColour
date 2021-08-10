@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class GameGoalInfo : MonoBehaviour
 {
@@ -10,11 +12,14 @@ public class GameGoalInfo : MonoBehaviour
     public bool infoGiven = false;
     public int delayTimer;
     W_MainMenuMusic mainMenuMusic;
+    public GameObject First;
 
     void Start()
     {
         mainMenuMusic = GameObject.Find("music").GetComponent<W_MainMenuMusic>();
         StartCoroutine(info());
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(First);
     }
     IEnumerator info()
     {

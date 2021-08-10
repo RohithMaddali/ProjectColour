@@ -170,6 +170,7 @@ public class PauseMenu : MonoBehaviour
     public void mainMenuPrompt()
     {
         submenu = true;
+        pauseMenuUI.SetActive(false);
         MainMenuPrompt.SetActive(true);
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(mainMenuFirst);
