@@ -71,27 +71,27 @@ public class GameManager : MonoBehaviour
             isPicked = false;
         }
 
-        if(gPrism == 2 /*&& g== false*/)
+        if(gPrism == 2 && g== false)
         {
-            green = GameObject.FindGameObjectWithTag("GreenPrism");
+            //green = GameObject.FindGameObjectWithTag("GreenPrism");
             g = true;
             green.GetComponent<Renderer>().material = Green;
             voiceOver.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
             isVoicePlaying = true;
         }
 
-        if (bPrism == 2 /*&& b == false*/)
+        if (bPrism == 2 && b == false)
         {
-            blue = GameObject.FindGameObjectWithTag("BluePrism");
+            //blue = GameObject.FindGameObjectWithTag("BluePrism");
             b = true;
             blue.GetComponent<Renderer>().material = Blue;
             voiceOver.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);
             isVoicePlaying = true;
         }
 
-        if (rPrism == 2 /*&& r == false*/)
+        if (rPrism == 2 && r == false)
         {
-            red = GameObject.FindGameObjectWithTag("RedPrism");
+            //red = GameObject.FindGameObjectWithTag("RedPrism");
             r = true;
             red.GetComponent<Renderer>().material = Red;
             voiceOver.Post(gameObject, (uint)AkCallbackType.AK_EndOfEvent, CallBackFunction);

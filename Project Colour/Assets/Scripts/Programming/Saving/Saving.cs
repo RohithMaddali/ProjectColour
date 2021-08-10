@@ -10,6 +10,7 @@ public class Saving : MonoBehaviour
 {
     public bool saving;
     public bool loading;
+    KillFloor killFloor;
     
     public float loadTimer = .05f;
     // Update is called once per frame
@@ -38,6 +39,10 @@ public class Saving : MonoBehaviour
 
     public void SaveGame()
     {
+        //find killfloor
+        killFloor = FindObjectOfType<KillFloor>();
+        //set respawn point for killfloor to this poisition
+        killFloor.respawnPoint = transform;
         //creates and runs the instance save
         Save save = CreateSaveGameObject();
         

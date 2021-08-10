@@ -13,7 +13,22 @@ public class Tutorial : MonoBehaviour
     {
         menu = FindObjectOfType<MenuScript>();
         gm = FindObjectOfType<GameManager>();
-        if(gm.displayTips)
+        gm.green = GameObject.FindGameObjectWithTag("GreenPrism");
+        gm.blue = GameObject.FindGameObjectWithTag("BluePrism");
+        gm.red = GameObject.FindGameObjectWithTag("RedPrism");
+        if (gm.gPrism == 2)
+        {
+            gm.green.GetComponent<Renderer>().material = gm.Green;
+        }
+        if (gm.bPrism == 2)
+        {
+            gm.blue.GetComponent<Renderer>().material = gm.Blue;
+        }
+        if (gm.rPrism == 2)
+        {
+            gm.red.GetComponent<Renderer>().material = gm.Red;
+        }
+        if (gm.displayTips)
         {
             menu.tips.SetActive(true);
         }

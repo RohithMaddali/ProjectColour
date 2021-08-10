@@ -83,6 +83,12 @@ namespace Pyro
             gm.r = false;
             gm.b = false;
             gm.g = false;
+            gm.red = null;
+            gm.green = null;
+            gm.blue = null;
+            gm.gPrism = 0;
+            gm.rPrism = 0;
+            gm.bPrism = 0;
             SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);

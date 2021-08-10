@@ -41,7 +41,8 @@ namespace Quontity
                     ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
-                    Destroy(prism);
+                    gameObject.SetActive(false);
+                    //Destroy(prism);
                 }
             }
 
@@ -55,7 +56,8 @@ namespace Quontity
                     ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
-                    Destroy(prism); 
+                    gameObject.SetActive(false);
+                    //Destroy(prism); 
                 }
             }
 
@@ -69,7 +71,8 @@ namespace Quontity
                     ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
-                    Destroy(prism);
+                    gameObject.SetActive(false);
+                    //Destroy(prism);
                 }
             }
         }
