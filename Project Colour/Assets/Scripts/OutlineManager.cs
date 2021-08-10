@@ -5,9 +5,9 @@ using AJ;
 
 public class OutlineManager : MonoBehaviour
 {
-    GameObject player;
+    public GameObject player;
     public GameObject self;
-    ChangeColour changeColour;
+    public ChangeColour changeColour;
     public Outline outline;
 
     // Start is called before the first frame update
@@ -15,14 +15,14 @@ public class OutlineManager : MonoBehaviour
     {
         self = this.gameObject;
         player = GameObject.FindGameObjectWithTag("Player");
-        changeColour = player.GetComponentInChildren<ChangeColour>();
+        if (!(player is null)) changeColour = player.GetComponentInChildren<ChangeColour>();
         outline = self.GetComponentInChildren<Outline>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (changeColour.colourTarget != null)
+        if (!(changeColour is null) && changeColour.colourTarget != null)
         {
             if (changeColour.colourTarget == self)
             {

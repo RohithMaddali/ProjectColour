@@ -30,7 +30,7 @@ public class ColourPowers : MonoBehaviour
     {
         interactSound = GetComponent<W_Interactables>();
         rend = GetComponent<Renderer>();
-        pairedRend = pairedObject.GetComponent<Renderer>();
+        if (!(pairedObject is null)) pairedRend = pairedObject.GetComponent<Renderer>();
         player = FindObjectOfType<RBMove>();
     }
 
