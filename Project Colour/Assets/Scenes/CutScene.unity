@@ -475,6 +475,7 @@ MonoBehaviour:
     m_Handle: 0
   infoGiven: 0
   delayTimer: 0
+  First: {fileID: 1996002804}
 --- !u!1 &616054959
 GameObject:
   m_ObjectHideFlags: 0
