@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public float mouseSenY = 1.5f;
     public bool isPicked = false;
     public bool displayTips = true;
+    public bool continuing;
 
     public float aimSen;
     public CharacterAim ca;
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
             isPicked = false;
         }
 
-        if(gPrism == 2 && g== false)
+        if(gPrism == 2 /*&& g== false*/)
         {
             green = GameObject.FindGameObjectWithTag("GreenPrism");
             g = true;
@@ -79,7 +80,7 @@ public class GameManager : MonoBehaviour
             isVoicePlaying = true;
         }
 
-        if (bPrism == 2 && b == false)
+        if (bPrism == 2 /*&& b == false*/)
         {
             blue = GameObject.FindGameObjectWithTag("BluePrism");
             b = true;
@@ -88,7 +89,7 @@ public class GameManager : MonoBehaviour
             isVoicePlaying = true;
         }
 
-        if (rPrism == 2 && r == false)
+        if (rPrism == 2 /*&& r == false*/)
         {
             red = GameObject.FindGameObjectWithTag("RedPrism");
             r = true;

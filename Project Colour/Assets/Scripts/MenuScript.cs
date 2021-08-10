@@ -87,6 +87,14 @@ namespace Pyro
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);
         }
+        public void Continue()
+        {
+            gm.displayTips = false;
+            gm.continuing = true;
+            SceneManager.LoadScene("AdditiveSceneTest");
+            MainMenu.SetActive(false);
+            PauseMenu.SetActive(true);
+        }
 
         public void feedback()
         {

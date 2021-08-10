@@ -7,14 +7,20 @@ public class Tutorial : MonoBehaviour
 {
     MenuScript menu;
     GameManager gm;
+    public Saving save;
     // Start is called before the first frame update
     void Start()
     {
         menu = FindObjectOfType<MenuScript>();
         gm = FindObjectOfType<GameManager>();
-        if(gm.displayTips == true)
+        if(gm.displayTips)
         {
             menu.tips.SetActive(true);
+        }
+
+        if (gm.continuing)
+        {
+            save.Load();
         }
     }
 
