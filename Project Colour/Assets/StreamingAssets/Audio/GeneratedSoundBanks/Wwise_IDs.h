@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID EV_SEAGULLS = 3893023783U;
         static const AkUniqueID EV_SERVO = 878682118U;
         static const AkUniqueID EV_SFX_BIRDS = 1994831277U;
+        static const AkUniqueID EV_SFX_JUMPPAD_C_SCALE = 3609902939U;
         static const AkUniqueID EV_SFX_PLR_FOOSTEPS = 1061346095U;
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
         static const AkUniqueID EV_SWITCH_ON = 1635355777U;
@@ -80,6 +81,7 @@ namespace AK
                 static const AkUniqueID DIRT = 2195636714U;
                 static const AkUniqueID METAL = 2473969246U;
                 static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID WATER = 2654748154U;
             } // namespace SWITCH
         } // namespace FS_MATERIAL_SWITCH_GROUP
 

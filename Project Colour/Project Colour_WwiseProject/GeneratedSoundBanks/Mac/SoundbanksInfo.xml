@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="543694036" Language="English(US)" Hash="1246692556">
+		<SoundBank Id="543694036" Language="English(US)" Hash="3815172310">
 			<ObjectPath>\SoundBanks\Default Work Unit\Vox</ObjectPath>
 			<ShortName>Vox</ShortName>
 			<Path>English(US)\Vox.bnk</Path>
@@ -103,7 +103,7 @@
 					<IncludedMemoryFiles>
 						<File Id="932068419" Language="English(US)">
 							<ShortName>Spectrum_5-S01- take 1 waking the weapon.wav</ShortName>
-							<Path>Voices\English(US)\Spectrum_5-S01- take 1 waking the weapon_155F58F3.wem</Path>
+							<Path>Voices\English(US)\Spectrum_5-S01- take 1 waking the weapon_085737CF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -119,12 +119,12 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="2944314425">
+		<SoundBank Id="1069431850" Language="SFX" Hash="4085616115">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1156092748" Name="ev_colour_grab_sequence" ObjectPath="\Events\Default Work Unit\ev_colour_grab_sequence" DurationType="OneShot" DurationMin="0.494065" DurationMax="0.789775">
+				<Event Id="1156092748" Name="ev_colour_grab_sequence" ObjectPath="\Events\Default Work Unit\ev_colour_grab_sequence" DurationType="OneShot" DurationMin="0.594251" DurationMax="0.789775">
 					<IncludedMemoryFiles>
 						<File Id="270396341" Language="SFX">
 							<ShortName>Spectrum_sfx_staff_wing_big.wav</ShortName>
@@ -145,10 +145,6 @@
 						<File Id="869924751" Language="SFX">
 							<ShortName>Spectrum - sfx_colour_place-003.wav</ShortName>
 							<Path>SFX\Spectrum - sfx_colour_place-003_060BE4F9.wem</Path>
-						</File>
-						<File Id="998041608" Language="SFX">
-							<ShortName>Spectrum - sfx_colour_place.wav</ShortName>
-							<Path>SFX\Spectrum - sfx_colour_place_060BE4F9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -188,15 +184,28 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3609902939" Name="ev_sfx_jumppad_c_scale" ObjectPath="\Events\Default Work Unit\ev_sfx_jumppad_c_scale" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1061346095" Name="ev_sfx_plr_foosteps" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_foosteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.894843">
 					<IncludedMemoryFiles>
 						<File Id="6347590" Language="SFX">
 							<ShortName>Spectrum - sfx_fs_metal-004.wav</ShortName>
 							<Path>SFX\Spectrum - sfx_fs_metal-004_060BE4F9.wem</Path>
 						</File>
+						<File Id="25017904" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24_060BE4F9.wem</Path>
+						</File>
+						<File Id="33898006" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-006.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-006_060BE4F9.wem</Path>
+						</File>
 						<File Id="55356466" Language="SFX">
 							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (7).wav</ShortName>
 							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (7)_060BE4F9.wem</Path>
+						</File>
+						<File Id="66063003" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-005.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-005_060BE4F9.wem</Path>
 						</File>
 						<File Id="80957804" Language="SFX">
 							<ShortName>FS_Dirt_48000_24-003.wav</ShortName>
@@ -218,6 +227,10 @@
 							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (4).wav</ShortName>
 							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (4)_060BE4F9.wem</Path>
 						</File>
+						<File Id="153169832" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-009.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-009_060BE4F9.wem</Path>
+						</File>
 						<File Id="155170770" Language="SFX">
 							<ShortName>fs_dirt_running-006.wav</ShortName>
 							<Path>SFX\fs_dirt_running-006_060BE4F9.wem</Path>
@@ -226,6 +239,10 @@
 							<ShortName>FS_Jeans_Rustle_Running_48khz_24bit (2).wav</ShortName>
 							<Path>SFX\FS_Jeans_Rustle_Running_48khz_24bit (2)_060BE4F9.wem</Path>
 						</File>
+						<File Id="215071955" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-003.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-003_060BE4F9.wem</Path>
+						</File>
 						<File Id="218238065" Language="SFX">
 							<ShortName>FS_Dirt_48000_24-002.wav</ShortName>
 							<Path>SFX\FS_Dirt_48000_24-002_060BE4F9.wem</Path>
@@ -233,6 +250,10 @@
 						<File Id="238284446" Language="SFX">
 							<ShortName>FS_Dirt_48000_24-007.wav</ShortName>
 							<Path>SFX\FS_Dirt_48000_24-007_060BE4F9.wem</Path>
+						</File>
+						<File Id="252160358" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-002.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-002_060BE4F9.wem</Path>
 						</File>
 						<File Id="254056045" Language="SFX">
 							<ShortName>fs_dirt_running-002.wav</ShortName>
@@ -245,6 +266,10 @@
 						<File Id="291821182" Language="SFX">
 							<ShortName>fs_dirt_running-005.wav</ShortName>
 							<Path>SFX\fs_dirt_running-005_060BE4F9.wem</Path>
+						</File>
+						<File Id="299547671" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-008.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-008_060BE4F9.wem</Path>
 						</File>
 						<File Id="320824849" Language="SFX">
 							<ShortName>FS_Ashphalt_Walking_Shoes-011.wav</ShortName>
@@ -269,6 +294,10 @@
 						<File Id="447494125" Language="SFX">
 							<ShortName>FS_Ashphalt_Walking_Shoes-014.wav</ShortName>
 							<Path>SFX\FS_Ashphalt_Walking_Shoes-014_060BE4F9.wem</Path>
+						</File>
+						<File Id="449752357" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-007.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-007_060BE4F9.wem</Path>
 						</File>
 						<File Id="459513931" Language="SFX">
 							<ShortName>FS_Ashphalt_Walking_Shoes-015.wav</ShortName>
@@ -326,6 +355,10 @@
 							<ShortName>Spectrum - sfx_fs_metal-007.wav</ShortName>
 							<Path>SFX\Spectrum - sfx_fs_metal-007_060BE4F9.wem</Path>
 						</File>
+						<File Id="631844357" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-004.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-004_060BE4F9.wem</Path>
+						</File>
 						<File Id="674103976" Language="SFX">
 							<ShortName>Spectrum - sfx_fs_metal-009.wav</ShortName>
 							<Path>SFX\Spectrum - sfx_fs_metal-009_060BE4F9.wem</Path>
@@ -361,6 +394,10 @@
 						<File Id="857922440" Language="SFX">
 							<ShortName>FS_Jeans_Rustle_Walking_48khz_24bit (4).wav</ShortName>
 							<Path>SFX\FS_Jeans_Rustle_Walking_48khz_24bit (4)_060BE4F9.wem</Path>
+						</File>
+						<File Id="867145083" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-001.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-001_060BE4F9.wem</Path>
 						</File>
 						<File Id="884210378" Language="SFX">
 							<ShortName>FS_Ashphalt_Walking_Shoes-007.wav</ShortName>
@@ -439,7 +476,7 @@
 										<File Id="1037418212"/>
 									</Media>
 								</SwitchContainer>
-								<SwitchContainer SwitchValue="{8F6F7E8C-6755-494A-81F0-2436E5BDB099}">
+								<SwitchContainer SwitchValue="{6B43535E-CEA5-4132-82F1-D0AFD85F4D62}">
 									<Media>
 										<File Id="81348802"/>
 										<File Id="143323330"/>
@@ -479,6 +516,20 @@
 										<File Id="1053912346"/>
 									</Media>
 								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6B43535E-CEA5-4132-82F1-D0AFD85F4D62}">
+									<Media>
+										<File Id="25017904"/>
+										<File Id="33898006"/>
+										<File Id="66063003"/>
+										<File Id="153169832"/>
+										<File Id="215071955"/>
+										<File Id="252160358"/>
+										<File Id="299547671"/>
+										<File Id="449752357"/>
+										<File Id="631844357"/>
+										<File Id="867145083"/>
+									</Media>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -502,6 +553,7 @@
 						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Dirt"/>
 						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Stone"/>
 						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Metal"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\fs_material_switch_group\Water"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="2905878991" Name="fs_movement_switch_group" ObjectPath="\Switches\Default Work Unit\fs_movement_switch_group">

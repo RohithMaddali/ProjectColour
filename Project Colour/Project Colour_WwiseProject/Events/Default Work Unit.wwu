@@ -365,6 +365,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_sfx_jumppad_c_scale" ID="{88EB49AB-AE5B-4C52-A931-D1AD6E8F7BA0}">
+					<ChildrenList>
+						<Action Name="" ID="{3BBF1A91-3EED-43C3-A018-71F148C0E82B}" ShortID="544067608">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_jumppad_c_scale" ID="{ACA171E7-26C4-41AD-A0D0-9C6906E0DC71}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
