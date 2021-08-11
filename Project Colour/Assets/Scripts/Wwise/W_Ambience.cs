@@ -40,6 +40,11 @@ public class W_Ambience : MonoBehaviour
             Debug.Log("red trigger");
             AkSoundEngine.SetSwitch("amb_area", "red_area", gameObject);
         }
+        if (other.gameObject.CompareTag("BlueTrigger"))
+        {
+            Debug.Log("blue trigger");
+            AkSoundEngine.SetSwitch("amb_area", "blue_area", gameObject);
+        }
     }
     private void OnTriggerExit(Collider other)
     {

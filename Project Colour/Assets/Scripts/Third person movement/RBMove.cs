@@ -233,6 +233,7 @@ public class RBMove : MonoBehaviour
                 //rb.velocity = Vector3.Reflect(fallVelocity, cp.normal);
                 if (bouncer != null && collision.gameObject == bouncer)
                 {
+                    AkSoundEngine.PostEvent("ev_sfx_jumppad_c_scale", gameObject);
                     rb.velocity = Vector3.zero;
                     rb.AddForce(0f, reboundForce, 0f, ForceMode.Impulse);
                     //Debug.Log("Do it again" + reboundForce);
