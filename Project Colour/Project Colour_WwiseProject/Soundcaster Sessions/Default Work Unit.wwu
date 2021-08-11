@@ -24,6 +24,18 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="sfx_bus_volume" ID="{77AE8874-8BDB-4243-8DDC-D7D5D2795F73}"/>
+							<Value>99.0595611285266</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="music_bus_volume" ID="{7154AD4D-A473-453C-AAE6-DC3700D34E2A}"/>
+							<Value>110.031347962382</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="voice_over_bus_volume" ID="{CCFD5FEE-6CA6-459B-B9A1-89C5579573BA}"/>
+							<Value>99.2163009404389</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{4C1B56D9-BA72-45F5-AF50-91BB37962680}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -37,7 +49,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{824C323C-7B75-47BD-8953-20B9D6C880E0}"/>
+						<CurrentStateRef Name="Red" ID="{1CB62A19-B8CA-4397-ACF1-568FF1D8D049}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Running" ID="{A444A2D9-4E8C-4D39-98F2-359B74AA080A}"/>

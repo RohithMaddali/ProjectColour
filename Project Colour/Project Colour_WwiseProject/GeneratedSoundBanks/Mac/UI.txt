@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	201342336	ev_sfx_ui_click			\Default Work Unit\ev_sfx_ui_click	
+	3612025966	ev_sfx_ui_hover			\Default Work Unit\ev_sfx_ui_hover	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	188772860	sfx_ui_hover	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Odod_StalBalk - Ui_Hover_Select_44100_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\UI\MainMenu\sfx_ui_hover		1232
+	456508116	sfx_ui_click	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Odod_StalBalk - Ui_Hover_Select_44100-003_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\UI\MainMenu\sfx_ui_click		1266
+

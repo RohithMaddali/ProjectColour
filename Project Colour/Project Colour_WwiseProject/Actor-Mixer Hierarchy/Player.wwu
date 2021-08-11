@@ -4,6 +4,9 @@
 		<WorkUnit Name="Player" ID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}" OwnerID="{326BFD9C-7286-4F00-8019-AD738FB66DD9}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Movement" ID="{03EDF5F3-7032-4DF0-8D4D-193E0F874201}" ShortID="501820638">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
@@ -1930,12 +1933,15 @@
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="ColourGrab" ID="{E1E3511E-2EFA-4E62-A83C-1DBEC25BDC9C}" ShortID="749061397">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+							<ObjectRef Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -2110,12 +2116,15 @@
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="ColourPlace" ID="{6F10C795-F7BE-4E1A-A8BE-E865A0DEC7AC}" ShortID="697235767">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+							<ObjectRef Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -2346,12 +2355,15 @@
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="ImpactWater" ID="{22CAD688-1391-4A72-8CEA-CFA572E1EA70}" ShortID="1011891040">
+					<PropertyList>
+						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AA820926-72CC-473C-9FF7-60491E5E138A}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
+							<ObjectRef Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

@@ -119,7 +119,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="4085616115">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2632450813">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -184,7 +184,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3609902939" Name="ev_sfx_jumppad_c_scale" ObjectPath="\Events\Default Work Unit\ev_sfx_jumppad_c_scale" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3149901282" Name="ev_sfx_jumppad" ObjectPath="\Events\Default Work Unit\ev_sfx_jumppad" DurationType="OneShot" DurationMin="0.890008" DurationMax="1.121340">
+					<IncludedMemoryFiles>
+						<File Id="1048377524" Language="SFX">
+							<ShortName>Spectrum - sfx_jumppad-001.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jumppad-001_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1061346095" Name="ev_sfx_plr_foosteps" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_foosteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.894843">
 					<IncludedMemoryFiles>
 						<File Id="6347590" Language="SFX">
@@ -564,7 +571,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="3544217404">
+		<SoundBank Id="1229948536" Language="SFX" Hash="2844637921">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
@@ -866,7 +873,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="109004806">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2752114056">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -874,10 +881,36 @@
 				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
 			</IncludedAuxBusses>
 			<GameParameters>
+				<GameParameter Id="79699294" Name="music_bus_volume" ObjectPath="\Game Parameters\Default Work Unit\music_bus_volume"/>
+				<GameParameter Id="1050949862" Name="sfx_bus_volume" ObjectPath="\Game Parameters\Default Work Unit\sfx_bus_volume"/>
+				<GameParameter Id="4085931514" Name="voice_over_bus_volume" ObjectPath="\Game Parameters\Default Work Unit\voice_over_bus_volume"/>
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="1235680456">
+		<SoundBank Id="1551306167" Language="SFX" Hash="3724589504">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="201342336" Name="ev_sfx_ui_click" ObjectPath="\Events\Default Work Unit\ev_sfx_ui_click" DurationType="OneShot" DurationMin="0.075238" DurationMax="0.075238">
+					<IncludedMemoryFiles>
+						<File Id="456508116" Language="SFX">
+							<ShortName>Odod_StalBalk - Ui_Hover_Select_44100-003.wav</ShortName>
+							<Path>SFX\Odod_StalBalk - Ui_Hover_Select_44100-003_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3612025966" Name="ev_sfx_ui_hover" ObjectPath="\Events\Default Work Unit\ev_sfx_ui_hover" DurationType="OneShot" DurationMin="0.056054" DurationMax="0.056054">
+					<IncludedMemoryFiles>
+						<File Id="188772860" Language="SFX">
+							<ShortName>Odod_StalBalk - Ui_Hover_Select_44100.wav</ShortName>
+							<Path>SFX\Odod_StalBalk - Ui_Hover_Select_44100_060BE4F9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="2172980445">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

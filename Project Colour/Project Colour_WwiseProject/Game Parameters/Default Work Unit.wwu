@@ -24,6 +24,24 @@
 						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="music_bus_volume" ID="{7154AD4D-A473-453C-AAE6-DC3700D34E2A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="Max" Type="Real64" Value="150"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="voice_over_bus_volume" ID="{CCFD5FEE-6CA6-459B-B9A1-89C5579573BA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="Max" Type="Real64" Value="150"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="sfx_bus_volume" ID="{77AE8874-8BDB-4243-8DDC-D7D5D2795F73}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="Max" Type="Real64" Value="150"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

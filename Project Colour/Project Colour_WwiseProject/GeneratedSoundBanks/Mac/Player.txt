@@ -3,7 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1156092748	ev_colour_grab_sequence			\Default Work Unit\ev_colour_grab_sequence	
 	1186802106	ev_water_splash			\Default Work Unit\ev_water_splash	
 	2911027737	ev_colour_place_sequence			\Default Work Unit\ev_colour_place_sequence	
-	3609902939	ev_sfx_jumppad_c_scale			\Default Work Unit\ev_sfx_jumppad_c_scale	
+	3149901282	ev_sfx_jumppad			\Default Work Unit\ev_sfx_jumppad	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2371526279	fs_material_switch_group			\Default Work Unit\fs_material_switch_group	
@@ -18,6 +18,7 @@ Switch	ID	Name	Switch Group			Notes
 	3863236874	Running	fs_movement_switch_group			
 
 Effect plug-ins	ID	Name	Type				Notes
+	340592174	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	722449831	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
@@ -96,5 +97,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	995057878	Spectrum - sfx_fs_metal-005	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum - sfx_fs_metal-005_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Player\Movement\sfx_plr_foosteps\walk_material\Metal_walk\Spectrum - sfx_fs_metal-005		6335
 	1009060801	Spectrum - sfx_colour_grab	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum - sfx_colour_grab_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Player\ColourPlace\sfx_colour_place_sequence\sfx_colour_grab_spell\Spectrum - sfx_colour_grab		11992
 	1037418212	sfx_FS_Dirt_Walk_06	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\FS_Dirt_48000_24-006_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Player\Movement\sfx_plr_foosteps\walk_material\Dirt_walk\sfx_FS_Dirt_Walk_06		4746
+	1048377524	Spectrum - sfx_jumppad-001	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum - sfx_jumppad-001_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Environment\Interactables\Jumppad\sfx_jumppad\Spectrum - sfx_jumppad-001		8568
 	1053912346	Spectrum - sfx_fs_metal-008	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum - sfx_fs_metal-008_060BE4F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\gameMix\Player\Movement\sfx_plr_foosteps\walk_material\Metal_walk\Spectrum - sfx_fs_metal-008		15182
 

@@ -30,9 +30,11 @@ namespace AK
         static const AkUniqueID EV_SEAGULLS = 3893023783U;
         static const AkUniqueID EV_SERVO = 878682118U;
         static const AkUniqueID EV_SFX_BIRDS = 1994831277U;
-        static const AkUniqueID EV_SFX_JUMPPAD_C_SCALE = 3609902939U;
+        static const AkUniqueID EV_SFX_JUMPPAD = 3149901282U;
         static const AkUniqueID EV_SFX_PLR_FOOSTEPS = 1061346095U;
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
+        static const AkUniqueID EV_SFX_UI_CLICK = 201342336U;
+        static const AkUniqueID EV_SFX_UI_HOVER = 3612025966U;
         static const AkUniqueID EV_SWITCH_ON = 1635355777U;
         static const AkUniqueID EV_VX_PRISMS = 729850778U;
         static const AkUniqueID EV_WAKING_THE_WEAPON = 2410568545U;
@@ -115,7 +117,10 @@ namespace AK
     {
         static const AkUniqueID MAIN_MENU_MUSIC_VOLUME = 914035509U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
+        static const AkUniqueID MUSIC_BUS_VOLUME = 79699294U;
+        static const AkUniqueID SFX_BUS_VOLUME = 1050949862U;
         static const AkUniqueID TRACK_VOLUME = 2557772815U;
+        static const AkUniqueID VOICE_OVER_BUS_VOLUME = 4085931514U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -124,6 +129,7 @@ namespace AK
         static const AkUniqueID ENVIRONMENT = 1229948536U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID UI = 1551306167U;
         static const AkUniqueID VOX = 543694036U;
     } // namespace BANKS
 
@@ -131,9 +137,12 @@ namespace AK
     {
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID ENEMY = 2299321487U;
+        static const AkUniqueID ENVIRONMENT = 1229948536U;
+        static const AkUniqueID INTERACTABLES = 181270742U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER = 1069431850U;
+        static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID VOICEOVER = 4041657371U;
     } // namespace BUSSES
 

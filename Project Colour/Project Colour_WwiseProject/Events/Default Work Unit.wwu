@@ -365,12 +365,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ev_sfx_jumppad_c_scale" ID="{88EB49AB-AE5B-4C52-A931-D1AD6E8F7BA0}">
+				<Event Name="ev_sfx_jumppad" ID="{88EB49AB-AE5B-4C52-A931-D1AD6E8F7BA0}">
 					<ChildrenList>
-						<Action Name="" ID="{3BBF1A91-3EED-43C3-A018-71F148C0E82B}" ShortID="544067608">
+						<Action Name="" ID="{EE6A559B-EC64-4A20-98DA-8DF3B565933B}" ShortID="293313285">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="sfx_jumppad_c_scale" ID="{ACA171E7-26C4-41AD-A0D0-9C6906E0DC71}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+									<ObjectRef Name="sfx_jumppad" ID="{B2941A92-4FFB-4099-BE19-4927828D6107}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_sfx_ui_hover" ID="{89EA7948-6543-4FD0-9441-430C1D82070C}">
+					<ChildrenList>
+						<Action Name="" ID="{9911BB12-0281-4716-98A6-1F61308B17D3}" ShortID="588535761">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ui_hover" ID="{A1DC3212-97F6-4139-93AC-D016323F58E0}" WorkUnitID="{D30E4DBF-0B27-4753-812D-CD3159CD9DE5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_sfx_ui_click" ID="{4703EF25-FC4D-46A8-B657-BA1E52026C91}">
+					<ChildrenList>
+						<Action Name="" ID="{FE741841-1B0D-49C0-A3B4-6E56269748FD}" ShortID="812762532">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_ui_click" ID="{4ABB9CCA-762B-453F-A40F-01CA73452B40}" WorkUnitID="{D30E4DBF-0B27-4753-812D-CD3159CD9DE5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

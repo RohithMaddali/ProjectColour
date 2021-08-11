@@ -46,8 +46,16 @@
 						<ObjectRef Name="ev_colour_place_sequence" ID="{0647F295-3EA2-47EB-9C03-4F18B956A5C3}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_plr_foosteps" ID="{F753B1F0-DDB8-4837-B3CA-13D65BD4DF2C}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_water_splash" ID="{04BE43AE-DF87-4BE4-9F15-4468D2052311}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ev_sfx_jumppad_c_scale" ID="{88EB49AB-AE5B-4C52-A931-D1AD6E8F7BA0}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_sfx_jumppad" ID="{88EB49AB-AE5B-4C52-A931-D1AD6E8F7BA0}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_colour_grab_sequence" ID="{A8A6FFB9-1AA5-4C9E-BD5E-42F486BF5CCA}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="UI" ID="{658E4022-2859-4A17-A1E9-04B42933FB00}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ev_sfx_ui_click" ID="{4703EF25-FC4D-46A8-B657-BA1E52026C91}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_sfx_ui_hover" ID="{89EA7948-6543-4FD0-9441-430C1D82070C}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

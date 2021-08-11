@@ -16,6 +16,7 @@
 						<WorkUnit Name="VoiceOver" ID="{5A4F02DD-E1A5-426E-9457-F53B70C89303}" PersistMode="Reference"/>
 						<WorkUnit Name="Environment" ID="{8F224472-0FE9-4D71-A993-379D65339606}" PersistMode="Reference"/>
 						<WorkUnit Name="Player" ID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}" PersistMode="Reference"/>
+						<WorkUnit Name="UI" ID="{D30E4DBF-0B27-4753-812D-CD3159CD9DE5}" PersistMode="Reference"/>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
