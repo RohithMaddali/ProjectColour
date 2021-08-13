@@ -11,7 +11,7 @@ public class RBMove : MonoBehaviour
     public Rigidbody rb;
     private GameManager gm;
     
-    public CinemachineVirtualCamera moveCam;
+    public CinemachineFreeLook moveCam;
     public CinemachineVirtualCamera aimCam;
     public CharacterAim aimScript;
     public Transform cam;
