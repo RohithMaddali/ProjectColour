@@ -10,9 +10,10 @@ public class Saving : MonoBehaviour
 {
     public bool saving;
     public bool loading;
+    public bool deleting;
     KillFloor killFloor;
     
-    public float loadTimer = .05f;
+    public float loadTimer = .1f;
     // Update is called once per frame
     void Update()
     {
@@ -25,13 +26,17 @@ public class Saving : MonoBehaviour
         {
             Load();
         }
-        
+        if (deleting)
+        {
+            Delete();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<RBMove>())
         {
+            Debug.Log("Collided, save");
             SaveGame();
         }
     }
@@ -50,9 +55,23 @@ public class Saving : MonoBehaviour
         BinaryFormatter binaryFormatter = new BinaryFormatter();
         FileStream file = File.Create(Application.dataPath + "/gamesave.save");
         binaryFormatter.Serialize(file,save);
+        PlayerPrefs.SetInt("Objective01", ObjectiveManager.i.GetObjectiveCurrentNumber(0));
+        PlayerPrefs.SetInt("Objective02", ObjectiveManager.i.GetObjectiveCurrentNumber(1));
+        PlayerPrefs.SetInt("Objective03", ObjectiveManager.i.GetObjectiveCurrentNumber(2));
+        for (int i = 0; i < ObjectiveManager.i.objectives[0].actualObjectName.Count; i++)
+        {
+            PlayerPrefs.SetString("GreenPrism" + i, ObjectiveManager.i.objectives[0].actualObjectName[i]);
+        }
+        for (int i = 0; i < ObjectiveManager.i.objectives[1].actualObjectName.Count; i++)
+        {
+            PlayerPrefs.SetString("BluePrism" + i, ObjectiveManager.i.objectives[1].actualObjectName[i]);
+        }
+        for (int i = 0; i < ObjectiveManager.i.objectives[2].actualObjectName.Count; i++)
+        {
+            PlayerPrefs.SetString("RedPrism" + i, ObjectiveManager.i.objectives[2].actualObjectName[i]);
+        }
         //closes file so that it can't be edited again during this instance 
         file.Close();
-        
         Debug.Log("Game Saved");
     }
     
@@ -68,11 +87,9 @@ public class Saving : MonoBehaviour
         save.xLocation = player.transform.position.x;
         save.yLocation = player.transform.position.y;
         save.zLocation = player.transform.position.z;
-        save.firstObjectiveNumber = ObjectiveManager.i.objectives[0].GetCurrentItemValue();
-        save.secondObjectiveNumber = ObjectiveManager.i.objectives[1].GetCurrentItemValue();
-        save.thirdObjectiveNumber = ObjectiveManager.i.objectives[2].GetCurrentItemValue();
-        save.itemValue = ObjectiveManager.i.storedItem;
+        
         return save;
+
     }
 
     //Function for loading the game, it refers to the instance of the save file that exists within the assets folder
@@ -101,10 +118,6 @@ public class Saving : MonoBehaviour
                 //Setting a local vector3 to the saved location
                 Vector3 transformPosition = new Vector3 {x = save.xLocation, y = save.yLocation, z = save.zLocation};
                 playerLocation.position = transformPosition;
-                ObjectiveManager.i.objectives[0].LoadValues(save.firstObjectiveNumber);
-                ObjectiveManager.i.objectives[1].LoadValues(save.secondObjectiveNumber);
-                ObjectiveManager.i.objectives[2].LoadValues(save.thirdObjectiveNumber);
-                ObjectiveManager.i.storedItem = save.itemValue;
                 Debug.Log("Load has completed");
             }
         }
@@ -113,8 +126,19 @@ public class Saving : MonoBehaviour
             Debug.Log("No Save File");
         }
     }
-    
-    
-    
-   
+
+
+    public void Delete()
+    {
+        try
+        {
+            Debug.Log("delete save file");
+            File.Delete(Application.dataPath + "/gamesave.save");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
+    }
+
 }
