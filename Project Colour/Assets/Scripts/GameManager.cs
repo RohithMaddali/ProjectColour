@@ -126,8 +126,8 @@ public class GameManager : MonoBehaviour
 
     public void ChangeMouseSensitivity()
     {
-        mouseSenX = Mathf.Clamp(camSlider.value * 1f, 0.01f, 1f);
-        mouseSenY = Mathf.Clamp(camSlider.value * 3f, 0.5f, 3f);
+        mouseSenX = Mathf.Clamp(camSlider.value * .5f, 0.001f, .5f);
+        mouseSenY = Mathf.Clamp(camSlider.value * 1.5f, 0.05f, 1.5f);
         if (moveCam != null)
         {
             moveCam.m_XAxis.m_MaxSpeed = mouseSenX;
