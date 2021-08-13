@@ -10,6 +10,7 @@ public class Saving : MonoBehaviour
 {
     public bool saving;
     public bool loading;
+    public bool deleting;
     KillFloor killFloor;
     
     public float loadTimer = .1f;
@@ -25,7 +26,10 @@ public class Saving : MonoBehaviour
         {
             Load();
         }
-        
+        if (deleting)
+        {
+            Delete();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -122,8 +126,19 @@ public class Saving : MonoBehaviour
             Debug.Log("No Save File");
         }
     }
-    
-    
-    
-   
+
+
+    public void Delete()
+    {
+        try
+        {
+            Debug.Log("delete save file");
+            File.Delete(Application.dataPath + "/gamesave.save");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogException(ex);
+        }
+    }
+
 }

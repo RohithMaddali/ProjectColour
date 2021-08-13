@@ -40,7 +40,7 @@ public class GameFlowManager : MonoBehaviour
         state = GameState.NewGame;
         ObjectiveManager.i.ClearObjective();
         PlayerPrefs.DeleteAll();
-        objectiveUI.SetActive(true);
+        objectiveUI.SetActive(false);
     }
 
     public void Continue()
@@ -48,7 +48,7 @@ public class GameFlowManager : MonoBehaviour
         state = GameState.Continue;
         //ObjectiveManager.i.ClearObjective();
         LoadObjectiveData();
-        objectiveUI.SetActive(true);
+        objectiveUI.SetActive(false);
     }
 
     public void Back()

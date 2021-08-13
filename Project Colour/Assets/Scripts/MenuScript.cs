@@ -78,6 +78,7 @@ namespace Pyro
 
         public void LoadScene()
         {
+            //new game function
             gm.isPicked = false;
             gm.itemsPicked = 0;
             gm.r = false;
@@ -92,6 +93,7 @@ namespace Pyro
             SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);
+
         }
         public void Continue()
         {

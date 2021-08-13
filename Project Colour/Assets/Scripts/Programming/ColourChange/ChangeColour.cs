@@ -90,7 +90,7 @@ namespace AJ
 
         void Update()
         {
-            Debug.Log(currentColor);
+            //Debug.Log(currentColor);
             if (currentColor == Color.green)
             {
                 Debug.Log("Playing Green Voice Lines");
