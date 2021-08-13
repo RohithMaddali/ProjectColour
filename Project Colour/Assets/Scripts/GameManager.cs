@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 {
     public bool gamepadInUse;
 
-    public CinemachineFreeLook moveCam;
+    public CinemachineVirtualCamera moveCam;
     public Slider camSlider;
     public Slider aimSlider;
     public float mouseSenX = 100f;
@@ -130,8 +130,10 @@ public class GameManager : MonoBehaviour
         mouseSenY = Mathf.Clamp(camSlider.value * 1.5f, 0.05f, 1.5f);
         if (moveCam != null)
         {
-            moveCam.m_XAxis.m_MaxSpeed = mouseSenX;
-            moveCam.m_YAxis.m_MaxSpeed = mouseSenY;
+            moveCam.GetCinemachineComponent<CinemachinePOV>().m_VerticalAxis.m_MaxSpeed = mouseSenY;
+            moveCam.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.m_MaxSpeed = mouseSenX;
+            /*moveCam.m_XAxis.m_MaxSpeed = mouseSenX;
+            moveCam.m_YAxis.m_MaxSpeed = mouseSenY;*/
         }
         Debug.Log("MOUSEX SENSITIVITY IS " + mouseSenX);
         Debug.Log("MOUSEY SENSITIVITY IS " + mouseSenY);
