@@ -13,7 +13,7 @@ public class CharacterAim : MonoBehaviour
     Camera mainCam;
     public float mouseSensitivity = 100f;
     public Transform playerBody;
-    float xRotation = 0f;
+    public float xRotation = 0f;
     public float minYClamp;
     public float maxYClamp;
 
