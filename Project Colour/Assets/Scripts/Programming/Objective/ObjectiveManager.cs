@@ -12,41 +12,34 @@ namespace Quontity
     {
         public string objectiveName;
         public int maxItemNumber;
-        private int currentItemNumber;
-        public UnityEvent OnCompletedObjective;
+        public int currentItemNumber;
+        public List<string> actualObjectName;
 
-        public void LoadValues(int value)
+        public void AddActualIndex(string _name)
         {
-            currentItemNumber = value;
+            if (!actualObjectName.Contains(_name))
+            {
+                actualObjectName.Add(_name);
+            }
         }
-        public int GetCurrentItemValue()
-        {
-            return currentItemNumber;
-        }
+
         public void AddCurrentItemNumber()
         {
             if (currentItemNumber < maxItemNumber)
             {
                 currentItemNumber += 1;
             }
-            if (currentItemNumber == maxItemNumber)
-            {
-                OnCompletedObjective?.Invoke();
-            }
+
         }
 
         public string GetObjectiveName()
         {
-            return objectiveName + "   " + currentItemNumber.ToString() + " / " + maxItemNumber.ToString();
+            return objectiveName + "\t" + currentItemNumber.ToString() + " / " + maxItemNumber.ToString();
         }
     }
-
     public class ObjectiveManager : MonoBehaviour
     {
         private static ObjectiveManager _i;
-        public GameObject mm;
-        public GameObject tm;
-        public List<string> storedItem;
         public static ObjectiveManager i
         {
             get
@@ -59,52 +52,54 @@ namespace Quontity
             }
         }
 
-        //public GameObject objectiveDisplayPanel;
         public GameObject objectiveTrackingPanel;
 
         public List<SingleObjective> objectives = new List<SingleObjective>();
-        private List<GameObject> objectiveInTrackingPanel = new List<GameObject>();
+        private List<GameObject> objectiveInTrakingPanel = new List<GameObject>();
 
         public GameObject objectivePrefab;
-        [SerializeField] private Scene currentScene;
 
         void Start()
         {
-            currentScene = SceneManager.GetActiveScene();
-            //objectiveDisplayPanel.SetActive(false);
-            //objectiveTrackingPanel.SetActive(false);
+            InitObjectives();
         }
-
-        public void TriggerDisplayPanel(int _objectiveIndex)
+        private void InitObjectives()
         {
-            string sceneName = currentScene.name;
-            //objectiveDisplayPanel.SetActive(true);
-            //objectiveDisplayPanel.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].objectiveName;
-            if (!mm.activeSelf) 
+            for (int i = 0; i < objectives.Count; i++)
             {
-               GameObject o = Instantiate(objectivePrefab);
-               o.transform.SetParent(objectiveTrackingPanel.transform, false);
-               o.GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
-               objectiveInTrackingPanel.Add(o);
-            } 
+                objectiveTrackingPanel.transform.GetChild(i).GetComponentInChildren<Text>().text = objectives[i].GetObjectiveName();
+                objectiveInTrakingPanel.Add(objectiveTrackingPanel.transform.GetChild(i).gameObject);
+            }
         }
 
-        public void AddItemToObjective(int _objectiveIndex)
+        public void AddItemToObjective(int _objectiveIndex, string _name)
         {
             objectives[_objectiveIndex].AddCurrentItemNumber();
-            objectiveInTrackingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
+            objectives[_objectiveIndex].AddActualIndex(_name);
+            objectiveInTrakingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
 
         }
 
-        public void AddToStore(Pickup StoreIndex)
+        public int GetObjectiveCurrentNumber(int _objectiveIndex)
         {
-            storedItem.Add(StoreIndex.tag + StoreIndex.index.ToString());
+            return objectives[_objectiveIndex].currentItemNumber;
         }
 
-        public void AllObjectiveCompleted()
+
+        public void SetObjectiveCurrentNumber(int _objectiveIndex, int _newNumber)
         {
-            //objectiveDisplayPanel.SetActive(true);
-            //objectiveDisplayPanel.GetComponentInChildren<Text>().text = "Completed!";
+            objectives[_objectiveIndex].currentItemNumber = _newNumber;
+            objectiveInTrakingPanel[_objectiveIndex].GetComponentInChildren<Text>().text = objectives[_objectiveIndex].GetObjectiveName();
         }
+        public void ClearObjective()
+        {
+            for (int i = 0; i < objectives.Count; i++)
+            {
+                objectives[i].currentItemNumber = 0;
+                objectiveInTrakingPanel[i].GetComponentInChildren<Text>().text = objectives[i].GetObjectiveName();
+                objectives[i].actualObjectName.Clear();
+            }
+        }
+
     }
 }

@@ -18,9 +18,16 @@ namespace Quontity
         }
         void Start()
         {
-            if (ObjectiveManager.i.storedItem.Contains(transform.tag + index.ToString()))
+            Debug.Log("fucking shit");
+            for (int i = 0; i < ObjectiveManager.i.objectives.Count; i++)
             {
-                Destroy(this.gameObject);
+                for (int j = 0; j < ObjectiveManager.i.objectives[i].actualObjectName.Count; j++)
+                {
+                    if (ObjectiveManager.i.objectives[i].actualObjectName[j] == transform.gameObject.tag + index.ToString())
+                    {
+                        Destroy(this.gameObject);
+                    }
+                }
             }
         }
         //when the player collides with object, it will check for tag, then add item to objective and destroy it
@@ -35,10 +42,9 @@ namespace Quontity
 
                 if (CompareTag("GreenPrism"))
                 {
+                    ObjectiveManager.i.AddItemToObjective(0, transform.tag + index.ToString());
                     gm.gPrism += 1;
                     AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
-                    ObjectiveManager.i.AddItemToObjective(0);
-                    ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
                     gameObject.SetActive(false);
@@ -50,10 +56,9 @@ namespace Quontity
             {
                 if (CompareTag("BluePrism"))
                 {
+                    ObjectiveManager.i.AddItemToObjective(1, transform.tag + index.ToString());
                     gm.bPrism += 1;
                     AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
-                    ObjectiveManager.i.AddItemToObjective(1);
-                    ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
                     gameObject.SetActive(false);
@@ -65,10 +70,9 @@ namespace Quontity
             {
                 if (CompareTag("RedPrism"))
                 {
+                    ObjectiveManager.i.AddItemToObjective(2, transform.tag + index.ToString());
                     gm.rPrism += 1;
                     AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
-                    ObjectiveManager.i.AddItemToObjective(2);
-                    ObjectiveManager.i.AddToStore(this);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
                     gm.itemsPicked += 1;
                     gameObject.SetActive(false);

@@ -36,7 +36,7 @@ public class Switch : MonoBehaviour
     {
         if (Gamepad.current == null)
         {
-            Debug.Log("no gamepad connected");
+            //Debug.Log("no gamepad connected");
             gamepadInUse = false;
             //use keyboard and mouse ui
         }
