@@ -26827,9 +26827,6 @@ MonoBehaviour:
   - {fileID: 1908774987}
   - {fileID: 1908774986}
   - {fileID: 1908774985}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1576195591}
   - {fileID: 1576195590}
   - {fileID: 1576195589}
@@ -28478,6 +28475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saving: 0
   loading: 0
+  deleting: 0
   loadTimer: 0.05
 --- !u!135 &3948903985636274445
 SphereCollider:
@@ -28747,6 +28745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saving: 0
   loading: 0
+  deleting: 0
   loadTimer: 0.05
 --- !u!4 &8056452299452298386
 Transform:
