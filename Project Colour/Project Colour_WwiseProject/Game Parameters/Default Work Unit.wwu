@@ -42,6 +42,15 @@
 						<Property Name="Max" Type="Real64" Value="150"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="voice_over_playing" ID="{D9AAEF1E-A4C5-484D-9739-E88A7DD2B1F3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

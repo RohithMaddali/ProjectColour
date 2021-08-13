@@ -119,7 +119,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="2632450813">
+		<SoundBank Id="1069431850" Language="SFX" Hash="486455002">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -571,7 +571,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="2844637921">
+		<SoundBank Id="1229948536" Language="SFX" Hash="2232932323">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
@@ -862,6 +862,9 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1168993717" Name="voice_over_playing" ObjectPath="\Game Parameters\Default Work Unit\voice_over_playing"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="3132623609" Name="amb_area" ObjectPath="\Switches\Default Work Unit\amb_area">
 					<Switches>
@@ -873,7 +876,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2752114056">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2555112243">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -883,7 +886,7 @@
 			<GameParameters>
 				<GameParameter Id="79699294" Name="music_bus_volume" ObjectPath="\Game Parameters\Default Work Unit\music_bus_volume"/>
 				<GameParameter Id="1050949862" Name="sfx_bus_volume" ObjectPath="\Game Parameters\Default Work Unit\sfx_bus_volume"/>
-				<GameParameter Id="4085931514" Name="voice_over_bus_volume" ObjectPath="\Game Parameters\Default Work Unit\voice_over_bus_volume"/>
+				<GameParameter Id="1168993717" Name="voice_over_playing" ObjectPath="\Game Parameters\Default Work Unit\voice_over_playing"/>
 				<GameParameter Id="4179668880" Name="Master_Volume" ObjectPath="\Game Parameters\Default Work Unit\Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
@@ -910,7 +913,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2172980445">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2923519314">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -948,6 +951,10 @@
 						<File Id="263510647" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 9-Kontakt.wav</ShortName>
 							<Path>SFX\Spectrum 4 74bpm 9-Kontakt_7DE7C0C7.wem</Path>
+						</File>
+						<File Id="266649752" Language="SFX">
+							<ShortName>Game Over.wav</ShortName>
+							<Path>SFX\Game Over_7DE7C0C7.wem</Path>
 						</File>
 						<File Id="267995335" Language="SFX">
 							<ShortName>Spectrum 4 74bpm 4-4 80-96 EP chords 2.wav</ShortName>
@@ -1190,6 +1197,11 @@
 								<File Id="1052226812"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{46B5E811-A82D-4E28-BAAB-2A2E6BDBA8F0}">
+							<Media>
+								<File Id="266649752"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 				<Event Id="4214391848" Name="ev_mx_mainmenu_and_intro_music" ObjectPath="\Events\Default Work Unit\ev_mx_mainmenu_and_intro_music" DurationType="Infinite">
@@ -1220,6 +1232,7 @@
 						<Switch Id="4147287986" Name="Green" ObjectPath="\Switches\Default Work Unit\MusicSwitch\Green"/>
 						<Switch Id="980603538" Name="Red" ObjectPath="\Switches\Default Work Unit\MusicSwitch\Red"/>
 						<Switch Id="646625282" Name="Hub" ObjectPath="\Switches\Default Work Unit\MusicSwitch\Hub"/>
+						<Switch Id="4264815106" Name="EndGame" ObjectPath="\Switches\Default Work Unit\MusicSwitch\EndGame"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

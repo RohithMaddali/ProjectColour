@@ -24,6 +24,9 @@ Switch	ID	Name	Switch Group			Notes
 	3617620722	red_area	amb_area			
 	3704253823	blue_area	amb_area			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1168993717	voice_over_playing			\Default Work Unit\voice_over_playing	
+
 Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 

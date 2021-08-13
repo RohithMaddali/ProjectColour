@@ -10,7 +10,7 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	79699294	music_bus_volume			\Default Work Unit\music_bus_volume	
 	1050949862	sfx_bus_volume			\Default Work Unit\sfx_bus_volume	
-	4085931514	voice_over_bus_volume			\Default Work Unit\voice_over_bus_volume	
+	1168993717	voice_over_playing			\Default Work Unit\voice_over_playing	
 	4179668880	Master_Volume			\Default Work Unit\Master_Volume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
@@ -29,6 +29,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	813255135	Room_Small (Custom)	Wwise RoomVerb			
+	1992114213	sidechain_meter	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

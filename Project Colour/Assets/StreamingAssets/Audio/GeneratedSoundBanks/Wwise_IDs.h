@@ -105,6 +105,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID BLUE = 1325827433U;
+                static const AkUniqueID ENDGAME = 4264815106U;
                 static const AkUniqueID GREEN = 4147287986U;
                 static const AkUniqueID HUB = 646625282U;
                 static const AkUniqueID RED = 980603538U;
@@ -121,6 +122,7 @@ namespace AK
         static const AkUniqueID SFX_BUS_VOLUME = 1050949862U;
         static const AkUniqueID TRACK_VOLUME = 2557772815U;
         static const AkUniqueID VOICE_OVER_BUS_VOLUME = 4085931514U;
+        static const AkUniqueID VOICE_OVER_PLAYING = 1168993717U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

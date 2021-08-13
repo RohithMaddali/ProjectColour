@@ -23,6 +23,7 @@
 						<Switch Name="Green" ID="{F199E652-AEA1-4DAC-9B37-F29F0AE1EC21}"/>
 						<Switch Name="Red" ID="{D5F10A84-655A-4B54-A21E-8A3CBD12FB3C}"/>
 						<Switch Name="Hub" ID="{A62A478D-CDF1-4DB3-91E9-BE14714D9D18}"/>
+						<Switch Name="EndGame" ID="{46B5E811-A82D-4E28-BAAB-2A2E6BDBA8F0}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="amb_area" ID="{D64C6178-E85E-4FF2-A58A-2012959F3AB8}">

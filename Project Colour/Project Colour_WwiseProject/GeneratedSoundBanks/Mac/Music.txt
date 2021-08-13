@@ -10,6 +10,7 @@ Switch	ID	Name	Switch Group			Notes
 	980603538	Red	MusicSwitch			
 	1325827433	Blue	MusicSwitch			
 	4147287986	Green	MusicSwitch			
+	4264815106	EndGame	MusicSwitch			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	914035509	main_menu_music_volume			\Default Work Unit\main_menu_music_volume	
@@ -25,6 +26,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	181296428	Kontakt	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum 4 74bpm 4-4 48-64 16-Kontakt_7DE7C0C7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicDynamic\mx_default\default\Kontakt		792174
 	254604164	Una cordaChords	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum 4 74bpm 4-4 80-96 Una cordaChords_BD3A0862.wem		\Interactive Music Hierarchy\Default Work Unit\MusicDynamic\mx_Green\Green2\Una cordaChords		816582
 	263510647	Spectrum 4 74bpm 9-Kontakt	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum 4 74bpm 9-Kontakt_7DE7C0C7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicDynamic\mx_Red\Red\Spectrum 4 74bpm 9-Kontakt		414013
+	266649752	Game Over	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Game Over_7DE7C0C7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicDynamic\mx_EndGame\EndGame\Game Over		1345241
 	267995335	EP chords	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum 4 74bpm 4-4 80-96 EP chords 2_BD3A0862.wem		\Interactive Music Hierarchy\Default Work Unit\MusicDynamic\mx_Green\Green2\EP chords		752416
 	319489435	Synthy pad	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum 4 74bpm 4-4 80-96 Synthy pad_7DE7C0C7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicDynamic\mx_default\default\Synthy pad		739104
 	327951146	Arp plucks	I:\Applications (x86)\Unity Projects\Collab Projects\new project colour\ProjectColour\Project Colour\Project Colour_WwiseProject\.cache\Mac\SFX\Spectrum 4 74bpm 4-4 80-96 Arp plucks_BD3A0862.wem		\Interactive Music Hierarchy\Default Work Unit\MusicDynamic\mx_Green\Green2\Arp plucks		508065

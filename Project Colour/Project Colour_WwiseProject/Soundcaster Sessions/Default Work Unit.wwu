@@ -10,16 +10,32 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="sfx_amb" ID="{962CED98-24EB-497F-B1A8-A497854D2057}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Spectrum_wind_forrest_vegetation" ID="{F0C3541F-A2B4-4C6A-B926-FF2C2E0BCE99}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spectrum - sfx_gem_collect" ID="{2CC7C818-EBB6-4B28-9098-5D0BCD63084B}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="vox_colours" ID="{2E49248B-C34C-46EA-837B-363D073F2E18}" WorkUnitID="{5A4F02DD-E1A5-426E-9457-F53B70C89303}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Spectrum - sfx_bridge_fixed_01" ID="{77DCF8E2-D35B-41B8-8509-7F2ACE9CCBDE}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="sfx_birds" ID="{6088CE7D-1E58-450E-A3EF-6EB5AC46ADC3}" WorkUnitID="{8F224472-0FE9-4D71-A993-379D65339606}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_colour_grab_sequence" ID="{D40CF6BF-3785-48C2-A1D9-DE78FA3213F9}" WorkUnitID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -29,11 +45,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="music_bus_volume" ID="{7154AD4D-A473-453C-AAE6-DC3700D34E2A}"/>
-							<Value>110.031347962382</Value>
+							<Value>150</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="voice_over_bus_volume" ID="{CCFD5FEE-6CA6-459B-B9A1-89C5579573BA}"/>
-							<Value>99.2163009404389</Value>
+							<Value>150</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{4C1B56D9-BA72-45F5-AF50-91BB37962680}"/>
@@ -42,6 +58,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="track_volume" ID="{8E739B6C-4D17-472E-B551-6CDCE271309B}"/>
 							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="voice_over_playing" ID="{D9AAEF1E-A4C5-484D-9739-E88A7DD2B1F3}"/>
+							<Value>-48</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="main_menu_music_volume" ID="{AC094864-75FD-4D4F-ABC4-794606D79A13}"/>
@@ -53,9 +73,9 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Running" ID="{A444A2D9-4E8C-4D39-98F2-359B74AA080A}"/>
-						<CurrentSwitchRef Name="Blue" ID="{970B1D6E-B21C-467B-8916-1295B05D5757}"/>
-						<CurrentSwitchRef Name="Water" ID="{6B43535E-CEA5-4132-82F1-D0AFD85F4D62}"/>
-						<CurrentSwitchRef Name="blue_area" ID="{036B9B0D-9695-4BC8-89BD-9FF0F9FFEF48}"/>
+						<CurrentSwitchRef Name="EndGame" ID="{46B5E811-A82D-4E28-BAAB-2A2E6BDBA8F0}"/>
+						<CurrentSwitchRef Name="Dirt" ID="{FCFCF67E-9E33-4313-8AC9-02871383162A}"/>
+						<CurrentSwitchRef Name="green_area" ID="{88C26644-9701-49FC-9BC9-1B83CD08B99A}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

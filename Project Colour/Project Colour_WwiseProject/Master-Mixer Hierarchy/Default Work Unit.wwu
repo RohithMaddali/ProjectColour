@@ -47,6 +47,40 @@
 										<Value>3</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{D1C48BBE-ECFE-45F6-A42E-6ADEFCFF7699}" ShortID="590954578">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="voice_over_playing" ID="{D9AAEF1E-A4C5-484D-9739-E88A7DD2B1F3}" WorkUnitID="{D690EFD4-68A2-4AB2-B2C9-AA2AC58F5FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D33F6EF4-ED2C-426B-B415-C8691B943063}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0.10658</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-37.6527</XPos>
+														<YPos>-2.17157</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-2.42844</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ObjectLists/>
 						</Bus>
@@ -86,6 +120,47 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{F2606BE8-62DC-4505-8AFC-0847A4FD7EC6}" ShortID="850572517">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="voice_over_playing" ID="{D9AAEF1E-A4C5-484D-9739-E88A7DD2B1F3}" WorkUnitID="{D690EFD4-68A2-4AB2-B2C9-AA2AC58F5FDE}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{028F0E9B-1607-4DB2-8281-FB33EE7FF805}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0.4344</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-45.24694</XPos>
+														<YPos>0.32374</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-37.94012</XPos>
+														<YPos>-4.87127</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-5.21203</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ObjectLists/>
 						</Bus>
@@ -95,32 +170,6 @@
 									<ValueList>
 										<Value>-13</Value>
 									</ValueList>
-									<RTPCList>
-										<RTPC Name="" ID="{69F277E2-0E67-49CB-A275-867656629CC4}" ShortID="317632966">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="voice_over_bus_volume" ID="{CCFD5FEE-6CA6-459B-B9A1-89C5579573BA}" WorkUnitID="{D690EFD4-68A2-4AB2-B2C9-AA2AC58F5FDE}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{8336F7DD-243D-4F62-BDC7-F9E9522592F0}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>150</XPos>
-														<YPos>5.60691</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
 								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
@@ -129,6 +178,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="sidechain_meter" ID="{CF5B3DF7-AF52-4E4B-864D-33BDBDF5F9C1}" WorkUnitID="{71436D30-89E5-4964-9D29-8865A70023BB}"/>
+								</Reference>
 								<Reference Name="UserAuxSend0">
 									<ObjectRef Name="Reverb" ID="{A71C2A53-1409-4559-946E-6163CFC1BE6F}" WorkUnitID="{33F7D71A-AC61-40E8-AF42-609FDD7FD554}"/>
 								</Reference>
@@ -195,6 +247,11 @@
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Player" ID="{4AE0C290-5F5F-43B8-8972-A3099EE6B0B4}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="sidechain_meter" ID="{CF5B3DF7-AF52-4E4B-864D-33BDBDF5F9C1}" WorkUnitID="{71436D30-89E5-4964-9D29-8865A70023BB}"/>
+										</Reference>
+									</ReferenceList>
 									<ObjectLists/>
 								</Bus>
 								<Bus Name="Interactables" ID="{DD30B9F6-A26F-4444-940D-2D23C149B86E}">

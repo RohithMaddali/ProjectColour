@@ -852,8 +852,39 @@
 						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-15</Value>
+								<Value>-19</Value>
 							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{1CD906E2-AE50-497A-86BA-EAB8B1263793}" ShortID="712937306">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="voice_over_playing" ID="{D9AAEF1E-A4C5-484D-9739-E88A7DD2B1F3}" WorkUnitID="{D690EFD4-68A2-4AB2-B2C9-AA2AC58F5FDE}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{1FA4B492-9B6A-497E-BA0D-07D62A643481}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>-48</XPos>
+												<YPos>0.10402</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>-35.71134</XPos>
+												<YPos>-5.08852</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-5.04363</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
