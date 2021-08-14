@@ -19,6 +19,7 @@ public class PauseMenu : MonoBehaviour
     public bool submenu = false;
     public GameObject player;
     public GameObject mainMenu;
+    public GameObject mainMenu2;
     public GameObject mainMenuPromptprompt;
     public GameObject controllerMainMenuFirst;
     public GameManager gm;
@@ -143,6 +144,7 @@ public class PauseMenu : MonoBehaviour
         submenu = false;
         Debug.Log("Loading Main Menu...");
         mainMenu.SetActive(true);
+        mainMenu2.SetActive(true);
         mainMenuPromptprompt.SetActive(false);
         pauseMenuUI.SetActive(false);
         MainMenuPrompt.SetActive(false);
