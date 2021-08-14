@@ -15,6 +15,7 @@ namespace Pyro
         public GameObject Title;
         public GameObject feedbackButton;
         public GameObject mainMenuPrompt;
+        public GameObject mainMenu;
 
         public SettingsMenu sm;
 
@@ -52,6 +53,7 @@ namespace Pyro
 
         public void OpenSubmenu(GameObject delta)
         {
+            mainMenu.SetActive(false);
             Debug.Log(delta.gameObject);
             delta.SetActive(true);
             EventSystem.current.SetSelectedGameObject(null);
@@ -71,6 +73,7 @@ namespace Pyro
 
         public void CloseSubmenu(GameObject delta)
         {
+            mainMenu.SetActive(true);
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(mainMenuFirst);
             delta.SetActive(false);
