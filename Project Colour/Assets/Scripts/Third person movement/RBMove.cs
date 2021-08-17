@@ -180,7 +180,9 @@ public class RBMove : MonoBehaviour
             Vector3 newRotation = gameObject.transform.eulerAngles;
             newRotation.y = Camera.main.transform.eulerAngles.y;
             gameObject.transform.eulerAngles = newRotation;
-            aimScript.xRotation = 0;
+            Debug.Log("Main Cam X ROT " + moveCam.transform.rotation.x);
+            aimScript.xRotation = 100 * moveCam.transform.rotation.x;
+            Debug.Log("xRotation " + aimScript.xRotation);
             moveCam.Priority = 0;
             aimCam.Priority = 1;
             aimScript.aimCam = true;
