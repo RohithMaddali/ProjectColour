@@ -8,7 +8,7 @@ public class FlyTowards : MonoBehaviour
     public float speed = 5.0f;
     public Color color;
 
-    public void FlyTowardsTarget(GameObject target)
+    /*public void FlyTowardsTarget(GameObject target)
     {
         if (target == null)
             target = myTarget;
@@ -22,6 +22,12 @@ public class FlyTowards : MonoBehaviour
         {
             myPos = Vector3.MoveTowards(myPos, tarPos, step);
         }
+    }*/
+
+    public void initilizeTrail(Color deltaColor, GameObject tar)
+    {
+        color = deltaColor;
+        myTarget = tar;
     }
 
     void Update()

@@ -33,6 +33,10 @@ namespace AJ
         //for animation
         public Animator animator;
 
+        //for particle effect, this is the gameobject that is spawned when the player shoots and absorbs
+        public GameObject colourTrail;
+        public GameObject orbLoc;
+
         //PRIVATE VARS
         private Color currentColor;
         public Color previousColor;
@@ -195,6 +199,7 @@ namespace AJ
                         
                         Debug.DrawLine(ray.origin, raycastToTarget.point, Color.green);
                         Renderer hitRenderer = raycastToTarget.transform.gameObject.GetComponent<Renderer>();
+                        GameObject targetObject = raycastToTarget.transform.gameObject; //this is for the particle effect to fly towards when shooting
                         if (hitRenderer.material.color == Color.blue || hitRenderer.material.color == Color.green || hitRenderer.material.color == Color.red)
                             hitColoured = true;
                         else
@@ -214,12 +219,22 @@ namespace AJ
                             orb.SetActive(true);
                             if (hitColoured)
                             {
+                                //this is spawing the particle effect
+                                Instantiate<GameObject>(colourTrail, targetObject.transform);
+                                FlyTowards flyTowards = FindObjectOfType<FlyTowards>();
+                                flyTowards.initilizeTrail(hitRenderer.material.color, orbLoc);
+
                                 thisRenderer.material.color = hitRenderer.material.color;
                                 hitRenderer.material.color = previousColor;
                                 previousColor = thisRenderer.material.color;
                             }
                             else
                             {
+                                //this is spawing the particle effect
+                                Instantiate<GameObject>(colourTrail, orbLoc.transform);
+                                FlyTowards flyTowards = FindObjectOfType<FlyTowards>();
+                                flyTowards.initilizeTrail(thisRenderer.material.color, targetObject);
+
                                 thisRenderer.material.color = Color.black;
                                 hitRenderer.material.color = previousColor;
                                 previousColor = Color.black;
