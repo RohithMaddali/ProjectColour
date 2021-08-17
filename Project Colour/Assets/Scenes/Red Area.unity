@@ -4374,7 +4374,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh224628
+  m_Name: pb_Mesh138890
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4539,6 +4539,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1637498996}
     m_Modifications:
+    - target: {fileID: 905597764581007048, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a31b0d0b5ce9fff4383e8daa7805586e, type: 2}
     - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_Name
       value: Industrial_Smasher (2)
@@ -11252,7 +11256,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh223972
+  m_Name: pb_Mesh138220
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11496,6 +11500,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1637498996}
     m_Modifications:
+    - target: {fileID: 905597764581007048, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a31b0d0b5ce9fff4383e8daa7805586e, type: 2}
     - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_Name
       value: Industrial_Smasher (2)
@@ -18927,7 +18935,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh224526
+  m_Name: pb_Mesh138786
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19345,7 +19353,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh224540
+  m_Name: pb_Mesh138800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25959,7 +25967,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh224334
+  m_Name: pb_Mesh138596
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33074,7 +33082,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh224688
+  m_Name: pb_Mesh138950
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37895,6 +37903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1637498996}
     m_Modifications:
+    - target: {fileID: 905597764581007048, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a31b0d0b5ce9fff4383e8daa7805586e, type: 2}
     - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_Name
       value: Industrial_Smasher (2)
@@ -38079,7 +38091,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh224318
+  m_Name: pb_Mesh138580
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38657,6 +38669,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1637498996}
     m_Modifications:
+    - target: {fileID: 905597764581007048, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a31b0d0b5ce9fff4383e8daa7805586e, type: 2}
     - target: {fileID: 1698323451587247901, guid: 6fac58b7044689442af2e15d90f22818, type: 3}
       propertyPath: m_Name
       value: Industrial_Smasher (2)
