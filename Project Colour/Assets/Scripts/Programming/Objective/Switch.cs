@@ -58,14 +58,17 @@ public class Switch : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("A");
         if (!gamepadInUse)
         {
+            Debug.Log("B");
             keyinteract.gameObject.SetActive(true);
         }
         else
         {
+            Debug.Log("C");
             controllerinteract.gameObject.SetActive(true);
         }
 
@@ -81,7 +84,7 @@ public class Switch : MonoBehaviour
         isCooldown = false;
     }
 
-    public void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         keyinteract.gameObject.SetActive(false);
         controllerinteract.gameObject.SetActive(false);
