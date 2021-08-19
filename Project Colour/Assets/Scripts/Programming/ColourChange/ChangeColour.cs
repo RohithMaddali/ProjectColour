@@ -36,6 +36,7 @@ namespace AJ
         //for particle effect, this is the gameobject that is spawned when the player shoots and absorbs
         public GameObject colourTrail;
         public GameObject orbLoc;
+        public float ParticleCooldownValue = 2f;
 
         //PRIVATE VARS
         private Color currentColor;
@@ -216,17 +217,18 @@ namespace AJ
                             StartCoroutine(Wait());
                             canShoot = false;
                             animator.SetTrigger("IsShooting");
-                            orb.SetActive(true);
+                           
                             if (hitColoured)
                             {
                                 //this is spawing the particle effect
                                 Instantiate<GameObject>(colourTrail, targetObject.transform);
                                 FlyTowards flyTowards = FindObjectOfType<FlyTowards>();
                                 flyTowards.initilizeTrail(hitRenderer.material.color, orbLoc);
+                                
 
                                 thisRenderer.material.color = hitRenderer.material.color;
                                 hitRenderer.material.color = previousColor;
-                                previousColor = thisRenderer.material.color;
+                                StartCoroutine(AbsorbDelay());
                             }
                             else
                             {
@@ -234,12 +236,12 @@ namespace AJ
                                 Instantiate<GameObject>(colourTrail, orbLoc.transform);
                                 FlyTowards flyTowards = FindObjectOfType<FlyTowards>();
                                 flyTowards.initilizeTrail(thisRenderer.material.color, targetObject);
+                               
 
-                                thisRenderer.material.color = Color.black;
-                                hitRenderer.material.color = previousColor;
-                                previousColor = Color.black;
-                                orbRend.material.color = Color.white;
                                 orb.SetActive(false);
+                                StartCoroutine(ShootDelay(hitRenderer));
+
+                                
                             }
                              //make object held colour
                             
@@ -307,9 +309,25 @@ namespace AJ
             }
         }
 
+        IEnumerator AbsorbDelay()
+        {
+            yield return new WaitForSeconds(ParticleCooldownValue);
+            orb.SetActive(true);
+            previousColor = thisRenderer.material.color;
+        }
+
+        IEnumerator ShootDelay(Renderer hitRenderer)
+        {
+            yield return new WaitForSeconds(ParticleCooldownValue);
+            thisRenderer.material.color = Color.black;
+            hitRenderer.material.color = previousColor;
+            previousColor = Color.black;
+            orbRend.material.color = Color.white;
+        }
+
         IEnumerator Wait()
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2.1f);
             canShoot = true;
         }
         IEnumerator ChangeCurrentColour(Renderer hitRenderer)
