@@ -36,7 +36,7 @@ namespace AJ
         //for particle effect, this is the gameobject that is spawned when the player shoots and absorbs
         public GameObject colourTrail;
         public GameObject orbLoc;
-        public float ParticleCooldownValue = 0.6f;
+        float ParticleCooldownValue = 0.8f;
 
         //PRIVATE VARS
         private Color currentColor;
