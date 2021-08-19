@@ -26,6 +26,8 @@ public class ControlTips : MonoBehaviour
 
     public GameObject powerTips;
 
+    public GameObject colourSteal;
+
     private GameObject previousTip;
 
     PlayerControls controls;
@@ -193,5 +195,9 @@ public class ControlTips : MonoBehaviour
         {
             StartCoroutine(DisplayTip(kmJump));
         }
+    }
+    public void DisplayColourStealTip()
+    {
+        StartCoroutine(DisplayTip(colourSteal));
     }
 }
