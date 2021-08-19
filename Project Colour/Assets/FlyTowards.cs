@@ -28,6 +28,7 @@ public class FlyTowards : MonoBehaviour
     {
         color = deltaColor;
         myTarget = tar;
+        StartCoroutine(Lifetime());
     }
 
     void Update()
@@ -50,5 +51,11 @@ public class FlyTowards : MonoBehaviour
         //{
             transform.position = Vector3.MoveTowards(transform.position, tarPos, step);
         //}
+    }
+
+    public IEnumerator Lifetime()
+    {       
+        yield return new WaitForSecondsRealtime(3);
+        Destroy(this);
     }
 }
