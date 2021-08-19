@@ -5711,6 +5711,7 @@ MonoBehaviour:
   animator: {fileID: 8771321105670239361}
   colourTrail: {fileID: 2269221669785476738, guid: 987e42f232c4d1d42847b43472f7e7ec, type: 3}
   orbLoc: {fileID: 577400389}
+  ParticleCooldownValue: 2
   previousColor: {r: 0, g: 0, b: 0, a: 0}
   thisRenderer: {fileID: 0}
   hasColour: 0
@@ -6944,7 +6945,7 @@ TerrainCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058473151}
   m_Material: {fileID: 13400000, guid: 2b44a5cf64d015643b0069a71faf751e, type: 2}
-  m_Enabled: 1
+  m_Enabled: 0
   m_TerrainData: {fileID: 15600000, guid: 8afc28c77337ab440ab3b7374321ca5e, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1058473153
@@ -7029,8 +7030,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1131.8, y: 18.22, z: 1100}
-  m_Center: {x: 545.92, y: -9.4, z: 500}
+  m_Size: {x: 1144.0967, y: 81.818665, z: 1100}
+  m_Center: {x: 552.06836, y: -40.362366, z: 500}
 --- !u!1 &1145580631
 GameObject:
   m_ObjectHideFlags: 0
