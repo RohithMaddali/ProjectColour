@@ -7,6 +7,7 @@ public class FlyTowards : MonoBehaviour
     public GameObject myTarget;
     public float speed = 5.0f;
     public Color color;
+    private Vector3 tarPos;
 
     /*public void FlyTowardsTarget(GameObject target)
     {
@@ -26,9 +27,10 @@ public class FlyTowards : MonoBehaviour
 
     public void initilizeTrail(Color deltaColor, GameObject tar)
     {
+        StartCoroutine(Lifetime());
         color = deltaColor;
         myTarget = tar;
-        StartCoroutine(Lifetime());
+        tarPos = myTarget.transform.position;
     }
 
     void Update()
@@ -43,7 +45,7 @@ public class FlyTowards : MonoBehaviour
         GameObject target = myTarget;
 
         Vector3 myPos = this.transform.position;
-        Vector3 tarPos = target.transform.position;
+        
 
         float step = speed * Time.deltaTime;
 
@@ -55,7 +57,7 @@ public class FlyTowards : MonoBehaviour
 
     public IEnumerator Lifetime()
     {       
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(2);
         Destroy(this);
     }
 }

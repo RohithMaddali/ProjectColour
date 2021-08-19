@@ -36,7 +36,7 @@ namespace AJ
         //for particle effect, this is the gameobject that is spawned when the player shoots and absorbs
         public GameObject colourTrail;
         public GameObject orbLoc;
-        public float ParticleCooldownValue = 2f;
+        public float ParticleCooldownValue = 0.6f;
 
         //PRIVATE VARS
         private Color currentColor;
@@ -221,7 +221,7 @@ namespace AJ
                             if (hitColoured)
                             {
                                 //this is spawing the particle effect
-                                Instantiate<GameObject>(colourTrail, targetObject.transform);
+                                Instantiate<GameObject>(colourTrail, targetObject.transform.position, Quaternion.identity);
                                 FlyTowards flyTowards = FindObjectOfType<FlyTowards>();
                                 flyTowards.initilizeTrail(hitRenderer.material.color, orbLoc);
                                 
@@ -233,7 +233,7 @@ namespace AJ
                             else
                             {
                                 //this is spawing the particle effect
-                                Instantiate<GameObject>(colourTrail, orbLoc.transform);
+                                Instantiate<GameObject>(colourTrail, orbLoc.transform.position, Quaternion.identity);
                                 FlyTowards flyTowards = FindObjectOfType<FlyTowards>();
                                 flyTowards.initilizeTrail(thisRenderer.material.color, targetObject);
                                
@@ -327,7 +327,7 @@ namespace AJ
 
         IEnumerator Wait()
         {
-            yield return new WaitForSeconds(2.1f);
+            yield return new WaitForSeconds(1f);
             canShoot = true;
         }
         IEnumerator ChangeCurrentColour(Renderer hitRenderer)
