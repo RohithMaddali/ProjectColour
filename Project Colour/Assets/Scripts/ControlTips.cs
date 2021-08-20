@@ -126,7 +126,7 @@ public class ControlTips : MonoBehaviour
     }
     public void DisplayMoveTip()
     {
-        Debug.Log("Display Move Tip");
+        //Debug.Log("Display Move Tip");
         if (gm.gamepadInUse)
         {
             StartCoroutine(DisplayTip(gpMove));
@@ -138,7 +138,7 @@ public class ControlTips : MonoBehaviour
     }
     public void DisplayAimTip()
     {
-        Debug.Log("Display Aim Tip");
+       // Debug.Log("Display Aim Tip");
         if (gm.gamepadInUse && !aimed)
         {
             StartCoroutine(DisplayTip(gpAim));
@@ -186,7 +186,7 @@ public class ControlTips : MonoBehaviour
     }
     public void DisplayJumpTip()
     {
-        Debug.Log("Display JUMP Tip");
+        //Debug.Log("Display JUMP Tip");
         if (gm.gamepadInUse)
         {
             StartCoroutine(DisplayTip(gpJump));

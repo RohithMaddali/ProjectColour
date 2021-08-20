@@ -44,13 +44,13 @@ public class GameManager : MonoBehaviour
     {
         if(Gamepad.current == null)
         {
-            Debug.Log("no gamepad connected");
+            //Debug.Log("no gamepad connected");
             gamepadInUse = false;
             //use keyboard and mouse ui
         }
         else
         {
-            Debug.Log(Gamepad.current.displayName + "Gamepad connected");
+            //Debug.Log(Gamepad.current.displayName + "Gamepad connected");
             gamepadInUse = true;
             //use gamepad ui
         }
@@ -107,13 +107,13 @@ public class GameManager : MonoBehaviour
                     case InputDeviceChange.Added:
                         //switch to gamepad ui
                         gamepadInUse = true;
-                        Debug.Log("New device added: " + device);
+                        //Debug.Log("New device added: " + device);
                         break;
 
                     case InputDeviceChange.Removed:
                         //switch to KM ui
                         gamepadInUse = false;
-                        Debug.Log("Device removed: " + device);
+                        //Debug.Log("Device removed: " + device);
                         break;
                 }
             };
@@ -136,8 +136,8 @@ public class GameManager : MonoBehaviour
             /*moveCam.m_XAxis.m_MaxSpeed = mouseSenX;
             moveCam.m_YAxis.m_MaxSpeed = mouseSenY;*/
         }
-        Debug.Log("MOUSEX SENSITIVITY IS " + mouseSenX);
-        Debug.Log("MOUSEY SENSITIVITY IS " + mouseSenY);
+        //Debug.Log("MOUSEX SENSITIVITY IS " + mouseSenX);
+       // Debug.Log("MOUSEY SENSITIVITY IS " + mouseSenY);
     }
 
     public void ChangeAimSensitivity()
@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
         {
             ca.mouseSensitivity = aimSen;
         }
-        Debug.Log("AIM SENSITIVITY IS " + aimSen);
+        //Debug.Log("AIM SENSITIVITY IS " + aimSen);
     }
 
     public void Endgame()

@@ -51,11 +51,11 @@ public class Pusher : MonoBehaviour
     IEnumerator Pause()
     {
         moving = false;
-        Debug.Log("SWITCH TURN AROUND NOW HIT IT");
+        //Debug.Log("SWITCH TURN AROUND NOW HIT IT");
         yield return new WaitForSeconds(pauseTime);
         destination = end;
 
-        Debug.Log("Moving towards " + destination);
+        //Debug.Log("Moving towards " + destination);
         moving = true;
         playOnce = false;
     }

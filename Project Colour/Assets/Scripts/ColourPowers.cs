@@ -63,7 +63,7 @@ public class ColourPowers : MonoBehaviour
         {
             if (animator != null && pairedObject == null)
             {
-                Debug.Log("Growwwww");
+                //Debug.Log("Growwwww");
                 if (!hasGrown)
                 {
                     interactSound.Interactions("Plant");
@@ -84,7 +84,7 @@ public class ColourPowers : MonoBehaviour
         }
         if(rend.material.color != Color.green && repaired)
         {
-            Debug.Log("LETS GOOOO");
+            //Debug.Log("LETS GOOOO");
             SwitchActive();
             rend.material.color = Color.green;
         }

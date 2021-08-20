@@ -7282,7 +7282,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25550
+  m_Name: pb_Mesh233260
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9580,7 +9580,7 @@ MonoBehaviour:
   acceleration: 10
   jumpHeight: 400
   bounceHeight: 800
-  accelBoost: 20
+  accelBoost: 50
   bounceMultiplier: 0
   isBouncing: 0
   boosted: 0
