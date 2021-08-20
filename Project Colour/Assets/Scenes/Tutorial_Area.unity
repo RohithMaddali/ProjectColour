@@ -3997,7 +3997,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977920448}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7492,6 +7492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8aaf53b0ceaa6947bc0d97c4fd1243b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ct: {fileID: 0}
   save: {fileID: 361711314}
 --- !u!4 &1794583954
 Transform:
