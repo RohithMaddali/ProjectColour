@@ -103091,6 +103091,7 @@ MonoBehaviour:
   prism: {fileID: 4510914445818890237}
   sfx: {fileID: 873976925274918748, guid: 7254a651548fe2b498b224e852374a3f, type: 3}
   gm: {fileID: 0}
+  prismTrail: {fileID: 4043735767701754961, guid: 961d194cb2e33be439c2c46bbdfbdca9, type: 3}
   index: 1
 --- !u!4 &642323658769969212
 Transform:
@@ -103319,6 +103320,7 @@ MonoBehaviour:
   prism: {fileID: 261821595014687366}
   sfx: {fileID: 873976925274918748, guid: 7254a651548fe2b498b224e852374a3f, type: 3}
   gm: {fileID: 0}
+  prismTrail: {fileID: 4043735767701754961, guid: 961d194cb2e33be439c2c46bbdfbdca9, type: 3}
   index: 0
 --- !u!1 &4337719208442010496
 GameObject:

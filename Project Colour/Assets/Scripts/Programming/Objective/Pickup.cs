@@ -11,6 +11,7 @@ namespace Quontity
         public GameObject prism;
         public GameObject sfx;
         public GameManager gm;
+        public GameObject prismTrail;
         public int index;
         void Awake()
         {
@@ -18,7 +19,6 @@ namespace Quontity
         }
         void Start()
         {
-            Debug.Log("fucking shit");
             for (int i = 0; i < ObjectiveManager.i.objectives.Count; i++)
             {
                 for (int j = 0; j < ObjectiveManager.i.objectives[i].actualObjectName.Count; j++)
@@ -46,6 +46,8 @@ namespace Quontity
                     gm.gPrism += 1;
                     AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
+                    GameObject myTrail = Instantiate(prismTrail, prism.transform.position, Quaternion.identity);
+                    myTrail.GetComponent<FlyTowards>().initilizeTrail(Color.green, GameObject.FindGameObjectWithTag("GreenPrism"));
                     gm.itemsPicked += 1;
                     gameObject.SetActive(false);
                     //Destroy(prism);
@@ -60,6 +62,8 @@ namespace Quontity
                     gm.bPrism += 1;
                     AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
+                    GameObject myTrail = Instantiate(prismTrail, prism.transform.position, Quaternion.identity);
+                    myTrail.GetComponent<FlyTowards>().initilizeTrail(Color.blue, GameObject.FindGameObjectWithTag("BluePrism"));
                     gm.itemsPicked += 1;
                     gameObject.SetActive(false);
                     //Destroy(prism); 
@@ -74,6 +78,8 @@ namespace Quontity
                     gm.rPrism += 1;
                     AkSoundEngine.PostEvent("ev_gem_collect", gameObject);
                     Instantiate(sfx, prism.transform.position, Quaternion.identity);
+                    GameObject myTrail = Instantiate(prismTrail, prism.transform.position, Quaternion.identity);
+                    myTrail.GetComponent<FlyTowards>().initilizeTrail(Color.red, GameObject.FindGameObjectWithTag("RedPrism"));
                     gm.itemsPicked += 1;
                     gameObject.SetActive(false);
                     //Destroy(prism);

@@ -9781,7 +9781,7 @@ MonoBehaviour:
   myTarget: {fileID: 0}
   speed: 8
   color: {r: 1, g: 0, b: 0, a: 1}
-  lifetime: 99999
+  lifetime: 20
 --- !u!1 &8337973115111958961
 GameObject:
   m_ObjectHideFlags: 0

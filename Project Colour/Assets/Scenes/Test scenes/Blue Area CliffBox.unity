@@ -28291,6 +28291,7 @@ MonoBehaviour:
   prism: {fileID: 3300205154193780872}
   sfx: {fileID: 873976925274918748, guid: ff0e1a55a5141534f8f785599365340c, type: 3}
   gm: {fileID: 0}
+  prismTrail: {fileID: 1883260052703529661, guid: 65cc251188eea2042acde156a8f3cb9f, type: 3}
   index: 1
 --- !u!1001 &1749672823390323854
 PrefabInstance:
@@ -28711,6 +28712,7 @@ MonoBehaviour:
   prism: {fileID: 7243358315899252264}
   sfx: {fileID: 873976925274918748, guid: ff0e1a55a5141534f8f785599365340c, type: 3}
   gm: {fileID: 0}
+  prismTrail: {fileID: 1883260052703529661, guid: 65cc251188eea2042acde156a8f3cb9f, type: 3}
   index: 0
 --- !u!1 &7243358315899252264
 GameObject:
