@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject red, green, blue;
     public Material Red, Green, Blue;
+    public Material terrain;
     public ColourList[] colourLists;
     public static bool isVoicePlaying;
     private void Awake()
@@ -151,6 +152,7 @@ public class GameManager : MonoBehaviour
 
     public void Endgame()
     {
+        terrain.SetFloat("Saturation", 1f);
         colourLists = FindObjectsOfType<ColourList>();
         foreach (ColourList colourList in colourLists)
         {
