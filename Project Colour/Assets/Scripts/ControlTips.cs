@@ -29,6 +29,7 @@ public class ControlTips : MonoBehaviour
     public GameObject colourSteal;
 
     private GameObject previousTip;
+    public GameObject currentTip;
 
     PlayerControls controls;
 
@@ -67,16 +68,7 @@ public class ControlTips : MonoBehaviour
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
-        if (gm.gamepadInUse)
-        {
-            GamepadInUse();
-            StartCoroutine(DelayTipDisplay(gpCam));
-        }
-        else
-        {
-            KeyboardMouseInUse();
-            StartCoroutine(DelayTipDisplay(kmCam));
-        }
+        
     }
     
     // Update is called once per frame
@@ -108,10 +100,39 @@ public class ControlTips : MonoBehaviour
         {
             previousTip.SetActive(false);
         }
+        currentTip = tip;
         tip.SetActive(true);
         previousTip = tip;
         yield return new WaitForSeconds(displayTime);
         tip.SetActive(false);
+        currentTip = null;
+    }
+
+    public void ResetBools()
+    {
+        jumped = false;
+        aimed = false;
+        sucked = false;
+        shot = false;
+        moved = false;
+        camMoved = false;
+        powersShown = false;
+        previousTip = null;
+        delay = true;
+    }
+
+    public void FirstTip()
+    {
+        if (gm.gamepadInUse)
+        {
+            GamepadInUse();
+            StartCoroutine(DelayTipDisplay(gpCam));
+        }
+        else
+        {
+            KeyboardMouseInUse();
+            StartCoroutine(DelayTipDisplay(kmCam));
+        }
     }
 
     public void GamepadInUse()

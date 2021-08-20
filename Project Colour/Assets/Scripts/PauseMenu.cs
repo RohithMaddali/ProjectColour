@@ -9,6 +9,7 @@ using Pyro;
 public class PauseMenu : MonoBehaviour
 {
     PlayerControls controls;
+    public ControlTips ct;
 
     public bool GameIsPaused = false;
     public GameObject controlsMenu;
@@ -148,6 +149,11 @@ public class PauseMenu : MonoBehaviour
         mainMenu2.SetActive(true);
         mainMenuPromptprompt.SetActive(false);
         pauseMenuUI.SetActive(false);
+        ct.ResetBools();
+
+        if(ct.currentTip != null)
+            ct.currentTip.SetActive(false);
+        
         MainMenuPrompt.SetActive(false);
         SceneManager.LoadScene(7);
         gameInfo.anim.SetBool("infoSpawn", false);

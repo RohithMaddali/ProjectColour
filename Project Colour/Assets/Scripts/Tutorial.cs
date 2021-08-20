@@ -7,11 +7,13 @@ public class Tutorial : MonoBehaviour
 {
     MenuScript menu;
     GameManager gm;
+    public ControlTips ct;
     public Saving save;
     // Start is called before the first frame update
     void Start()
     {
         menu = FindObjectOfType<MenuScript>();
+        ct = FindObjectOfType<ControlTips>();
         gm = FindObjectOfType<GameManager>();
         gm.green = GameObject.FindGameObjectWithTag("GreenPrism");
         gm.blue = GameObject.FindGameObjectWithTag("BluePrism");
@@ -37,6 +39,7 @@ public class Tutorial : MonoBehaviour
         {
             save.Load();
         }
+        ct.FirstTip();
     }
 
     // Update is called once per frame
