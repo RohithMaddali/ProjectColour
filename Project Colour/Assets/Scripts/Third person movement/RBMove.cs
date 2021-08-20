@@ -40,6 +40,7 @@ public class RBMove : MonoBehaviour
     float reboundForce;
     public GameObject bouncer;
     private float delta;
+    private bool holdMomentum;
 
     public Transform groundCheck;
     public float groundDistance = .4f;
@@ -119,15 +120,7 @@ public class RBMove : MonoBehaviour
             {
                 //reset down to new max speed if running then walking
                 speed = maxSpeed;
-            }
-
-            if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude < .9f && !boosted)
-            {
-                maxSpeed = walkSpeed;
-            }
-            else if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude >= .9f && !boosted)
-            {
-                maxSpeed = runSpeed;
+                //Debug.Log("SPEED EQUALS MAX SPEED");
             }
 
             Vector3 direction = new Vector3(move.x, 0f, move.y).normalized;
@@ -154,13 +147,14 @@ public class RBMove : MonoBehaviour
             }
 
 
-            if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude < .9f && !boosted)
+            if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude < .9f && !boosted && !holdMomentum)
             {
                 maxSpeed = walkSpeed;
             }
-            else if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude >= .9f && !boosted)
+            else if (controls.Gameplay.Move.ReadValue<Vector2>().magnitude >= .9f && !boosted && !holdMomentum)
             {
                 maxSpeed = runSpeed;
+                //Debug.Log("MAXSPEED IS RUN SPEED");
             }
         }
         else if (!moveCamActive)
@@ -180,9 +174,9 @@ public class RBMove : MonoBehaviour
             Vector3 newRotation = gameObject.transform.eulerAngles;
             newRotation.y = Camera.main.transform.eulerAngles.y;
             gameObject.transform.eulerAngles = newRotation;
-            Debug.Log("Main Cam X ROT " + moveCam.transform.rotation.x);
+            //Debug.Log("Main Cam X ROT " + moveCam.transform.rotation.x);
             aimScript.xRotation = 100 * moveCam.transform.rotation.x;
-            Debug.Log("xRotation " + aimScript.xRotation);
+            //Debug.Log("xRotation " + aimScript.xRotation);
             moveCam.Priority = 0;
             aimCam.Priority = 1;
             aimScript.aimCam = true;
@@ -221,7 +215,7 @@ public class RBMove : MonoBehaviour
                 //Vector3 bounceDir = Vector3.Reflect(collision.gameObject.GetComponent<Rigidbody>().velocity, contact.normal);
                 rb.AddForce(collision.gameObject.GetComponent<Rigidbody>().velocity * bounceHeight * 5);
                 isBouncing = true;
-                Debug.Log("BELLY BOUNCE");
+                //Debug.Log("BELLY BOUNCE");
             }
         }
 
@@ -249,7 +243,7 @@ public class RBMove : MonoBehaviour
                     isBouncing = true;
                     delta = 0f;
                     reboundForce = bounceForce;
-                    Debug.Log("fall velocity force is " + mag);
+                    //Debug.Log("fall velocity force is " + mag);
 
                     //Debug.Log("first Bounce on this objkect" + bounceForce);
 
@@ -307,20 +301,28 @@ public class RBMove : MonoBehaviour
                 && colColor != Color.blue)
             {
                 boosted = false;
+                holdMomentum = false;
+                //Debug.Log("BOOSTED FALSE CASUE LANDED ON UNCOLOURED GROUND");
                 isBouncing = false;
                 bouncer = null;
-                Debug.Log(collision.gameObject);
+                //Debug.Log(collision.gameObject);
             }
 
-            Debug.Log("COLLIDEED WITH" + contact.thisCollider.name);
+            //Debug.Log("COLLIDEED WITH" + contact.thisCollider.name);
         }
     }
     private void OnCollisionExit(Collision collision)
     {
         Color colColor = collision.gameObject.GetComponent<MeshRenderer>().material.color;
-        if(colColor == Color.red || colColor == Color.blue)
+        if(colColor == Color.red || colColor == Color.blue && !isGrounded)
+        {
+            holdMomentum = true;
             boosted = false;
-        else if( colColor == Color.blue)
+            //Debug.Log("BOOSTED FALSE CASUE NOT ON COLOURED GROUND");
+        }
+            
+
+        if (colColor == Color.blue)
             isBouncing = false;
     }
     /*private void OnCollisionStay(Collision collision)

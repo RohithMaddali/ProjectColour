@@ -29,7 +29,7 @@ public class W_Player : MonoBehaviour
         if (movement.isGrounded)
         {
             footsteps = AkSoundEngine.PostEvent("ev_sfx_plr_foosteps", gameObject);
-            Debug.Log("step");
+            //Debug.Log("step");
         }
     }
     public void GrabColour()
@@ -45,22 +45,22 @@ public class W_Player : MonoBehaviour
         {
             if (hit.collider.GetComponent<W_TagExtender>() != null && hit.collider.GetComponent<W_TagExtender>().tags[0] == "Dirt")
             {
-                Debug.Log("Dirt");
+                //Debug.Log("Dirt");
                 AkSoundEngine.SetSwitch("fs_material_switch_group", "Dirt", gameObject);
             }
             if (hit.collider.GetComponent<W_TagExtender>() != null && hit.collider.GetComponent<W_TagExtender>().tags[0] == "Stone")
             {
-                Debug.Log("Stone");
+                //Debug.Log("Stone");
                 AkSoundEngine.SetSwitch("fs_material_switch_group", "Stone", gameObject);
             }
             if (hit.collider.GetComponent<W_TagExtender>() != null && hit.collider.GetComponent<W_TagExtender>().tags[0] == "Metal")
             {
-                Debug.Log("Stone");
+                //Debug.Log("Stone");
                 AkSoundEngine.SetSwitch("fs_material_switch_group", "Metal", gameObject);
             }
             if (hit.collider.GetComponent<W_TagExtender>() != null && hit.collider.GetComponent<W_TagExtender>().tags[0] == "Water")
             {
-                Debug.Log("Water");
+                //Debug.Log("Water");
                 AkSoundEngine.SetSwitch("fs_material_switch_group", "Water", gameObject);
             }
         }
