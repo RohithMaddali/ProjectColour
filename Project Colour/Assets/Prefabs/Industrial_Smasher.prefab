@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 905597764581007048}
   - component: {fileID: 4025786475979520921}
   - component: {fileID: 9027381009966060409}
+  - component: {fileID: 1511030535542253653}
+  - component: {fileID: 3175693626131573203}
   m_Layer: 0
   m_Name: Industrial_Smasher
   m_TagString: Untagged
@@ -113,3 +115,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2703148258569967370, guid: 6d51d57f03ecca14daa8fab3fae1c3cb, type: 3}
+--- !u!114 &1511030535542253653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698323451587247901}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 0
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &3175693626131573203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698323451587247901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80a1e1b4e130f84596ebceffab34100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  self: {fileID: 0}
+  changeColour: {fileID: 0}
+  outline: {fileID: 0}

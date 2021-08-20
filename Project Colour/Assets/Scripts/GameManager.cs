@@ -152,6 +152,7 @@ public class GameManager : MonoBehaviour
 
     public void Endgame()
     {
+        terrain.SetFloat("Saturation", 1f);
         colourLists = FindObjectsOfType<ColourList>();
         foreach (ColourList colourList in colourLists)
         {
@@ -161,7 +162,5 @@ public class GameManager : MonoBehaviour
                 colourableObject.GetComponent<Renderer>().material.SetFloat("Saturation", 1f);
             }
         }
-        terrain.SetFloat("Saturation", 1f);
-
     }
 }
