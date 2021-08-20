@@ -7,6 +7,7 @@ public class FlyTowards : MonoBehaviour
     public GameObject myTarget;
     public float speed = 5.0f;
     public Color color;
+    public float lifetime = 1;
 
     /*public void FlyTowardsTarget(GameObject target)
     {
@@ -55,7 +56,7 @@ public class FlyTowards : MonoBehaviour
 
     public IEnumerator Lifetime()
     {       
-        yield return new WaitForSecondsRealtime(1);
+        yield return new WaitForSecondsRealtime(lifetime);
         Destroy(this);
     }
 }
