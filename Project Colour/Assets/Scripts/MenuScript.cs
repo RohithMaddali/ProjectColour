@@ -93,6 +93,7 @@ namespace Pyro
             gm.gPrism = 0;
             gm.rPrism = 0;
             gm.bPrism = 0;
+            gm.terrain.SetFloat("Saturation", 0.25f);
             SceneManager.LoadScene("CutScene", LoadSceneMode.Single);
             MainMenu.SetActive(false);
             PauseMenu.SetActive(true);

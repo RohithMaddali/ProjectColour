@@ -140,6 +140,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
+        GameIsPaused = false;
         Time.timeScale = 1f;
         submenu = false;
         Debug.Log("Loading Main Menu...");
