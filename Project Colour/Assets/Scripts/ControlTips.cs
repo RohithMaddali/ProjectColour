@@ -119,6 +119,7 @@ public class ControlTips : MonoBehaviour
         powersShown = false;
         previousTip = null;
         delay = true;
+        //gm.displayTips = true;
     }
 
     public void FirstTip()
@@ -148,11 +149,11 @@ public class ControlTips : MonoBehaviour
     public void DisplayMoveTip()
     {
         //Debug.Log("Display Move Tip");
-        if (gm.gamepadInUse)
+        if (gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(gpMove));
         }
-        else if (!gm.gamepadInUse)
+        else if (!gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(kmMove));
         }
@@ -160,11 +161,11 @@ public class ControlTips : MonoBehaviour
     public void DisplayAimTip()
     {
        // Debug.Log("Display Aim Tip");
-        if (gm.gamepadInUse && !aimed)
+        if (gm.gamepadInUse && !aimed && gm.displayTips)
         {
             StartCoroutine(DisplayTip(gpAim));
         }
-        else if (!gm.gamepadInUse && !aimed)
+        else if (!gm.gamepadInUse && !aimed && gm.displayTips)
         {
             StartCoroutine(DisplayTip(kmAim));
         }
@@ -174,12 +175,12 @@ public class ControlTips : MonoBehaviour
     public void DisplaySuckShootTip()
     {
         
-        if (!sucked && gm.gamepadInUse)
+        if (!sucked && gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(gpSuck));
             sucked = true;
         }
-        else if (!sucked && !gm.gamepadInUse)
+        else if (!sucked && !gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(kmSuck));
             sucked = true;
@@ -188,17 +189,17 @@ public class ControlTips : MonoBehaviour
     }
     public void DisplayPowerTips()
     {
-        if (shot && sucked && !powersShown)
+        if (shot && sucked && !powersShown && gm.displayTips)
         {
             StartCoroutine(DisplayTip(powerTips));
             powersShown = true;
         }
-        if (sucked && !shot && gm.gamepadInUse)
+        if (sucked && !shot && gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(gpShoot));
             shot = true;
         }
-        else if (sucked && !shot && !gm.gamepadInUse)
+        else if (sucked && !shot && !gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(kmShoot));
             shot = true;
@@ -208,11 +209,11 @@ public class ControlTips : MonoBehaviour
     public void DisplayJumpTip()
     {
         //Debug.Log("Display JUMP Tip");
-        if (gm.gamepadInUse)
+        if (gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(gpJump));
         }
-        else if (!gm.gamepadInUse)
+        else if (!gm.gamepadInUse && gm.displayTips)
         {
             StartCoroutine(DisplayTip(kmJump));
         }

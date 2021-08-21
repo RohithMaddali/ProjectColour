@@ -39,6 +39,8 @@ public class Tutorial : MonoBehaviour
         {
             save.Load();
         }
+
+        if(gm.displayTips)
         ct.FirstTip();
     }
 

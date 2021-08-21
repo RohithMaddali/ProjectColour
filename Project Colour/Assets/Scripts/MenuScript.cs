@@ -102,6 +102,7 @@ namespace Pyro
         public void Continue()
         {
             gm.displayTips = false;
+            gm.toggle.isOn = false;
             gm.continuing = true;
             SceneManager.LoadScene("AdditiveSceneTest");
             MainMenu.SetActive(false);

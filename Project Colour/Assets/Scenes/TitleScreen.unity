@@ -8466,6 +8466,7 @@ MonoBehaviour:
   kmMove: {fileID: 116179177}
   powerTips: {fileID: 1191324086}
   colourSteal: {fileID: 1306559423}
+  currentTip: {fileID: 0}
   jumped: 0
   aimed: 0
   sucked: 0
@@ -14763,6 +14764,7 @@ MonoBehaviour:
   moveCam: {fileID: 0}
   camSlider: {fileID: 432952914}
   aimSlider: {fileID: 500526386}
+  toggle: {fileID: 1336367246}
   mouseSenX: 100
   mouseSenY: 1.5
   isPicked: 0

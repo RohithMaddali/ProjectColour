@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public CinemachineVirtualCamera moveCam;
     public Slider camSlider;
     public Slider aimSlider;
+    public Toggle toggle;
     public float mouseSenX = 100f;
     public float mouseSenY = 1.5f;
     public bool isPicked = false;
@@ -122,7 +123,10 @@ public class GameManager : MonoBehaviour
 
     public void TipDisplay()
     {
-        displayTips = !displayTips;
+        if (toggle.isOn)
+            displayTips = true;
+        else
+            displayTips = false;
     }
 
     public void ChangeMouseSensitivity()
