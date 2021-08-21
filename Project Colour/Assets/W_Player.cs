@@ -9,6 +9,8 @@ public class W_Player : MonoBehaviour
     [SerializeField] LayerMask lm;
     RBMove movement;
     [SerializeField] Transform raycastPos;
+    bool doOnce;
+    bool dontPlay;
 
     void Start()
     {
@@ -19,17 +21,42 @@ public class W_Player : MonoBehaviour
     {
         MaterialCheck();
     }
+    private void Update()
+    {
+        Landing();
+    }
     void SetInitialSwitches()
     {
-        AkSoundEngine.SetSwitch("fs_material_switch_group", "Dirt", gameObject);
+        AkSoundEngine.SetSwitch("fs_material_switch_group", "Stone", gameObject);
         AkSoundEngine.SetSwitch("fs_movement_switch_group", "Walking", gameObject);
+    }
+    public void JumpSound()
+    {
+        dontPlay = true;
+        AkSoundEngine.PostEvent("ev_sfx_plr_jump", gameObject);
+        AkSoundEngine.PostEvent("ev_sfx_landing", gameObject);
+    }
+    void Landing()
+    {
+        if (dontPlay) //Stops sound playing at the start of the game.
+        {
+            if (movement.isGrounded && !doOnce)
+            {
+                AkSoundEngine.PostEvent("ev_sfx_landing", gameObject);
+                doOnce = true;
+            }
+            else if (!movement.isGrounded)
+            {
+                doOnce = false;
+            }
+        }
     }
     public void Step()
     {
         if (movement.isGrounded)
         {
+            dontPlay = true; 
             footsteps = AkSoundEngine.PostEvent("ev_sfx_plr_foosteps", gameObject);
-            //Debug.Log("step");
         }
     }
     public void GrabColour()

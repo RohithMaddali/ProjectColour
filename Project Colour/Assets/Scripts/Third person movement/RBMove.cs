@@ -51,10 +51,9 @@ public class RBMove : MonoBehaviour
 
     public Material red;
     public Material blue;
-
+    W_Player playerAudio;
     private void Awake()
     {
-        
         controls = new PlayerControls();
 
         controls.Gameplay.Jump.performed += ctx => Jump();
@@ -78,6 +77,7 @@ public class RBMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerAudio = GetComponentInChildren<W_Player>();
         rb = GetComponent<Rigidbody>();
         gm = FindObjectOfType<GameManager>();
         if (gm != null)
@@ -199,6 +199,7 @@ public class RBMove : MonoBehaviour
         if (isGrounded && moveCamActive && ! isBouncing)
         {
             rb.AddForce(0f, jumpHeight, 0f, ForceMode.Impulse);
+            playerAudio.JumpSound();
             //Debug.Log("JUMP");
         }
     }
@@ -224,6 +225,7 @@ public class RBMove : MonoBehaviour
             //Debug.Log(fallVelocity.y);
             if (colColor == Color.blue && !isBouncing)
             {
+                AkSoundEngine.PostEvent("ev_sfx_jumppad", gameObject);
                 float mag = fallVelocity.magnitude * 50;
                 //ContactPoint cp = collision.contacts[0];
                 //Vector3 bounceDir = Vector3.Reflect(fallVelocity, cp.normal);
@@ -231,7 +233,6 @@ public class RBMove : MonoBehaviour
                 //rb.velocity = Vector3.Reflect(fallVelocity, cp.normal);
                 if (bouncer != null && collision.gameObject == bouncer)
                 {
-                    AkSoundEngine.PostEvent("ev_sfx_jumppad", gameObject);
                     rb.velocity = Vector3.zero;
                     rb.AddForce(0f, reboundForce, 0f, ForceMode.Impulse);
                     //Debug.Log("Do it again" + reboundForce);

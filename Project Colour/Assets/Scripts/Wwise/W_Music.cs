@@ -27,8 +27,6 @@ public class W_Music : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (gm.itemsPicked != 6)
-        {
             if (other.gameObject.CompareTag("GreenTriger"))
             {
                 Debug.Log("green trigger");
@@ -47,7 +45,6 @@ public class W_Music : MonoBehaviour
                 AkSoundEngine.SetSwitch("MusicSwitch", "Red", gameObject);
                 AkSoundEngine.SetState("Colour", "Red");
             }
-        }
     }
     private void OnTriggerExit(Collider other)
     {
