@@ -33,7 +33,6 @@ public class W_Player : MonoBehaviour
     public void JumpSound()
     {
         dontPlay = true;
-        AkSoundEngine.PostEvent("ev_sfx_plr_jump", gameObject);
         AkSoundEngine.PostEvent("ev_sfx_landing", gameObject);
     }
     void Landing()
