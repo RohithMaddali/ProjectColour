@@ -398,6 +398,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ev_sfx_landing" ID="{00C30079-9C52-466F-AC2C-EAAA62E9C0E4}">
+					<ChildrenList>
+						<Action Name="" ID="{838D5BD8-E33D-49AC-A476-5DBA73534E14}" ShortID="689513533">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_landing" ID="{604D6DD1-08CB-4765-B0F0-E51D810934CF}" WorkUnitID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ev_sfx_plr_jump" ID="{EAB3BD2F-69EA-4ABC-B6AA-9CF2E29FF19B}">
+					<ChildrenList>
+						<Action Name="" ID="{A82065CE-A38D-42B5-AE0E-4F98946859C6}" ShortID="939204697">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_plr_jump" ID="{4E479755-AF8E-47A1-9B2D-91CD2E20F977}" WorkUnitID="{3E003EBC-309A-4280-AADA-8062F06A7E8A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

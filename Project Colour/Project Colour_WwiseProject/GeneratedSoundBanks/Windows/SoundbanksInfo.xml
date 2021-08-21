@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="543694036" Language="English(US)" Hash="4165386345">
+		<SoundBank Id="543694036" Language="English(US)" Hash="2973395395">
 			<ObjectPath>\SoundBanks\Default Work Unit\Vox</ObjectPath>
 			<ShortName>Vox</ShortName>
 			<Path>English(US)\Vox.bnk</Path>
@@ -119,12 +119,12 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="1399878578">
+		<SoundBank Id="1069431850" Language="SFX" Hash="130980682">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1156092748" Name="ev_colour_grab_sequence" ObjectPath="\Events\Default Work Unit\ev_colour_grab_sequence" DurationType="OneShot" DurationMin="0.594251" DurationMax="0.789775">
+				<Event Id="1156092748" Name="ev_colour_grab_sequence" ObjectPath="\Events\Default Work Unit\ev_colour_grab_sequence" DurationType="OneShot" DurationMin="0.577333" DurationMax="0.659208">
 					<IncludedMemoryFiles>
 						<File Id="270396341" Language="SFX">
 							<ShortName>Spectrum_sfx_staff_wing_big.wav</ShortName>
@@ -141,10 +141,6 @@
 						<File Id="588632048" Language="SFX">
 							<ShortName>Spectrum_sfx_staff_wing_small.wav</ShortName>
 							<Path>SFX\Spectrum_sfx_staff_wing_small_05842A19.wem</Path>
-						</File>
-						<File Id="869924751" Language="SFX">
-							<ShortName>Spectrum - sfx_colour_place-003.wav</ShortName>
-							<Path>SFX\Spectrum - sfx_colour_place-003_05842A19.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -191,6 +187,104 @@
 							<Path>SFX\Spectrum - sfx_jumppad-001_05842A19.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="84769344" Name="ev_sfx_landing" ObjectPath="\Events\Default Work Unit\ev_sfx_landing" DurationType="OneShot" DurationMin="0.060581" DurationMax="0.768327">
+					<IncludedMemoryFiles>
+						<File Id="6347590" Language="SFX">
+							<ShortName>Spectrum - sfx_fs_metal-004.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_fs_metal-004_05842A19.wem</Path>
+						</File>
+						<File Id="25017904" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24_05842A19.wem</Path>
+						</File>
+						<File Id="74083422" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_land_concrete.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_land_concrete_05842A19.wem</Path>
+						</File>
+						<File Id="126577073" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_land_concrete-002.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_land_concrete-002_05842A19.wem</Path>
+						</File>
+						<File Id="215071955" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-003.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-003_05842A19.wem</Path>
+						</File>
+						<File Id="252160358" Language="SFX">
+							<ShortName>FS_Water_Layer_48000_24-002.wav</ShortName>
+							<Path>SFX\FS_Water_Layer_48000_24-002_05842A19.wem</Path>
+						</File>
+						<File Id="373215190" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_land_concrete-001.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_land_concrete-001_05842A19.wem</Path>
+						</File>
+						<File Id="486842485" Language="SFX">
+							<ShortName>Spectrum - sfx_fs_metal-003.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_fs_metal-003_05842A19.wem</Path>
+						</File>
+						<File Id="654988684" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_grass-010.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_grass-010_05842A19.wem</Path>
+						</File>
+						<File Id="782124771" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_grass-009.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_grass-009_05842A19.wem</Path>
+						</File>
+						<File Id="782314459" Language="SFX">
+							<ShortName>Spectrum - sfx_fs_metal-001.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_fs_metal-001_05842A19.wem</Path>
+						</File>
+						<File Id="862585930" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_land_concrete-003.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_land_concrete-003_05842A19.wem</Path>
+						</File>
+						<File Id="947121648" Language="SFX">
+							<ShortName>Spectrum - sfx_fs_metal-002.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_fs_metal-002_05842A19.wem</Path>
+						</File>
+						<File Id="1024149497" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_grass-007.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_grass-007_05842A19.wem</Path>
+						</File>
+						<File Id="1045868161" Language="SFX">
+							<ShortName>Matter2D - sfx_fs_grass-008.wav</ShortName>
+							<Path>SFX\Matter2D - sfx_fs_grass-008_05842A19.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{8F6F7E8C-6755-494A-81F0-2436E5BDB099}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{FCFCF67E-9E33-4313-8AC9-02871383162A}">
+							<Media>
+								<File Id="654988684"/>
+								<File Id="782124771"/>
+								<File Id="1024149497"/>
+								<File Id="1045868161"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6B43535E-CEA5-4132-82F1-D0AFD85F4D62}">
+							<Media>
+								<File Id="74083422"/>
+								<File Id="126577073"/>
+								<File Id="373215190"/>
+								<File Id="862585930"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E6F3B48A-5B55-4E0D-A9F5-C4BF9F720DB1}">
+							<Media>
+								<File Id="6347590"/>
+								<File Id="486842485"/>
+								<File Id="782314459"/>
+								<File Id="947121648"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6B43535E-CEA5-4132-82F1-D0AFD85F4D62}">
+							<Media>
+								<File Id="25017904"/>
+								<File Id="215071955"/>
+								<File Id="252160358"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="1061346095" Name="ev_sfx_plr_foosteps" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_foosteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.894843">
 					<IncludedMemoryFiles>
@@ -541,6 +635,46 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2205897810" Name="ev_sfx_plr_jump" ObjectPath="\Events\Default Work Unit\ev_sfx_plr_jump" DurationType="OneShot" DurationMin="0.179461" DurationMax="0.438602">
+					<IncludedMemoryFiles>
+						<File Id="59446294" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-005.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-005_05842A19.wem</Path>
+						</File>
+						<File Id="111743064" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-008.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-008_05842A19.wem</Path>
+						</File>
+						<File Id="123338322" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-006.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-006_05842A19.wem</Path>
+						</File>
+						<File Id="479040305" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-002.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-002_05842A19.wem</Path>
+						</File>
+						<File Id="489200301" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-004.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-004_05842A19.wem</Path>
+						</File>
+						<File Id="560582860" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-003.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-003_05842A19.wem</Path>
+						</File>
+						<File Id="853342244" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-007.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-007_05842A19.wem</Path>
+						</File>
+						<File Id="926877498" Language="SFX">
+							<ShortName>Spectrum - sfx_jump-001.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump-001_05842A19.wem</Path>
+						</File>
+						<File Id="1039897849" Language="SFX">
+							<ShortName>Spectrum - sfx_jump.wav</ShortName>
+							<Path>SFX\Spectrum - sfx_jump_05842A19.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1186802106" Name="ev_water_splash" ObjectPath="\Events\Default Work Unit\ev_water_splash" DurationType="OneShot" DurationMin="1.086133" DurationMax="1.501606">
 					<IncludedMemoryFiles>
 						<File Id="546331495" Language="SFX">
@@ -571,7 +705,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1229948536" Language="SFX" Hash="2108408170">
+		<SoundBank Id="1229948536" Language="SFX" Hash="3898182861">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
 			<ShortName>Environment</ShortName>
 			<Path>Environment.bnk</Path>
@@ -913,7 +1047,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2470074595">
+		<SoundBank Id="3991942870" Language="SFX" Hash="961384374">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

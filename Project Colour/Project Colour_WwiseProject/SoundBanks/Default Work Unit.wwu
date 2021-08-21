@@ -43,8 +43,10 @@
 				</SoundBank>
 				<SoundBank Name="Player" ID="{FF9D288F-16C8-4C6E-A945-B35117AD0D45}">
 					<ObjectInclusionList>
+						<ObjectRef Name="ev_sfx_landing" ID="{00C30079-9C52-466F-AC2C-EAAA62E9C0E4}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_colour_place_sequence" ID="{0647F295-3EA2-47EB-9C03-4F18B956A5C3}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_plr_foosteps" ID="{F753B1F0-DDB8-4837-B3CA-13D65BD4DF2C}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ev_sfx_plr_jump" ID="{EAB3BD2F-69EA-4ABC-B6AA-9CF2E29FF19B}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_water_splash" ID="{04BE43AE-DF87-4BE4-9F15-4468D2052311}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_sfx_jumppad" ID="{88EB49AB-AE5B-4C52-A931-D1AD6E8F7BA0}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ev_colour_grab_sequence" ID="{A8A6FFB9-1AA5-4C9E-BD5E-42F486BF5CCA}" WorkUnitID="{5553FA71-C49E-4700-AC09-CC7BABDC1A38}" Origin="Manual" Filter="7"/>

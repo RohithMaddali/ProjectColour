@@ -6,6 +6,11 @@
 				<ActorMixer Name="Story" ID="{DA81D912-FD31-4D60-99B7-6B354358BA0E}" ShortID="474704119">
 					<PropertyList>
 						<Property Name="OverrideOutput" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

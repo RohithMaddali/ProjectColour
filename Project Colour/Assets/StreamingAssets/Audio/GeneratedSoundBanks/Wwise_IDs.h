@@ -31,7 +31,9 @@ namespace AK
         static const AkUniqueID EV_SERVO = 878682118U;
         static const AkUniqueID EV_SFX_BIRDS = 1994831277U;
         static const AkUniqueID EV_SFX_JUMPPAD = 3149901282U;
+        static const AkUniqueID EV_SFX_LANDING = 84769344U;
         static const AkUniqueID EV_SFX_PLR_FOOSTEPS = 1061346095U;
+        static const AkUniqueID EV_SFX_PLR_JUMP = 2205897810U;
         static const AkUniqueID EV_SFX_RUNNING_WATER = 2793993496U;
         static const AkUniqueID EV_SFX_UI_CLICK = 201342336U;
         static const AkUniqueID EV_SFX_UI_HOVER = 3612025966U;
