@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="543694036" Language="English(US)" Hash="2973395395">
+		<SoundBank Id="543694036" Language="English(US)" Hash="3161266950">
 			<ObjectPath>\SoundBanks\Default Work Unit\Vox</ObjectPath>
 			<ShortName>Vox</ShortName>
 			<Path>English(US)\Vox.bnk</Path>
@@ -119,7 +119,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="130980682">
+		<SoundBank Id="1069431850" Language="SFX" Hash="4059842238">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>

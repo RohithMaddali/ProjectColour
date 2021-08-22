@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2106854878730106223}
   - component: {fileID: 2460184201154821477}
   - component: {fileID: 5224750450411157178}
+  - component: {fileID: 4441785138852705060}
   m_Layer: 8
   m_Name: blob
   m_TagString: CanColour
@@ -127,5 +128,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80a1e1b4e130f84596ebceffab34100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   self: {fileID: 0}
+  changeColour: {fileID: 0}
   outline: {fileID: 0}
+--- !u!114 &4441785138852705060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864178206555237293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac6b418a71433549abbb3937ddf3b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - Stone
