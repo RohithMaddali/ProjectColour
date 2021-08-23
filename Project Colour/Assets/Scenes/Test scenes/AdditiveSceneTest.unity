@@ -706,6 +706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BirdPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3185705885628564631, guid: 3f2f077535cc79c47a1b04285f7995f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3185705885628668151, guid: 3f2f077535cc79c47a1b04285f7995f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23513
