@@ -82,6 +82,8 @@ namespace Pyro
         public void LoadScene()
         {
             //new game function
+            gm.credits.SetBool("Credits", false);
+            gm.endgameText.SetActive(false);
             gm.isPicked = false;
             gm.itemsPicked = 0;
             gm.r = false;

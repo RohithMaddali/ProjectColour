@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public bool isPicked = false;
     public bool displayTips = true;
     public bool continuing;
+    public Animator credits;
 
     public float aimSen;
     public CharacterAim ca;
@@ -35,6 +36,8 @@ public class GameManager : MonoBehaviour
     public Material terrain;
     public ColourList[] colourLists;
     public static bool isVoicePlaying;
+
+    public GameObject endgameText;
     private void Awake()
     {
         mm = FindObjectOfType<MenuScript>();
@@ -156,6 +159,8 @@ public class GameManager : MonoBehaviour
 
     public void Endgame()
     {
+        endgameText.SetActive(true);
+        StartCoroutine(endgametimer());
         terrain.SetFloat("Saturation", 1f);
         colourLists = FindObjectsOfType<ColourList>();
         foreach (ColourList colourList in colourLists)
@@ -166,5 +171,12 @@ public class GameManager : MonoBehaviour
                 colourableObject.GetComponent<Renderer>().material.SetFloat("Saturation", 1f);
             }
         }
+    }
+
+    IEnumerator endgametimer()
+    {
+        yield return new WaitForSeconds(5f);
+        //endgameText.SetActive(false);
+        credits.SetBool("Credits", true);
     }
 }
